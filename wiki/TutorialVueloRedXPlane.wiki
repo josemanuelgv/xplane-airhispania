@@ -70,15 +70,15 @@
 
   === Elementos del terreno ===
    
-   * Puntos de notificación: TODO subir el paquete y poner enlace
-   * Faros: TODO subir el paquete y poner enlace
-   * Toros de Osborne: TODO subir el paquete y poner enlace
-   * Pueblos de España: TODO subir el paquete y poner enlace
-   * Aerogeneradores: TODO subir el paquete y poner enlace
+   * Puntos de notificación VFR 1.8: [https://mega.co.nz/#!qZIwFATS!GN-brkdy4pdOCxXxnHgN6x2VPVYwRegyE0kWfst70_U Descargar]
+   * Faros 1.4: [https://mega.co.nz/#!fd5F3YqT!QyVi9zz-XYCcDsksWEprK0XAViQnEvacqEj-imXpxpw Descargar]
+   * Toros de Osborne 1.0: [https://mega.co.nz/#!bd4XFZSC!borM5gxQMOIQaqoI8cxhdQ0HwZwwsI2XaJuwK47CkA8 Descargar]
+   * Castillos 1.0: [https://mega.co.nz/#!LcghHCDZ!ZNnA_lV3KcC-9CdIjhJcv0Ppo1JDr7LFtCFwZJiDoGg Descargar]
+   * Obstáculos 2.1: [https://mega.co.nz/#!DNAxDLCK!Cq8Gimxl2PaNDmh-3SWDrSBK7eEJEsnR6hcK7I3rmlk Descargar]
 
   === Aeródromos convertidos de AirHispaniaSC FSX ===
 
-   TODO Tengo ya la conversión pero en un solo paquete. Sería interesante hacerla para cada aeródromo y así poder seleccionarlos.
+   Pediente de publicación
 
   
 == 6. Instalación de aeronaves de la flota de AirHispania ==  
@@ -89,7 +89,7 @@
  
   Los CSL's se ubican en la carpeta DIR_INSTALL_XPLANE/Resources/plugins/XSquawkBox Resources/CSL. 
 
-  TODO: Instalar X-CSL-PAckage y apuntarlo al repositorio de CSL's de AirHispania
+ [https://mega.co.nz/#!jcghSCII!ay_81AQ3bke28CYLHE070S37YCYFB-u_0udc0wrsZmk Descarga] AirHispania CSL's 0.1  
 
 == 7. Configuración específica del simulador ==  
 
@@ -97,10 +97,6 @@
 
 == 8. Plugins adicionales recomendables ==  
 
- # Airport Navigator plugin TODO: enlace y descripción
- # PilotView plugin TODO: enlace y descripción
+ # Airport Navigator plugin: excelente utilidad muy recomendable. Utiliza la base de datos de aeropuertos para representar un mapa del mismo en el cual podemos guiarnos para conocer nuestra posición y movimientos en tiempo real. Descarga en [http://forums.x-plane.org/index.php?app=downloads&showfile=4930]
+ # PilotView plugin: Fundamental para los que usan TrackIR, pero también muy util para los que no, ya que permite asignas vistas concretas a teclas o botones de joystick. Facilita mucho los cambios de vista. Disponible en [http://www.xpluginsdk.org/pilot_view.htm]
  # CheckList plugin TODO: enlace y descripción
-
-== 9. Valoración de vuelos con Bender ==  
-
- TODO: descripción y descarga de la herramienta
