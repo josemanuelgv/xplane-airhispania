@@ -1,4 +1,6 @@
-#summary One-sentence summary of this page.
+#summary Tutorial de vuelo en red con XPlane en AirHispania
+
+= *Tutorial de vuelo en red con XPlane en AirHispania* =
 
 = Introducción =
 
@@ -8,6 +10,7 @@
 
    La guía abarca las versiones 9 y 10 de XPlane de 32bits para Windows. La versión 10 de 64 bits de XPlane por ahora no permite la conexión a la red de AirHispania debido a que el agente de red usado, XsquawkBox, no ha sido portado a 64 bits todavía.
 
+                                         _Jose Manuel GV - AHS018D_
 
 = Instalación y configuración de XPlane =
 
