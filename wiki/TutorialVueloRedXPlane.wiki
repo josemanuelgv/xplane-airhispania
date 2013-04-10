@@ -87,16 +87,20 @@
 
   La comunidad XPlane está trabajando para tener disponible los CSL's de toda la flota de AirHispania. De momento disponemos de algunas de las aeronaves de la flota sin texturizar, pero nos permite al menos volar viendo las aeronaves que corresponden a los ICAO correctos.  
  
-  Los CSL's se ubican en la carpeta DIR_INSTALL_XPLANE/Resources/plugins/XSquawkBox Resources/CSL. 
+  Los CSL's se ubican en la carpeta DIR_INSTALL_XPLANE/Resources/plugins/XSquawkBox Resources/CSL. Hay que eliminar (o mover a otro sitio) los que existen instalados por XSquawkBox. Después descomprimimos los de AirHispania. Descarga en el siguiente enlace:
 
- [https://mega.co.nz/#!jcghSCII!ay_81AQ3bke28CYLHE070S37YCYFB-u_0udc0wrsZmk Descarga] AirHispania CSL's 0.1  
+ [https://mega.co.nz/#!jcghSCII!ay_81AQ3bke28CYLHE070S37YCYFB-u_0udc0wrsZmk CSL's] de la flota de AirHispania (versión inicial)   
 
+ Es importante comentar que la versión que usamos de XSquawkBox carga TODOS los CSL's existentes en memoria, con el correspondiente tiempo de espera en la carga de XPlane y consumo de recursos. Por eso es importante tener un número "coherente" de CSL's.
+ 
 == 7. Configuración específica del simulador ==  
 
- # Desactivar la opción de "seguir contornos del terreno" en la configuración de Gráficos (Render options). TODO: poner captura para XPlane9 y XPlane10
+ # Desactivar la opción de "seguir contornos del terreno" en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando. 
+
+Pendiente poner captura para XPlane9 y XPlane10
 
 == 8. Plugins adicionales recomendables ==  
 
- # Airport Navigator plugin: excelente utilidad muy recomendable. Utiliza la base de datos de aeropuertos para representar un mapa del mismo en el cual podemos guiarnos para conocer nuestra posición y movimientos en tiempo real. Descarga en [http://forums.x-plane.org/index.php?app=downloads&showfile=4930]
- # PilotView plugin: Fundamental para los que usan TrackIR, pero también muy util para los que no, ya que permite asignas vistas concretas a teclas o botones de joystick. Facilita mucho los cambios de vista. Disponible en [http://www.xpluginsdk.org/pilot_view.htm]
- # CheckList plugin TODO: enlace y descripción
+ # *Airport Navigator plugin*: excelente utilidad muy recomendable. Utiliza la base de datos de aeropuertos para representar un mapa del mismo en el cual podemos guiarnos para conocer nuestra posición y movimientos en tiempo real. Descarga en [http://forums.x-plane.org/index.php?app=downloads&showfile=4930]
+ # *PilotView plugin*: Fundamental para los que usan TrackIR, pero también muy util para los que no, ya que permite asignas vistas concretas a teclas o botones de joystick. Facilita mucho los cambios de vista. Disponible en [http://www.xpluginsdk.org/pilot_view.htm]
+ # *CheckList plugin*: Pendiente enlace y descripción
