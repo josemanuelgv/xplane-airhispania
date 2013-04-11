@@ -75,9 +75,9 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
    * Castillos 1.0: [https://mega.co.nz/#!LcghHCDZ!ZNnA_lV3KcC-9CdIjhJcv0Ppo1JDr7LFtCFwZJiDoGg Descargar]
    * Obstáculos 2.1: [https://mega.co.nz/#!DNAxDLCK!Cq8Gimxl2PaNDmh-3SWDrSBK7eEJEsnR6hcK7I3rmlk Descargar]
 
-  === Aeródromos convertidos de AirHispaniaSC FSX ===
+  === Aeródromos convertidos de AirHispaniaSC ===
 
-   Pediente de publicación
+   * Aeródromos 2.0 convertidos de FSX: [https://mega.co.nz/#!jcghSCII!ay_81AQ3bke28CYLHE070S37YCYFB-u_0udc0wrsZmk Descarga]
 
   
 == 6. Instalación de aeronaves de la flota de AirHispania ==  
