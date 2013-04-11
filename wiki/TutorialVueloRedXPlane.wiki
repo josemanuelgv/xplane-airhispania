@@ -35,13 +35,12 @@
   # Abrir con un editor de textos el fichero DIR_INSTALL_XPLANE/Resources/plugins/XUIPCOffsets.cfg
   # Añadir el siguiente contenido al final del mismo y guardarlo:
   
-  {{{   
-	 # Añadido para compatibilidad con AHSBOX
-	 Dataref TotalPayload sim/flightmodel/weight/m_fixed float
-	 Offset 0x13FC UINT32 1 r 1 # Count of payload stations = 1
-	 Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" en lbs
-
-  }}}
+{{{   
+# Añadido para compatibilidad con AHSBOX
+Dataref TotalPayload sim/flightmodel/weight/m_fixed float
+Offset 0x13FC UINT32 1 r 1 # Count of payload stations = 1
+Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" en lbs
+}}}
 
 == 3. Instalar XSquawkBox 1.0.0 IVAO Compatible (aporte de Carlos, AHS6441) ==
  
