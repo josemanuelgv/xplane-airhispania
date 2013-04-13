@@ -56,9 +56,11 @@ public class MakeR4 {
 		FilesFilter.walk(workDir, Scenery.APT_FILE_PATTERN, temporalaptfiles);
 
 		List<File> aptfiles = new ArrayList<File>();
-		// Eliminar los apt que esten deshabilitados por XAddonManager
+		// Descarte de APT's
 		for (File f : temporalaptfiles) {
-			if (!f.getAbsolutePath().contains("(disabled)")) {
+			// Eliminar los apt que esten deshabilitados por XAddonManager
+			if (!f.getAbsolutePath().contains("(disabled)")
+					&& !f.getAbsolutePath().contains("__MACOSX")) {
 				aptfiles.add(f);
 				logger.info("Found apt.dat: " + f.getAbsolutePath());
 			}
@@ -74,13 +76,15 @@ public class MakeR4 {
 
 		long airportsParsed = 0;
 		for (File f : aptfiles) {
+			Scenery s = new Scenery(f.getAbsolutePath(), f);
 			try {
-				Scenery s = new Scenery(f.getAbsolutePath(), f);
 				airportsParsed += s.parse();
 				if (s.getAirports().size() > 0)
 					currentSceneries.add(s);
 			} catch (Exception e) {
-				logger.error(e);
+				logger.error("ERROR parsing apt file "
+						+ s.getAptfile().getAbsolutePath() + ": "
+						+ e.getMessage());
 				return;
 			}
 		}
