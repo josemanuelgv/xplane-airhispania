@@ -27,11 +27,16 @@ public class MakeR4 {
 
 	private static final String BENDER9_R4_CSV = "\\r4.csv";
 
+	private static final String VERSION = "0.1.0";
+
 	/**
 	 * @param args
 	 * @throws IOException
 	 */
 	public static void main(String[] args) throws IOException {
+
+		logger.info("XPlane2RC, xplane apt to Radar Contact R4 converter. Version = "
+				+ VERSION);
 
 		// String workDir = System.getProperty("user.dir");
 		File currentDirectory = new File(new File(".").getAbsolutePath());
