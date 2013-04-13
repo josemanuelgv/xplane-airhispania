@@ -148,16 +148,17 @@ public class Apt2rcTransformer {
 			}
 
 			if (targetLandAirport != null) {
-				Airport rairport = transformAirport(targetLandAirport,
-						baseR4.get(customIcao));
-				if (rairport != null)
-					result.put(customIcao, rairport);
+				try {
+					Airport rairport = transformAirport(targetLandAirport,
+							baseR4.get(customIcao));
+					if (rairport != null)
+						result.put(customIcao, rairport);
 
-				// else
-				// sendMessage("Airport "
-				// + customIcao
-				// +
-				// " definitions not similar between apt.dat and base r4.csv");
+				} catch (Exception e) {
+					sendMessage("Error transforming Airport " + customIcao
+							+ ": " + e.getMessage());
+				}
+
 			} else {
 				sendMessage("Airport " + customIcao
 						+ " has not been found on apt.dat files");

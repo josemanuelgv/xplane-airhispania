@@ -98,18 +98,25 @@ public class AptParser {
 		if (l.startsWith(APT_XP10_HEADER) || l.startsWith(APT_XP09_HEADER))
 			return;
 
-		// Check for LandAirport line
-		if ((l.length() > 2)
-				&& (LandAirport.APT_CODE == Integer.parseInt(l.substring(0, 3)
-						.trim()))) {
-			parseLandAirportLine(l);
-		}
+		try {
 
-		// Check for LandRunway line
-		if ((l.length() > 3)
-				&& (LandRunway.APT_CODE == Integer.parseInt(l.substring(0, 3)
-						.trim())) && l.substring(0, 4).contains(" ")) {
-			parseLandRunwayLine(l);
+			// Check for LandAirport line
+			if ((l.length() > 2)
+					&& (LandAirport.APT_CODE == Integer.parseInt(l.substring(0,
+							3).trim()))) {
+				parseLandAirportLine(l);
+			}
+
+			// Check for LandRunway line
+			if ((l.length() > 3)
+					&& (LandRunway.APT_CODE == Integer.parseInt(l.substring(0,
+							3).trim())) && l.substring(0, 4).contains(" ")) {
+				parseLandRunwayLine(l);
+			}
+
+		} catch (Exception e) {
+			throw new Exception(e.getMessage() + " error parsing line \"" + l
+					+ "\"");
 		}
 
 	}
