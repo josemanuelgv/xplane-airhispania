@@ -109,12 +109,6 @@ public class AptParser {
 
 	private void parseLandAirportLine(String l) throws Exception {
 
-		if (this.currentAirport != null) {
-			parsedAirports.put(this.currentAirport.getIcao_code(),
-					this.currentAirport);
-			this.currentAirport = null;
-		}
-
 		String elevation;
 		String icao;
 		String name = "";
@@ -143,6 +137,9 @@ public class AptParser {
 		currentAirport.setIcao_code(icao);
 		currentAirport.setName(name);
 		currentAirport.setRunways(new ArrayList<LandRunway>());
+
+		parsedAirports.put(this.currentAirport.getIcao_code(),
+				this.currentAirport);
 
 		for (IAptParserListener lsn : listeners) {
 			lsn.landAirportParsed();

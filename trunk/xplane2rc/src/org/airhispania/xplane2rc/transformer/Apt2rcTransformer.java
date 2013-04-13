@@ -124,7 +124,7 @@ public class Apt2rcTransformer {
 		// Main loop
 		int i = 1;
 		int notFound = 0;
-		int notSim = 0;
+
 		LandAirport targetLandAirport;
 		for (String customIcao : baseR4.keySet()) {
 
@@ -134,8 +134,12 @@ public class Apt2rcTransformer {
 					targetLandAirport = defApt.get(customIcao);
 			} else {
 				for (Map<String, LandAirport> customApt : customApts) {
-					if (customApt.containsKey(customIcao))
+					if (customApt.containsKey(customIcao)) {
 						targetLandAirport = customApt.get(customIcao);
+						sendMessage("Airport " + customIcao
+								+ " processed from custom Apt ");
+					}
+
 				}
 				if (targetLandAirport == null) {
 					if (defApt.containsKey(customIcao))
@@ -148,8 +152,7 @@ public class Apt2rcTransformer {
 						baseR4.get(customIcao));
 				if (rairport != null)
 					result.put(customIcao, rairport);
-				else
-					notSim++;
+
 				// else
 				// sendMessage("Airport "
 				// + customIcao
@@ -166,12 +169,12 @@ public class Apt2rcTransformer {
 
 		statistics.add("Airports calculated = " + (i - 1));
 		statistics.add("Airports not found = " + notFound);
-		statistics.add("Airports not similar = " + notSim);
+		// statistics.add("Airports not similar = " + notSim);
 
 		sendMessage("Storing results on new r4.csv file ... ");
 		RC4Parser rc4Parser = new RC4Parser(this.generatedR4Db);
 		long ndata = rc4Parser.store(result);
-		statistics.add("Airports generated on r4.csv = " + ndata);
+		statistics.add("Runways generated on r4.csv = " + ndata);
 
 	}
 
@@ -297,47 +300,48 @@ public class Apt2rcTransformer {
 		Airport newAirport = null;
 
 		// First, verify the airport definitions are similar
-		if (aptAirport.getRunwayEndCount() == r4Airport.getRunways().size()) {
+		// if (aptAirport.getRunwayEndCount() == r4Airport.getRunways().size())
+		// {
 
-			newAirport = r4Airport.clone();
+		newAirport = r4Airport.clone();
 
-			for (String customRwy : r4Airport.getRunways().keySet()) {
+		for (String customRwy : r4Airport.getRunways().keySet()) {
 
-				RunwayEnd rwR4 = newAirport.getRunways().get(customRwy);
-				LandRunwayEnd rwApt = aptAirport.getLandRunwayEndByNumber(rwR4
-						.getNumberAsApt());
+			RunwayEnd rwR4 = newAirport.getRunways().get(customRwy);
+			LandRunwayEnd rwApt = aptAirport.getLandRunwayEndByNumber(rwR4
+					.getNumberAsApt());
 
-				if (rwApt != null) {
+			if (rwApt != null) {
 
-					// Calculamos el ángulo entre los dos puntos y su distancia
-					// para luego aplicar el desplazamiento adecuado a
-					// rwR4.endLocation
-					double bearing = EarthCalc.getBearing(
-							rwR4.getStartLocation(), rwApt.getLocation()); // in
-																			// decimal
-																			// degrees
-					double distance = EarthCalc.getDistance(
-							rwR4.getStartLocation(), rwApt.getLocation()); // in
-																			// meters
+				// Calculamos el ángulo entre los dos puntos y su distancia
+				// para luego aplicar el desplazamiento adecuado a
+				// rwR4.endLocation
+				double bearing = EarthCalc.getBearing(rwR4.getStartLocation(),
+						rwApt.getLocation()); // in
+												// decimal
+												// degrees
+				double distance = EarthCalc.getDistance(
+						rwR4.getStartLocation(), rwApt.getLocation()); // in
+																		// meters
 
-					rwR4.setStartLocation(rwApt.getLocation());
+				rwR4.setStartLocation(rwApt.getLocation());
 
-					// Aplicamos el desplazamiento a rwR4.endLocation
-					com.grum.geocalc.Point endLocation = (com.grum.geocalc.Point) EarthCalc
-							.pointRadialDistance(rwR4.getEndLocation(),
-									bearing, distance);
+				// Aplicamos el desplazamiento a rwR4.endLocation
+				com.grum.geocalc.Point endLocation = (com.grum.geocalc.Point) EarthCalc
+						.pointRadialDistance(rwR4.getEndLocation(), bearing,
+								distance);
 
-					rwR4.setEndLocation(new Point(endLocation.getLatitude(),
-							endLocation.getLongitude()));
+				rwR4.setEndLocation(new Point(endLocation.getLatitude(),
+						endLocation.getLongitude()));
 
-				} else
-					sendMessage("Runway End " + rwR4.getNumber()
-							+ " not found on APT");
+			} else
+				sendMessage("Runway End " + rwR4.getNumber() + " of airport "
+						+ r4Airport.getIcao_code() + " not found on APT");
 
-			}
-		} else
-			sendMessage("Airport " + aptAirport.getIcao_code()
-					+ " definition differs");
+		}
+		// } else
+		// sendMessage("Airport " + aptAirport.getIcao_code()
+		// + " definition differs");
 
 		return newAirport;
 

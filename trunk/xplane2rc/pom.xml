@@ -52,15 +52,15 @@
   </organization>
   <dependencies>
   	<dependency>
-  		<groupId>com.grum</groupId>
-  		<artifactId>geocalc</artifactId>
-  		<version>0.1.1</version>
-  	</dependency>
-  	<dependency>
         <groupId>log4j</groupId>
         <artifactId>apache-log4j-extras</artifactId>
         <version>1.0</version>
       </dependency>
+  	<dependency>
+  		<groupId>com.grum</groupId>
+  		<artifactId>geocalc</artifactId>
+  		<version>0.1.1</version>
+  	</dependency>
   </dependencies>
   <url>http://code.google.com/p/xplane-airhispania/</url>
 </project>
