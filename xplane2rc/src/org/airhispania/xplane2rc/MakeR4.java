@@ -27,7 +27,7 @@ public class MakeR4 {
 
 	private static final String BENDER9_R4_CSV = "\\r4.csv";
 
-	private static final String VERSION = "0.1.0";
+	private static final String VERSION = "0.1.1";
 
 	/**
 	 * @param args

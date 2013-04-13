@@ -1,7 +1,7 @@
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>console</headerType>
-  <jar>xplane2rc-0.1.0-jar-with-dependencies.jar</jar>
+  <jar>xplane2rc-0.1.1-jar-with-dependencies.jar</jar>
   <outfile>F:\jdev\wk-xplane\xplane2rc\dist\MakeRwys.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
@@ -18,7 +18,7 @@
     <minVersion>1.5.0</minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
-    <initialHeapSize>32</initialHeapSize>
-    <maxHeapSize>128</maxHeapSize>
+    <initialHeapSize>64</initialHeapSize>
+    <maxHeapSize>256</maxHeapSize>
   </jre>
 </launch4jConfig>
