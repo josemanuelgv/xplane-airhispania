@@ -26,6 +26,9 @@ import org.airhispania.xplane2rc.apt.model.LandRunwayEnd;
  */
 public class AptParser {
 
+	public static String APT_XP10_HEADER = "1000 Version";
+	public static String APT_XP09_HEADER = "850 Version";
+
 	private File fileToParser;
 
 	private Vector<IAptParserListener> listeners = new Vector<IAptParserListener>();
@@ -91,6 +94,10 @@ public class AptParser {
 		if (l == null)
 			return;
 
+		// Check for headers lines
+		if (l.startsWith(APT_XP10_HEADER) || l.startsWith(APT_XP09_HEADER))
+			return;
+
 		// Check for LandAirport line
 		if ((l.length() > 2)
 				&& (LandAirport.APT_CODE == Integer.parseInt(l.substring(0, 3)
@@ -99,9 +106,9 @@ public class AptParser {
 		}
 
 		// Check for LandRunway line
-		if ((l.length() > 2)
+		if ((l.length() > 3)
 				&& (LandRunway.APT_CODE == Integer.parseInt(l.substring(0, 3)
-						.trim()))) {
+						.trim())) && l.substring(0, 4).contains(" ")) {
 			parseLandRunwayLine(l);
 		}
 
