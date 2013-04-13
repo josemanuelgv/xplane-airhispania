@@ -1,0 +1,264 @@
+2013-04-12 21:27:04 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\XBender
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 21:27:14 INFO  Application:391 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 21:27:19 INFO  Application:495 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\rc4.csv
+2013-04-12 21:27:19 INFO  Application:502 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 21:29:08 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\XBender
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 21:29:18 INFO  Application:391 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 21:29:24 INFO  Application:495 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\rc4.csv
+2013-04-12 21:29:24 INFO  Application:502 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 21:29:27 ERROR Application:520 - java.lang.ClassCastException: com.grum.geocalc.Point cannot be cast to org.airhispania.xplane2rc.util.Point
+2013-04-12 21:30:19 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\XBender
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 21:30:29 INFO  Application:391 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 21:30:44 INFO  Application:495 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\rc4.csv
+2013-04-12 21:30:44 INFO  Application:502 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 21:32:38 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\XBender
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 21:32:55 INFO  Application:391 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 21:32:59 INFO  Application:495 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\rc4.csv
+2013-04-12 21:32:59 INFO  Application:502 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 21:34:09 INFO  Application:73 - Working Directory = F:\jdev\wk-xplane\XBender
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 21:34:20 INFO  Application:396 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 21:34:24 INFO  Application:500 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\r4.csv
+2013-04-12 21:34:24 INFO  Application:507 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 21:34:52 INFO  Application:500 - Target RC4 file location = F:\jdev\wk-xplane\XBender\bender9\r4.csv
+2013-04-12 21:34:52 INFO  Application:507 - Reference RC4 file location = F:\jdev\wk-xplane\xplane2rc\target\classes\r4.csv
+2013-04-12 23:56:11 INFO  Application:69 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-12 23:56:40 INFO  Application:69 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 23:56:48 INFO  Application:349 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-12 23:57:32 INFO  Application:69 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-12 23:57:43 INFO  Application:349 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-13 02:15:58 INFO  Application:69 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-13 02:16:16 INFO  Application:349 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-13 02:21:39 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-13 02:21:53 INFO  Application:335 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
+2013-04-13 02:22:24 INFO  Application:68 - Working Directory = F:\jdev\wk-xplane\AptViewer
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\AHS_Aerodromos_FSX_2.0\Earth nav data\fullapt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Alicante LEAL\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Almeria LEAM\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Badajoz LEBZ\Earth nav data\fullapt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Barcelona LEBL\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Bilbao LE\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Burgos LEBG\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Granada LEGR\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT La Palma LEPA\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT LEDA - Lleida-Alguaire\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT LEGE - Girona\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT LEZL Sevilla\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Malaga LEMG\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Santander LEXJ\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\APT Valencia LEVC\Earth nav data\Nueva carpeta\fullapt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\LELN_Leon\Earth nav data\fullapt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Custom Scenery\LOWI Demo Area\Earth nav data\apt.dat
+2013-04-13 02:22:36 INFO  Application:334 - apt.dat: F:\XPlane9\Resources\default scenery\default apt dat\Earth nav data\apt.dat
