@@ -79,7 +79,12 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
    * Aeródromos 2.0 convertidos de FSX: [https://mega.co.nz/#!uNpXyLpJ!aB739TdWWxyYaIn4vO8uGUK5hbYdKzW06X7DQ_Dmxow Descarga]
 
-  
+  === Aviones de la flota ===
+   
+   * Cessna Skyline 182 gratuita de AIR.C74.NET, muy similar a la usada en FS9 y FSX: [http://www.c74.net/xplane/fx/viewtopic.php?f=44&t=14 Cessna_Skyline_C182]
+
+   * BeechCraft Baron 58 gratuita: [http://forums.x-plane.org/index.php?app=downloads&showfile=9291 Baron_58]
+
 == 6. Instalación de aeronaves de la flota de AirHispania ==  
 
   En XSquawkbox el concepto de CSL se corresponde con el modelo tridimensional (OBJ) y las texturas (PNG) que representan a un aeronave conectada a la red. Por tanto, si al conectarnos a la red deseamos ver a los compañeros con sus respectivas aeronaves, debemos tener instalado en nuestro simulador los CSL de las mismas.
@@ -96,10 +101,39 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
  # Desactivar la opción de "seguir contornos del terreno" en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando. 
 
-Pendiente poner captura para XPlane9 y XPlane10
+ * Captura en XPlane9: https://mega.co.nz/#!iZggVSjb!MqCs-wBcCuX1i30LiYMl7y57DP9kBEO-nMcF0sN6s5Y Ver]
+ * Captura en XPlane10: pendiente
 
 == 8. Plugins adicionales recomendables ==  
 
  # *Airport Navigator plugin*: excelente utilidad muy recomendable. Utiliza la base de datos de aeropuertos para representar un mapa del mismo en el cual podemos guiarnos para conocer nuestra posición y movimientos en tiempo real. Descarga en [http://forums.x-plane.org/index.php?app=downloads&showfile=4930]
  # *PilotView plugin*: Fundamental para los que usan TrackIR, pero también muy util para los que no, ya que permite asignas vistas concretas a teclas o botones de joystick. Facilita mucho los cambios de vista. Disponible en [http://www.xpluginsdk.org/pilot_view.htm]
  # *CheckList plugin*: Pendiente enlace y descripción
+
+= Conexión y vuelo en la red =
+
+ == Conexión ==
+
+ Para conectar iremos al plugin XSquawkbox y seleccionaremos la opción "Connect". Introduciremos todos los datos para la conexión tal como muestra esta [https://mega.co.nz/#!rZRTkAST!Ydp8HHWRu3M1mGhYOZ-MwVf0HexgRRCsORwO_SaTJnc captura] de pantalla.
+
+ == Metereología ==
+
+ Al conectar recibimos automáticamente el ATIS de las dependencias abiertas en la red. Pero si necesitamos actualizarlo, debemos ordenárselo a XSquawkbox. La forma de hacerlo es pulsar Enter para abrir la zona de mensajes y escribir allí:
+{{{
+   .atis LECO_TWR
+}}}
+ 
+ Si queremos también que nuestro simulador reciba, interprete y represente el último METAR, hacemos:
+
+{{{
+   .metar LECO_TWR
+}}}
+ 
+ == El Plan de Vuelo ==
+
+ [https://mega.co.nz/#!2UBGRQDL!e68CaSC32B1AdAhwppuPVieoJa5ckpy4FM3UpdHDFbU Aquí] tenemos un ejemplo de plan de vuelo para VFR. Podemos especificar toda la información del FP al igual que con FS9 o FSX *salvo uno de los datos requeridos, la altitud de cruzero*. La norma dice que para un vuelo VFR en dicho campo hay que poner "VFR", pero vemos que la única letra que nos deja XSquawkBox poner es la "F", por tanto realizaremos lo siguiente:
+
+ # Indicar la altitud máxima de crucero en nuestro plan en pies. En el ejemplo hemos indicado 1000 pies para un circuito de tráfico.
+ # En el apartado de REMARKS, indicaremos que estamos usando XPlane para que el ATC pueda tener en cuenta nuestra limitación.
+
+  
