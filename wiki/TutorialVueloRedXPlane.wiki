@@ -101,7 +101,7 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
  # Desactivar la opción de "seguir contornos del terreno" en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando. 
 
- * Captura en XPlane9: https://mega.co.nz/#!iZggVSjb!MqCs-wBcCuX1i30LiYMl7y57DP9kBEO-nMcF0sN6s5Y Ver]
+ * Captura en XPlane9: [https://xplane-airhispania.googlecode.com/svn/wiki/xplane9_graphics_setup.png Ver]
  * Captura en XPlane10: pendiente
 
 == 8. Plugins adicionales recomendables ==  
@@ -114,7 +114,9 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
  == Conexión ==
 
- Para conectar iremos al plugin XSquawkbox y seleccionaremos la opción "Connect". Introduciremos todos los datos para la conexión tal como muestra esta [https://mega.co.nz/#!rZRTkAST!Ydp8HHWRu3M1mGhYOZ-MwVf0HexgRRCsORwO_SaTJnc captura] de pantalla.
+ Para conectar iremos al plugin XSquawkbox y seleccionaremos la opción "Connect". Introduciremos todos los datos para la conexión tal como muestra esta captura de pantalla:
+
+[https://xplane-airhispania.googlecode.com/svn/wiki/xsb_connect_ahs.png]
 
  == Metereología ==
 
@@ -131,7 +133,11 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
  
  == El Plan de Vuelo ==
 
- [https://mega.co.nz/#!2UBGRQDL!e68CaSC32B1AdAhwppuPVieoJa5ckpy4FM3UpdHDFbU Aquí] tenemos un ejemplo de plan de vuelo para VFR. Podemos especificar toda la información del FP al igual que con FS9 o FSX *salvo uno de los datos requeridos, la altitud de cruzero*. La norma dice que para un vuelo VFR en dicho campo hay que poner "VFR", pero vemos que la única letra que nos deja XSquawkBox poner es la "F", por tanto realizaremos lo siguiente:
+ Aquí tenemos un ejemplo de plan de vuelo para VFR. 
+
+ [https://xplane-airhispania.googlecode.com/svn/wiki/xsb_fp_ahs.png]
+
+ Podemos especificar toda la información del FP al igual que con FS9 o FSX *salvo uno de los datos requeridos, la altitud de cruzero*. La norma dice que para un vuelo VFR en dicho campo hay que poner "VFR", pero vemos que la única letra que nos deja XSquawkBox poner es la "F", por tanto realizaremos lo siguiente:
 
  # Indicar la altitud máxima de crucero en nuestro plan en pies. En el ejemplo hemos indicado 1000 pies para un circuito de tráfico.
  # En el apartado de REMARKS, indicaremos que estamos usando XPlane para que el ATC pueda tener en cuenta nuestra limitación.
