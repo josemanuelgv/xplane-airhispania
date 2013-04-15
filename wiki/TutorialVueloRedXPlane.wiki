@@ -118,6 +118,9 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
 [https://xplane-airhispania.googlecode.com/svn/wiki/xsb_connect_ahs.png]
 
+ * En el campo _Model_ indicaremos el código ICAO de la aeronave con la que queremos que nos vean el resto de usuarios de la red. Lo normal es que coincida con la aeronave con la que volamos.
+ * En el campo _Airline_ indicaremos el codigo de la aerolínea. Si queremos que salga AirHispania disponible, debemos darla de alta en el fichero *airlines.txt* localizado en la carpeta _DIR_INSTALL_XPLANE/Resources\plugins\XSquawkBox Resources_
+
  == Metereología ==
 
  Al conectar recibimos automáticamente el ATIS de las dependencias abiertas en la red. Pero si necesitamos actualizarlo, debemos ordenárselo a XSquawkbox. La forma de hacerlo es pulsar Enter para abrir la zona de mensajes y escribir allí:
