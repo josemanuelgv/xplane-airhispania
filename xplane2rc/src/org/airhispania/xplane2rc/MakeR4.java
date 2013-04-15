@@ -10,6 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.airhispania.xplane2rc.model.Scenery;
+import org.airhispania.xplane2rc.transformer.Apt2FrequenciesTransformer;
 import org.airhispania.xplane2rc.transformer.Apt2rcTransformer;
 import org.airhispania.xplane2rc.transformer.IApt2rcTransformerListener;
 import org.airhispania.xplane2rc.util.FilesFilter;
@@ -26,8 +27,9 @@ public class MakeR4 {
 	protected static Logger logger = Logger.getLogger(MakeR4.class);
 
 	private static final String BENDER9_R4_CSV = "\\r4.csv";
+	private static final String FREQ_CSV = "\\frequencies.csv";
 
-	private static final String VERSION = "0.1.2";
+	private static final String VERSION = "0.1.3";
 
 	/**
 	 * @param args
@@ -85,6 +87,7 @@ public class MakeR4 {
 				logger.error("ERROR parsing apt file "
 						+ s.getAptfile().getAbsolutePath() + ": "
 						+ e.getMessage());
+				logger.info("Process executed WITH errors. ");
 				return;
 			}
 		}
@@ -95,7 +98,7 @@ public class MakeR4 {
 		}
 
 		logger.info("Parsed " + airportsParsed + " airports.");
-		logger.info("Generating R4 file ... ");
+
 		// Default XPlane apt db
 		File xplaneAptFile = null;
 		List<File> customAptFiles = new ArrayList<File>();
@@ -111,7 +114,8 @@ public class MakeR4 {
 			return;
 		}
 
-		File rc4File = new File(System.getProperty("user.dir") + BENDER9_R4_CSV);
+		logger.info("Generating R4 file ... ");
+		File rc4File = new File(currentDirectory + BENDER9_R4_CSV);
 		logger.info("Target RC4 file location = " + rc4File.getAbsolutePath());
 		InputStream referenceRC4 = MakeR4.class.getClassLoader()
 				.getResourceAsStream("r4ref.csv");
@@ -134,9 +138,23 @@ public class MakeR4 {
 			}
 		} catch (Exception e) {
 			logger.error(e);
+			logger.info("Process executed WITH errors. ");
 			return;
 		}
 
+		logger.info("Generating Communication Frequencies file ... ");
+		File freqFile = new File(currentDirectory + FREQ_CSV);
+		logger.info("Target Frequencies file location = "
+				+ freqFile.getAbsolutePath());
+		try {
+			new Apt2FrequenciesTransformer().transform(currentSceneries,
+					freqFile);
+			logger.info("Frequencies file generated successfully!");
+		} catch (Exception e) {
+			logger.error(e);
+			logger.info("Process executed WITH errors. ");
+			return;
+		}
 		logger.info("Process executed without errors. ");
 	}
 

@@ -14,6 +14,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Vector;
 
+import org.airhispania.xplane2rc.apt.model.ComFrequency;
 import org.airhispania.xplane2rc.apt.model.LandAirport;
 import org.airhispania.xplane2rc.apt.model.LandRunway;
 import org.airhispania.xplane2rc.apt.model.LandRunwayEnd;
@@ -114,6 +115,13 @@ public class AptParser {
 				parseLandRunwayLine(l);
 			}
 
+			// Check for Communication Frequency line
+			if ((l.length() > 3)
+					&& (ComFrequency.validFreqCode(Integer.parseInt(l
+							.substring(0, 3).trim())))) {
+				parseFrequencyLine(l);
+			}
+
 		} catch (Exception e) {
 			throw new Exception(e.getMessage() + " error parsing line \"" + l
 					+ "\"");
@@ -157,6 +165,27 @@ public class AptParser {
 
 		for (IAptParserListener lsn : listeners) {
 			lsn.landAirportParsed();
+		}
+	}
+
+	private void parseFrequencyLine(String l) throws Exception {
+		String[] initdata = l.split(" ");
+		if (initdata.length == 3) {
+			int code = Integer.parseInt(initdata[0]);
+			String freq = initdata[1];
+			String dep = initdata[2];
+
+			ComFrequency cf = new ComFrequency();
+			cf.setCode(code);
+			cf.setFrequency(freq);
+			cf.setDependency(dep);
+
+			if (currentAirport != null) {
+				if (currentAirport.getFrequencies() == null)
+					currentAirport
+							.setFrequencies(new ArrayList<ComFrequency>());
+				currentAirport.getFrequencies().add(cf);
+			}
 		}
 	}
 

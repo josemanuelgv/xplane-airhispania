@@ -37,7 +37,7 @@ public class Application extends ApplicationWindow {
 	 * 
 	 */
 
-	public static String APPLICATION_VERSION = "0.1.2";
+	public static String APPLICATION_VERSION = "0.1.3";
 
 	private Text ubicXPlaneText;
 	private final FormToolkit formToolkit = new FormToolkit(

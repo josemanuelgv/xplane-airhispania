@@ -33,6 +33,8 @@ public class LandAirport {
 
 	private List<LandRunway> runways;
 
+	private List<ComFrequency> frequencies;
+
 	/**
 	 * @return the elevation
 	 */
@@ -106,6 +108,12 @@ public class LandAirport {
 		for (LandRunway e : this.getRunways()) {
 			r = r + e.toString();
 		}
+		if (this.getFrequencies() != null) {
+			r = r + " ComFq= ";
+			for (ComFrequency e : this.getFrequencies()) {
+				r = r + e.toString() + " ";
+			}
+		}
 		return r;
 	}
 
@@ -128,4 +136,20 @@ public class LandAirport {
 		}
 		return c;
 	}
+
+	/**
+	 * @return the frequencies
+	 */
+	public List<ComFrequency> getFrequencies() {
+		return frequencies;
+	}
+
+	/**
+	 * @param frequencies
+	 *            the frequencies to set
+	 */
+	public void setFrequencies(List<ComFrequency> frequencies) {
+		this.frequencies = frequencies;
+	}
+
 }

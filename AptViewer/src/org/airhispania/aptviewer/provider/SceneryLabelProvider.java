@@ -4,6 +4,7 @@
 package org.airhispania.aptviewer.provider;
 
 import org.airhispania.aptviewer.Application;
+import org.airhispania.xplane2rc.apt.model.ComFrequency;
 import org.airhispania.xplane2rc.apt.model.LandAirport;
 import org.airhispania.xplane2rc.apt.model.LandRunwayEnd;
 import org.airhispania.xplane2rc.model.Scenery;
@@ -109,9 +110,17 @@ public class SceneryLabelProvider implements ILabelProvider {
 		} else
 
 		if (arg0 instanceof LandAirport) {
-			return ((LandAirport) arg0).getIcao_code() + " "
+			String r = ((LandAirport) arg0).getIcao_code() + " "
 					+ ((LandAirport) arg0).getName() + ", Elev: "
 					+ ((LandAirport) arg0).getElevation() + " ft";
+			if (((LandAirport) arg0).getFrequencies() != null) {
+				r = r + ", Frq:[";
+				for (ComFrequency f : ((LandAirport) arg0).getFrequencies()) {
+					r = r + f.toString() + ",";
+				}
+				r = r + "]";
+			}
+			return r;
 		} else
 
 		if (arg0 instanceof LandRunwayEnd) {
