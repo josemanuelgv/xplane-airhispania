@@ -99,7 +99,7 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
  
 == 7. Configuración específica del simulador ==  
 
- # Desactivar la opción de "seguir contornos del terreno" en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando. 
+ # Desactivar la opción de "pistas siguen los contornos del terreno" (en inglés "runways follow terrain contours") en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando. 
 
  * Captura en XPlane9: [https://xplane-airhispania.googlecode.com/svn/wiki/xplane9_graphics_setup.png Ver]
  * Captura en XPlane10: pendiente
