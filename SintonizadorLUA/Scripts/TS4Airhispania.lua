@@ -1,5 +1,5 @@
 -- Este script permite la interaccion de las radios COM de XPlane con TeamSpeak 2 para la aerolinea virtual AIRHISPANIA
--- Autor: Tom谩s Garc铆a Fresno (LEXJ) AHS232D
+-- Autor: Tom醩 Garc韆 Fresno (LEXJ) AHS232D
 -- Colaboradores: Jose Manuel Garcia Valladolid (LEVC) AHS018D
 
 local ffi = require("ffi") 
@@ -24,27 +24,29 @@ void *malloc(size_t size);
 void *memset(void *s, int c, size_t n);
 ]]
 -- Datarefs
-dataref("Avionics_on", "sim/cockpit/electrical/avionics_on", "writable")
+dataref("Avionics_on", "sim/cockpit/electrical/avionics_on")
 dataref("Plane_Latitude", "sim/flightmodel/position/latitude")
 dataref("Plane_Longitude", "sim/flightmodel/position/longitude")
 
 -- Constantes
+local version = "0.1.0"
 local unicom = 12280
 local unicom_dep = "UNICOM"
-local modo_debug = 1
-local distancia_aeropuerto = 40 -- Distancia entre el avi贸n y el aeropuerto en millas
+local modo_debug = 0
+local distancia_aeropuerto = 40 -- Distancia entre el avion y el aeropuerto en millas
+local fichero_frecuencias = "frequencies.csv"
+local fichero_configuracion = "SintonizadorTS_AHS-config.csv"
 
 -- Variables
 local TSpeak = ffi.load("Resources\\plugins\\FlyWithLua\\Modules\\TSRemote")
 local bufferError = ffi.C.malloc(1024)
 
 local TSAirhispania ="teamspeak://".. server .. ":" .. port .. "?nickname=".. nickName .. "?loginname=" .. loginName .. "?password=" .. password .. "?channel="
-local UltimoCanal = unicom
-local CanalActual = unicom
-local Dependencia = unicom_dep
+--local UltimoCanal = unicom
+local CanalActual = 0
+--local Dependencia = unicom_dep
 local listaFrecuencias = {}
 local listaFrecCercanas = {}
-local conectado = false
 
 -- Funciones auxiliares
 function DividirCadena(inputstr, sep)
@@ -91,9 +93,12 @@ function ObtenerNombreCanal(frecuencia)
 end
 
 --Conecta con teamSpeak con un canal especificado
--- formato ejemplo: teamspeak://95.211.55.201:8767?nickname=AHS232D-Tom谩s G Fresno?loginname=AHS232D?password=MiPasword
+-- formato ejemplo: teamspeak://95.211.55.201:8767?nickname=AHS232D-Tomas G Fresno?loginname=AHS232D?password=MiPasword
 function Conectar(url, canal)
 	if (canal~=nil) then 
+		if (modo_debug == 1) then
+			print ("SintonizadorTS_AHS: url = " .. url .. canal)
+		end
 		resp = TSpeak.tsrConnect(url .. canal)
 		if (resp==0) then
 			-- XPLMSpeakString("Conexion con " .. canal .. " establecida con exito.")
@@ -104,9 +109,9 @@ function Conectar(url, canal)
 end
 -- providing the function
 function Desconectar()
-	if (conectado == true) then
+	if (CanalActual ~= 0) then
 		TSpeak.tsrDisconnect()
-		conectado = false
+		CanalActual = 0
 	end
 end
 
@@ -118,22 +123,20 @@ function Sintonizacion()
 		-- Buscamos si la frecuencia a sintonizar existe en la lista de dependencias calculadas
 		nombreCanal = ObtenerNombreCanal(radio.COM1)
 		if(nombreCanal ~= nil) then
-			print ("SintonizadorTS_AHS: sintonizando " .. radio.COM1 .. " en " .. nombreCanal)
 			Desconectar() -- Desconectamos antes de conectar con el canal seleccionado
 			conectado = Conectar(TSAirhispania, nombreCanal)
 			if  (conectado == true) then
 				-- Como hemos podido conectar, actualizamos el canal actual
 				CanalActual = radio.COM1
-				if (modo_debug == 1) then
-					print ("SintonizadorTS_AHS: sintonizaci贸n a " .. CanalActual .. " OK!")
-				end
+				print ("SintonizadorTS_AHS: sintonizada " .. radio.COM1 .. " en " .. nombreCanal)
 			else
+				CanalActual = 0
 				if (modo_debug == 1) then
-					print ("SintonizadorTS_AHS: sintonizaci贸n a " .. CanalActual .. " NO EFECTUADA!")
+					print ("SintonizadorTS_AHS: sintonizaci髇 " .. radio.COM1 .. " en " .. nombreCanal .. " NO EFECTUADA!")
 				end
 			end
 		else
-			-- Situaci贸n en la que estamos cambiando el dial de la radio.
+			-- Situaci髇 en la que estamos cambiando el dial de la radio.
 			-- Mientras no seleccionamos una frecuencia de un canal disponible mantenmos el TS desconectado
 			Desconectar()	
 		end
@@ -188,7 +191,7 @@ function CargarTablaFrecuencias()
 	local lista ={}
 		
 	-- abrimos el fichero para leer los datos que contiene	
-	local fichero = assert(io.open("frequencies.csv", "r"))
+	local fichero = assert(io.open(fichero_frecuencias, "r"))
     for line in fichero:lines() do
 		if line == nil then
 			break
@@ -209,8 +212,33 @@ function CargarTablaFrecuencias()
 	return lista	
 end
 
--- S贸lo si tenemos activo el script y tenemos la avi贸nica en marcha se ejecuta la sintonizaci贸n
+function CargarConfiguracion()
+			
+	-- abrimos el fichero para leer los datos que contiene	
+	local fichero = io.open(fichero_configuracion, "r")
+	if fichero~=nil then
+		for line in fichero:lines() do
+			if line == nil then
+				break
+			end
+			local items = DividirCadena(line, ",")
+			-- Por ahora soportamos s髄o un servidor de TS
+			server = items[1]
+			port = items[2]
+			nickName = items[3]
+			loginName = items[4]
+			password = string.upper(items[5])
+			TSAirhispania ="teamspeak://".. server .. ":" .. port .. "?nickname=".. nickName .. "?loginname=" .. loginName .. "?password=" .. password .. "?channel="
+			
+		end
+		fichero:close()
+		print ("SintonizadorTS_AHS: cargada configuracion de fichero!")
+	end
+end
+
+-- S髄o si tenemos activo el script y tenemos la avi髇ica en marcha se ejecuta la sintonizaci髇
 function PuestaEnMarcha()
+
 	if (TSpeak_flag == true and Avionics_on) then
 		Sintonizacion()
 	else
@@ -220,23 +248,26 @@ end
 
 -- Carga las frecuencias del fichero (AHS018D)
 function Inicializar()
+	-- Carga de frecuencias
 	if (table.getn(listaFrecuencias) == 0) then  
 		listaFrecuencias = CargarTablaFrecuencias()
-		UltimoCanal = unicom
-        CanalActual = unicom
-		Dependencia = unicom_dep
+        CanalActual = 0
+		--Dependencia = unicom_dep
 		if (modo_debug == 1) then
 			print "SintonizadorTS_AHS: inicializado!"
 		end
 	end
+	
+	-- Carga de configuracion
+	CargarConfiguracion()
 end
 
-print "Ejecutando SintonizadorTS_AHS: sintonizador automatico de TeamSpeak para Airhispania ..."
+print ("SintonizadorTS_AHS: sintonizador automatico de TeamSpeak para Airhispania v. " .. version)
 Inicializar() 
 do_sometimes("FiltradoAeropuertos()") -- se ejecuta cada 10 segundos
 do_often("PuestaEnMarcha()") -- se ejecuta cada segundo			
 
--- A帽adimos la macro y la activamos
+-- A馻dimos la macro y la activamos
 -- add_macro("Inicializar TeamSpeak Airhispania", "Incializar()")
 add_macro("SintonizadorTS_AHS", "TSpeak_flag = true", "TSpeak_flag = false", "activate")
 
