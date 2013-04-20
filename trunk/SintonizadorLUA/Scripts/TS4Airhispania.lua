@@ -1,19 +1,18 @@
-
 -- Este script permite la interaccion de las radios COM de XPlane con TeamSpeak 2 para la aerolinea virtual AIRHISPANIA
--- Autor: Tom醩 Garc韆 Fresno (LEXJ) AHS232D
+-- Autor: Tom谩s Garc铆a Fresno (LEXJ) AHS232D
 -- Colaboradores: Jose Manuel Garcia Valladolid (LEVC) AHS018D
 
--- ****************************** INTRODUCIR LOS DATOS DE CONEXION A TEAMSPEAK ************************************
--- TODO: persistir en fichero de configuraci髇 (AHS018D)
-local server = "95.211.55.201"
-local port = "8767"
-local nickName = "AHS018D Jose Manuel Garc韆 Valladolid" 
-local loginName ="AHS018D" 
-local password ="password" 
--- ****************************************************************************************************************
 local ffi = require("ffi") 
 local XB = require ("XSquawkBox")
 local radio = require ("radio")
+
+-- ****************************** Configuracion TeamSpeak tomada desde XSquawkBox (AHS232D)************************************
+local server = "95.211.55.201"
+local port = "8767"
+local nickName = XSquawkBox.XSB_CON_REALNAME
+local loginName =XSquawkBox.XSB_CON_PILOT_ID
+local password = string.upper(XSquawkBox.XSB_CON_PASSWORD)
+-- ****************************************************************************************************************
 
 -- Declaracion de funciones C que pueden ser utilizadas
 ffi.cdef [[ 
@@ -33,7 +32,7 @@ dataref("Plane_Longitude", "sim/flightmodel/position/longitude")
 local unicom = 12280
 local unicom_dep = "UNICOM"
 local modo_debug = 1
-local distancia_aeropuerto = 40 -- Distancia entre el avi髇 y el aeropuerto en millas
+local distancia_aeropuerto = 40 -- Distancia entre el avi贸n y el aeropuerto en millas
 
 -- Variables
 local TSpeak = ffi.load("Resources\\plugins\\FlyWithLua\\Modules\\TSRemote")
@@ -92,7 +91,7 @@ function ObtenerNombreCanal(frecuencia)
 end
 
 --Conecta con teamSpeak con un canal especificado
--- formato ejemplo: teamspeak://95.211.55.201:8767?nickname=AHS232D-Tom醩 G Fresno?loginname=AHS232D?password=MiPasword
+-- formato ejemplo: teamspeak://95.211.55.201:8767?nickname=AHS232D-Tom谩s G Fresno?loginname=AHS232D?password=MiPasword
 function Conectar(url, canal)
 	if (canal~=nil) then 
 		resp = TSpeak.tsrConnect(url .. canal)
@@ -126,15 +125,15 @@ function Sintonizacion()
 				-- Como hemos podido conectar, actualizamos el canal actual
 				CanalActual = radio.COM1
 				if (modo_debug == 1) then
-					print ("SintonizadorTS_AHS: sintonizaci髇 a " .. CanalActual .. " OK!")
+					print ("SintonizadorTS_AHS: sintonizaci贸n a " .. CanalActual .. " OK!")
 				end
 			else
 				if (modo_debug == 1) then
-					print ("SintonizadorTS_AHS: sintonizaci髇 a " .. CanalActual .. " NO EFECTUADA!")
+					print ("SintonizadorTS_AHS: sintonizaci贸n a " .. CanalActual .. " NO EFECTUADA!")
 				end
 			end
 		else
-			-- Situaci髇 en la que estamos cambiando el dial de la radio.
+			-- Situaci贸n en la que estamos cambiando el dial de la radio.
 			-- Mientras no seleccionamos una frecuencia de un canal disponible mantenmos el TS desconectado
 			Desconectar()	
 		end
@@ -210,7 +209,7 @@ function CargarTablaFrecuencias()
 	return lista	
 end
 
--- S髄o si tenemos activo el script y tenemos la avi髇ica en marcha se ejecuta la sintonizaci髇
+-- S贸lo si tenemos activo el script y tenemos la avi贸nica en marcha se ejecuta la sintonizaci贸n
 function PuestaEnMarcha()
 	if (TSpeak_flag == true and Avionics_on) then
 		Sintonizacion()
@@ -237,7 +236,7 @@ Inicializar()
 do_sometimes("FiltradoAeropuertos()") -- se ejecuta cada 10 segundos
 do_often("PuestaEnMarcha()") -- se ejecuta cada segundo			
 
--- A馻dimos la macro y la activamos
+-- A帽adimos la macro y la activamos
 -- add_macro("Inicializar TeamSpeak Airhispania", "Incializar()")
 add_macro("SintonizadorTS_AHS", "TSpeak_flag = true", "TSpeak_flag = false", "activate")
 
