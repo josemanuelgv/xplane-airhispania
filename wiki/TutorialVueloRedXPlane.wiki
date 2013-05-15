@@ -143,6 +143,6 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
  Podemos especificar toda la información del FP al igual que con FS9 o FSX *salvo uno de los datos requeridos, la altitud de cruzero*. La norma dice que para un vuelo VFR en dicho campo hay que poner "VFR", pero vemos que la única letra que nos deja XSquawkBox poner es la "F", por tanto realizaremos lo siguiente:
 
  # Indicar la altitud máxima de crucero en nuestro plan en pies. En el ejemplo hemos indicado 1000 pies para un circuito de tráfico.
- # En el apartado de REMARKS, indicaremos que estamos usando XPlane para que el ATC pueda tener en cuenta nuestra limitación. Aún así, os aconsejo que al llamar a torre tras enviar el plan de vuelo, idiquéis al ATC verbalmente que voláis con XPlane. Esto evita que si en REMARKS con cabe la palabra "XPLANE" y el ATC no la ve (ellos sólo ven los primero 75 caractéres de REMARKS), no tengáis que dar explicaciones y saturar el canal.
+ # En el apartado de REMARKS, indicaremos que estamos usando XPlane para que el ATC pueda tener en cuenta nuestra limitación. Aún así, os aconsejo que al llamar a torre tras enviar el plan de vuelo, indiquéis al ATC verbalmente que voláis con XPlane. Esto evita que si en REMARKS no cabe la palabra "XPLANE" y el ATC no la ve (ellos sólo ven los primero 75 caracteres de REMARKS), no tengáis que dar explicaciones y saturar el canal.
 
   
