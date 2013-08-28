@@ -56,9 +56,23 @@ public class Apt2FrequenciesTransformer {
 		}
 
 		// Iterate over customSceneries
-		for (Scenery s : customSceneries) {
-			for (String airport : s.getAirports().keySet()) {
-				LandAirport la = s.getAirports().get(airport);
+		// for (Scenery s : customSceneries) {
+		// for (String airport : s.getAirports().keySet()) {
+		// LandAirport la = s.getAirports().get(airport);
+		// if (la.getFrequencies() != null)
+		// for (ComFrequency f : la.getFrequencies()) {
+		// String freqLine = createFreqLine(f, la);
+		// if ((freqLine != null)
+		// && (!frqProcessed.contains(freqLine)))
+		// frqProcessed.add(freqLine);
+		// }
+		// }
+		// }
+
+		if (defaultScenery != null) {
+			// Iterate over default scenery
+			for (String airport : defaultScenery.getAirports().keySet()) {
+				LandAirport la = defaultScenery.getAirports().get(airport);
 				if (la.getFrequencies() != null)
 					for (ComFrequency f : la.getFrequencies()) {
 						String freqLine = createFreqLine(f, la);
@@ -69,16 +83,9 @@ public class Apt2FrequenciesTransformer {
 			}
 		}
 
-		// Iterate over default scenery
-		for (String airport : defaultScenery.getAirports().keySet()) {
-			LandAirport la = defaultScenery.getAirports().get(airport);
-			if (la.getFrequencies() != null)
-				for (ComFrequency f : la.getFrequencies()) {
-					String freqLine = createFreqLine(f, la);
-					if ((freqLine != null)
-							&& (!frqProcessed.contains(freqLine)))
-						frqProcessed.add(freqLine);
-				}
+		// Spain FIR Frequencies
+		for (int i = 0; i < FIRFrequencies.SPAIN_FIR.length; i++) {
+			frqProcessed.add(FIRFrequencies.SPAIN_FIR[i]);
 		}
 
 		BufferedWriter out = new BufferedWriter(new FileWriter(fFreq));

@@ -3,6 +3,9 @@
  */
 package org.airhispania.xplane2rc.apt.model;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * @author Jose Manuel García Valladolid - josemanuelgv@gmail.com
  * 
@@ -10,6 +13,13 @@ package org.airhispania.xplane2rc.apt.model;
 public class ComFrequency {
 
 	public static int[] APT_CODES = { 53, 54, 55 };
+	public static Map<Integer, String> APT_CODES_DEP_SUFFIX;
+	static {
+		APT_CODES_DEP_SUFFIX = new HashMap<Integer, String>();
+		APT_CODES_DEP_SUFFIX.put(53, "GND");
+		APT_CODES_DEP_SUFFIX.put(54, "TWR");
+		APT_CODES_DEP_SUFFIX.put(55, "APP");
+	}
 
 	private int code;
 	private String frequency;

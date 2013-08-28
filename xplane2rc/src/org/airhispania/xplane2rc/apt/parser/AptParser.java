@@ -170,10 +170,10 @@ public class AptParser {
 
 	private void parseFrequencyLine(String l) throws Exception {
 		String[] initdata = l.split(" ");
-		if (initdata.length == 3) {
+		if (initdata.length > 1) {
 			int code = Integer.parseInt(initdata[0]);
 			String freq = initdata[1];
-			String dep = initdata[2];
+			String dep = ComFrequency.APT_CODES_DEP_SUFFIX.get(code);
 
 			ComFrequency cf = new ComFrequency();
 			cf.setCode(code);
