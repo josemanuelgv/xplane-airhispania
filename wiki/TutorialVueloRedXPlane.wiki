@@ -1,6 +1,6 @@
 #summary Tutorial de vuelo en red con XPlane en AirHispania
 
-<h2> *Tutorial de vuelo en red con XPlane en AirHispania* </h2>
+<h1> *Tutorial de vuelo en red con XPlane en AirHispania* </h1>
 
 <wiki:toc max_depth="1" />
 
