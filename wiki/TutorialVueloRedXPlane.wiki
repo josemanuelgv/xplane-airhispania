@@ -160,13 +160,13 @@ Dado que se basa en FSUIPC/XPUIPC permite ser usado con cualquier simulador de v
  En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con AHSBox y realizados con XPlane.
  
 Requisitos:
- 1. Sistema operativo Windows
- 2. Máquina virtual Java JRE mínimo 1.5.0
- 3. XPlane 9 o 10
+ # Sistema operativo Windows
+ # Máquina virtual Java JRE mínimo 1.5.0
+ # XPlane 9 o 10
  
 Uso: 
- 1. Desempaquetar los archivos en la carpeta de instalación de XPlane.
- 2. Ejecutar "MakeRwys.exe".
- 3. Ejecutar "AhsBender.exe" para valorar vuelos.
+ # Desempaquetar los archivos en la carpeta de instalación de XPlane.
+ # Ejecutar "MakeRwys.exe".
+ # Ejecutar "AhsBender.exe" para valorar vuelos.
 
 Opcionalmente ejecutar "AptViewer" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane.
