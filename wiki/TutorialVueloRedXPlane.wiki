@@ -1,6 +1,8 @@
 #summary Tutorial de vuelo en red con XPlane en AirHispania
 
-= *Tutorial de vuelo en red con XPlane en AirHispania* =
+<h2> *Tutorial de vuelo en red con XPlane en AirHispania* </h2>
+
+<wiki:toc max_depth="1" />
 
 = Introducción =
 
@@ -155,7 +157,7 @@ Dado que se basa en FSUIPC/XPUIPC permite ser usado con cualquier simulador de v
 
  Podéis descargar la utilidad desde la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas].
   
- = Valoración de vuelos con Bender =
+ = Valoración de vuelos con AHSBender =
 
  En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con AHSBox y realizados con XPlane.
  
