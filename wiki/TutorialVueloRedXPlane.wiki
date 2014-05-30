@@ -155,7 +155,7 @@ Dado que se basa en FSUIPC/XPUIPC permite ser usado con cualquier simulador de v
 
  Está en estado de pruebas, por lo que si encontráis errores o mejoras a aplicar, éstas serán bienvenidas. 
 
- Podéis descargar la utilidad desde la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas].
+ Podéis descargar la versión 0.2.0 desde este  [https://drive.google.com/file/d/0By8c9o_8djGZbXZsWGRTY2x4M1U enlace].
   
  = Valoración de vuelos con AHSBender =
 
