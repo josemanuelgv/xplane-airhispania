@@ -168,6 +168,7 @@ Requisitos:
  # Sistema operativo Windows
  # Máquina virtual Java JRE mínimo 1.5.0
  # XPlane 9 o 10
+ # AhsBender
  
 Uso: 
  # Desempaquetar los archivos en la carpeta de instalación de XPlane.
