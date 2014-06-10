@@ -81,6 +81,9 @@ Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" 
 
    * Aeródromos 2.0 convertidos de FSX: [https://mega.co.nz/#!uNpXyLpJ!aB739TdWWxyYaIn4vO8uGUK5hbYdKzW06X7DQ_Dmxow Descarga]
 
+   Para la correcta visualización de los aeródromos es aconsejable realizar este ajuste en la configuración: 
+     * Ajustes - opciones gráficas - numbers of objects - y luego pinchar donde dice "a lot" o bien otra opción superior, como puede ser "tons".
+
   === Aviones de la flota ===
    
    * Cessna Skyline 182 gratuita de AIR.C74.NET, muy similar a la usada en FS9 y FSX: [http://www.c74.net/xplane/fx/viewtopic.php?f=44&t=14 Cessna_Skyline_C182]
