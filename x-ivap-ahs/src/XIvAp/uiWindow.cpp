@@ -109,14 +109,15 @@ void UiWindow::textDrawCallback(XPLMWindowID inWindowID, void *inRefcon)
 	
 	//dont draw the TDB, as it is not needed anymore 15/08/2012
 	// Draw a translucent dark rectangle that is our window's shape
-	//XPLMDrawTranslucentDarkBox(left, top, right, bottom);
+	XPLMDrawTranslucentDarkBox(left, top, right, bottom);
 
 	// we want it a bit darker - draw that box a second time :)
 //	if(_extradark) XPLMDrawTranslucentDarkBox(left, top, right, bottom);
 
 	// draw the select keys
 	// delete as not needed anymore 15/08/2012
-	/*for(int i = 0; i < 6; ++i) {
+	// @jmgv
+	for(int i = 0; i < 6; ++i) {
 		XPLMDrawString(SK_COLOR,
 			left + MARGIN_LEFT,
 			bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
@@ -126,7 +127,7 @@ void UiWindow::textDrawCallback(XPLMWindowID inWindowID, void *inRefcon)
 			bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
 			RSK, NULL, xplmFont_Basic);
 	}
-*/
+	
 	// draw the paint jobs
 	for(std::vector<UIWriteJob>::const_iterator i = joblist.begin(); i != joblist.end(); ++i)
 		XPLMDrawString(i->color, getX(i->x), getY(i->y), const_cast<char*>(pconst(i->text)), NULL, xplmFont_Basic);
