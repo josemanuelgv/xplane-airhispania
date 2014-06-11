@@ -172,7 +172,8 @@ void ConnectForm::create()
 					1, "", 0, window, xpWidgetClass_TextField);
 
 	XPSetWidgetProperty(vidTextField, xpProperty_TextFieldType, xpTextEntryField);
-	XPSetWidgetProperty(vidTextField, xpProperty_MaxCharacters, 6);
+	// @jmgv
+	XPSetWidgetProperty(vidTextField, xpProperty_MaxCharacters, 7);
 
 	// Password
 	XPCreateWidget(x+211, y-90, x+263, y-112,

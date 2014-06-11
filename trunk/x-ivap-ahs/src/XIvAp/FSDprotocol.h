@@ -28,7 +28,8 @@
 /**
  * General FSD Details
  */
-#define _FSD_REVISION_               "B"
+//#define _FSD_REVISION_               "B"
+#define _FSD_REVISION_               "9" // @jmgv for AHS FSD Server
 
 #define _FSD_SEP_                      "\r\n"
 #define _FSD_MAXLENGTH_                3 // of packet ids!
