@@ -1,0 +1,78 @@
+﻿Build started 16/06/2014 18:51:10.
+     1>Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I..\WinIncludes /I..\..\SDK /I..\..\SDK\multiplayer\src /I..\ptypes\include /I..\..\SDK\CHeaders\Widgets /I..\..\SDK\CHeaders\XPLM /I..\stund /I..\..\SDK\multiplayer\include /I..\FMOD\FMODWindows\api\inc /nologo /W3 /WX- /O2 /Ob1 /Ot /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IBM=1 /D XPLM200 /D _CRT_SECURE_NO_WARNINGS /D X64=1 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"IVAO\x64\obj\\" /Fd"IVAO\x64\obj\vc110.pdb" /Gd /TP /errorReport:prompt multiplayer.cpp
+         multiplayer.cpp
+     1>multiplayer.cpp(1127): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>multiplayer.cpp(1130): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>multiplayer.cpp(1133): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"IVAO\x64\bin\X-IvAp-64.xpl" /INCREMENTAL /NOLOGO /LIBPATH:../../SDK/Libraries/Win /LIBPATH:../IVAO/ Opengl32.lib odbc32.lib odbccp32.lib ptypes_ST64.lib MDSPLib64.lib ws2_32.lib glu32.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBC /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"IVAO\x64\bin\X-IvAp-64.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"IVAO\x64\bin\X-IvAp-64.lib" /MACHINE:X64 /DLL /DLL IVAO\x64\obj\aircraftDB.obj
+         IVAO\x64\obj\airlinesDB.obj
+         IVAO\x64\obj\atcPosition.obj
+         IVAO\x64\obj\awyFinder.obj
+         IVAO\x64\obj\chatWindow.obj
+         IVAO\x64\obj\configFile.obj
+         IVAO\x64\obj\connectForm.obj
+         IVAO\x64\obj\disconnectForm.obj
+         IVAO\x64\obj\FlightLogger.obj
+         IVAO\x64\obj\flightplanForm.obj
+         IVAO\x64\obj\FMCform.obj
+         IVAO\x64\obj\fsdapi.obj
+         IVAO\x64\obj\fsdmessage.obj
+         IVAO\x64\obj\helpers.obj
+         IVAO\x64\obj\HTTPclient.obj
+         IVAO\x64\obj\interpolator.obj
+         IVAO\x64\obj\messageHandler.obj
+         IVAO\x64\obj\messageWindow.obj
+         IVAO\x64\obj\multiplayer.obj
+         IVAO\x64\obj\multiplayerPilot.obj
+         IVAO\x64\obj\navQuery.obj
+         IVAO\x64\obj\planeposition.obj
+         IVAO\x64\obj\refInspector.obj
+         IVAO\x64\obj\SoundGraphics.obj
+         IVAO\x64\obj\stb_image_aug.obj
+         IVAO\x64\obj\systemcallbacks.obj
+         IVAO\x64\obj\Tcas.obj
+         IVAO\x64\obj\tcpsocket.obj
+         IVAO\x64\obj\TeamSpeak.obj
+         IVAO\x64\obj\TLVpacket.obj
+         IVAO\x64\obj\uiWindow.obj
+         IVAO\x64\obj\weatherGod.obj
+         IVAO\x64\obj\weatherPosition.obj
+         IVAO\x64\obj\WristWatch.obj
+         IVAO\x64\obj\xivap.obj
+         IVAO\x64\obj\xivapWin.obj
+         IVAO\x64\obj\XPmessageBox.obj
+         IVAO\x64\obj\TexUtils.obj
+         IVAO\x64\obj\BitmapUtils.obj
+         IVAO\x64\obj\PlatformUtils.win.obj
+         IVAO\x64\obj\XObjDefs.obj
+         IVAO\x64\obj\XObjReadWrite.obj
+         IVAO\x64\obj\XOGLUtils.obj
+         IVAO\x64\obj\XPMPMultiplayer.obj
+         IVAO\x64\obj\XPMPMultiplayerCSL.obj
+         IVAO\x64\obj\XPMPMultiplayerObj.obj
+         IVAO\x64\obj\XPMPMultiplayerVars.obj
+         IVAO\x64\obj\XPMPPlaneRenderer.obj
+         IVAO\x64\obj\XUtils.obj
+         IVAO\x64\obj\XPListBox.obj
+         IVAO\x64\obj\XPPopups.obj
+         IVAO\x64\obj\stun.obj
+         IVAO\x64\obj\StunClient.obj
+         IVAO\x64\obj\udp.obj
+         ..\..\SDK\Libraries\Win\XPLM_64.lib
+         ..\..\SDK\Libraries\Win\XPWidgets_64.lib
+         ..\FMOD\FMODWindows\api\lib\fmodex64_vc.lib
+         ..\png\Windows\pnglib64.lib
+         ..\zlib\win32\zlib64.lib
+         "C:\Prog\FSD\x-ivap-ahs-estable\src\IVAO\PTypes_ST64.lib"
+            Creating library IVAO\x64\bin\X-IvAp-64.lib and object IVAO\x64\bin\X-IvAp-64.exp
+         XIvAp.vcxproj -> C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\IVAO\x64\bin\X-IvAp-64.xpl
+     1>Done Building Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.41
