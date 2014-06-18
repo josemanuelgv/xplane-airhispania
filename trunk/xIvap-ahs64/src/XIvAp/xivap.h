@@ -116,6 +116,7 @@ public:
 	void checkRadioAtis();
 
 	XPLMHotKeyID	uiWindowHotKey;
+	XPLMHotKeyID	debugWindowHotKey; // Añadido para tener hotkey también para la ventana de depuración
 	XPLMWindowID	console, focusDumper;
 
 	ConnectForm& connectForm();
@@ -257,6 +258,7 @@ public:
 		};
 	};
 	Debuglevels debug;
+	double altpeque, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
 
 			
 private:

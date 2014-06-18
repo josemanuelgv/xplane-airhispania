@@ -15,7 +15,7 @@
 #ifndef VERSION_H_
 #define VERSION_H_
 
-#define SOFTWARE_VERSION	"0.3.0 AHSmod"
+#define SOFTWARE_VERSION	"0.3.0"
 #define SOFTWARE_REVISION	"140"
 #define SOFTWARE_VERSION_INT    30
 

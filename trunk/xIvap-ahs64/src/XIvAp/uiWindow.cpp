@@ -106,10 +106,15 @@ void UiWindow::textDrawCallback(XPLMWindowID inWindowID, void *inRefcon)
 	xPanelWindowLeft=left;
 	xPanelWindowBottom=bottom;
 
+	XPLMHostApplicationID appId;
+	int xplane_version, xplmVersion;
+	XPLMGetVersions(&xplane_version, &xplmVersion, &appId);
 	
 	//dont draw the TDB, as it is not needed anymore 15/08/2012
 	// Draw a translucent dark rectangle that is our window's shape
-	XPLMDrawTranslucentDarkBox(left, top, right, bottom);
+	if (xplane_version < 10000) // Si la versión de X-Plane es menor a la 10
+	{
+		XPLMDrawTranslucentDarkBox(left, top, right, bottom); // oscurece la interfaz de usuario
 
 	// we want it a bit darker - draw that box a second time :)
 //	if(_extradark) XPLMDrawTranslucentDarkBox(left, top, right, bottom);
@@ -117,17 +122,20 @@ void UiWindow::textDrawCallback(XPLMWindowID inWindowID, void *inRefcon)
 	// draw the select keys
 	// delete as not needed anymore 15/08/2012
 	// @jmgv
-	for(int i = 0; i < 6; ++i) {
-		XPLMDrawString(SK_COLOR,
-			left + MARGIN_LEFT,
-			bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
-			LSK, NULL, xplmFont_Basic);
-		XPLMDrawString(SK_COLOR,
-			right - MARGIN_LEFT - SK_LEN * fontWidth-Ex_Window_Range,
-			bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
-			RSK, NULL, xplmFont_Basic);
+	// Añadido para que sólo cambie la interfaz en versiones de X-Plane 9 o inferiores
+	// Si la versión de X-Plane es menor a la 10, redibuja los botones de la interfaz de usuario
+		for(int i = 0; i < 6; ++i) {
+			XPLMDrawString(SK_COLOR,
+				left + MARGIN_LEFT,
+				bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
+				LSK, NULL, xplmFont_Basic);
+			XPLMDrawString(SK_COLOR,
+				right - MARGIN_LEFT - SK_LEN * fontWidth-Ex_Window_Range,
+				bottom + MARGIN_TOP + i * 2 * fontHeight, // bottom left
+				RSK, NULL, xplmFont_Basic);
+		}
 	}
-	
+
 	// draw the paint jobs
 	for(std::vector<UIWriteJob>::const_iterator i = joblist.begin(); i != joblist.end(); ++i)
 		XPLMDrawString(i->color, getX(i->x), getY(i->y), const_cast<char*>(pconst(i->text)), NULL, xplmFont_Basic);

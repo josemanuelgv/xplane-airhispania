@@ -278,8 +278,8 @@ void FsdAPI::connectPilot(string host, string port, string callsign, string id, 
 	packet.tokens.push_back(password);
 //	packet.tokens.push_back(hideadm ? "1" : "11");
 	packet.tokens.push_back("1");
-//	packet.tokens.push_back(_FSD_REVISION_);
-	packet.tokens.push_back("9");
+	packet.tokens.push_back(_FSD_REVISION_);
+//	packet.tokens.push_back("9");
 	packet.tokens.push_back(itostring(sim));
 	packet.tokens.push_back(realname);
 	send(packet);
@@ -613,7 +613,7 @@ void FsdAPI::sendInfoReply(const string& dest)
 #ifdef IVAO
 		+ " IVAO"
 #endif
-		+ " AHS (" + xivap.revision() + ") " + PLATFORM 
+		+ " (" + xivap.revision() + ") " + PLATFORM 
 		+ " - " + _realname + " (" + _id + ") MTL " + _mtl
 		+ " - PrvIP " + _socket.ip() + " PubIP "
 		+ _mypublicip + " - Srv " + _host;

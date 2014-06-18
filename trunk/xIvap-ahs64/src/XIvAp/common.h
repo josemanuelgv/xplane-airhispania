@@ -181,7 +181,7 @@ extern float colGray[];
 
 #ifdef WIN32
 #define PLATFORM "Windows"
-#define FSD_SOFTWARE_NAME "X-IvAp/win"
+#define FSD_SOFTWARE_NAME "X-IvAp/win AHS"
 
 #pragma warning ( disable : 4311 )
 
@@ -189,12 +189,12 @@ extern float colGray[];
 
 #ifdef LINUX
 #define PLATFORM "Linux"
-#define FSD_SOFTWARE_NAME "X-IvAp/lin"
+#define FSD_SOFTWARE_NAME "X-IvAp/lin AHS"
 #endif
 
 #ifdef APPLE
 #define PLATFORM "Mac"
-#define FSD_SOFTWARE_NAME "X-IvAp/mac"
+#define FSD_SOFTWARE_NAME "X-IvAp/mac AHS"
 #endif
 
 /*

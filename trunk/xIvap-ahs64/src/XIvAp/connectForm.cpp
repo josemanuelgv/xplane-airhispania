@@ -97,7 +97,8 @@ void ConnectForm::loadServers()
 	// make sure we have at least one live server
 	// hard coded fallback in case there is no usable server list
 	if(_servers.size() < 1) {
-		_serverText = "AHS;EU2;EU3;";
+//		_serverText = "AHS;EU2;EU3;";
+		_serverText = "AHS;";
 		_servers.push_back(ServerEntry("AHS.AHS", "95.211.55.201"));
 //		_servers.push_back(ServerEntry("IVAO.EU2", "eu2.ivan.ivao.aero"));
 //		_servers.push_back(ServerEntry("IVAO.EU3", "eu3.ivan.ivao.aero"));
@@ -246,11 +247,12 @@ void ConnectForm::create()
 	XPCreateWidget(x+10, y-16, x+340, y-95,
 					1, "", 0, window, xpWidgetClass_SubWindow);
 
+// Quitado por no tener sentido para la red AHS
 	// blabla
-	XPCreateWidget(x+20, y-18, x+80, y-30,
-					1, "For optimal performance you should connect to the",	0, window, xpWidgetClass_Caption);
-	XPCreateWidget(x+20, y-30, x+80, y-42,
-					1, "geographically closest server.",	0, window, xpWidgetClass_Caption);
+//	XPCreateWidget(x+20, y-18, x+80, y-30,
+//					1, "For optimal performance you should connect to the",	0, window, xpWidgetClass_Caption);
+//	XPCreateWidget(x+20, y-30, x+80, y-42,
+//					1, "geographically closest server.",	0, window, xpWidgetClass_Caption);
 
 	// Server
 	XPCreateWidget(x+20, y-47, x+80, y-69,
@@ -431,7 +433,7 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 
 			//validate base airport
 			if(length(baseairport) < 4) {
-				xivap.messageBox().show("Por favor, introduce un aeropuerto base válido.");
+				xivap.messageBox().show("Por favor, introduce un aeropuerto base valido.");
 				return 1;
 			}
 
