@@ -1,13 +1,10 @@
-﻿Build started 16/06/2014 18:51:10.
+﻿Build started 18/06/2014 16:10:30.
      1>Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" on node 2 (Build target(s)).
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
      1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
      1>ClCompile:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I..\WinIncludes /I..\..\SDK /I..\..\SDK\multiplayer\src /I..\ptypes\include /I..\..\SDK\CHeaders\Widgets /I..\..\SDK\CHeaders\XPLM /I..\stund /I..\..\SDK\multiplayer\include /I..\FMOD\FMODWindows\api\inc /nologo /W3 /WX- /O2 /Ob1 /Ot /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IBM=1 /D XPLM200 /D _CRT_SECURE_NO_WARNINGS /D X64=1 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"IVAO\x64\obj\\" /Fd"IVAO\x64\obj\vc110.pdb" /Gd /TP /errorReport:prompt multiplayer.cpp
-         multiplayer.cpp
-     1>multiplayer.cpp(1127): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>multiplayer.cpp(1130): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
-     1>multiplayer.cpp(1133): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I..\WinIncludes /I..\..\SDK /I..\..\SDK\multiplayer\src /I..\ptypes\include /I..\..\SDK\CHeaders\Widgets /I..\..\SDK\CHeaders\XPLM /I..\stund /I..\..\SDK\multiplayer\include /I..\FMOD\FMODWindows\api\inc /nologo /W3 /WX- /O2 /Ob1 /Ot /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IBM=1 /D XPLM200 /D _CRT_SECURE_NO_WARNINGS /D X64=1 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"IVAO\x64\obj\\" /Fd"IVAO\x64\obj\vc110.pdb" /Gd /TP /errorReport:prompt xivap.cpp
+         xivap.cpp
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"IVAO\x64\bin\X-IvAp-64.xpl" /INCREMENTAL /NOLOGO /LIBPATH:../../SDK/Libraries/Win /LIBPATH:../IVAO/ Opengl32.lib odbc32.lib odbccp32.lib ptypes_ST64.lib MDSPLib64.lib ws2_32.lib glu32.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBC /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"IVAO\x64\bin\X-IvAp-64.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"IVAO\x64\bin\X-IvAp-64.lib" /MACHINE:X64 /DLL /DLL IVAO\x64\obj\aircraftDB.obj
          IVAO\x64\obj\airlinesDB.obj
@@ -69,10 +66,9 @@
          ..\png\Windows\pnglib64.lib
          ..\zlib\win32\zlib64.lib
          "C:\Prog\FSD\x-ivap-ahs-estable\src\IVAO\PTypes_ST64.lib"
-            Creating library IVAO\x64\bin\X-IvAp-64.lib and object IVAO\x64\bin\X-IvAp-64.exp
          XIvAp.vcxproj -> C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\IVAO\x64\bin\X-IvAp-64.xpl
      1>Done Building Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" (Build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:03.41
+Time Elapsed 00:00:03.02

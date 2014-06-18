@@ -176,7 +176,7 @@ void XPWeatherSituation::setWeather(const XPWeatherSituation& target, XPWeatherS
 	if (xivap.debug.weather > 2)
 	{
 		DEB_WXf(string("Temperatura nivel del mar: "), ref_temperature_sealevel_c, temperature_sealevel_c);
-		DEB_WXf(string("Temperatura punto de rocio: "), ref_dewpoi_sealevel_c, dewpoi_sealevel_c);
+		DEB_WXf(string("Temperatura punto de rocio a nivel del mar: "), ref_dewpoi_sealevel_c, dewpoi_sealevel_c);
 		DEB_WXf(string("Barometro InHg: "), ref_barometer_sealevel_inhg, barometer_sealevel_inhg);
 		DEB_WXf(string("Porcentaje de turbulencia: "), ref_wind_turbulence_percent, wind_turbulence_percent);
 		DEB_WXf(string("Porcentaje de tormenta electrica: "), ref_thunderstorm_percent, thunderstorm_percent);

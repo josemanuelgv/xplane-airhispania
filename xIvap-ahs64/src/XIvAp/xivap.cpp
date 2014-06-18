@@ -57,6 +57,7 @@ Xivap::Xivap()
 	console = NULL;
 	focusDumper = NULL;
 	uiWindowHotKey = NULL;
+	debugWindowHotKey = NULL; // Recipiente para hotkey de la consola de depuración
 	nextFSDPosUpdate = 0;
 	nextFSDPoll = 0;
 	nextStatusUpdate = 0;
@@ -126,6 +127,12 @@ Xivap::Xivap()
 	_plane_resolution = 3;
 //	_default_icao = "A320";
 	_default_icao = "C182";
+
+	// Niveles de debug iniciados a 0
+	debug.debuglevels = 0;
+
+	altpeque = 1; // Altura añadida por defecto para corrección de aviones en tierra
+	altgrande = 5; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
 }
 
 Xivap::~Xivap()
@@ -194,7 +201,7 @@ void Xivap::XPluginEnable()
 			uiWindow.addMessage(colRed, "Error iniciando multijugador: " + _multiplayer.errorMessage(), true, true);
 	}
 
-//Quitada descarga de servidores de IVA
+//Quitada descarga de servidores de IVAO
 	// start to download the server list
 //	_HTTPclient.Download(SERVERSTATUS_URL, getXivapRessourcesDir() + SERVERS_FILENAME, XPLMGetElapsedTime());
 //	_downloadingServerStatus = true;
@@ -214,9 +221,6 @@ void Xivap::XPluginStart()
 	XPLMHostApplicationID appId;
 	XPLMGetVersions(&_xplane_version, &xplmVersion, &appId);
 	
-	// Niveles de debug iniciados a 0
-	debug.debuglevels = 0;
-
 	// position references
 	gPlaneLat		= XPLMFindDataRef("sim/flightmodel/position/latitude");
 	gPlaneLon		= XPLMFindDataRef("sim/flightmodel/position/longitude");
@@ -296,7 +300,11 @@ void Xivap::XPluginStart()
 								   NULL);
 
 	uiWindowHotKey = XPLMRegisterHotKey(XPLM_VK_TAB, xplm_DownFlag,
-										  "Toggle X-IvAp window", uiToggleCallback, NULL);
+										  "Conmutar ventana de X-IvAp AHS", uiToggleCallback, NULL);
+
+	//Añadida hotkey (mayús + TAB) para ventana de depuración
+	debugWindowHotKey = XPLMRegisterHotKey(XPLM_VK_TAB, xplm_DownFlag | xplm_ShiftFlag,
+										  "Conmutar ventana de debug de X-IvAp AHS", debugToggleCallback, NULL);
 
 	string str = string(SOFTWARE_NAME) + " " + SOFTWARE_VERSION + " for " + PLATFORM + " (Rev. " + _revision + ")";
 	uiWindow.addMessage(colWhite, str + " ready", true, true);
@@ -1341,15 +1349,62 @@ void Xivap::sendFlightplan()
 
 #define HANDLECHG(message) { changed = true; if(length(changes) > 0) changes += ", "; changes += message; }
 
-void Xivap::test(string linea) // Reproducido el sistema de recepción de mensajes de la red, pero con el mensaje recibido desde el parámetro "linea"
+void Xivap::test(string linea) // Diversos tests relacionados con la simulación de recepción de mensajes desde la red
 {
-	FSD::Message m;
-
-//	do {
+	
+	linea = "@*:" + trim(strupcase(linea)); // prepara texto para utilizar FSD::Message.decompose
+	FSD::Message m, mlinea;
+	mlinea.decompose(linea);
+	
+	if (mlinea.dest == "MSG") // Primer parámetro "MSG" para simular recepción de un mensaje "tal cual" desde la red
+	{
+		del(linea,0,7); // Borra "@*:MSG:" de la línea, para dejar únicamente el mensaje a enviar
 		m = fsd.testreceive(linea);
-
 //FIXME: DEBUG
 		addText(colDarkGreen, "Pasado testreceive()", true, true);
+	}
+	else if (mlinea.dest == "PPOS") // Mandar posición de presunto piloto de la red, para visualizar un avión
+	{
+		m.type = _FSD_PILOTPOS_;
+		m.source = "S";
+		m.dest = "AHS0000";
+		m.tokens.push_back("7400");
+		m.tokens.push_back("1");
+		m.tokens.push_back(ftoa(lat));
+		m.tokens.push_back(ftoa(lon + 0.002f)); // Varía un poco la posición respecto a la propia
+//		if (mlinea.tokens.size() > 1) m.tokens.push_back(itostring((int)(elevationft() + 1 + atof(mlinea.tokens[1])))); // 2º parámetro: altitud extra añadida para aviones grandes
+//		else m.tokens.push_back(itostring((int)(elevationft() + 1)));
+//		if (mlinea.tokens.size()> 1) altgrande = atof(mlinea.tokens[1]);
+		m.tokens.push_back(itostring((int)(elevationft() + 1)));
+		m.tokens.push_back("0");
+		m.tokens.push_back("4290774782"); // PBH de avión cogido al azar de una traza de la red
+		m.tokens.push_back("0");
+		if (mlinea.tokens.size() > 0) 
+		{
+			m.tokens.push_back(mlinea.tokens[0]); // 1er. parámetro: parámetros del avión en forma numérica
+		}
+	}
+	else if (mlinea.dest == "PI")
+	{
+		m.type = _FSD_CUSTOMPILOT_;
+		m.source = "AHS0000";
+//		if (mlinea.tokens.size() > 1) m.dest = mlinea.tokens[1]; // 2º parámetro: callsign
+//		else m.dest = "AHS120D";
+		m.dest = fsd.callsign();
+		m.tokens.push_back("PI");
+		m.tokens.push_back("X");
+		m.tokens.push_back("0");
+		if (mlinea.tokens.size() > 2) m.tokens.push_back(mlinea.tokens[3]); // 3er. parámetro: el segundo número del comando (de momento puede ser 0 ó 1)
+		else m.tokens.push_back("0");
+		if (mlinea.tokens.size() > 0) m.tokens.push_back("~" + mlinea.tokens[0]); // 1er. parámetro: ICAO de la aeronave
+		else m.tokens.push_back("~" + _default_icao);
+		if (mlinea.tokens.size()> 1) altgrande = atof(mlinea.tokens[1]); // 2º parámetro: Altitud en tierra extra añadida para aviones grandes (TODO: Hacerlo configurable, por cada MTL si fuera posible)
+
+		string ac0 = m.tokens[4]; // ICAO de aeronave
+		if (ac0[0] == '~') del(ac0,0,1); // Borra el primer carácter "~" que suele mandar la red (no sé si significará algo)
+		m.tokens[4] = ac0;
+	}
+
 
 		if(m.type != _FSD_INVALID_ && m.source != fsd.callsign()) {
 			// ignore invalid packets or packets that are from myself
@@ -1426,7 +1481,6 @@ void Xivap::test(string linea) // Reproducido el sistema de recepción de mensaje
 
 		} // if packet not invalid
 
-//	} while(m.type != _FSD_INVALID_);
 }
 
 /*
@@ -2039,6 +2093,7 @@ void Xivap::handleCommand(string line)
 		return;
 
 	} else if(command == "CAVOK") {
+		line = trim(strupcase(line));
 		if (line == "") // si se envía el comando sin parámetros
 		{
 			if (cavok) // conmuta el CAVOK
@@ -2413,10 +2468,11 @@ void Xivap::checkWeather(double elapsed)
 			else metarAlt = fpl.alternate + ": No hay METAR disponible";
 
 			// Muetra METARs en ventana de mensajes
-			msgWindow.addMessage(colGreen,"Origen: " + metarOrg + "\n"); // Muestra el METAR del AD origen en los mensajes
-			msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n"); // Muestra el METAR del AD más próximo en los mensajes
-			msgWindow.addMessage(colCyan,"Destino: " + metarDest + "\n"); // Muestra el METAR del AD de destino en los mensajes
-			msgWindow.addMessage(colRed,"Alternativo: " + metarAlt + "\n"); // Muestra el METAR del AD alternativo en los mensajes
+			msgWindow.addMessage(colGreen,"Origen: " + metarOrg + "\n\n"); // Muestra el METAR del AD origen en los mensajes
+			if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
+			else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
+			msgWindow.addMessage(colCyan,"Destino: " + metarDest + "\n\n"); // Muestra el METAR del AD de destino en los mensajes
+			msgWindow.addMessage(colRed,"Alternativo: " + metarAlt + "\n\n"); // Muestra el METAR del AD alternativo en los mensajes
 			if (xivap.fpl.alternate2 != "") // Si existe 2º AD alternativo, mostrar su METAR también
 			{
 				ADAlt2 = _weatherDB.findName(fpl.alternate2,static_cast<float>(elapsed));
@@ -2427,7 +2483,8 @@ void Xivap::checkWeather(double elapsed)
 		}
 		else
 		{
-			msgWindow.addMessage(colWhite, currentWxStation.metar); // Muestra el METAR del AD más próximo en los mensajes
+			if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
+			else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
 		}
 		_erwin.setWeather(currentWxStation, static_cast<float>(el), static_cast<float>(groundalt));
 	}

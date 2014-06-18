@@ -31,11 +31,12 @@ PLUGIN_API int XPluginStart(char *outName, char *outSig, char *outDesc)
 	strcpy(outName, "X-IvAp");
 	strcpy(outSig, "ivao.xivap");
 	string desc = string(SOFTWARE_NAME) + " " 
-		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Fly online on IVAO " + SOFTWARE_COPYRIGHT1;
+		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Vuenla en la red de AHS " + SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3;
 	strcpy(outDesc, pconst(desc));
 	if (!InitSound()) XPLMDebugString(" Xivap SoundInit error\r\n"); //added for sound init
 	if (!InitGraphics()) XPLMDebugString("XIvap Graphics init error\r\n");//added for graphics init
 	Graphics=1;
+/* Quitado para crear un menú directamente en la barra principal de menús
 	int mySubMenuItem = XPLMAppendMenuItem(XPLMFindPluginsMenu(), // Put in plugins menu
 						"X-IvAp",	// Item Title
 						0,			// Item Ref
@@ -46,13 +47,20 @@ PLUGIN_API int XPluginStart(char *outName, char *outSig, char *outDesc)
 						mySubMenuItem, 			// Menu Item to attach to.
 						MenuHandlerCallback,	// The handler
 						0);	
+*/
 
-	XPLMAppendMenuItem(xivap.menuEntry, "Toggle X-IvAp main window", (void*)MENU_MAIN, 1);
-	xivap.menuConnect = XPLMAppendMenuItem(xivap.menuEntry, "Connect...", (void*)MENU_CONNECT, 1);
-	xivap.menuDisconnect = XPLMAppendMenuItem(xivap.menuEntry, "Disconnect", (void*)MENU_DISCONNECT, 1);
-	xivap.menuFlightplan = XPLMAppendMenuItem(xivap.menuEntry, "Send Flightplan...", (void*)MENU_FLIGHTPLAN, 1);
-	XPLMAppendMenuItem(xivap.menuEntry, "Toggle console (debug) window", (void*)MENU_CONSOLE, 1);
-	XPLMAppendMenuItem(xivap.menuEntry, "About...", (void*)MENU_ABOUT, 1);
+	xivap.menuEntry = XPLMCreateMenu("X-IvAp AHS", 
+						NULL,
+						NULL, 			// Menu Item to attach to.
+						MenuHandlerCallback,	// The handler
+						0);	
+
+	XPLMAppendMenuItem(xivap.menuEntry, "Conmutar ventana principal de X-IvAp", (void*)MENU_MAIN, 1);
+	xivap.menuConnect = XPLMAppendMenuItem(xivap.menuEntry, "Conectar...", (void*)MENU_CONNECT, 1);
+	xivap.menuDisconnect = XPLMAppendMenuItem(xivap.menuEntry, "Desconectar", (void*)MENU_DISCONNECT, 1);
+	xivap.menuFlightplan = XPLMAppendMenuItem(xivap.menuEntry, "Enviar Plan de Vuelo...", (void*)MENU_FLIGHTPLAN, 1);
+	XPLMAppendMenuItem(xivap.menuEntry, "Conmutar ventana de consola (debug)", (void*)MENU_CONSOLE, 1);
+	XPLMAppendMenuItem(xivap.menuEntry, "Acerca de...", (void*)MENU_ABOUT, 1);
 
 	// disable disconnect menu entry
 	XPLMEnableMenuItem(xivap.menuEntry, xivap.menuDisconnect, 0);
@@ -240,7 +248,8 @@ void MenuHandlerCallback(void *inMenuRef, void *inItemRef)
 		case MENU_ABOUT:
 			xivap.messageBox().show(string(FSD_SOFTWARE_NAME)
 				+ " " + SOFTWARE_VERSION + "(Rev. " + xivap.revision() + ")  -  " 
-				+ SOFTWARE_COPYRIGHT1 + "     www.ivao.aero/softdev/X-IvAp");
+//				+ SOFTWARE_COPYRIGHT1 + "     www.ivao.aero/softdev/X-IvAp");
+				+ SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3);
 			break;
 
 		default:
@@ -311,6 +320,12 @@ void uiToggleCallback(void *inRefcon)
 {
 	if(xivap.uiWindow.visible()) {xivap.uiWindow.hide();Graphics&=~1;} 
 	else {xivap.uiWindow.show();Graphics|=1;} //UI toggle  5/10/2012
+}
+// Añadido para conmutar consola de depuración con hotkey
+void debugToggleCallback(void *inRefcon)
+{
+	if(xivap.consoleVisible()) xivap.setConsoleVisible(false);
+	else xivap.setConsoleVisible(true);
 }
 
 // message window callbacks

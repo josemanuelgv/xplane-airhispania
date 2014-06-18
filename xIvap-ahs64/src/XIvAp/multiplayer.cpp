@@ -85,7 +85,7 @@ MultiplayerEngine::MultiplayerEngine():
 _initialized(false), _enabled(false)
 {
 	_mp_engine = this;
-	_defaultIcao = "A320"; // fixme - make this configurable
+	_defaultIcao = "C182"; // fixme - make this configurable
 	_p2pmode = 0; // off
 	p2penabled = false;
 	p2psendbps = 0;
@@ -226,8 +226,8 @@ XPMPPlaneCallbackResult MultiplayerEngine::planeCallback(
 				XPMPPlanePosition_t *pos = static_cast<XPMPPlanePosition_t*>(ioData);
 //FIXME: DEBUG
 
-				if (xivap.debug.multiplayer)
-					XPLMDebugString("MP Callback: " + callsign);
+//				if (xivap.debug.multiplayer)
+//					XPLMDebugString("MP Callback: " + callsign);
 				
 			
 				if(pos->lat == plane->position.pos.lat
@@ -565,10 +565,13 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 
 	if(packet.type == _FSD_PILOTPOS_) {
 		//Añadido para recibir e interpretar los plane params (luces, motor, etc.) desde otro cliente X-Ivap AHS
-		if (packet.tokens.size() > 7) // Comprobar que es un mensaje "extendido" con los parámetros del avión añadidos
+		if (packet.tokens.size() > 8) // Comprobar que es un mensaje "extendido" con los parámetros del avión añadidos
 		{
 			FSD::PlaneParams params;
-			params.params = static_cast<unsigned int>(stringtoi(packet.tokens[7])); // Lo recibe como último parámetro (8º parámetro = tokens[7])
+			params.params = static_cast<unsigned int>(stringtoi(packet.tokens[8])); // Lo recibe como último parámetro (9º parámetro = tokens[8])
+//FIXME: DEBUG
+			if (xivap.debug.multiplayer) xivap.addText(colYellow,"Recibidos 'plane params': " + packet.tokens[8], true, true);
+
 			HandlePlaneParams(pilot, params);
 		}
 		// ignore standard position updates for clients
@@ -586,12 +589,12 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 //		if (pilot->onground && xivap.onGround()) // Si el piloto de la red está en tierra y nosotros estamos también en tierra (parece que no funciona siempre)
 //		if (pilot->onground) // Si el piloto de la red está en tierra
 		{
-			double ant_elev = pos0->pos.elevation + 1;
+			double ant_elev = pos0->pos.elevation;
 //			pos0->pos.elevation = (xivap.elevationft() / 3.2808399) - (xivap.Getgroundalt() / 2.2) ; // Equiparar la altitud del avión de la red con la nuestra
-			pos0->pos.elevation = xivap.elevationft(); // Equiparar la altitud del avión de la red con la nuestra
+			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
 //FIXME: DEBUG
 		if (xivap.debug.multiplayer)
-				xivap.addText(colRed, "Corregida posición en tierra de " + callsign + "( " + ftoa(ant_elev) + "m -> " + ftoa(pos0->pos.elevation) + "m)", true, true);
+				xivap.addText(colRed, "Corregida posición en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "m -> " + ftoa(pos0->pos.elevation) + "m)", true, true);
 
 			PlaneMap::iterator pilotIter = _planes.find(STDSTRING(packet.dest));
 //			MultiplayerPilot *pilot;
@@ -600,10 +603,10 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 //				if (pilotIter->second->mtl[0] == 'A' || (pilotIter->second->mtl[0] != 'B' && pos("BE", pilotIter->second->mtl) == -1)  || pilotIter->second->mtl[0] != 'M') // Si es un Airbus, Boeing o MD
 				if (pilot->mtl[0] == 'A' || (pilot->mtl[0] == 'B' && pos("BE", pilot->mtl) == -1)  || pilot->mtl[0] == 'M') // Si es un Airbus, Boeing o MD
 				{
-					pos0->pos.elevation += 4; // Elevo el avión unos 4m para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
+					pos0->pos.elevation += xivap.altgrande; // Elevo el avión unos 4m para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
 //FIXME: DEBUG
-		if (xivap.debug.multiplayer)
-				xivap.addText(colRed, "Corregida otra vez al alza posición en tierra de " + callsign + " (avión grande: " + pilot->mtl + ")" , true, true);
+				if (xivap.debug.multiplayer)
+					xivap.addText(colRed, "Corregida otra vez al alza posición en tierra de " + callsign + " (avión grande: " + pilot->mtl + ")" , true, true);
 				}
 //			}
 		}

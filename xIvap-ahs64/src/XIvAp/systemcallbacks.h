@@ -50,6 +50,8 @@ int inspectorFormHandler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 
 // UI callbacks
 void uiToggleCallback(void *inRefcon);
+
+void debugToggleCallback(void *inRefcon); //Añadido para hacer conmutable la consola de depuración con hotkey
 void uiTextWinDrawCallback(XPLMWindowID inWindowID, void *inRefcon);
 void uiTextWinToggleCallback(void *inRefcon);
 void uiTextWinKeyCallback(XPLMWindowID inWindowID, char inKey, XPLMKeyFlags inFlags, char inVirtualKey,
