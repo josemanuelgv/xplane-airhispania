@@ -252,7 +252,7 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 	WxMap::iterator it = _map.find(pconst(stationName));
 	if(it == _map.end()) {
 		WxStation s(stationName);
-		s.metar = METAR; // Almacena el METAR en la estación para futuras consultas
+//		s.metar = METAR; // Almacena el METAR en la estación para futuras consultas
 
 		if(stationName != "GLOB") { // X-Plane doesnt know GLOB of course
 
@@ -284,6 +284,7 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 	}
 	if(it == _map.end()) return; // paranoia
 
+	it->second.metar = METAR; // Almacena el METAR en la estación para futuras consultas
 
 	switch(m.type) {
 
