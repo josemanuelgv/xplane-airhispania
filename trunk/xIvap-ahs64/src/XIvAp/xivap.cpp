@@ -1410,7 +1410,7 @@ void Xivap::test(string linea) // Diversos tests relacionados con la simulación 
 			// ignore invalid packets or packets that are from myself
 
 //FIXME:DEBUG
-			addText(colRed, "No es invalid y no soy yo la fuente", true, true);
+			addText(colRed, "No es invalido y no soy yo la fuente", true, true);
 
 			// handle message / fsd packet
 			switch(m.type) {
@@ -1588,8 +1588,8 @@ void Xivap::handleFPchange(const FSD::Message& m)
 	if(fpl.alttype!=new_fp.alttype) {HANDLECHG("Alttype"); fpl.alttype =new_fp.alttype ; }
 
 	if(changed) {
-		uiWindow.addMessage(colYellow, "Flightplan changed by " + m.source + ": " + changes, true, true);
-		msgWindow.addMessage(colYellow, "Flightplan changed by " + m.source + ": " + changes);
+		uiWindow.addMessage(colYellow, "Plan de vuelo cambiado por " + m.source + ": " + changes, true, true);
+		msgWindow.addMessage(colYellow, "Plan de vuelo cambiado por " + m.source + ": " + changes);
 
 		// update flightplan in flightplan window
 		flightplanForm().fillForm(false);
@@ -1718,8 +1718,8 @@ void Xivap::flightLoopCallback()
 		XPLMPluginID pluginId;
 		XPLMCountAircraft(&numAircraft, &numActive, &pluginId);
 		if(numAircraft < 4) {
-			uiWindow.addMessage(colYellow, "Warning: TCAS will show " + itostring(numAircraft) + " targets only");
-			messageBox().show("Warning: TCAS will show " + itostring(numAircraft) + " targets only. If you need more, increase the number of airplanes in the rendering settings.");
+			uiWindow.addMessage(colYellow, "Aviso: TCAS mostrará " + itostring(numAircraft) + " objetivos solamente");
+			messageBox().show("Aviso: TCAS mostrará " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el número de aviones en las opciones gráficas.");
 		}
 	}
 
@@ -1778,8 +1778,8 @@ void Xivap::handleAtisReply(const FSD::Message& m)
 
 	if(tuneAudio > 0 && isVoiceUrl(m.tokens[0]) && _useVoice) {
 		addText(colYellow,
-			"Com " + itostring(tuneAudio) + (primaryTune ? " (primary) " : "") 
-				+ " should be tuned to " + m.tokens[0] + " now", true, true);
+			"Com " + itostring(tuneAudio) + (primaryTune ? " (primaria) " : "") 
+				+ " debería ser sintonizada en " + m.tokens[0] + " ahora", true, true);
 #ifdef HAVE_TEAMSPEAK
 		if(primaryTune) {
 			string channel = m.tokens[0];
@@ -1893,7 +1893,7 @@ void Xivap::airportChange()
     if (gpsRef != XPLM_NAV_NOT_FOUND){
         XPLMGetNavAidInfo(gpsRef, NULL, &lat, &lon, NULL, NULL, NULL, gpsBuf, NULL, NULL);        
     }
-	addText(colWhite, "Your GPS destination: " + string(gpsBuf), true, true);
+	addText(colWhite, "Su destino GPS: " + string(gpsBuf), true, true);
 
 	_destAirport = string(gpsBuf);
 
@@ -1915,7 +1915,7 @@ void Xivap::airportChange()
 		XPLMNavRef outRef;
 		char outID[256];
 		XPLMGetFMSEntryInfo(index, &outType, outID, &outRef, NULL, NULL, NULL);
-		addText(colWhite, "Your FMS destination: " + string(outID), true, true);
+		addText(colWhite, "Su destino FMS: " + string(outID), true, true);
 
 		if ( index == 0 && outType == xplm_Nav_Airport) {
 			_deptAirport = string(outID);
@@ -1947,7 +1947,7 @@ void Xivap::aircraftChange()
 	char byteBuf[40];
 	XPLMGetDatab(df, byteBuf, 0, 40);
 	string icao = string(byteBuf);
-	addText(colWhite, "Your ICAO: " + icao, true, true);
+	addText(colWhite, "Su ICAO: " + icao, true, true);
 	int len;
 	string icao_ = "test";//STDSTRING(icao);
     len = length(icao_);
@@ -1971,7 +1971,7 @@ void Xivap::aircraftChange()
 
 	XPLMGetDatab(gAcfTailnum, byteBuf, 0, 40);
 	string tailnum = string(byteBuf);
-	addText(colWhite, "Your Tailnumber: " + tailnum, true, true);
+	addText(colWhite, "Su matrícula: " + tailnum, true, true);
 }
 
 void Xivap::handleCommand(string line)
@@ -2079,17 +2079,17 @@ void Xivap::handleCommand(string line)
 
 	} else if(command == "NOMP") {
 		setMultiplayer(false);
-		uiWindow.addMessage(colDarkGreen, "Multiplayer disabled");
+		uiWindow.addMessage(colDarkGreen, "Multijugador desactivado");
 		return;
 
 	} else if(command == "YESMP") {
-		uiWindow.addMessage(colDarkGreen, "Enabling multiplayer");
+		uiWindow.addMessage(colDarkGreen, "Activando multijugador");
 		setMultiplayer(true);
 		return;
 
 	} else if(command == "NOWX") {
 		setWeather(false);
-		uiWindow.addMessage(colDarkGreen, "Weather disabled");
+		uiWindow.addMessage(colDarkGreen, "Meteorología desactivada");
 		return;
 
 	} else if(command == "CAVOK") {
@@ -2125,18 +2125,18 @@ void Xivap::handleCommand(string line)
 
 	} else if(command == "YESWX") {
 		setWeather(true);
-		uiWindow.addMessage(colDarkGreen, "Weather enabled");
+		uiWindow.addMessage(colDarkGreen, "Meteorología activada");
 		return;
 
 #ifdef HAVE_TEAMSPEAK
 	} else if(command == "VOICE") {
 		setVoice(true);
-		uiWindow.addMessage(colDarkGreen, "Voice enabled");
+		uiWindow.addMessage(colDarkGreen, "Voz activada");
 		return;
 
 	} else if(command == "NOVOICE") {
 		setVoice(false);
-		uiWindow.addMessage(colDarkGreen, "Voice disabled");
+		uiWindow.addMessage(colDarkGreen, "Voz desactivada");
 		return;
 #endif
 
@@ -2163,7 +2163,7 @@ void Xivap::handleCommand(string line)
 	} else if(command == "KILL") {
 		int p = pos(' ', line);
 		if(p < 0) {
-			uiWindow.addMessage(colYellow, "You have to provide a callsign and a reason", false, false);
+			uiWindow.addMessage(colYellow, "Tiene que porporcionar un callsign y una razón", false, false);
 			return;
 		}
 		callsign = strupcase(trim(copy(line, 0, p)));
@@ -2254,7 +2254,7 @@ void Xivap::handleCommand(string line)
 		del(line, 0, p+1);
 		string livery = line;
 
-		uiWindow.addMessage(colYellow, "Setting all models to " + aircraft + "/" + airline + "/" + livery, true, true);
+		uiWindow.addMessage(colYellow, "Estableciendo todos los modelos en " + aircraft + "/" + airline + "/" + livery, true, true);
 		_multiplayer.setAllModels(aircraft, airline, livery);
 		return;
 
@@ -2324,26 +2324,26 @@ void Xivap::handleCommand(string line)
 			return;
 
 	}	else if(command == "HELP") {
-		uiWindow.addMessage(colYellow, "List of commands:", false, false);
-		uiWindow.addMessage(colYellow, ".R <text> - reply to private message", false, false);
-		uiWindow.addMessage(colYellow, ".MSG <callsign> <text> - send private message to callsign", false, false);
-		uiWindow.addMessage(colYellow, ".CHAT <callsign> - open a chat window to callsign (type .HELP there)", false, false);
-		uiWindow.addMessage(colYellow, ".WALLOP <message> - send a message to all SUPs online", false, false);
-		uiWindow.addMessage(colYellow, ".METAR <station> - request METAR from station", false, false);
-		uiWindow.addMessage(colYellow, ".TAF <station - request TAF from station", false, false);
-		uiWindow.addMessage(colYellow, ".SHORTTAF <station> - request SHORTTAF from station", false, false);
-		uiWindow.addMessage(colYellow, ".ATIS <callsign> - request a controllers ATIS message", false, false);
-		uiWindow.addMessage(colYellow, ".NOMP / .YESMP - turn multiplayer off/on", false, false);
-		uiWindow.addMessage(colYellow, ".NOWX / .YESWX - turn weather off/on", false, false);
-		uiWindow.addMessage(colYellow, ".VOICE / .NOVOICE - turn voice off/on", false, false);
-		uiWindow.addMessage(colYellow, ".MODEL <aircraft>/<airline>/<livery> - see ALL other players as the specified aircraft (for CSL developers)", false, false);
-		uiWindow.addMessage(colYellow, ".DUMPWX <ICAO> - dump current weather profile and profile for ICAO to logfile and console (for WX debugging)", false, false);
-		uiWindow.addMessage(colYellow, ".FIND <ID> - print information about navaid ID", false, false);
-		uiWindow.addMessage(colYellow, ".X <code> - tune transponder to code", false, false);
-		uiWindow.addMessage(colYellow, ".C1 <freq> / .C2 <freq> - tune COM1 or COM2 to freq", false, false);
-		uiWindow.addMessage(colYellow, ".QNH <QNH> .ALT <ALTIMETER> - Set primary altimeter to barometric value", false, false);
+		uiWindow.addMessage(colYellow, "Lista de comandos:", false, false);
+		uiWindow.addMessage(colYellow, ".R <text> - responder a mensaje privado", false, false);
+		uiWindow.addMessage(colYellow, ".MSG <callsign> <text> - enviar un mensaje privado a un callsign", false, false);
+		uiWindow.addMessage(colYellow, ".CHAT <callsign> - abrir una ventana de chat a un callsign (teclear .HELP allí)", false, false);
+		uiWindow.addMessage(colYellow, ".WALLOP <message> - enviar un mensaje a todos los SUPs online", false, false);
+		uiWindow.addMessage(colYellow, ".METAR <station> - solicitar METAR de una estación", false, false);
+		uiWindow.addMessage(colYellow, ".TAF <station - solicitar TAF de una estación", false, false);
+		uiWindow.addMessage(colYellow, ".SHORTTAF <station> - solicitar SHORTTAF de una estación", false, false);
+		uiWindow.addMessage(colYellow, ".ATIS <callsign> - solicitar mensaje ATIS", false, false);
+		uiWindow.addMessage(colYellow, ".NOMP / .YESMP - modo Multijugador off/on", false, false);
+		uiWindow.addMessage(colYellow, ".NOWX / .YESWX - modo Meteorología off/on", false, false);
+		uiWindow.addMessage(colYellow, ".VOICE / .NOVOICE - modo Voz off/on", false, false);
+		uiWindow.addMessage(colYellow, ".MODEL <aircraft>/<airline>/<livery> - ver a todos los demás jugadores como el avion especificado (para desarrolladores CSL)", false, false);
+		uiWindow.addMessage(colYellow, ".DUMPWX <ICAO> - volcar el perfil de clima actual y el perfil para ICAO en un fichero log y consola (para depuración WX )", false, false);
+		uiWindow.addMessage(colYellow, ".FIND <ID> - imprimir informacion sobre la NavId ID", false, false);
+		uiWindow.addMessage(colYellow, ".X <code> - sintonizar el transponder en el código especificado", false, false);
+		uiWindow.addMessage(colYellow, ".C1 <freq> / .C2 <freq> - sintonizar COM1 o COM2 en freq", false, false);
+		uiWindow.addMessage(colYellow, ".QNH <QNH> .ALT <ALTIMETER> - Establecer el altímetro primario en el valor barómetrico dado", false, false);
 		uiWindow.addMessage(colYellow, ".TEST <mensaje> -probar mensaje como si viniera de la red (solo para desarrolladores)", false, false);
-		uiWindow.addMessage(colYellow, "Use your arrow-up and -down keys to scroll up and down", false, false);
+		uiWindow.addMessage(colYellow, "Usar flecha-arriba y flecha-abajo para desplazar pantalla", false, false);
 		return;
 
 	}
@@ -2572,7 +2572,7 @@ void Xivap::setMultiplayer(bool value)
 	} else { // turn on MP
 		if(!_multiplayer.initialized()) {
 			if(!_multiplayer.init()) {
-				uiWindow.addMessage(colRed, "Failed to initialize multiplayer: "
+				uiWindow.addMessage(colRed, "Falló al inicializar el multijugador: "
 					+ _multiplayer.errorMessage(), true, true);
 				_useMultiplayer = false;
 				return;
@@ -2611,7 +2611,7 @@ void Xivap::RequestP2P(const string& callsign, const string& protocol, int mode,
 		request += ":" + ipport;
 
 	fsd.sendInfoRequest(callsign, request);
-	xivap.addText(colRed, "SENT P2P request: " + request, true, true);
+	xivap.addText(colRed, "Enviada petición P2P: " + request, true, true);
 }
 
 void Xivap::SendP2PReply(const string& callsign, const string& protocol, int mode, const string& ipport)
@@ -2622,7 +2622,7 @@ void Xivap::SendP2PReply(const string& callsign, const string& protocol, int mod
 		reply += ":" + ipport;
 
 	fsd.sendInfoRequestReply(callsign, "P2P", reply);
-	xivap.addText(colRed, "SENT P2P reply: " + reply, true, true);
+	xivap.addText(colRed, "Enviada respuesta P2P: " + reply, true, true);
 }
 
 void Xivap::Selcal(string source)

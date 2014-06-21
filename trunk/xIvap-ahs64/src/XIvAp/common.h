@@ -83,7 +83,6 @@ inline float ntohf1( const float f )
 }
 #endif
 
-
 // macro to convert a pt::string to std::string
 #define STDSTRING(s) std::string(pconst(s))
 
