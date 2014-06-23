@@ -1,0 +1,60 @@
+X-IvAp is released under a the GNU Lesser General Public License
+version 3 with some modifications (see below).
+You find a copy of the original LGPL in the COPYING file.
+
+All enclosed software libraries and third party components
+are released under their respective licenses, please refer
+to the appropriate documentation.
+
+
+MODIFICATIONS TO THE LGPL
+=========================
+
+Clarification:
+
+The term "Library" in the LGPL encloses all software parts
+of this product, unless stated otherwise. 
+
+The following modifications to the LGPL apply for this project:
+
+1. Modifications SHOULD, but DO NOT HAVE TO BE, made available
+   in source code to the public, if
+
+   a) those modifications have the sole purpose to integrate
+      the client in a proprietary network
+
+   and
+
+   b) those modifications do not include other significant
+      improvements or additional features.
+
+   In other words: If the client needs to be patched in order
+   to work with a proprietary network (e.g. if the network
+   requires proprietary authentication code, uses a proprietary
+   network protocol or requires other modifications to make
+   existing features work for that network), that patch SHOULD,
+   - BUT DOES NOT HAVE TO BE - made available in source code to
+   the public.
+   However, if the modification includes additional functionality
+   that is not related to the integration of existing features,
+   that modification MUST BE MADE AVAILABLE in source code to
+   the public source code repository. Examples for this include,
+   but are not limited to: modifications to the visual
+   representation or user interface, improvements that
+   would allow additional 3rd party plug-ins to work with the
+   client, or modifications related to newer versions of X-Plane.
+   
+2. Versions including such modifications as mentioned above
+   must indicate this in the startup message of the client in
+   the simulator. For example: if a proprietary client is based
+   on version 1.2.3 of the public client, but includes
+   modifications to work with the proprietary network XYZ,
+   the client must display the version information "1.2.3 XYZ"
+   on startup. This is to avoid confusion for users of multiple
+   networks.
+
+--
+Martin Domig <martin@domig.net>
+3/Dec/2011
+
+
