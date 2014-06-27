@@ -799,8 +799,8 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 	// try the next step:
 	// For each aircraft, we know the equiment type "L2T" and the WTC category.
 	// try to find a model that has the same equipment type and WTC
-
 	std::map<string, CSLAircraftCode_t>::const_iterator model_it = gAircraftCodes.find(icao);
+	// FIXME: Si no encuentra el ICAO entre los modelos grabados, sacar el equipamiento del 2º parámetro numérico del comando "#SB<src>:<dest>:PI:X:0:n:~<ICAO>" previamente archivado
 	if(model_it != gAircraftCodes.end()) {
 
 		if (gIntPrefsFunc("debug", "model_matching", 0))
@@ -883,7 +883,11 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 				}
 			}
 		}
+	} // si no se encuentra nada con el mismo equipamiento
+	else // FIXME: Implementar que saque el ICAO del plan de vuelo
+	{
 	}
+
 
 	if (gIntPrefsFunc("debug", "model_matching", 0)) {
 		XPLMDebugString(string("gAircraftCodes.find(" + icao + ") returned no match.").c_str());
@@ -978,10 +982,23 @@ void			CSL_DrawObject(
 				XPLMPluginID	who;
 				int		total, active;
 				XPLMCountAircraft(&total, &active, &who);
-				if (model->austin_idx > 0  && model->austin_idx < active)
+//				if (model->austin_idx > 0  && model->austin_idx < active)
+				if (model->austin_idx > 0  && model->austin_idx < total) // Parece ser que el poner "active" en vez de "total" es un bug de X-IvAp, pero PROBAR, por si acaso se cuelga el X-Plane
+				{
+					//FIXME: DEBUG
+//					char sdebug[200];
+//					sprintf(sdebug, "Llamando a XPLMDRawAircraft con state.thrust = %f y lights.lightFlags = %d (lights no se pasan a la funcion)\r\n", state->thrust, lights.lightFlags);
+//					XPLMDebugString(sdebug);
+
 					XPLMDrawAircraft(model->austin_idx,
-							x, y ,z, pitch, roll, heading,
-							full, state);
+						x, y ,z, pitch, roll, heading,
+						full, state);
+
+					//FIXME: DEBUG
+//					sprintf(sdebug, "Dibujado el ACF del avión %d con XPLMDRawAircraft, con lights.lightFlags: beacon = %d, strobe = %d, nav = %d - thrust = %f\r\n", model->austin_idx, lights.bcnLights, lights.strbLights, lights.navLights, state->thrust);
+//					XPLMDebugString(sdebug);
+
+				}
 			}
 			break;
 		case plane_Obj:			

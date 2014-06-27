@@ -532,6 +532,19 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		
 		}
 
+		if(packet.tokens[0] == _FSD_CUSTOMPILOT_PLANEPARAMS_) // recepción de "plane params" (estado de luces, motores, flaps, etc.)
+		{
+
+			FSD::PlaneParams params;
+			params.params = static_cast<unsigned int>(stringtoi(packet.tokens[1])); // Lo recibe como último parámetro (9º parámetro = tokens[8])
+//FIXME: DEBUG
+			if (xivap.debug.multiplayer) xivap.addText(colYellow,"Recibidos 'plane params': " + packet.tokens[1], true, true);
+
+			HandlePlaneParams(pilot, params);
+
+			return;
+		}
+
 		return;
 	}
 
@@ -564,6 +577,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 	}
 
 	if(packet.type == _FSD_PILOTPOS_) {
+/* NO FUNCIONA PORQUE LA RED SOLO MANDA 8 PARAMETROS
 		//Añadido para recibir e interpretar los plane params (luces, motor, etc.) desde otro cliente X-Ivap AHS
 		if (packet.tokens.size() > 8) // Comprobar que es un mensaje "extendido" con los parámetros del avión añadidos
 		{
@@ -574,11 +588,12 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 
 			HandlePlaneParams(pilot, params);
 		}
+*/
 		// ignore standard position updates for clients
 		// that send p2p data
 		pilot->lastFsdPos_t = XPLMGetElapsedTime();
-		if(pilot->ignoreLegacyUpdates())
-			return;
+//		if(pilot->ignoreLegacyUpdates())
+//			return;
 
 		PlanePosition* pos0 = new PlanePosition();
 		decodeFSDPosition(packet, &(pos0->pos), &(pilot->radarStatus), pilot->onground);
@@ -591,10 +606,11 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		{
 			double ant_elev = pos0->pos.elevation;
 //			pos0->pos.elevation = (xivap.elevationft() / 3.2808399) - (xivap.Getgroundalt() / 2.2) ; // Equiparar la altitud del avión de la red con la nuestra
-			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
+//			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
+			pos0->pos.elevation = xivap.elevationft(); // Equiparar la altitud del avión de la red con la nuestra
 //FIXME: DEBUG
 		if (xivap.debug.multiplayer)
-				xivap.addText(colRed, "Corregida posición en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "m -> " + ftoa(pos0->pos.elevation) + "m)", true, true);
+				xivap.addText(colRed, "Corregida posición en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "ft -> " + ftoa(pos0->pos.elevation) + "ft)", true, true);
 
 			PlaneMap::iterator pilotIter = _planes.find(STDSTRING(packet.dest));
 //			MultiplayerPilot *pilot;
@@ -606,7 +622,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 					pos0->pos.elevation += xivap.altgrande; // Elevo el avión unos 4m para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
 //FIXME: DEBUG
 				if (xivap.debug.multiplayer)
-					xivap.addText(colRed, "Corregida otra vez al alza posición en tierra de " + callsign + " (avión grande: " + pilot->mtl + ")" , true, true);
+					xivap.addText(colRed, "Corregida otra vez al alza posición en tierra de " + callsign + " (avión grande: " + pilot->mtl + ") a " + ftoa(pos0->pos.elevation) +" ft" , true, true);
 				}
 //			}
 		}
@@ -624,7 +640,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		if(altdiff < 0) altdiff *= -1.0;
 		if(altdiff > P2P_ALTDIFF)
 			return;
-
+/*
 		// if close enough, ask for p2pinfo (if we dont have it already)
 		if(pilot->p2prequested || pilot->didrequestp2p || _p2pmode < 1)
 			return;
@@ -644,6 +660,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		}
 
 		return;
+*/
 	}
 
 	if(packet.type == _FSD_PLANEPARAMS_) {
@@ -842,7 +859,8 @@ void MultiplayerEngine::HandlePlaneParams(MultiplayerPilot *pilot, FSD::PlanePar
 
 	pilot->surfaces.speedBrakeRatio	= params.speedbrakeRatio / 8.0f;
 	pilot->surfaces.spoilerRatio		= params.speedbrakeRatio / 8.0f;
-	pilot->surfaces.thrust				= params.thrustRatio / 8.0f;
+	//pilot->surfaces.thrust				= (params.thrustRatio / 8.0f) * (params.engine1Running | params.engine2Running | params.engine3Running | params.engine4Running); //Cambiado para representar mejor si los motores están en marcha
+	pilot->surfaces.thrust				= static_cast<float>(params.engine1Running | params.engine2Running | params.engine3Running | params.engine4Running); //Cambiado para representar mejor si los motores están en marcha
 	pilot->surfaces.wingSweep			= pilot->onground ? 0.8f : 0.0f;
 
 	// wtf is that anyway?
@@ -979,6 +997,8 @@ void MultiplayerEngine::frameTick()
 
 	if(!(_initialized && _enabled)) return;
 
+// Eliminado para compatibilidad con red de AHS
+/*
 	static UInt32 nextp2pkeepalive = 0;
 	static UInt32 nextp2pping = 0;
 	static float nextFrequencyCalc = 0.0f;
@@ -1018,7 +1038,7 @@ void MultiplayerEngine::frameTick()
 		// poll peers
 		pollPeers();
 	}
-
+*/
 	// remove idle pilots
 	static float corpse_timeout = XPLMGetElapsedTime();
 	if(corpse_timeout + FSD_PILOT_TIMEOUT < XPLMGetElapsedTime()) {
@@ -1469,4 +1489,14 @@ void MultiplayerEngine::pollPeers()
 				xivap.addText(colWhite, "P2P from " + sender + " " + desc, true, true);
 //#endif
 	}
+}
+
+std::vector<string> MultiplayerEngine::listaConectados()
+{
+	std::vector<string> lista;
+	for(PlaneMap::iterator i = _planes.begin(); i != _planes.end(); ++i)
+	{
+		lista.push_back((string)i->first);
+	}
+	return lista;
 }

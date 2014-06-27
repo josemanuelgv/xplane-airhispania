@@ -46,6 +46,13 @@ void MultiplayerPilot::initSurfaces(XPMPPlaneSurfaces_t& surfaces)
 	surfaces.yokeHeading = 0;
 	surfaces.yokePitch = 0;
 	surfaces.lights.timeOffset = rand();
+
+	//Añadido para que se vean por defecto todas las luces encendidas, para distinguir mejor los tráficos de FSInn con ACFs
+	surfaces.lights.bcnLights = 1;
+	surfaces.lights.navLights = 1;
+	surfaces.lights.strbLights = 1;
+	surfaces.lights.landLights = 1;
+
 }
 
 void MultiplayerPilot::setLightPattern(string icao)

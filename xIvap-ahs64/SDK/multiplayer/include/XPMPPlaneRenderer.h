@@ -24,6 +24,9 @@
 #ifndef XPLMPLANERENDERER_H
 #define XPLMPLANERENDERER_H
 
+#include "XPLMDataAccess.h" // Añadido para poder acceder a los DataRefs
+//#include <ptypes.h> // Añadido para acceder a las funciones de los "portable types"
+
 // Theoretically you can plug in your own plane-rendering
 // function (although in practice this isn't real useful.
 // These functions do "the drawing" once per frame.

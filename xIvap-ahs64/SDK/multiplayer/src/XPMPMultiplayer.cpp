@@ -392,7 +392,7 @@ int			XPMPGetPlaneData(
 				if (result == xpmpData_NewData)
 					plane->posAge = now;
 			}
-			
+
 			XPMPPlanePosition_t *	posD = (XPMPPlanePosition_t *) outData;
 			memcpy(posD, &plane->pos, XPMP_TMIN(posD->size, plane->pos.size));
 
@@ -406,6 +406,12 @@ int			XPMPGetPlaneData(
 					plane->dataFunc(plane, inDataType, &plane->surface, plane->ref);
 				if (result == xpmpData_NewData)
 					plane->surfaceAge = now;
+
+			//FIXME: DEBUG
+//			char sdebug[50];
+//			sprintf(sdebug, "XPMPGetPlaneData: result = %d", result);
+//			XPLMDebugString(sdebug);
+
 			}
 			
 			XPMPPlaneSurfaces_t *	surfD = (XPMPPlaneSurfaces_t *) outData;

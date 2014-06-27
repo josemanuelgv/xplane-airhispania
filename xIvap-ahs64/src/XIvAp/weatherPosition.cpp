@@ -322,47 +322,60 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 
 			WindLayer l;
 			//	[ alt speed gusts direction variance turbulence windshear ]
-			l.alt =				0; // Vientos en tierra (no sé cómo habría que poner la altura realmente)
-			l.speed =			Tiempo.winData.windSpeed;
-			if (Tiempo.winData.windGust != INT_MAX) // La librería lo inicializa al valor #define INT_MAX
+			if (!xivap.cavok)
 			{
-				l.gusts =		Tiempo.winData.windGust; // Supuestamente hay datos de rachas de viento para copiar
-			}
-			else
-			{
-				l.gusts =		0; // FIXME: No sé si poner la misma velocidad del viento o 0
-			}
-			if (Tiempo.winData.windVRB == 0)
-			{
-				l.direction =		Tiempo.winData.windDir;
-				l.turbulence =		FSD::TURB_NONE; // No parece que se pueda obtener del METAR
-				l.windshear =		FSD::SHEAR_GRADUAL ; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
-			}
-			else // Como no parece haber variable para vientos variables, pongo la máxima variación que creo que se puede poner
-			{
-				l.direction = 0;
-				l.variance = 180;
-				l.gusts = l.speed*2.0f;
-				l.turbulence =		FSD::TURB_NONE; // No parece que se pueda obtener del METAR
-				l.windshear =		FSD::SHEAR_MODERATE ; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
-
-
-			}
-			if (Tiempo.minWnDir != INT_MAX) //FIXME: Creo que sería mejor poner cada dirección del viento en una capa distinta
-			{
-				l.direction =	Tiempo.minWnDir;
-//				l.variance =	Tiempo.maxWnDir - Tiempo.minWnDir; // FIXME: No sé si debe ser la diferencia o la dirección "máxima"
-				l.variance =	Tiempo.maxWnDir; // FIXME: Creo que debe ser la dirección "máxima"
-				l.gusts = l.speed*2.0f;
-			}
-			else
-			{
-				l.variance =	0;
-			}
-//				l.turbulence =		static_cast<FSD::WindTurb>(stringtoi(m.tokens[j++]));
-//				l.windshear =		static_cast<FSD::WindShear>(stringtoi(m.tokens[j++]));
-
+				l.alt =				0; // Vientos en tierra (no sé cómo habría que poner la altura realmente)
+				l.speed =			Tiempo.winData.windSpeed;
+				if (Tiempo.winData.windGust != INT_MAX) // La librería lo inicializa al valor #define INT_MAX
+				{
+					l.gusts =		Tiempo.winData.windGust; // Supuestamente hay datos de rachas de viento para copiar
+				}
+				else
+				{
+					l.gusts =		0; // FIXME: No sé si poner la misma velocidad del viento o 0
+				}
+				if (Tiempo.winData.windVRB != 0) // Como no parece haber variable para vientos variables, pongo la máxima variación que creo que se puede poner
+				{
+					l.direction =	0;
+					l.variance =	180;
+					l.gusts =		l.speed*2.0f;
+					l.turbulence =	FSD::TURB_NONE; // No parece que se pueda obtener del METAR
+					l.windshear =	FSD::SHEAR_MODERATE ; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
+				}
+				else 
+				{
+					l.direction =	Tiempo.winData.windDir;
+					l.turbulence =	FSD::TURB_NONE; // No parece que se pueda obtener del METAR
+					l.windshear =	FSD::SHEAR_GRADUAL ; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
+	
+					if (Tiempo.minWnDir != INT_MAX) //FIXME: Creo que sería mejor poner cada dirección del viento en una capa distinta
+					{
+						l.direction =	Tiempo.minWnDir;
+//						l.variance =	Tiempo.maxWnDir - Tiempo.minWnDir; // FIXME: No sé si debe ser la diferencia o la dirección "máxima"
+						l.variance =	Tiempo.maxWnDir; // FIXME: Creo que debe ser la dirección "máxima"
+						l.gusts =		l.speed*2.0f;
+						l.windshear =	FSD::SHEAR_MODERATE; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
+					}
+					else
+					{
+						l.variance =	0;
+					}
+	//				l.turbulence =		static_cast<FSD::WindTurb>(stringtoi(m.tokens[j++]));
+	//				l.windshear =		static_cast<FSD::WindShear>(stringtoi(m.tokens[j++]));
+				}
 // FIXME: DEBUG
+			} // if !cavok
+			else
+			{
+				l.alt =				0; // Vientos en tierra (no sé cómo habría que poner la altura realmente)
+				l.speed =			0;
+				l.direction =		0;
+				l.variance =		0;
+				l.gusts =			0;
+				l.turbulence =		FSD::TURB_NONE; // No parece que se pueda obtener del METAR
+				l.windshear =		FSD::SHEAR_GRADUAL; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
+			}
+
 
 			if (xivap.debug.weather > 2)
 				xivap.addText(colRed, "WxDB::add.Vientos de " + ftoa(l.direction) + "º a " + ftoa(l.speed) + " Kt con rachas de " + ftoa(l.gusts) + " Kt variables hasta " + ftoa(l.variance) + "º (variable = " + itostring(Tiempo.winData.windVRB) + ")", true, true);

@@ -127,10 +127,11 @@ void FlightplanForm::create()
 	XPSetWidgetProperty(numberTextField, xpProperty_MaxCharacters, 1);
 
 	// aircraft
-	actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C172", 0, window, xpWidgetClass_TextField);
+	actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C182", 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(actypeTextField, xpProperty_TextFieldType, xpTextEntryField);
 	//XPSetWidgetProperty(actypeTextField, xpProperty_MaxCharacters, 4);
-   fmcarStaticText = XPCreateWidget(288, 619, 368, 614, 1, "ZZZC", 0, window, xpWidgetClass_Caption);
+//   fmcarStaticText = XPCreateWidget(288, 619, 368, 614, 1, "ZZZC", 0, window, xpWidgetClass_Caption);
+   fmcarStaticText = XPCreateWidget(288, 619, 368, 614, 1, "FMC", 0, window, xpWidgetClass_Caption);
    XPHideWidget(fmcarStaticText);
 	// WTC
 	XPCreateWidget(x+158, y, x+168, y-22, 1, "/", 0, window, xpWidgetClass_Caption);
@@ -624,9 +625,27 @@ return;
 
 void FlightplanForm::setAcfIcao()
 {
-	if(pconst(xivap.acType()) != NULL){ //if acType is null take the aircraft type from the
+	string icao = xivap.acType();
+//	if(pconst(xivap.acType()) != NULL){ //if acType is null take the aircraft type from the
+	if (icao != "" && length(icao) != 0) { 
 	XPSetWidgetDescriptor(actypeTextField, pconst(xivap.acType())); //  default (previous) FPL
 	updateACList();
+	}
+// Añadido para que ponga el acType que saque del plan de vuelo, en caso de no tener ICAO
+	else
+	{
+//		string actype, airline, livery;
+//		char buf[100];
+//		XPGetWidgetDescriptor(actypeTextField, buf, 4); //  ICAO del plan de vuelo
+//		actype = string(buf);
+//		XPGetWidgetDescriptor(airlineTextField, buf, 4); //  ICAO del plan de vuelo
+//		livery = string(buf);
+		xivap.addText(colRed, "ICAO de la aeronave no encontrado, intentando utilizar el ICAO del plan de vuelo", true, true);
+		string actype, airline, livery;
+		actype = xivap.fpl.aircrafttype;
+		airline = xivap.fpl.airline;
+		livery = xivap.fpl.livery;
+		xivap.setAcType(actype, airline, livery);
 	}
 }
 

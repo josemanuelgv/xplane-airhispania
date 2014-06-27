@@ -107,6 +107,11 @@ public:
 	
 	int p2pmode() const { return _p2pmode; };
 
+	/**
+	 * Devuelve lista de indicativos de pilotos conectados en la red. 
+	 */
+	std::vector<string> listaConectados(); // Añadido para poder mandar mensajes a todos los pilotos conectados
+
 private:
 	/** remove pilots who didnt send any FSD updates within the last FSD_PILOT_TIMEOUT seconds */
 	void removeCorpses();

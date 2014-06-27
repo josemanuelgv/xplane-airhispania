@@ -687,11 +687,20 @@ void FsdAPI::sendPilotPos(IdentMode ident, int transponder, float lat, float lon
 	int altdiff = pressurealt - alt;
 	pos.tokens.push_back(itostring(altdiff));
 
-	//Añadido para enviar "plane params" como estado de luces y de motores (no sé si interferirá con otros clientes... PROBAR)
-	
-	pos.tokens.push_back(itostring(xivap.getParams()));
-
 	send(pos);
+
+	//Añadido para enviar "plane params" como estado de luces y de motores, esperando no saturar demasiado la red, en caso de que se envíe, porque se manda a todos los clientes conectados
+
+//	FSD::Message pparams;
+//	pparams.type = _FSD_CUSTOMPILOT_;
+//	pparams.source = _callsign;
+//	pparams.dest = "*";
+//	pparams.tokens.push_back(_FSD_CUSTOMPILOT_PLANEPARAMS_);
+//	pparams.tokens.push_back(itostring(xivap.getParams()));
+
+//	send(pparams);
+
+//	xivap.sendPlaneParams();
 }
 
 void FsdAPI::decodePBH(const unsigned int pbh, float& pitch, float& bank, float& heading, bool& onground)
@@ -835,7 +844,7 @@ void FsdAPI::sendInfoRequest(string dest, string request)
 	send(m, false);
 }
 
-bool FsdAPI::setParams(FSD::PlaneParams p)
+bool FsdAPI::setParams(FSD::PlaneParams p, string dest)
 {
 	if(!(_verified && _connected))
 		return false;				// don't send the info yet
@@ -843,23 +852,27 @@ bool FsdAPI::setParams(FSD::PlaneParams p)
 	if(p.params == _params.params)
 		return false;				// params did not change
 
-#ifdef PARAMS_DEBUG
-	string debug = "SENDING PARAMS: Gear:" + itostring(_params.gear)
-		+ " Bcn:" + itostring(p.beaconLight)
-		+ " Lnd:" + itostring(p.landLight)
-		+ " Nav:" + itostring(p.navLight)
-		+ " Strb:" + itostring(p.strobeLight)
-		+ " Txi:" + itostring(p.taxiLight)
-		+ " ThRev:" + itostring(p.thrustReversers)
-		+ " E1:" + itostring(p.engine1Running)
-		+ " E2:" + itostring(p.engine2Running)
-		+ " E3:" + itostring(p.engine3Running)
-		+ " E4:" + itostring(p.engine4Running)
-		+ " Flps:" + itostring(p.flapsRatio)
-		+ " SpdBrk:" + itostring(p.speedbrakeRatio)
-		+ " Thrtle:" + itostring(p.thrustRatio);
-	xivap.addText(colGray, debug, true, true);
-#endif
+//#ifdef PARAMS_DEBUG
+	//FIXME: DEBUG
+	if (xivap.debug.params)
+	{
+		string debug = "ENVIANDO PLANE PARAMS: Gear:" + itostring(_params.gear)
+			+ " Bcn:" + itostring(p.beaconLight)
+			+ " Lnd:" + itostring(p.landLight)
+			+ " Nav:" + itostring(p.navLight)
+			+ " Strb:" + itostring(p.strobeLight)
+			+ " Txi:" + itostring(p.taxiLight)
+			+ " ThRev:" + itostring(p.thrustReversers)
+			+ " E1:" + itostring(p.engine1Running)
+			+ " E2:" + itostring(p.engine2Running)
+			+ " E3:" + itostring(p.engine3Running)
+			+ " E4:" + itostring(p.engine4Running)
+			+ " Flps:" + itostring(p.flapsRatio)
+			+ " SpdBrk:" + itostring(p.speedbrakeRatio)
+			+ " Thrtle:" + itostring(p.thrustRatio);
+		xivap.addText(colGray, debug, true, true);
+	}
+//#endif
 // Quitado para compatibilidad con red AHS
 //	FSD::Message m;
 //	m.type = _FSD_PLANEPARAMS_;
@@ -868,10 +881,21 @@ bool FsdAPI::setParams(FSD::PlaneParams p)
 
 //	m.tokens.push_back(itostring(p.params));
 
-//	if(send(m)) {
+//Añadido para enviar "plane params" como estado de luces y de motores, esperando no saturar demasiado la red, en caso de que se envíe, porque se manda a todos los clientes conectados
+
+	FSD::Message pparams;
+	pparams.type = _FSD_CUSTOMPILOT_;
+	pparams.source = _callsign;
+//	pparams.dest = "*";
+	pparams.dest = dest;
+	pparams.tokens.push_back(_FSD_CUSTOMPILOT_PLANEPARAMS_);
+//	pparams.tokens.push_back(itostring(xivap.getParams()));
+	pparams.tokens.push_back(itostring(p.params));
+
+	if(send(pparams)) {
 		_params.params = p.params;
 		return true;
-//	}
+	}
 	return false;
 }
 
@@ -987,7 +1011,7 @@ void FsdAPI::sendPlaneInfo(string mtl, string dcallsign)
 	m.tokens.push_back(_FSD_CUSTOMPILOT_PLANEINFO_); // Comando plane info ("PI")
 	m.tokens.push_back("X"); // Parámetro que al parecer se manda siempre
 	m.tokens.push_back("0"); // Parámetro que al parecer se manda siempre
-	m.tokens.push_back("0"); // Parámetro que al parecer se manda siempre
+	m.tokens.push_back("0"); // Parámetro que creo que está entre 0 y 5 (Teóricamente: 0 =  avión Light; 1 = avión Medium; 2 = avión Heavy; 3 = Heli L; 4 = Heli M; 5 = Heli H)
 	m.tokens.push_back("~"+_mtl);  // "~" (parece que se envía siempre) + ICAO de la aeronave
 	send(m);
 

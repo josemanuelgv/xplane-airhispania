@@ -182,6 +182,11 @@ static	int		gOBJPlanes = 0;			// Number of our OBJ planes we drew in full
 static	XPLMDataRef		gVisDataRef = NULL;		// Current air visiblity for culling.
 static	XPLMDataRef		gAltitudeRef = NULL;	// Current aircraft altitude (for TCAS)
 
+static std::vector<XPLMDataRef> ref_lights_beacon;
+static std::vector<XPLMDataRef> ref_lights_nav;
+static std::vector<XPLMDataRef> ref_lights_strobe;
+static std::vector<XPLMDataRef> ref_lights_landing;
+static std::vector<XPLMDataRef> ref_light_taxi;
 
 void			XPMPInitDefaultPlaneRenderer(void)
 {
@@ -229,7 +234,29 @@ void			XPMPInitDefaultPlaneRenderer(void)
 		if (!d) break;
 		gMultiRef_Z.push_back(d);
 		++n;
-	}	
+	}
+
+	// Prearchiva referencias a los DataRefs de luces de todos los aviones multiplayer
+	char sPrefijoDataRef[100];
+	char sDataRef[100];
+	for (int i = 0; i < 20; ++i)
+	{
+		sprintf(sPrefijoDataRef, "sim/multiplayer/position/plane%d", i);
+		sprintf(sDataRef, "%s_beacon_lights_on", sPrefijoDataRef);
+		ref_lights_beacon.push_back(XPLMFindDataRef(sDataRef));
+		sprintf(sDataRef, "%s_landing_lights_on", sPrefijoDataRef);
+		ref_lights_landing.push_back(XPLMFindDataRef(sDataRef));
+		sprintf(sDataRef, "%s_nav_lights_on", sPrefijoDataRef);
+		ref_lights_nav.push_back(XPLMFindDataRef(sDataRef));
+		sprintf(sDataRef, "%s_strobe_lights_on", sPrefijoDataRef);
+		ref_lights_strobe.push_back(XPLMFindDataRef(sDataRef));
+		sprintf(sDataRef, "%s_taxi_light_on", sPrefijoDataRef);
+		ref_light_taxi.push_back(XPLMFindDataRef(sDataRef));
+//		sprintf(sDataRef, "%s_throttle", sPrefijoDataRef);
+//		XPLMDataRef ref_throttle = XPLMFindDataRef(sDataRef);
+//		sprintf(sDataRef, "%s_gear_deploy", sPrefijoDataRef);
+//		XPLMDataRef ref_gear_deploy = XPLMFindDataRef(sDataRef);
+	}
 }
 
 // PlaneToRender struct: we prioritize planes radially by distance, so...
@@ -408,7 +435,12 @@ void			XPMPDefaultPlaneRenderer(void)
 					renderRecord.state.yokeRoll 		= surfaces.yokeRoll 		;
 
 					renderRecord.lights.lightFlags		= surfaces.lights.lightFlags;
-				
+
+					//FIXME: DEBUG
+//					char sdebug[200];
+//					sprintf(sdebug, "\r\nXPMPDefaultPlaneRenderer: surfaces: lights.lightFlags: beacon = %d, strobe = %d, nav = %d - thrust = %f\r\n", surfaces.lights.bcnLights, surfaces.lights.strbLights, surfaces.lights.navLights, surfaces.thrust);
+//					XPLMDebugString(sdebug);
+
 				} else {
 					renderRecord.state.structSize = sizeof(renderRecord.state);
 					renderRecord.state.gearPosition = (pos.elevation < 70) ?  1.0 : 0.0;
@@ -531,6 +563,26 @@ void			XPMPDefaultPlaneRenderer(void)
 
 	for (planeMapIter = planes_austin.begin(); planeMapIter != planes_austin.end(); ++planeMapIter)	
 	{
+//FIXME: DEBUG
+//		char sdebug[200];
+//		sprintf(sdebug, "Procediendo a dibujar ACF de avión %d llamando a CSL_DrawObject, austin_idx = %d, full = %d dist = %f\r\n", (int)plane_Austin, planeMapIter->second->model->austin_idx, planeMapIter->second->full, planeMapIter->second->dist);
+//		XPLMDebugString(sdebug);
+
+		// Poner los parámetros del avión por DataRefs, porque el procedimiento normal parece que con los ACFs no funciona
+		int indice = planeMapIter->first;
+		XPLMSetDatai(ref_lights_beacon[indice], planeMapIter->second->lights.bcnLights);
+		XPLMSetDatai(ref_lights_landing[indice], planeMapIter->second->lights.landLights);
+		XPLMSetDatai(ref_lights_nav[indice], planeMapIter->second->lights.navLights);
+		XPLMSetDatai(ref_lights_strobe[indice], planeMapIter->second->lights.strbLights);
+		XPLMSetDatai(ref_light_taxi[indice], planeMapIter->second->lights.landLights); // El sistema no guarda la información de luces de taxi, así que las acoplo a las landing
+//		XPLMSetDatai(ref_lights_landing, 0);
+//		XPLMSetDatai(ref_light_taxi, 0);
+
+//FIXME: DEBUG
+//		char sdebug[200];
+//		sprintf(sdebug, "Dataref '%s' para avion %d (austin_idx = %d) = %d\r\n", sDataRef, (int)plane_Austin, planeMapIter->second->model->austin_idx, planeMapIter->second->lights.bcnLights);
+//		XPLMDebugString(sdebug);
+
 		CSL_DrawObject(	planeMapIter->second->model, 
 						planeMapIter->second->dist,
 						planeMapIter->second->x, 

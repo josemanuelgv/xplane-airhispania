@@ -112,6 +112,7 @@ const string FSD_HEADS[] = {
 
 #define _FSD_CUSTOMPILOT_REQPLANEINFO_ "PIR"
 #define _FSD_CUSTOMPILOT_PLANEINFO_    "PI"
+#define _FSD_CUSTOMPILOT_PLANEPARAMS_  "PP" 
 
 // Administrative
 #define _FSD_FLIGHTPLAN_    16 //      "$FP"
