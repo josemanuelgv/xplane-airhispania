@@ -99,7 +99,8 @@ public:
 	void sendInfoRequestReply(string dest, string request, string reply);
 
 	// returns true if new parameters were sent to FSD
-	bool setParams(FSD::PlaneParams p);
+//	bool setParams(FSD::PlaneParams p);
+	bool setParams(FSD::PlaneParams p, string dest);
 
 	bool sendFlightplan(Flightplan& fpl);
 

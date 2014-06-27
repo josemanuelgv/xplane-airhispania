@@ -490,7 +490,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 		//otherwise send actual flightplan aircraft data
 // FIXME: Supongo que habría que enviar la información a la lista de pilotos conectados a la red AHS, si existe
 //		  Esta información se mete en sendPilotPos como último parámetro extra, siempre que no interfiera en el proceso de la posición en otros clientes
-//		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, "AHS712D"); // Probando para ver qué MTL manda
+		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, "dummy");
 //	}
 
 	if(_useWeather) {
@@ -509,7 +509,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 	}
 
 	// send plane params on connect
-	sendPlaneParams(); // Función que realmente no envía nada, pero que se deja para funcionamiento interno correcto
+	sendPlaneParams();
 	
 	nextFSDPosUpdate = XPLMGetElapsedTime() + 5.0f;
 	nextFSDPoll = XPLMGetElapsedTime();
@@ -532,7 +532,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 
 		// re-test p2p (user might have hooked his dialup modem just before connecting,
 		// or his IP changed... or god knows what else)
-		_multiplayer.testp2p(_stun_server);
+//		_multiplayer.testp2p(_stun_server);
 	}
 
 	if(_useMultiplayer) {
@@ -655,6 +655,8 @@ void Xivap::sendPosUpdate()
 		static_cast<int>(elevationft()),
 		static_cast<int>(speed), -pitch, -bank, heading, _onground, static_cast<int>(flightlevelft()));
 
+//	sendPlaneParams(); // Añadido para enviar los plane params justo después de la posición
+
 	nextFSDPosUpdate += 5.0;
 	if(nextFSDPosUpdate < XPLMGetElapsedTime()) // can happen on pause
 		nextFSDPosUpdate = XPLMGetElapsedTime() + 5.0f;
@@ -751,8 +753,15 @@ void Xivap::sendPlaneParams()
 	_lastParams = XPLMGetElapsedTime();
 	updateParams();
 
-	if(fsd.setParams(_planeParams))
-		_lastParams = XPLMGetElapsedTime();
+//	if (online())
+//	{
+		std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
+		for (int i = 0; i < lista.size(); ++i) // Envía lista de parámetros del avión a cada piloto conectado
+		{
+			if(fsd.setParams(_planeParams, lista[i]))
+				_lastParams = XPLMGetElapsedTime();
+		}
+//	}
 }
 
 void Xivap::updatePosition(PlanePosition* position)
@@ -1244,13 +1253,14 @@ void Xivap::handleInfoReply(const FSD::Message &m)
 	else if(m.tokens[0] == "SEL") { // Selcal
 		Selcal(m.source);
 	}
-	else if(m.tokens[0] == "P2P") { // p2p request
-		if(m.tokens.size() > 2) {
-			// $CQAAAA:BBBB:P2P:<mode>:<application>[:<ip>:<port>]
-			if(m.tokens[2] == P2P_POS_PROTOCOL)
-				_multiplayer.eatThis(m);
-		}
-	}
+	// Eliminado para compatibilidad con red de AHS
+//	else if(m.tokens[0] == "P2P") { // p2p request
+//		if(m.tokens.size() > 2) {
+//			// $CQAAAA:BBBB:P2P:<mode>:<application>[:<ip>:<port>]
+//			if(m.tokens[2] == P2P_POS_PROTOCOL)
+//				_multiplayer.eatThis(m);
+//		}
+//	}
 	//FIXME: Añadir respuesta a otras peticiones como "CAPS"
 }
 
@@ -1379,10 +1389,6 @@ void Xivap::test(string linea) // Diversos tests relacionados con la simulación 
 		m.tokens.push_back("0");
 		m.tokens.push_back("4290774782"); // PBH de avión cogido al azar de una traza de la red
 		m.tokens.push_back("0");
-		if (mlinea.tokens.size() > 0) 
-		{
-			m.tokens.push_back(mlinea.tokens[0]); // 1er. parámetro: parámetros del avión en forma numérica
-		}
 	}
 	else if (mlinea.dest == "PI")
 	{
@@ -1404,13 +1410,25 @@ void Xivap::test(string linea) // Diversos tests relacionados con la simulación 
 		if (ac0[0] == '~') del(ac0,0,1); // Borra el primer carácter "~" que suele mandar la red (no sé si significará algo)
 		m.tokens[4] = ac0;
 	}
-
+	else if (mlinea.dest == "PP")
+	{
+		m.type = _FSD_CUSTOMPILOT_;
+		m.source = "AHS0000";
+//		if (mlinea.tokens.size() > 1) m.dest = mlinea.tokens[1]; // 2º parámetro: callsign
+//		else m.dest = "AHS120D";
+		m.dest = "*";
+		m.tokens.push_back(_FSD_CUSTOMPILOT_PLANEPARAMS_);
+		if (mlinea.tokens.size() > 0) 
+		{
+			m.tokens.push_back(mlinea.tokens[0]); // 1er. parámetro: parámetros del avión en forma numérica
+		}
+	}
 
 		if(m.type != _FSD_INVALID_ && m.source != fsd.callsign()) {
 			// ignore invalid packets or packets that are from myself
 
 //FIXME:DEBUG
-			addText(colRed, "No es invalido y no soy yo la fuente", true, true);
+			addText(colRed, "No es invalid y no soy yo la fuente", true, true);
 
 			// handle message / fsd packet
 			switch(m.type) {
@@ -1947,17 +1965,33 @@ void Xivap::aircraftChange()
 	char byteBuf[40];
 	XPLMGetDatab(df, byteBuf, 0, 40);
 	string icao = string(byteBuf);
-	addText(colWhite, "Su ICAO: " + icao, true, true);
-	int len;
-	string icao_ = "test";//STDSTRING(icao);
-    len = length(icao_);
-	if(len > 1){ // changes the acType only if we found a working acType value
+	icao = strupcase(trim(icao));
+	//FIXME: DEBUG
+	if (debug.multiplayer)
+		addText(colWhite, "Su ICAO (fichero ACF): '" + icao + "'", true, true);
+//	int len;
+//	string icao_ = "test";//STDSTRING(icao);
+//   len = length(icao_);
+//	if(len > 1){ // changes the acType only if we found a working acType value
     _acType = icao; //otherwise, keep the value from the FPL
 	xivap.flightplanForm().setAcfIcao();
-	}
-	
-	
 
+	if (online())
+	{
+		std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
+		for (int i = 0; i < lista.size(); ++i) // Envía tipo de avión (ICAO, airline, livery) a cada piloto conectado
+		{
+			fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, lista[i]);
+		}	
+	}
+	else // Si no está conectado, llama a la función de envío para que inicialice la variable _mtl y se pueda conectar más adelante
+	{
+		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, "dummy");
+	}
+
+//	}
+	
+	addText(colWhite, "Su ICAO: " + _acType, true, true);
 
 
 	/*
@@ -1971,7 +2005,7 @@ void Xivap::aircraftChange()
 
 	XPLMGetDatab(gAcfTailnum, byteBuf, 0, 40);
 	string tailnum = string(byteBuf);
-	addText(colWhite, "Su matrícula: " + tailnum, true, true);
+	addText(colWhite, "Su matricula: " + tailnum, true, true);
 }
 
 void Xivap::handleCommand(string line)
@@ -1996,6 +2030,7 @@ void Xivap::handleCommand(string line)
 			uiWindow.addMessage(colGreen, _lastPrivSender + "> " + line);
 			msgWindow.addMessage(colGreen, _lastPrivSender + "> " + line);
 		}
+		return;
 
 	} else if(command == "MSG") {
 		if(!online()) return;
@@ -2015,6 +2050,7 @@ void Xivap::handleCommand(string line)
 		fsd.sendMessage(dest, line);
 		uiWindow.addMessage(colGreen, dest + "> " + line);
 		msgWindow.addMessage(colGreen, dest + "> " + line);
+		return;
 
 	} else if(command == "METAR") {
 		if(!online()) return;
@@ -2093,18 +2129,18 @@ void Xivap::handleCommand(string line)
 		return;
 
 	} else if(command == "CAVOK") {
-		line = trim(strupcase(line));
-		if (line == "") // si se envía el comando sin parámetros
+		line = strupcase(trim(line));
+		if (length(line) <= 0) // si se envía el comando sin parámetros
 		{
 			if (cavok) // conmuta el CAVOK
 			{
 				cavok = false;
-				uiWindow.addMessage(colDarkGreen, "CAVOK desactivado");
+				uiWindow.addMessage(colDarkGreen, "Conmutado CAVOK a desactivado");
 			}
 			else
 			{
 				cavok = true;
-				uiWindow.addMessage(colDarkGreen, "CAVOK activado");
+				uiWindow.addMessage(colDarkGreen, "Conmutado CAVOK a activado");
 			}
 		}
 		else
@@ -2121,6 +2157,7 @@ void Xivap::handleCommand(string line)
 				uiWindow.addMessage(colDarkGreen, "CAVOK activado");
 			}
 		}
+		checkWeather(XPLMGetElapsedTime());
 		return;
 
 	} else if(command == "YESWX") {
@@ -2263,9 +2300,17 @@ void Xivap::handleCommand(string line)
 		xivap.test(line); // Rehabilitado comando "TEST" para mandar un mensaje al plugin como si viniera de la red
 		return;
 
+	}	else if (command=="SEND") { // Añadido para mandar un mensaje manualmente a la red
+		if(!online()) return;
+		line = strupcase(trim(line));
+		FSD::Message m;
+		if (m.decompose(line)) fsd.send(m);
+		return;
+
 	}	else if (command=="TS") { // Añadido comando para cambiar de canal directamente en el Teamspeak
 		line = trim(strupcase(line));
 		tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), line);
+		return;
 
 	}	else if (command=="DEBUG") { // Añadido comando para aplicar niveles de debug al vuelo (parámetros separados por ":")
 		line = trim(strupcase(line));
@@ -2358,7 +2403,13 @@ void Xivap::setAcType(const string& aircraft, const string& airline, const strin
 	while(length(_acType) < 4) _acType = _acType + " ";
 // FIXME: Supongo que habría que mandar la información a la lista de pilotos conectados a la red de AHS, si es que existe una
 //	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery);
-	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,"dummy");
+//	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,"dummy");
+
+//	std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
+//	for (int i = 0; i < lista.size(); ++i) // Envía tipo de avión (ICAO, airline, livery) a cada piloto conectado
+//	{
+//		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,lista[i]);
+//	}
 }
 
 // if we are using weather, this is being called once every WEATHER_UPDATE_INTERVAL secs
