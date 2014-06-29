@@ -40,6 +40,7 @@
 #include "TeamSpeak.h"
 
 #include <deque>
+#include <locale.h>
 
 #define CONSOLE_LINES   28
 #define CONSOLE_ROWS   150
@@ -144,6 +145,7 @@ public:
 
 	void setXpdrIdent();
 	void xpdrModeToggle();
+	void CAVOKModeToggle();
 
 	bool online() { return fsd.connected() && fsd.verified(); };
 

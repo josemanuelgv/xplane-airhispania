@@ -298,14 +298,22 @@ int UiWindow::checkButton(int x, int y)
 			}
 		}
 	}
-	//last check for the new keys 16/08/2012
+	//last check for the new keys 16/08/2012 //Se comprueba si se ha pulsado alguno de los botones de la derecha
+	//addMessage(colDarkGreen, "x:" + itostring(x)+ "y:"+itostring(y)+ "left:"+itostring(left)+ "top:"+itostring(top));
 	x-=left;
 	y=top-y;
+
 	int i=0;
-	while (i<4)  {
-		if (x>=ExtMouseFields[4*i] && x<=ExtMouseFields[4*i+2]) if (y>=ExtMouseFields[4*i+1] && y<=ExtMouseFields[4*i+3]) return (i+Connect_Capture);
+	while (i<10)  { //se amplia el ciclo de vueltas para incluir los nuevos botones
+		if (x>=ExtMouseFields[4*i] && x<=ExtMouseFields[4*i+2]) {
+			if (y>=ExtMouseFields[4*i+1] && y<=ExtMouseFields[4*i+3]) 
+			{
+				return (i+Connect_Capture);
+			}
+		}
 		i++;
 	}
+	
 
 	return 0; //nothing else found, quit with 0
 }
@@ -413,6 +421,11 @@ void UiWindow::buttonClicked(int button)
 	switch (button)
 	{
 	case TX_Capture: xivap.xpdrModeToggle();break;
+	case CAVOK_Capture: xivap.CAVOKModeToggle();break;
+	case FPL_Capture: xivap.flightplanForm().show(); break; 
+	case FMC_Capture: xivap.fmcForm().show();break;
+	case Chat_Capture: xivap.handleCommand(".CHAT");break;  
+	case AcercaDe_Capture:xivap.messageBox().show("AHS4XP se trata de una adaptacion del plugin Xivap de IVAO para conectar XPlane 10 64 bits a la red de Airhispania.");break;
 	case TCAS_Capture: {xivap.Tcasbox.hide();break;}
 	case Ident_Capture: {xivap.setXpdrIdent();break;}
 	case Connect_Capture: if(xivap.fsd.connected()) xivap.disconnectForm().show();
@@ -674,6 +687,7 @@ void UiWindow::buttonClicked(int button)
 		dumpKeyboardFocus();	// give away the keyboard focus if we dont need it
 }
 
+/*Prepara el contenido de la ventana de comandos y de visualizacion*/
 void UiWindow::prepScreen()
 {
 	clearText();
@@ -721,11 +735,11 @@ void UiWindow::prepScreen()
 
 				// text messages - hide them from the GW-FMS (last param = false)
 				int j = 0;
-				for(size_t i = textLine; i < uiText.size() && j < 5; ++i, ++j)
-					addText(AL_left, 9 - j, uiText[i].first, uiText[i].second, true, false);
+				for(size_t i = textLine; i < uiText.size() && j < 10; ++i, ++j)
+					addText(AL_left, 14 - j, uiText[i].first, uiText[i].second, true, false);
 				
 				// bottom line --------------
-				addText(AL_left, 10, colDarkGreen, line, true);
+				addText(AL_left, 15, colDarkGreen, line, true);
 			}
 			break;
 
@@ -837,7 +851,7 @@ void UiWindow::prepScreen()
 			}
 		}
 		if(_cursor) str = str + "_";
-		addText(AL_left, 11, colGreen, str, true, true);
+		addText(AL_left, 16, colGreen, str, true, true);
 	}
 }
 

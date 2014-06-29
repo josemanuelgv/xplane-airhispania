@@ -519,7 +519,7 @@ void Tcas::Create()
 	zone=1;
 	tcasmode=0;
 	left = 50;
-	top = 720;
+	top = 500;
 	
 	right = left + Size();
 	bottom = top - Size();
