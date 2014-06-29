@@ -18,6 +18,7 @@
 #include "messageHandler.h"
 #include "SoundGraphics.h"
 
+
 extern char Graphics;
 
 PLUGIN_API int XPluginStart(char *outName, char *outSig, char *outDesc)
@@ -31,7 +32,7 @@ PLUGIN_API int XPluginStart(char *outName, char *outSig, char *outDesc)
 	strcpy(outName, "X-IvAp");
 	strcpy(outSig, "ivao.xivap");
 	string desc = string(SOFTWARE_NAME) + " " 
-		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Vuenla en la red de AHS " + SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3;
+		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Vuela en la red de AHS " + SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3;
 	strcpy(outDesc, pconst(desc));
 	if (!InitSound()) XPLMDebugString(" Xivap SoundInit error\r\n"); //added for sound init
 	if (!InitGraphics()) XPLMDebugString("XIvap Graphics init error\r\n");//added for graphics init

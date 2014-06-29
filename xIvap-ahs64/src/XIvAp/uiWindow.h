@@ -38,11 +38,27 @@
 #define MARGIN_LEFT 5
 //new mouse detection result 16/08/2012
 
-const	int	ExtMouseFields[]={524,104,554,119,621,86,651,114,630,53,647,67,566,102,596,122};
+const	int	ExtMouseFields[]=
+	{525,104,558,125,  //Boton Connect
+	621,86,651,114,    //Boton Transponder
+	630,53,647,67,	   //Boton 	ID
+	566,104,600,125,   //Boton TCAS 	
+	525,165,558,185,  //Boton cavok on/off
+	566,165,600,185,  //Boton plan de vuelo 
+	525,136,558,157,  //Boton chat
+	566,136,600,157,  //Boton fmc
+	624,130,665,183}; //Boton acerca de
 #define Connect_Capture	20
 #define TX_Capture	21
 #define	Ident_Capture	22
 #define	TCAS_Capture	23
+#define CAVOK_Capture	24
+#define FPL_Capture	25
+#define Chat_Capture	26
+#define FMC_Capture	27
+#define AcercaDe_Capture	28
+
+
 #define	Ex_Window_Range	155
 #define SK_COLOR colWhite
 
@@ -235,8 +251,8 @@ private:
 	const static int ui_columns = 75; //was 100 before, reduced to get better xivap size 15/08/2012
 	//const static int ui_columnsFMS = 25; // 25 characters in the FMS
 
-	// don't change this
-	const static int ui_rows = 12;
+	// Se aumenta el numero de filas en proporcion al tamaño de la nueva interfaz para AHS
+	const static int ui_rows = 18; //12;
 
 	bool _extradark;
 

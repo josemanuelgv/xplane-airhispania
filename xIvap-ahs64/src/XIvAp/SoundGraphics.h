@@ -31,7 +31,7 @@ void CloseGauge(void);
 #define RESOURCES_DIR	"X-IvAp Resources"
 #define SOUND_DIR		"sound"
 #define TEXTURE_DIR		"textures"
-#define PANEL_FILENAMEDAY	"xivap.png" 
+#define PANEL_FILENAMEDAY	"xivapExtended.png" //Extendida la interfaz principal 
 #define TransponderOff	"squawk_sby.png"
 #define TransponderOn	"squawk_tx.png"
 #define ConnectON		"net_conn.png"
@@ -41,7 +41,9 @@ void CloseGauge(void);
 #define IDENTON			"squawk_id.png"
 #define TRANSPONDER		"transponder.png"
 #define TCAS			"tcas.png"
-#define MAXTEXTURE 24	//17
+
+
+#define MAXTEXTURE  24	//17
 #define IVPANEL_TEXTURE 0
 #define	IVTRANS_OFF_TEXTURE	1
 #define	IVTRANS_ON_TEXTURE	2
@@ -59,6 +61,7 @@ void CloseGauge(void);
 #define IVTCAS_CYAN			14
 #define IVTCAS_RANGE		15
 #define	IVDIGITS_TEXTURES	16
+#define	IVCAVOK_ON_TEXTURES	17
 
 
 int LoadGLTexture(char *pFileName, int TextureId);

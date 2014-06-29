@@ -31,6 +31,7 @@
 #include "fsdmessage.h"
 
 
+
 #ifndef WIN32
 #include <stdlib.h>
 #include <fcntl.h>
@@ -306,8 +307,8 @@ void Xivap::XPluginStart()
 	debugWindowHotKey = XPLMRegisterHotKey(XPLM_VK_TAB, xplm_DownFlag | xplm_ShiftFlag,
 										  "Conmutar ventana de debug de X-IvAp AHS", debugToggleCallback, NULL);
 
-	string str = string(SOFTWARE_NAME) + " " + SOFTWARE_VERSION + " for " + PLATFORM + " (Rev. " + _revision + ")";
-	uiWindow.addMessage(colWhite, str + " ready", true, true);
+	string str = string(SOFTWARE_NAME) + " " + SOFTWARE_VERSION + " para " + PLATFORM + " (Rev. " + _revision + ")";
+	uiWindow.addMessage(colWhite, str + " listo", true, true);
 
 	uiWindow.pluginStart();
 	msgWindow.pluginStart();
@@ -393,9 +394,9 @@ void Xivap::XPluginStart()
 	// test if icao.dat can be read
 	FILE *fp = fopen(getXivapRessourcesDir() + STATIONS_FILE, "r");
 	if(fp == NULL) {
-		uiWindow.addMessage(colRed, string("Warning: ") + STATIONS_FILE
-			+ " could not be found! Check if " + getXivapRessourcesDir()
-			+ " exists!", true, true);
+		uiWindow.addMessage(colRed, string("Aviso: ") + STATIONS_FILE
+			+ " no se encuentra! Compruebe si " + getXivapRessourcesDir()
+			+ " existe!", true, true);
 	} else {
 		fclose(fp);
 	}
@@ -525,7 +526,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 	
 	if(_useMultiplayer) {
 		if(!_multiplayer.init(_p2p_enabled, _p2p_max_sendbps, _p2p_max_recvbps, _p2p_forced_port, _default_icao)) {
-			uiWindow.addMessage(colRed, string("Failed to initialize Multiplayer: ")
+			uiWindow.addMessage(colRed, string("Falló al inicializar Multijugador: ")
 				+ _multiplayer.errorMessage());
 			_useMultiplayer = false;
 		}
@@ -537,7 +538,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 
 	if(_useMultiplayer) {
 		if(!_multiplayer.enable())
-			uiWindow.addMessage(colRed, "Failed to start multiplayer: " + _multiplayer.errorMessage(), true, true);
+			uiWindow.addMessage(colRed, "Falló al arrancar Multijugador: " + _multiplayer.errorMessage(), true, true);
 	}
 
 #ifdef HAVE_TEAMSPEAK
@@ -1289,9 +1290,9 @@ void Xivap::handleKill(const FSD::Message &m)
 {
 	// source dest reason
 	// $!!EBBR_APP:N1697J:YOU ARE ANNOYING
-	string reason = "(no reason given)";
+	string reason = "(Ninguna razon dada)";
 	if(m.tokens.size() > 0)	reason = m.tokens[0];
-	uiWindow.addMessage(colRed, "Kicked: " + reason, true, true);
+	uiWindow.addMessage(colRed, "Expulsado: " + reason, true, true);
 }
 
 void Xivap::disconnect()
@@ -1299,8 +1300,8 @@ void Xivap::disconnect()
 	if(fsd.connected())
 		fsd.disconnectPilot();
 	Playsound("disconnect.wav");
-	uiWindow.addMessage(colWhite, "Disconnected", true, true);
-	msgWindow.addMessage(colWhite, "Disconnected");
+	uiWindow.addMessage(colWhite, "Desconectado", true, true);
+	msgWindow.addMessage(colWhite, "Desconectado");
 	nextFSDPoll = 0;
 	nextFSDPosUpdate = 0;
 
@@ -1638,6 +1639,7 @@ void Xivap::setComActive(int radio)
 	_activeRadio = radio;
 }
 
+/*Activa el ID del transponder durante 5.5 segundos*/
 void Xivap::setXpdrIdent()
 {
 	XPLMSetDatai(gXpdrId, 1);
@@ -1648,6 +1650,7 @@ void Xivap::setXpdrIdent()
 	
 }
 
+/*Activa/desactiva el transponder (off=0,stdby=1,on=2,test=3)*/
 void Xivap::xpdrModeToggle()
 {
 	// Transponder mode (off=0,stdby=1,on=2,test=3)
@@ -1663,7 +1666,22 @@ void Xivap::xpdrModeToggle()
 	XPLMSetDatai(gXpdrMode, newMode);
 }
 
-// !!! Called once per frame
+void Xivap::CAVOKModeToggle()
+{
+	cavok = !cavok; 
+	if (cavok){
+		uiWindow.addMessage(colDarkGreen, "CAVOK activado");
+		Graphics|=32;
+	}
+	else{
+		uiWindow.addMessage(colDarkGreen, "CAVOK desactivado");
+		Graphics&=~32;
+	}
+	checkWeather(XPLMGetElapsedTime());
+}
+
+
+/* !!! Called once per frame*/
 void Xivap::flightLoopCallback()
 {
 	if(XPLMGetElapsedTime() >= nextFSDPosUpdate && nextFSDPosUpdate != 0.0) {
@@ -1736,8 +1754,8 @@ void Xivap::flightLoopCallback()
 		XPLMPluginID pluginId;
 		XPLMCountAircraft(&numAircraft, &numActive, &pluginId);
 		if(numAircraft < 4) {
-			uiWindow.addMessage(colYellow, "Aviso: TCAS mostrará " + itostring(numAircraft) + " objetivos solamente");
-			messageBox().show("Aviso: TCAS mostrará " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el número de aviones en las opciones gráficas.");
+			uiWindow.addMessage(colYellow, "Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente");
+			messageBox().show("Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el número de aviones en las opciones graficas.");
 		}
 	}
 
@@ -1747,16 +1765,19 @@ void Xivap::flightLoopCallback()
 	posSent = false;
 }
 
+/*Añade ATC */
 void Xivap::addATC(const FSD::Message& m)
 {
 	_atcList.add(m, XPLMGetElapsedTime());
 }
 
+/*Elimina ATC*/
 void Xivap::delATC(const FSD::Message& m)
 {
 	_atcList.remove(m);
 }
 
+/*Actualiza ATC*/
 void Xivap::updateATC(const FSD::Message& m)
 {
 	_atcList.add(m, XPLMGetElapsedTime());
@@ -1901,7 +1922,7 @@ void Xivap::airportChange()
     if (ref != XPLM_NAV_NOT_FOUND){
         XPLMGetNavAidInfo(ref, NULL, &lat, &lon, NULL, NULL, NULL, aptBuf, NULL, NULL);        
     }
-	addText(colWhite, "Your Airport: " + string(aptBuf), true, true);
+	addText(colWhite, "Su aeropuerto: " + string(aptBuf), true, true);
 	_deptAirport = string(aptBuf);
 
 
@@ -1955,7 +1976,8 @@ void Xivap::airportChange()
 	xivap.flightplanForm().setFPTextFields();
 }
 
-void Xivap::aircraftChange()
+/*Toma el modelo de avion actualmente en uso*/
+void Xivap::aircraftChange() 
 {
 	// how many engines?
 	XPLMDataRef df	= XPLMFindDataRef("sim/aircraft/engine/acf_num_engines");
@@ -2135,11 +2157,13 @@ void Xivap::handleCommand(string line)
 			if (cavok) // conmuta el CAVOK
 			{
 				cavok = false;
+				Graphics&=~32;
 				uiWindow.addMessage(colDarkGreen, "Conmutado CAVOK a desactivado");
 			}
 			else
 			{
 				cavok = true;
+				Graphics|=32;
 				uiWindow.addMessage(colDarkGreen, "Conmutado CAVOK a activado");
 			}
 		}
@@ -2149,11 +2173,13 @@ void Xivap::handleCommand(string line)
 			if (line == "OFF") // "CAVOK OFF" desactiva el CAVOK
 			{
 				cavok = false;
+				Graphics&=~32;
 				uiWindow.addMessage(colDarkGreen, "CAVOK desactivado");
 			}
 			else // cualquier otro parámetro, se interpretará como activar CAVOK
 			{
 				cavok = true;
+				Graphics|=32;
 				uiWindow.addMessage(colDarkGreen, "CAVOK activado");
 			}
 		}
@@ -2200,7 +2226,7 @@ void Xivap::handleCommand(string line)
 	} else if(command == "KILL") {
 		int p = pos(' ', line);
 		if(p < 0) {
-			uiWindow.addMessage(colYellow, "Tiene que porporcionar un callsign y una razón", false, false);
+			uiWindow.addMessage(colYellow, "Tiene que porporcionar un callsign y una razon", false, false);
 			return;
 		}
 		callsign = strupcase(trim(copy(line, 0, p)));
@@ -2541,6 +2567,7 @@ void Xivap::checkWeather(double elapsed)
 	}
 }
 
+/*Activar voz*/
 void Xivap::setVoice(bool value)
 {
 	if(_useVoice == value) return;
@@ -2596,6 +2623,7 @@ void Xivap::setLabels(bool value)
 	config.save(filename);
 }
 
+/*Activar climatologia*/
 void Xivap::setWeather(bool value)
 {
 	if(_useWeather == value) return;
@@ -2612,6 +2640,7 @@ void Xivap::setWeather(bool value)
 	config.save(filename);
 }
 
+/*Activar modo multijugador*/
 void Xivap::setMultiplayer(bool value)
 {
 	if(_useMultiplayer == value) return;
@@ -2639,6 +2668,7 @@ void Xivap::setMultiplayer(bool value)
 	config.save(filename);
 }
 
+/*Cerrar ventana de chat*/
 void Xivap::closeChatWindow(ChatWindow *win)
 {
 	std::vector<ChatWindow*>::iterator it = chatWindows.begin();
@@ -2652,6 +2682,7 @@ void Xivap::closeChatWindow(ChatWindow *win)
 	}
 }
 
+/*Solicitar conexion P2P*/
 void Xivap::RequestP2P(const string& callsign, const string& protocol, int mode, const string& ipport)
 {
 	if(mode < 2) return;
@@ -2665,6 +2696,7 @@ void Xivap::RequestP2P(const string& callsign, const string& protocol, int mode,
 	xivap.addText(colRed, "Enviada petición P2P: " + request, true, true);
 }
 
+/*Enviar respuesta P2P*/
 void Xivap::SendP2PReply(const string& callsign, const string& protocol, int mode, const string& ipport)
 {
 	// $CRAAAA:BBBB:P2P:<mode>:<application>[:<ip>:<port>:<intip>:<intport>]
@@ -2676,6 +2708,9 @@ void Xivap::SendP2PReply(const string& callsign, const string& protocol, int mod
 	xivap.addText(colRed, "Enviada respuesta P2P: " + reply, true, true);
 }
 
+/*SELCAL, o llamada selectiva, es un sistema de llamada usado conjuntamente con las comunicaciones por radio de
+alta frecuencia (HF). Se utiliza para alertar a pilotos que comunican con ATC con un mensaje de radio entrante en el
+HF.*/
 void Xivap::Selcal(string source)
 {
 	ConfigFile config;

@@ -154,6 +154,7 @@ int InitSound(void)
 
 	return 1;
 }
+
 void Playsound (char * voice)
 {
 	char			DirPath[1024];
@@ -196,7 +197,7 @@ void	IvBuildTextures(void)
 	glNewList(IVbase + IVPANEL_TEXTURE, GL_COMPILE);
 	glPushMatrix();
 	Ui_width = 670;
-	Ui_height = 130;
+	Ui_height = 186;//130; // La interfaz se pone a un tamaño del 50% de la textura original
 	XPLMBindTexture2d(IvaoTexture[IVPANEL_TEXTURE], 0);
 	glBegin(GL_QUADS);
 	glTexCoord2f(+1, 1.0f); glVertex2f((float)Ui_width, 0);          // Bottom Right Of The Texture and Quad
@@ -302,6 +303,18 @@ void	IvBuildTextures(void)
 	glEnd(); 
 
 	glEndList();
+/////////////////////
+	glNewList(IVbase + IVCAVOK_ON_TEXTURES, GL_COMPILE);
+	XPLMBindTexture2d(IvaoTexture[IVCAVOK_ON_TEXTURES], 0);
+	glBegin(GL_QUADS);
+	glTexCoord2f(+1, 1.0f); glVertex2f(11, 0);	// Bottom Right Of The Texture and Quad
+	glTexCoord2f(+0, 1.0f); glVertex2f(0, 0);	// Bottom Left Of The Texture and Quad
+	glTexCoord2f(+0, 0.0f); glVertex2f(0, 11);	// Top Left Of The Texture and Quad
+	glTexCoord2f(+1, 0.0f); glVertex2f(11, 11);	// Top Right Of The Texture and Quad
+	glEnd();
+	glEndList();
+
+
 /////////////////////
 	glNewList(IVbase + IVTCAS_RED, GL_COMPILE);
 
@@ -434,6 +447,7 @@ static int	IvaoDrawCallback(
 							 int                  inIsBefore,
 							 void *               inRefcon);
 
+/*Incializacion de la ventana grafica basica*/
 int InitGraphics (void)
 {
 		
@@ -585,22 +599,27 @@ static int IvaoDrawGLScene(void )
 	XPLMSetGraphicsState(0/*Fog*/, 1/*TexUnits*/, 0/*Lighting*/, 0/*AlphaTesting*/, 1/*AlphaBlending*/, 0/*DepthTesting*/, 1/*DepthWriting*/);
 	// Enable Smooth Shading
 	glBlendFunc(GL_ONE, GL_ONE);
-	
+
 	glPushMatrix();
-	glTranslated(621, 10, 0);
+	glTranslated(521,154,0);
+	if (Graphics & 32) glCallList(IVbase + IVIDENT_ON_TEXTURE);  //Activamos la luz de cavok para avisar que funciona
+	glPopMatrix();
+
+	glPushMatrix();
+	glTranslated(621, 66, 0);
 	//added alt report special for Qpac A320
    	if ((xm & 2)| (xm & 4)) glCallList(IVbase+IVTRANS_ON_TEXTURE); else glCallList(IVbase+IVTRANS_OFF_TEXTURE);
     
 	glPopMatrix();
 	glPushMatrix();
-	glTranslated(526,38,0);
+	glTranslated(526,94,0);
     
 	if (Graphics & 4) glCallList(IVbase + IVCONN_ON_TEXTURE);
     else              glCallList(IVbase + IVCONN_OFF_TEXTURE);
     
 	glPopMatrix();
 	glPushMatrix();
-	glTranslated(566, 38, 0);
+	glTranslated(566, 94, 0);
     
 	if (Graphics & 8) glCallList(IVbase + IVFLP_SEND_TEXTURE);
     else              glCallList(IVbase + IVNO_FPL_TEXTURE);
@@ -608,20 +627,24 @@ static int IvaoDrawGLScene(void )
 	glPopMatrix();
 	
 	glPushMatrix();
-	glTranslated(536, 98, 0);
+	glTranslated(536, 154, 0);
 	if (Graphics & 16) glCallList(IVbase + IVIDENT_ON_TEXTURE);
 	glPopMatrix();
+
+	
+
 	glPushMatrix();
 	char text[10];
 	sprintf(text, "%4.4d", XPLMGetDatai(gXpdrCode)); //fix for transpondercodes <1000
-	glPrint(558, 90, text);
+	glPrint(558, 146, text);
 	glPopMatrix();
+
 	glLoadIdentity();
 	//glPushMatrix();
 	glTranslated(Tcasbox.left,Tcasbox.bottom, 0);
 	if (Tcasbox.ShowTcas) glCallList(IVbase + IVTCAS); //tcas picture
 
-	glTranslated(100,100, 0); //set to center
+	glTranslated(100,156, 0); //set to center
 	//disable texture drawing and switch
 	XPLMSetGraphicsState(0/*Fog*/, 0/*TexUnits*/, 0/*Lighting*/, 0/*AlphaTesting*/, 0/*AlphaBlending*/, 0/*DepthTesting*/, 0/*DepthWriting*/);
 
@@ -679,7 +702,7 @@ static int	IvaoDrawCallback(
                              )
 
 {
-	if (Graphics & 1)
+	if (Graphics & 1)  
         IvaoDrawGLScene();
 
 	return 1;

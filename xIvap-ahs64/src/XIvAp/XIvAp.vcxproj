@@ -99,13 +99,12 @@
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\$(Platform)\bin</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\bin</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Configuration)\$(Platform)\obj</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\obj</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
     <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(Configuration)\$(Platform)\bin</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(Configuration)\$(Platform)\bin</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(SolutionDir)$(Configuration)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(Configuration)\$(Platform)\obj</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(Configuration)\$(Platform)\obj</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">true</LinkIncremental>
