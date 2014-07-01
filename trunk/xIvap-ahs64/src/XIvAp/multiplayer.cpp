@@ -536,7 +536,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		{
 
 			FSD::PlaneParams params;
-			params.params = static_cast<unsigned int>(stringtoi(packet.tokens[1])); // Lo recibe como último parámetro (9º parámetro = tokens[8])
+			params.params = static_cast<unsigned int>(stringtoi(packet.tokens[1])); // Lo recibe como primer parámetro
 //FIXME: DEBUG
 			if (xivap.debug.multiplayer) xivap.addText(colYellow,"Recibidos 'plane params': " + packet.tokens[1], true, true);
 
@@ -606,11 +606,11 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		{
 			double ant_elev = pos0->pos.elevation;
 //			pos0->pos.elevation = (xivap.elevationft() / 3.2808399) - (xivap.Getgroundalt() / 2.2) ; // Equiparar la altitud del avión de la red con la nuestra
-//			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
-			pos0->pos.elevation = xivap.elevationft(); // Equiparar la altitud del avión de la red con la nuestra
+			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
+//			pos0->pos.elevation = xivap.elevationft(); // Equiparar la altitud del avión de la red con la nuestra
 //FIXME: DEBUG
 		if (xivap.debug.multiplayer)
-				xivap.addText(colRed, "Corregida posición en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "ft -> " + ftoa(pos0->pos.elevation) + "ft)", true, true);
+				xivap.addText(colRed, "Corregida posicion en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "ft -> " + ftoa(pos0->pos.elevation) + "ft)", true, true);
 
 			PlaneMap::iterator pilotIter = _planes.find(STDSTRING(packet.dest));
 //			MultiplayerPilot *pilot;
@@ -622,7 +622,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 					pos0->pos.elevation += xivap.altgrande; // Elevo el avión unos 4m para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
 //FIXME: DEBUG
 				if (xivap.debug.multiplayer)
-					xivap.addText(colRed, "Corregida otra vez al alza posición en tierra de " + callsign + " (avión grande: " + pilot->mtl + ") a " + ftoa(pos0->pos.elevation) +" ft" , true, true);
+					xivap.addText(colRed, "Corregida otra vez al alza posicion en tierra de " + callsign + " (avion grande: " + pilot->mtl + ") a " + ftoa(pos0->pos.elevation) +" ft" , true, true);
 				}
 //			}
 		}

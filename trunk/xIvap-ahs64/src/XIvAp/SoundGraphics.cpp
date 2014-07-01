@@ -644,7 +644,7 @@ static int IvaoDrawGLScene(void )
 	glTranslated(Tcasbox.left,Tcasbox.bottom, 0);
 	if (Tcasbox.ShowTcas) glCallList(IVbase + IVTCAS); //tcas picture
 
-	glTranslated(100,156, 0); //set to center
+	glTranslated(100,100, 0); //set to center
 	//disable texture drawing and switch
 	XPLMSetGraphicsState(0/*Fog*/, 0/*TexUnits*/, 0/*Lighting*/, 0/*AlphaTesting*/, 0/*AlphaBlending*/, 0/*DepthTesting*/, 0/*DepthWriting*/);
 
