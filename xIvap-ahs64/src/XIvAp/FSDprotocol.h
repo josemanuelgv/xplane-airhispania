@@ -110,9 +110,9 @@ const string FSD_HEADS[] = {
 #define _FSD_WINDVAR_        14 //      "#DL"
 #define _FSD_CUSTOMPILOT_    15 //      "#SB"
 
-#define _FSD_CUSTOMPILOT_REQPLANEINFO_ "PIR"
-#define _FSD_CUSTOMPILOT_PLANEINFO_    "PI"
-#define _FSD_CUSTOMPILOT_PLANEPARAMS_  "PP" 
+#define _FSD_CUSTOMPILOT_REQPLANEINFO_ "PIR" // Comando de petición de textura (ICAO) de aeronave 
+#define _FSD_CUSTOMPILOT_PLANEINFO_    "PI" // Comando de envío de textura (ICAO) de aeronave
+#define _FSD_CUSTOMPILOT_PLANEPARAMS_  "PP" // Comando de envío de parámetros del avión
 
 // Administrative
 #define _FSD_FLIGHTPLAN_    16 //      "$FP"
@@ -130,6 +130,8 @@ const string FSD_HEADS[] = {
 #define _FSD_INFOREPLY_TCAS2_          "T2"
 #define _FSD_NOVOICE_       23 //      "$NV"
 #define _FSD_ERROR_         24 //      "$ER"
+
+#define _FSD_INFOREQ_FLIGHTPLAN_		"FP" // Comando de petición del plan de vuelo a la red a través de "$CQ"
 
 // pilot packets
 #define _FSD_REQPLANEINFO_   25  //    "-PR"

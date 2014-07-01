@@ -1619,9 +1619,11 @@ void Xivap::handleFPchange(const FSD::Message& m)
 
 void Xivap::setComActive(int radio)
 {
+/* Eliminado para poder cambiar de canal en el TS al cambiar el COM activo (la función se incluye en tuneCom)
+
 	string name;
 	if(radio == 1) name = freq2name(_com1freq);
-	else name = freq2name(_com2freq);
+	else name = freq2name(_com2freq);	
 	AtcPosition p = _atcList.findName(name);
 	if(p.isValid()) {
 		if(_activeRadio != radio)  {
@@ -1629,7 +1631,8 @@ void Xivap::setComActive(int radio)
 			_atcList.setAtis(name, true);
 		}
 	}
-
+*/
+	
 	// that value is 10 if com1 is lit, and 11 if com2 is lit
 	// but somehow, you can also lite up nav1 and nav2, which doesn't make much sense,
 	// because only ONE of com1, com2, nav1 and nav2 can be lit at the same time?
@@ -1637,6 +1640,19 @@ void Xivap::setComActive(int radio)
 	if(radio != 1) value = 11;
 	XPLMSetDatai(gAudioSwitches, value);
 	_activeRadio = radio;
+
+// Añadido para cambiar el canal TS automáticamente al cambiar el COM activo
+	string name;
+	if(radio == 1)	
+	{
+		name = freq2name(_com1freq);
+		tuneCom(radio,_com1freq,name);
+	}
+	else
+	{
+		name = freq2name(_com2freq);
+		tuneCom(radio,_com2freq,name);
+	}
 }
 
 /*Activa el ID del transponder durante 5.5 segundos*/
@@ -1668,7 +1684,8 @@ void Xivap::xpdrModeToggle()
 
 void Xivap::CAVOKModeToggle()
 {
-	cavok = !cavok; 
+	cavok = !cavok;
+	checkWeather(XPLMGetElapsedTime());
 	if (cavok){
 		uiWindow.addMessage(colDarkGreen, "CAVOK activado");
 		Graphics|=32;
