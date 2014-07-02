@@ -41,13 +41,14 @@
 const	int	ExtMouseFields[]=
 	{525,104,558,125,  //Boton Connect
 	621,86,651,114,    //Boton Transponder
-	630,53,647,67,	   //Boton 	ID
+	629,70,645,85,	   //Boton 	ID
 	566,104,600,125,   //Boton TCAS 	
 	525,165,558,185,  //Boton cavok on/off
 	566,165,600,185,  //Boton plan de vuelo 
 	525,136,558,157,  //Boton chat
 	566,136,600,157,  //Boton fmc
-	624,130,665,183}; //Boton acerca de
+	624,130,665,183, //Boton acerca de
+	605,53,613,60};//Boton caja negra
 #define Connect_Capture	20
 #define TX_Capture	21
 #define	Ident_Capture	22
@@ -57,6 +58,7 @@ const	int	ExtMouseFields[]=
 #define Chat_Capture	26
 #define FMC_Capture	27
 #define AcercaDe_Capture	28
+#define BlackBox_Capture	29
 
 
 #define	Ex_Window_Range	155

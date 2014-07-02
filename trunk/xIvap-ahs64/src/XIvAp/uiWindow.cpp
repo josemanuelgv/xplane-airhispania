@@ -304,7 +304,7 @@ int UiWindow::checkButton(int x, int y)
 	y=top-y;
 
 	int i=0;
-	while (i<10)  { //se amplia el ciclo de vueltas para incluir los nuevos botones
+	while (i<11)  { //se amplia el ciclo de vueltas para incluir los nuevos botones
 		if (x>=ExtMouseFields[4*i] && x<=ExtMouseFields[4*i+2]) {
 			if (y>=ExtMouseFields[4*i+1] && y<=ExtMouseFields[4*i+3]) 
 			{
@@ -424,6 +424,7 @@ void UiWindow::buttonClicked(int button)
 	case CAVOK_Capture: xivap.CAVOKModeToggle();break;
 	case FPL_Capture: xivap.flightplanForm().show(); break; 
 	case FMC_Capture: xivap.fmcForm().show();break;
+	case BlackBox_Capture:xivap.ActivarCajaNegra();break;
 	case Chat_Capture: xivap.handleCommand(".CHAT");break;  
 	case AcercaDe_Capture:xivap.messageBox().show("AHS4XP se trata de una adaptacion del plugin Xivap de IVAO para conectar XPlane 10 64 bits a la red de Airhispania.");break;
 	case TCAS_Capture: {xivap.Tcasbox.hide();break;}

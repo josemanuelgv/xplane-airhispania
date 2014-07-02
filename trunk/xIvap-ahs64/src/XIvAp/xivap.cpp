@@ -1697,6 +1697,21 @@ void Xivap::CAVOKModeToggle()
 	checkWeather(XPLMGetElapsedTime());
 }
 
+void Xivap::ActivarCajaNegra()
+{
+		//Implementar aqui la activoacion de la caja negra
+	blackBoxON = !blackBoxON;
+	
+	if (blackBoxON){
+		uiWindow.addMessage(colDarkGreen, "Caja negra activada");
+		Graphics|=64;
+
+	}
+	else{
+		uiWindow.addMessage(colDarkGreen, "Caja negra desactivada");
+		Graphics&=~64;
+	}	
+}
 
 /* !!! Called once per frame*/
 void Xivap::flightLoopCallback()
