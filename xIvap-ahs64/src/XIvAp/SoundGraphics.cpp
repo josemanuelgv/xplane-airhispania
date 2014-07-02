@@ -606,6 +606,11 @@ static int IvaoDrawGLScene(void )
 	glPopMatrix();
 
 	glPushMatrix();
+	glTranslated(619,126,0);
+	if (Graphics & 64) glCallList(IVbase + IVIDENT_ON_TEXTURE);  //Activamos la luz de la caja negra esta funcionando
+	glPopMatrix();
+
+	glPushMatrix();
 	glTranslated(621, 66, 0);
 	//added alt report special for Qpac A320
    	if ((xm & 2)| (xm & 4)) glCallList(IVbase+IVTRANS_ON_TEXTURE); else glCallList(IVbase+IVTRANS_OFF_TEXTURE);

@@ -146,6 +146,7 @@ public:
 	void setXpdrIdent();
 	void xpdrModeToggle();
 	void CAVOKModeToggle();
+	void ActivarCajaNegra();
 
 	bool online() { return fsd.connected() && fsd.verified(); };
 
@@ -233,6 +234,7 @@ public:
 	WeatherGod _erwin;	//moved to public for use of weatherstation name
 
 	bool cavok; // Añadido para implementar comando CAVOK
+	bool blackBoxON; //Añadido para implentar la caja negra
 
 	//Añadido para mostrar METARs de los ADs del plan de vuelo
 	string metarOrg, metarDest, metarAlt, metarAlt2;
