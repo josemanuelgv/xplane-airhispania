@@ -64,7 +64,7 @@ Status HTTPClient::Download(const string& url, const string& file, float timesta
 
 	bool ok = true;
 
-	SOCKWRITE("GET " + path + " HTTP/1.1");
+	SOCKWRITE("GET " + path + " HTTP/1.0");
 	SOCKWRITE("Host: " + server);
 	SOCKWRITE("Connection: close");
 	SOCKWRITE("User-Agent: X-IvAp");
