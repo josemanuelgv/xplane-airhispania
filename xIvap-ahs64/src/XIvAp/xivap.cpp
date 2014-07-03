@@ -134,6 +134,7 @@ Xivap::Xivap()
 
 	altpeque = 1; // Altura añadida por defecto para corrección de aviones en tierra
 	altgrande = 5; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
+	
 }
 
 Xivap::~Xivap()
@@ -207,6 +208,7 @@ void Xivap::XPluginEnable()
 //	_HTTPclient.Download(SERVERSTATUS_URL, getXivapRessourcesDir() + SERVERS_FILENAME, XPLMGetElapsedTime());
 //	_downloadingServerStatus = true;
 
+	
 }
 
 void Xivap::XPluginDisable()
@@ -410,6 +412,18 @@ void Xivap::XPluginStart()
 
 	str = config.readConfig("PLANE", "ICAO");
 
+#ifdef HAVE_TEAMSPEAK
+	// Estado de AhsControl
+	_ahsControl = new AhsControl();
+	_ahsControl->parse();
+	if(_ahsControl->getStatus() == 1){
+		string msg = "Estado actual de AhsControl: " + std::to_string(_ahsControl->numDep()) + " dependencias activas.";
+		uiWindow.addMessage(colGreen, msg , true, true);
+		_ahsControl->saveToFile();
+	}
+	else
+		uiWindow.addMessage(colRed, "Fallo al intentar descargar el estado actual de AhsControl", true, true);
+#endif		
 }
 
 bool Xivap::consoleVisible()
@@ -975,6 +989,7 @@ void Xivap::tuneCom(int radio, int freq, string name)
 		{
 			if(p.isValid()) {
 				if(_activeRadio == radio)  {
+
 					switch(radio) {
 					case 1:
 					fsd.sendInfoRequest(com1name, _FSD_INFOREQ_ATIS_);
@@ -1107,8 +1122,17 @@ string Xivap::freq2name(int freq)
 	// if freq matches an ATC station in range, map it to the name here
 	string f = freq2str(freq);
 	AtcPosition p = _atcList.findFreq(f, lat, lon);
-        if(p.isValid()) return p.callsign;
-        else return f;          // if nothing matches, just return the frequency
+	string r = f; // if nothing matches, just return the frequency
+    if(p.isValid()) r = p.callsign;
+    
+	string ahsDep = _ahsControl->findDep(f);
+	// AHS dependency is prioritary
+	if(ahsDep.stl_str().size()>0){			
+		if(debug.teamspeak > 0)
+			uiWindow.addMessage(colCyan, "Teamspeak: resuelto canal de AhsControl " + ahsDep.stl_str(), true, true);
+		r = ahsDep.stl_str(); // AHS dependency
+	}
+	return r;
 }
 
 string Xivap::getActiveRadioFreq()
@@ -1759,6 +1783,7 @@ void Xivap::flightLoopCallback()
 		}
 	}
 	*/
+
 	// check if we should switch to a new weather station
 	// and check the http downloader
 	if(XPLMGetElapsedTime() > _nextWxCheck && _useWeather) {
@@ -1787,7 +1812,7 @@ void Xivap::flightLoopCallback()
 		XPLMCountAircraft(&numAircraft, &numActive, &pluginId);
 		if(numAircraft < 4) {
 			uiWindow.addMessage(colYellow, "Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente");
-			messageBox().show("Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el número de aviones en las opciones graficas.");
+			messageBox().show("Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el numero de aviones en las opciones graficas.");
 		}
 	}
 

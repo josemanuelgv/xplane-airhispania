@@ -199,8 +199,9 @@ void TeamSpeak::SwitchChannel(string vid,
   // if it failed, try with the url
   if(!library)
 	{
-		TryWithURL(vid, pass, string(AHS_SERVER_URL), pilotcall, atccall);
-		xivap.addText(colCyan, "Teamspeak: sdk switch failed, trying with url", true, true);
+		bool url(TryWithURL(vid, pass, string(AHS_SERVER_URL), pilotcall, atccall));
+		if(!url)
+			xivap.addText(colCyan, "Teamspeak: sdk switch failed, trying with url", true, true);
 	}
 #endif
 #ifdef LINUX
