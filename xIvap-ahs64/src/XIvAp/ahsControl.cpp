@@ -95,13 +95,21 @@ string AhsControl::findDep(string freq)
 		return "";
 
 	std::list<string>::iterator itd = deps.begin();
-	for(std::list<string>::const_iterator itf = freqs.begin(); itf != freqs.end(); ++itf) {
+	std::list<string>::iterator itf = freqs.begin();
+	bool found = false;
+	while(itf != freqs.end() ) {
 		if(!(freq == (*itf))){
 			std::advance(itd, 1);
+		}else{
+			found = true;
+			break;
 		}
+		++itf;
 	}
-
-	return (*itd);
+	if(found)
+		return (*itd);
+	else
+		return "";
 }
 
 int AhsControl::getStatus()

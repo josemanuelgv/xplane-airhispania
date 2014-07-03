@@ -128,6 +128,10 @@ inline float ntohf1( const float f )
 #define SERVERS_FILENAME "serverlist.txt"
 #define OWN_SERVERS_FILENAME "myservers.txt"
 
+#define AHSCONTROL_IP "95.211.55.201"
+#define AHSCONTROL_RES "www.airhispania.com/modact01.php?tCod=mod_actahs"
+#define AHSCONTROL_FILE "ahsStatus.html"
+
 // p2p settings
 
 #define P2P_POS_PROTOCOL "PPOS1"
