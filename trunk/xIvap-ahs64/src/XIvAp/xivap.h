@@ -38,6 +38,7 @@
 #include "planeposition.h"
 #include "Tcas.h" //added 16/10/2012
 #include "TeamSpeak.h"
+#include "ahsControl.h"
 
 #include <deque>
 #include <locale.h>
@@ -264,7 +265,8 @@ public:
 	Debuglevels debug;
 	double altpeque, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
 
-			
+	AhsControl _ahscontrol;
+
 private:
 
 	string _lastPrivSender; // the callsign of the last station that sent a private message
@@ -375,6 +377,7 @@ private:
 
 	HTTP::HTTPClient _HTTPclient;
 	bool _downloadingServerStatus;
+	bool _downloadingAhsStatus;
 
 	
 
@@ -390,6 +393,7 @@ private:
 	string _revision;
 	int _xplane_version;
 	
+	AhsControl *_ahsControl;
 };
 
 #endif
