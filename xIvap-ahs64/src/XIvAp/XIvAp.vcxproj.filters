@@ -163,6 +163,9 @@
     <ClCompile Include="..\stund\udp.cxx">
       <Filter>srcfiles</Filter>
     </ClCompile>
+    <ClCompile Include="ahsControl.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="airlinesDB.h">
@@ -355,6 +358,9 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="..\..\mdsplib\metar.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ahsControl.h">
       <Filter>headers</Filter>
     </ClInclude>
   </ItemGroup>

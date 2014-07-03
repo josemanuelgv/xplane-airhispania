@@ -339,6 +339,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ahsControl.cpp" />
     <ClCompile Include="aircraftDB.cpp" />
     <ClCompile Include="airlinesDB.cpp" />
     <ClCompile Include="atcPosition.cpp" />
@@ -396,6 +397,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\mdsplib\metar.h" />
+    <ClInclude Include="ahsControl.h" />
     <ClInclude Include="aircraftDB.h" />
     <ClInclude Include="airlinesDB.h" />
     <ClInclude Include="atcPosition.h" />
