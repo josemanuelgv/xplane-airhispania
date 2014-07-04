@@ -386,7 +386,7 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 		if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
 		{
 			xivap.fpl.aircrafttype = aircraftPV;
-			if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().actypeTextField, aircraftPV);
+			if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
 		}
 		hide();
 		return 1;
@@ -489,7 +489,7 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
 			{
 				xivap.fpl.aircrafttype = aircraftPV;
-				if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().actypeTextField, aircraftPV);
+				if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
 			}
 
 			bool fmcar = false;

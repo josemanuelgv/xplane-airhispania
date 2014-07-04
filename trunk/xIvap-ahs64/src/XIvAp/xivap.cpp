@@ -436,7 +436,8 @@ void Xivap::XPluginStart()
 	}
 	else
 		uiWindow.addMessage(colRed, "Fallo al intentar descargar el estado actual de AhsControl", true, true);
-#endif		}
+#endif		
+}
 
 bool Xivap::consoleVisible()
 {

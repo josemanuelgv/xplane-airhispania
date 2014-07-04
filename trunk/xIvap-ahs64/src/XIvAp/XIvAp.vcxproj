@@ -344,6 +344,7 @@
     <ClCompile Include="airlinesDB.cpp" />
     <ClCompile Include="atcPosition.cpp" />
     <ClCompile Include="awyFinder.cpp" />
+    <ClCompile Include="caja.cpp" />
     <ClCompile Include="chatWindow.cpp" />
     <ClCompile Include="configFile.cpp" />
     <ClCompile Include="connectForm.cpp" />
@@ -402,6 +403,7 @@
     <ClInclude Include="airlinesDB.h" />
     <ClInclude Include="atcPosition.h" />
     <ClInclude Include="awyFinder.h" />
+    <ClInclude Include="caja.h" />
     <ClInclude Include="chatWindow.h" />
     <ClInclude Include="common.h" />
     <ClInclude Include="configFile.h" />
