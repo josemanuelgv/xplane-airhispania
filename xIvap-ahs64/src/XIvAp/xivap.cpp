@@ -218,7 +218,8 @@ void Xivap::XPluginDisable()
 //	XPluginStop(); // FIXME: Cambiado para que realmente se deshabilite el plugin (PROBAR)
 }
 
-void Xivap::XPluginStart(){
+void Xivap::XPluginStart()
+{
 //	cfgICAO= "";
 	// X-Plane Version
 	int xplmVersion = 0;
@@ -960,7 +961,17 @@ The return value is a series of bit flags, as follows:
 
 void Xivap::tuneCom(int radio, int freq, string name)
 {
-	if(name == "") 	name = freq2name(freq);
+    if(debug.teamspeak > 0){
+					uiWindow.addMessage(colCyan, "Teamspeak: tunning freq " + freq2str(freq) + " and name " + name, true, true);
+    }
+    // AHS dependency is prioritary
+    string ahsDep = _ahsControl->findDep(freq2str(freq));
+	if(ahsDep.stl_str().size()>0){                  
+		if(debug.teamspeak > 0)
+			uiWindow.addMessage(colCyan, "Teamspeak: resuelto canal de AhsControl " + ahsDep.stl_str(), true, true);
+		name = ahsDep.stl_str(); // AHS dependency
+	}
+	if(name == "") 	name = freq2name(freq); // Movido después de la búsqueda en la página de AHS, para que busque si falla la primera
 	AtcPosition p = _atcList.findName(name);
 
         // if we failed to find a name, let's see whether we received the freq
@@ -1029,13 +1040,13 @@ void Xivap::tuneCom(int radio, int freq, string name)
 				if(_activeRadio == radio && copy(com1name,3,1) == ".")
 				{
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), "");
+					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
 				}
 //				if(_activeRadio == radio && copy(com2name,3,1) == ".") tsRemote.Disconnect(); //tune com2 where there is no atc -> disconnect TS
 				if(_activeRadio == radio && copy(com2name,3,1) == ".")
 				{
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), "");
+					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
 				}
 			}
 		}

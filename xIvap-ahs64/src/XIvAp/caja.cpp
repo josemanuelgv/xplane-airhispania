@@ -128,8 +128,10 @@ int CajaNegra::Graba()
 		_rCaja.lat = XPLMGetDatad(gXp_Lat);
 		_rCaja.lon = XPLMGetDatad(gXp_Lon);
 		_rCaja.qnh = XPLMGetDataf(gXp_Qnh);
-		_rCaja.cab = XPLMGetDataf(gXp_Pitch);
-		_rCaja.alab = XPLMGetDataf(gXp_Roll);
+//		_rCaja.cab = XPLMGetDataf(gXp_Pitch);
+		_rCaja.cab = XPLMGetDataf(gXp_Pitch) * -1.0f; // Para compatibilidad con AHSBox
+//		_rCaja.alab = XPLMGetDataf(gXp_Roll);
+		_rCaja.alab = XPLMGetDataf(gXp_Roll) * -1.0f; // Para compatibilidad con AHSBox
 		_rCaja.hdg = XPLMGetDataf(gXp_Hdg);
 		if (XPLMGetDatai(gXp_Ap) == 2) _rCaja.autop = 1;
 		else _rCaja.autop = 0;
