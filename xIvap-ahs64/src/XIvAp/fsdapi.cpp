@@ -276,7 +276,7 @@ void FsdAPI::connectPilot(string host, string port, string callsign, string id, 
 	packet.dest = _FSD_SERVERDEST_;
 	packet.tokens.push_back("AHS"+id);
 	packet.tokens.push_back(password);
-//	packet.tokens.push_back(hideadm ? "1" : "11");
+//	packet.tokens.push_back(hideadm ? "1" : "11"); // FIXME: Si da problemas, dejarlo a "1" siempre (LOS DA)
 	packet.tokens.push_back("1");
 	packet.tokens.push_back(_FSD_REVISION_);
 //	packet.tokens.push_back("9");
