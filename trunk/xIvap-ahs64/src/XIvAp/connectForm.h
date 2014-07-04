@@ -29,10 +29,13 @@ public:
 
 	void setUserCredentials();
 
+	XPWidgetID acTypeTextField, acMTLTextField, acLivTextField; // Añadidos para recuperar tipo de aeronave en la ventana de conexión (movidos a "public")
+
 private:
 	XPWidgetID window;
 	XPWidgetID callsignTextField, realNameTextField, baseTextField, vidTextField, passwdTextField,
         hideSupCheckbox, rememberMeCheckbox, portTextField, followMeCheckbox, connectButton, cancelButton;
+
 
 	XPWidgetID serverList;
 

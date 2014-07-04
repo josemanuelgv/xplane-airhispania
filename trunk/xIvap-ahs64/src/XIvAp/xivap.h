@@ -40,6 +40,7 @@
 #include "TeamSpeak.h"
 #include "ahsControl.h"
 
+#include "caja.h" // Caja negra tipo AHSBox
 #include <deque>
 #include <locale.h>
 
@@ -147,7 +148,6 @@ public:
 	void setXpdrIdent();
 	void xpdrModeToggle();
 	void CAVOKModeToggle();
-	void ActivarCajaNegra();
 
 	bool online() { return fsd.connected() && fsd.verified(); };
 
@@ -235,12 +235,11 @@ public:
 	WeatherGod _erwin;	//moved to public for use of weatherstation name
 
 	bool cavok; // Añadido para implementar comando CAVOK
-	bool blackBoxON; //Añadido para implentar la caja negra
 
 	//Añadido para mostrar METARs de los ADs del plan de vuelo
 	string metarOrg, metarDest, metarAlt, metarAlt2;
 
-	int debugLvl; // Añadido para implementar niveles de debug en comando DEBUG
+//	int debugLvl; // Añadido para implementar niveles de debug en comando DEBUG
 
 	//Añadido para recuperar versión de ATIS desde la red de AHS
 	string atisV, atisV_ant;
@@ -257,16 +256,21 @@ public:
 			unsigned int teamspeak			: 1;
 			unsigned int params				: 1;
 			unsigned int ui					: 1;
-	
-			unsigned int unused				: 25;
+			unsigned int bb					: 1;
+			unsigned int unused				: 24;
 
 		};
 	};
 	Debuglevels debug;
+
 	double altpeque, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
 
 	AhsControl _ahscontrol;
 
+	CajaNegra caja; // Clase para grabación de caja negra
+
+	string cfgICAO; // Añadido para guardar el ICAO de la aeronave definido por el usuario en el fichero de configuración
+			
 private:
 
 	string _lastPrivSender; // the callsign of the last station that sent a private message
@@ -352,6 +356,7 @@ private:
 	AtcList _atcList;
 	bool isVoiceUrl(string str);
 	double _nextRadioAtisCheck;
+	double _siguienteRegistroCaja; // Añadido para grabación de caja negra
 
 	bool _useWeather;
 	WxDB _weatherDB;
@@ -392,6 +397,7 @@ private:
 	string _default_icao;
 	string _revision;
 	int _xplane_version;
+
 	
 	AhsControl *_ahsControl;
 };
