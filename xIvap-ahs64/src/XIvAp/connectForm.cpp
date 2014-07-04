@@ -126,7 +126,8 @@ void ConnectForm::create()
 	int x = 50;
 	int y = 750;
 	int x2 = x + 350;
-	int y2 = y - 275;
+//	int y2 = y - 275;
+	int y2 = y - 350;
 
 	window = XPCreateWidget(x, y, x2, y2,
 					1,			// Visible
@@ -138,7 +139,7 @@ void ConnectForm::create()
 
 	// Callsign
 	XPCreateWidget(x+10, y-25, x+70, y-47,
-					1, "Alias:", 0, window, xpWidgetClass_Caption);
+					1, "Indicativo:", 0, window, xpWidgetClass_Caption);
 	callsignTextField = XPCreateWidget(x+70, y-25, x+70+9*8, y-47,
 					1, "", 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(callsignTextField, xpProperty_TextFieldType, xpTextEntryField);
@@ -185,7 +186,8 @@ void ConnectForm::create()
 	XPSetWidgetProperty(passwdTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(passwdTextField, xpProperty_MaxCharacters, 30);
 	XPSetWidgetProperty(passwdTextField, xpProperty_PasswordMode, 1);
-	
+
+/* Eliminado porque no está soportado en la red de AirHispania
 	// Hide SUP/ADM rating
 	hideSupCheckbox = XPCreateWidget(x+21, y-115, x+35, y-137,
 					1, "", 0, window, xpWidgetClass_Button);
@@ -194,6 +196,7 @@ void ConnectForm::create()
 	XPCreateWidget(x+40, y-113, x+320, y-137,
 					1, "Ocultar SUP/ADM (si es aplicable)",
 					0, window, xpWidgetClass_Caption);
+*/
 
 	//Remember me... or not.
 	rememberMeCheckbox = XPCreateWidget(x+220, y-115, x+234, y-137,
@@ -208,28 +211,28 @@ void ConnectForm::create()
 
 
 	y = y - 145;
-	/*
+/* Recuperado del X-IvAp anterior */
 	// MTL group
 	XPCreateWidget(x+10, y, x+70, y-12,
-					1, "Multiplayer Visual Model (MTL)", 0, window, xpWidgetClass_Caption);
+					1, "ICAO de la aeronave", 0, window, xpWidgetClass_Caption);
 	XPCreateWidget(x+10, y-16, x+340, y-67,
 					1, "", 0, window, xpWidgetClass_SubWindow);
 
 	// Aircraft Type
 	XPCreateWidget(x+20, y-18, x+80, y-40,
-					1, "Aircraft Type:", 0, window, xpWidgetClass_Caption);
+					1, "ICAO:", 0, window, xpWidgetClass_Caption);
 	acTypeTextField = XPCreateWidget(x+95, y-18, x+138, y-40,
-					1, "C172", 0, window, xpWidgetClass_TextField);
+					1, pconst(xivap.fpl.aircrafttype), 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(acTypeTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(acTypeTextField, xpProperty_MaxCharacters, 4);
 	XPCreateWidget(x+143, y-18, x+200, y-40,
-					1, "(from flightplan)", 0, window, xpWidgetClass_Caption);
+					1, "(plan de vuelo)", 0, window, xpWidgetClass_Caption);
 
 	// MTL Model
 	XPCreateWidget(x+20, y-40, x+80, y-62,
-					1, "MTL model:", 0, window, xpWidgetClass_Caption);
+					1, "ICAO en red:", 0, window, xpWidgetClass_Caption);
 	acMTLTextField = XPCreateWidget(x+95, y-40, x+138, y-62,
-					1, "C172", 0, window, xpWidgetClass_TextField);
+					1, "C182", 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(acMTLTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(acMTLTextField, xpProperty_MaxCharacters, 4);
 	// livery
@@ -239,7 +242,7 @@ void ConnectForm::create()
 	XPSetWidgetProperty(acLivTextField, xpProperty_MaxCharacters, 30);
 
 	y = y - 75;
-	*/
+//	*/
 
 	// IVAO Network Connection group
 	XPCreateWidget(x+10, y, x+70, y-12,
@@ -319,6 +322,9 @@ void ConnectForm::create()
 	XPSetWidgetDescriptor(passwdTextField, pconst(config.readConfig("ACCOUNT", "PASSWORD")));
 	XPSetWidgetDescriptor(realNameTextField, pconst(config.readConfig("ACCOUNT", "REALNAME")));
 	XPSetWidgetDescriptor(baseTextField, pconst(config.readConfig("ACCOUNT", "BASE")));
+	char mtl_prev[4];
+	XPGetWidgetDescriptor(acMTLTextField, mtl_prev, 4); 
+	if (mtl_prev == "") XPSetWidgetDescriptor(acMTLTextField, pconst(config.readConfig("PLANE", "ICAO"))); // Si no hay nada en el campo de MTL, lo coge del fichero de configuración
 
 	string port = config.readConfig("ACCOUNT", "PORT");
 	if(length(port) <= 1) port = "6809";
@@ -364,6 +370,24 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 	char buffer[512];
 
 	if(inMessage == xpMessage_CloseButtonPushed) {
+
+		XPGetWidgetDescriptor(acMTLTextField, buffer, sizeof(buffer));
+		string aircraftMTL = buffer;
+		aircraftMTL = trim(strupcase(aircraftMTL));
+		XPGetWidgetDescriptor(acTypeTextField, buffer, sizeof(buffer));
+		string  aircraftPV = buffer;
+		aircraftPV = trim(strupcase(aircraftPV));
+
+/* Recuperado para incorporar el ICAO de la aeronave en la conexión */
+		if (length(aircraftMTL) > 2 && length(aircraftMTL) < 5)
+		{
+			xivap.setAcType(aircraftMTL, "", "");
+		}
+		if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
+		{
+			xivap.fpl.aircrafttype = aircraftPV;
+			if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().actypeTextField, aircraftPV);
+		}
 		hide();
 		return 1;
 	}
@@ -407,10 +431,17 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			long voice = 0;
 #endif
 
-			//XPGetWidgetDescriptor(acMTLTextField, buffer, sizeof(buffer));
-			//string aircraft = buffer;
-			//XPGetWidgetDescriptor(acLivTextField, buffer, sizeof(buffer));
-			//string livery = buffer;
+/* Recuperados campos de ICAO */
+			XPGetWidgetDescriptor(acMTLTextField, buffer, sizeof(buffer));
+			string aircraftMTL = buffer;
+			aircraftMTL = trim(strupcase(aircraftMTL));
+			XPGetWidgetDescriptor(acLivTextField, buffer, sizeof(buffer));
+			string livery = buffer;
+			livery = trim(strupcase(livery));
+/* */
+			XPGetWidgetDescriptor(acTypeTextField, buffer, sizeof(buffer));
+			string  aircraftPV = buffer;
+			aircraftPV = trim(strupcase(aircraftPV));
 
 			// validate RN
 			realname = trim(realname);
@@ -420,7 +451,7 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			}
 
 			// validate callsign... a bit
-			callsign = trim(strupcase(callsign));
+			callsign = trim(strupcase(callsign)); // FIXME: ¿Dejar que se pueda poner cualquier cosa o forzar a que sea "AHS"+vid?
 			if(length(callsign) < 2) {
 				xivap.messageBox().show("Tu alias es demasiado corto.");
 				return 1;
@@ -448,8 +479,19 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 
 			// act upon the input
 			hide();
-			//xivap.setAcType(aircraft, livery);
-			//xivap.fpl.aircrafttype = aircraft;
+
+/* Recuperado para incorporar el ICAO de la aeronave en la conexión */
+			if (length(aircraftMTL) > 2 && length(aircraftMTL) < 5)
+			{
+				xivap.setAcType(aircraftMTL, "", "");
+//				xivap.fpl.aircrafttype = aircraft; // No cambiar el plan de vuelo, dejar el MTL sólo para presentarlo al resto de pilotos en la red independientemente del ICAO del plan de vuelo
+			}
+			if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
+			{
+				xivap.fpl.aircrafttype = aircraftPV;
+				if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().actypeTextField, aircraftPV);
+			}
+
 			bool fmcar = false;
 			if(followme > 0)
 			{
