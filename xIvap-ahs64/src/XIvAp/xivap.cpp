@@ -218,8 +218,7 @@ void Xivap::XPluginDisable()
 //	XPluginStop(); // FIXME: Cambiado para que realmente se deshabilite el plugin (PROBAR)
 }
 
-void Xivap::XPluginStart()
-{
+void Xivap::XPluginStart(){
 //	cfgICAO= "";
 	// X-Plane Version
 	int xplmVersion = 0;
@@ -439,7 +438,7 @@ void Xivap::XPluginStart()
 #endif		
 }
 
-bool Xivap::consoleVisible()
+	bool Xivap::consoleVisible()
 {
 	int visible = XPLMGetWindowIsVisible(console);
 	return (visible == 1);
@@ -2840,3 +2839,4 @@ void Xivap::Selcal(string source)
 	msgWindow.addMessage(colYellow, source + ">S-E-L-C-A-L");
 #endif
 }
+
