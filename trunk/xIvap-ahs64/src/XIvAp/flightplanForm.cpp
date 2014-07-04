@@ -127,9 +127,19 @@ void FlightplanForm::create()
 	XPSetWidgetProperty(numberTextField, xpProperty_MaxCharacters, 1);
 
 	// aircraft
-	actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C182", 0, window, xpWidgetClass_TextField);
+	//actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C182", 0, window, xpWidgetClass_TextField);
+	
+	if (&xivap.connectForm() != NULL) // Coge el ICAO del que aparece en la ventana de conexión, si está disponible
+	{
+		char cICAO[5] = "";
+		XPGetWidgetDescriptor(xivap.connectForm().acTypeTextField, cICAO, 4);
+		if (cICAO == "") actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C182", 0, window, xpWidgetClass_TextField);
+		else actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, cICAO, 0, window, xpWidgetClass_TextField);
+	}
+	else actypeTextField = XPCreateWidget(x+78, y, x+152, y-22, 1, "C182", 0, window, xpWidgetClass_TextField);
+
 	XPSetWidgetProperty(actypeTextField, xpProperty_TextFieldType, xpTextEntryField);
-	//XPSetWidgetProperty(actypeTextField, xpProperty_MaxCharacters, 4);
+	XPSetWidgetProperty(actypeTextField, xpProperty_MaxCharacters, 4); // Recuperado para limitar el campo a 4 caracteres 
 //   fmcarStaticText = XPCreateWidget(288, 619, 368, 614, 1, "ZZZC", 0, window, xpWidgetClass_Caption);
    fmcarStaticText = XPCreateWidget(288, 619, 368, 614, 1, "FMC", 0, window, xpWidgetClass_Caption);
    XPHideWidget(fmcarStaticText);
@@ -318,6 +328,10 @@ void FlightplanForm::create()
 int	FlightplanForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_t inParam1, intptr_t inParam2)
 {
 	if(inMessage == xpMessage_CloseButtonPushed) {
+		char icao[5] = "";
+		XPGetWidgetDescriptor(actypeTextField, icao, 4);
+		xivap.fpl.aircrafttype = string(icao);
+		if (&xivap.connectForm() != NULL) XPSetWidgetDescriptor(xivap.connectForm().acTypeTextField, pconst(xivap.fpl.aircrafttype)); //  ICAO nativo de la aeronave al ICAO de la ventana de la conexión
 		hide();
 		return 1;
 	}
@@ -625,10 +639,15 @@ return;
 
 void FlightplanForm::setAcfIcao()
 {
+	string actype, airline, livery;
+	actype = airline = livery = "";
 	string icao = xivap.acType();
 //	if(pconst(xivap.acType()) != NULL){ //if acType is null take the aircraft type from the
 	if (icao != "" && length(icao) != 0) { 
-	XPSetWidgetDescriptor(actypeTextField, pconst(xivap.acType())); //  default (previous) FPL
+	XPSetWidgetDescriptor(actypeTextField, pconst(icao)); //  default (previous) FPL
+	if (&xivap.connectForm() != NULL) XPSetWidgetDescriptor(xivap.connectForm().acTypeTextField, pconst(icao)); //  ICAO nativo de la aeronave al ICAO de la ventana de la conexión
+//	XPSetWidgetDescriptor(xivap.connectForm().acMTLTextField, pconst(icao)); //  ICAO nativo de la aeronave al "ICAO en red" de la ventana de conexión
+	actype = icao;
 	updateACList();
 	}
 // Añadido para que ponga el acType que saque del plan de vuelo, en caso de no tener ICAO
@@ -640,13 +659,22 @@ void FlightplanForm::setAcfIcao()
 //		actype = string(buf);
 //		XPGetWidgetDescriptor(airlineTextField, buf, 4); //  ICAO del plan de vuelo
 //		livery = string(buf);
-		xivap.addText(colRed, "ICAO de la aeronave no encontrado, intentando utilizar el ICAO del plan de vuelo", true, true);
-		string actype, airline, livery;
-		actype = xivap.fpl.aircrafttype;
-		airline = xivap.fpl.airline;
-		livery = xivap.fpl.livery;
-		xivap.setAcType(actype, airline, livery);
+		if (length(xivap.cfgICAO) > 0)
+		{
+			actype = xivap.cfgICAO;
+//			xivap.uiWindow.addMessage(colRed, "ICAO de la aeronave no encontrado, utilizando el ICAO del fichero de configuracion", true, true);
+			xivap.addText(colRed, "ICAO de la aeronave no encontrado, utilizando el ICAO del fichero de configuracion", true, true);
+		}
+		else
+		{
+//			xivap.uiWindow.addMessage(colRed, "ICAO de la aeronave no encontrado, utilizando el ICAO del plan de vuelo", true, true);
+			xivap.addText(colRed, "ICAO de la aeronave no encontrado, utilizando el ICAO del plan de vuelo", true, true);
+			actype = xivap.fpl.aircrafttype;
+			airline = xivap.fpl.airline;
+			livery = xivap.fpl.livery;
+		}
 	}
+	xivap.setAcType(actype, airline, livery);
 }
 
 void FlightplanForm::setUserCredentials()
@@ -756,13 +784,15 @@ void FlightplanForm::send(bool closeWindow)
 	}
 	xivap.fpl.normalize();
 
+	if (&xivap.connectForm() != NULL) XPSetWidgetDescriptor(xivap.connectForm().acTypeTextField, pconst(xivap.fpl.aircrafttype)); //  ICAO nativo de la aeronave al ICAO de la ventana de la conexión
+
 	// stop here if all we want to do is setting the internal flightplan
 	// to the correct values
 	if(!closeWindow)
 		return;
 
 	if(xivap.fpl.isValid()) {
-		xivap.setAcType(xivap.fpl.aircrafttype, xivap.fpl.airline, xivap.fpl.livery);
+//		xivap.setAcType(xivap.fpl.aircrafttype, xivap.fpl.airline, xivap.fpl.livery); // Eliminado para que no actualice el ICAO que se visualizará en red
 		xivap.sendFlightplan();
 		xivap.fpl.save(DEFAULT_FPL_FILE);
 		xivap.connectForm().setUserCredentials();
@@ -780,6 +810,7 @@ void FlightplanForm::updateACList()
 
 	string actype;
 	READFORM(actypeTextField, actype);
+	XPSetWidgetDescriptor(xivap.connectForm().acTypeTextField,actype); // Copia el ICAO al ICAO de la ventana de conexión
 	acList = xivap.aircraftDB.retrieve(actype);
 	string caption = "";
 	for(AircraftDB::AircraftList::const_iterator it = acList.begin(); it != acList.end(); ++it)

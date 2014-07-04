@@ -350,10 +350,13 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 	
 					if (Tiempo.minWnDir != INT_MAX) //FIXME: Creo que sería mejor poner cada dirección del viento en una capa distinta
 					{
-						l.direction =	Tiempo.minWnDir;
-//						l.variance =	Tiempo.maxWnDir - Tiempo.minWnDir; // FIXME: No sé si debe ser la diferencia o la dirección "máxima"
-						l.variance =	Tiempo.maxWnDir; // FIXME: Creo que debe ser la dirección "máxima"
-						l.gusts =		l.speed*2.0f;
+						l.direction =	Tiempo.winData.windDir; // FIXME: ¡¡¡PROBAR!!!
+//						l.direction =	(Tiempo.maxWnDir + Tiempo.minWnDir) / 2;
+						l.variance =	Tiempo.maxWnDir - Tiempo.minWnDir; // FIXME: No sé si debe ser la diferencia o la dirección "máxima" ¡¡¡PROBAR!!!
+//						l.direction =	Tiempo.minWnDir;
+//						l.variance =	Tiempo.maxWnDir; // FIXME: Creo que debe ser la dirección "máxima"
+						if (Tiempo.winData.windGust == INT_MAX) // La librería lo inicializa al valor #define INT_MAX
+							l.gusts =		l.speed*2.0f;
 						l.windshear =	FSD::SHEAR_MODERATE; // No parece que se pueda obtener del METAR (posiblemente pueda hacerse por el código WS de cizalladura en pista)
 					}
 					else
@@ -377,8 +380,8 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 			}
 
 
-			if (xivap.debug.weather > 2)
-				xivap.addText(colRed, "WxDB::add.Vientos de " + ftoa(l.direction) + "º a " + ftoa(l.speed) + " Kt con rachas de " + ftoa(l.gusts) + " Kt variables hasta " + ftoa(l.variance) + "º (variable = " + itostring(Tiempo.winData.windVRB) + ")", true, true);
+			if (xivap.debug.weather > 1)
+				xivap.addText(colRed, "WxDB::add.Vientos de " + ftoa(l.direction) + "º a " + ftoa(l.speed) + " Kt con rachas de " + ftoa(l.gusts) + " Kt variables en " + ftoa(l.variance) + "º (variable = " + itostring(Tiempo.winData.windVRB) + ")", true, true);
 				
 			it->second.windLayers.push_back(l);
 //			it->second.numWindlayers += 1; // Prueba con una sola capa de viento con el único dato de vientos que se recibe en el METAR
@@ -396,7 +399,7 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 			l2.tops = 300; // Pongo altura 300 m por si acaso
 
 // FIXME: DEBUG
-			if (xivap.debug.weather > 2)
+			if (xivap.debug.weather > 1)
 				xivap.addText(colRed, "WxDB::add.Visibilidad horizontal de " + ftoa(l2.visibility) + "m desde " + ftoa(l2.base) + "m hasta " + ftoa(l2.tops) + "m de altura", true, true);
 
 			it->second.visLayers.push_back(l2);
@@ -408,7 +411,7 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 			CloudLayer l3;
 			// [ cloudtype cloudbase cloudtops clouddeviation cloudcoverage cloudtop
 			//   cloudturbulence preciptype precipbase preciprate icingrate ]
-			if (Tiempo.CAVOK || xivap.cavok) // Si hay tiempo cAVOK forzado o por METAR
+			if (Tiempo.CAVOK || xivap.cavok) // Si hay tiempo CAVOK forzado o por METAR
 			{
 				l3.type = FSD::CLOUD_NONE;
 				l3.coverage = 0;
@@ -462,17 +465,17 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 					if(l3.tops < l3.base) l3.tops = l3.base + 250;
 
 // FIXME: DEBUG
-					if (xivap.debug.weather > 2)
+					if (xivap.debug.weather > 1)
 						xivap.addText(colRed, "WxDB::add.Nubes tipo " + string(Tiempo.cldTypHgt[lnubes].cloud_type) + " (" + itostring ((int)l3.type) + ") a " + ftoa(l3.base) + " m (" + string(Tiempo.cldTypHgt[lnubes].cloud_hgt_char) + "00 ft)", true, true);
 	
 					it->second.cloudLayers.push_back(l3);
 					it->second.numCloudlayers += 1;
 				}
-			}
+			
 
-			int i = 0;
-			while (i < 3 && Tiempo.WxObstruct[i][0] != NULL) // Hasta 3 capas de nubes
-			{
+			 int i = 0;
+			 while (i < 3 && Tiempo.WxObstruct[i][0] != NULL) // Hasta 3 capas de nubes
+			 {
 				if (i < it->second.cloudLayers.size()) // Si existe capa de nubes para meter esta precipitación
 				{
 					l3 = it->second.cloudLayers[i]; // Se copia la información de nubes existente
@@ -542,12 +545,13 @@ void WxDB::add(const FSD::Message &m, float elapsed)
 				}
 
 // FIXME: DEBUG
-				if (xivap.debug.weather > 2)
+				if (xivap.debug.weather > 1)
 					xivap.addText(colRed, "WxDB::add.Precipitaciones (" + itostring(i) + ") tipo " + itostring((int)l3.precip) + " (" + tiemposig + ") a ritmo " + ftoa(l3.preciprate) + " de precipitación y " + ftoa(l3.icingrate) + " de engelamiento", true, true);
 
 				it->second.cloudLayers[i]= l3;
 				++i;
-			}
+			 }
+			} // no CAVOK
 		
 			TempLayer l4;
 			// [ alt day daynightvar dewpoint ]

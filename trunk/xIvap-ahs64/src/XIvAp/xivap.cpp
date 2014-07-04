@@ -109,7 +109,8 @@ Xivap::Xivap()
 
 	_useMultiplayer = true;
 	_downloadingServerStatus = false;
-
+	
+	cfgICAO = "";
 //	string dummy1 = "C172";
 	string dummy1 = "C182";
 	string dummy2 = "";
@@ -134,7 +135,7 @@ Xivap::Xivap()
 
 	altpeque = 1; // Altura añadida por defecto para corrección de aviones en tierra
 	altgrande = 5; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
-	
+
 }
 
 Xivap::~Xivap()
@@ -197,6 +198,7 @@ FMCForm& Xivap::fmcForm()
 
 void Xivap::XPluginEnable()
 {
+//	XPluginStart(); // FIXME: Añadido para que realmente habilite/deshabilite el plugin con las opciones enable/disable (PROBAR)
 	// do that upon connection
 	if(_useMultiplayer) {
 		if(!_multiplayer.enable())
@@ -208,17 +210,17 @@ void Xivap::XPluginEnable()
 //	_HTTPclient.Download(SERVERSTATUS_URL, getXivapRessourcesDir() + SERVERS_FILENAME, XPLMGetElapsedTime());
 //	_downloadingServerStatus = true;
 
-	
 }
 
 void Xivap::XPluginDisable()
 {
-	disconnect();
+//	disconnect();
+//	XPluginStop(); // FIXME: Cambiado para que realmente se deshabilite el plugin (PROBAR)
 }
 
 void Xivap::XPluginStart()
 {
-
+//	cfgICAO= "";
 	// X-Plane Version
 	int xplmVersion = 0;
 	XPLMHostApplicationID appId;
@@ -313,9 +315,13 @@ void Xivap::XPluginStart()
 	uiWindow.addMessage(colWhite, str + " listo", true, true);
 
 	uiWindow.pluginStart();
+//	uiWindow.addMessage(colWhite, "Pasado uiWindow", true, true);
 	msgWindow.pluginStart();
+//	uiWindow.addMessage(colWhite, "Pasado msgWindow", true, true);
 	Tcasbox.pluginStart(); //added for tcasplot 16/10/2012
+//	uiWindow.addMessage(colWhite, "Pasado Tcasbox", true, true);
 	aircraftChange();
+//	uiWindow.addMessage(colWhite, "Pasado aircraftChange()", true, true);
 
 	// load configuration
 	ConfigFile config;
@@ -406,11 +412,18 @@ void Xivap::XPluginStart()
 
 	// Inicializar variable a false para no tener CAVOK por defecto
 	cavok = false;
+	
 	str = config.readConfig("PLANE", "RESOLUTION");
 	if(length(str) > 0 && str != "0")
 		_plane_resolution = atoi(pconst(str));
 
 	str = config.readConfig("PLANE", "ICAO");
+	if(length(str) > 0)
+	{
+		while(length(str) < 4) str = str + " ";
+		cfgICAO = copy(pconst(str),0,4);
+	}
+	else cfgICAO = "";
 
 #ifdef HAVE_TEAMSPEAK
 	// Estado de AhsControl
@@ -423,8 +436,7 @@ void Xivap::XPluginStart()
 	}
 	else
 		uiWindow.addMessage(colRed, "Fallo al intentar descargar el estado actual de AhsControl", true, true);
-#endif		
-}
+#endif		}
 
 bool Xivap::consoleVisible()
 {
@@ -461,6 +473,8 @@ void Xivap::XPluginStop()
 	for(std::vector<ChatWindow*>::iterator it = chatWindows.begin(); it != chatWindows.end(); ++it)
 		if(*it != NULL) delete *it;
 	chatWindows.clear();
+
+	if (caja.Activada()) caja.Fin(); // Desactiva caja negra si estaba activada
 }
 
 void Xivap::connect(const string& callsign_, const string& vid, const string& password,
@@ -857,6 +871,8 @@ void Xivap::updateStatus()
 	if(XPLMGetElapsedTime() > _lastParams + PARAMS_MINDELAY)
 		sendPlaneParams();
 
+	caja.Graba(); // Añadido para grabación de registro en caja negra, si procede
+
 	uiWindow.refresh();
 
 	// kill all hidden chat windows
@@ -944,17 +960,7 @@ The return value is a series of bit flags, as follows:
 
 void Xivap::tuneCom(int radio, int freq, string name)
 {
-	if(debug.teamspeak > 0){
-			uiWindow.addMessage(colCyan, "Teamspeak: tunning freq " + freq2str(freq) + " and name " + name, true, true);
-	}
 	if(name == "") 	name = freq2name(freq);
-	// AHS dependency is prioritary
-	string ahsDep = _ahsControl->findDep(freq2str(freq));
-	if(ahsDep.stl_str().size()>0){			
-		if(debug.teamspeak > 0)
-			uiWindow.addMessage(colCyan, "Teamspeak: resuelto canal de AhsControl " + ahsDep.stl_str(), true, true);
-		name = ahsDep.stl_str(); // AHS dependency
-	}
 	AtcPosition p = _atcList.findName(name);
 
         // if we failed to find a name, let's see whether we received the freq
@@ -997,18 +1003,14 @@ void Xivap::tuneCom(int radio, int freq, string name)
 		}
 		else // TODO: ¿Qué hacer con el canal 121.500 de emergencia?
 		{
-			
-
 			if(p.isValid()) {
 				if(_activeRadio == radio)  {
-
 					switch(radio) {
 					case 1:
 					fsd.sendInfoRequest(com1name, _FSD_INFOREQ_ATIS_);
 					_atcList.setAtis(com1name, true);
 					// Añadido para cambiar al canal de TS de la dependencia correspondiente de AHS
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);
-		
+					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);		
 					break;
 					case 2:
 					fsd.sendInfoRequest(com2name, _FSD_INFOREQ_ATIS_);
@@ -1017,21 +1019,23 @@ void Xivap::tuneCom(int radio, int freq, string name)
 					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);
 					break;
 					}
+					caja.atc = p.callsign;
 				}
 			}  
 //			if(_activeRadio == radio && copy(com1name,3,1) == ".") tsRemote.Disconnect(); //tune com1 where there is no atc -> disconnect TS
 			else 
 			{
+				caja.atc = "";
 				if(_activeRadio == radio && copy(com1name,3,1) == ".")
 				{
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
+					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), "");
 				}
 //				if(_activeRadio == radio && copy(com2name,3,1) == ".") tsRemote.Disconnect(); //tune com2 where there is no atc -> disconnect TS
 				if(_activeRadio == radio && copy(com2name,3,1) == ".")
 				{
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
+					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), "");
 				}
 			}
 		}
@@ -1134,11 +1138,8 @@ string Xivap::freq2name(int freq)
 	// if freq matches an ATC station in range, map it to the name here
 	string f = freq2str(freq);
 	AtcPosition p = _atcList.findFreq(f, lat, lon);
-	string r = f; // if nothing matches, just return the frequency
-    if(p.isValid()) r = p.callsign;
-    
-	
-	return r;
+        if(p.isValid()) return p.callsign;
+        else return f;          // if nothing matches, just return the frequency
 }
 
 string Xivap::getActiveRadioFreq()
@@ -1727,21 +1728,6 @@ void Xivap::CAVOKModeToggle()
 	checkWeather(XPLMGetElapsedTime());
 }
 
-void Xivap::ActivarCajaNegra()
-{
-		//Implementar aqui la activoacion de la caja negra
-	blackBoxON = !blackBoxON;
-	
-	if (blackBoxON){
-		uiWindow.addMessage(colDarkGreen, "Caja negra activada");
-		Graphics|=64;
-
-	}
-	else{
-		uiWindow.addMessage(colDarkGreen, "Caja negra desactivada");
-		Graphics&=~64;
-	}	
-}
 
 /* !!! Called once per frame*/
 void Xivap::flightLoopCallback()
@@ -1789,7 +1775,6 @@ void Xivap::flightLoopCallback()
 		}
 	}
 	*/
-
 	// check if we should switch to a new weather station
 	// and check the http downloader
 	if(XPLMGetElapsedTime() > _nextWxCheck && _useWeather) {
@@ -1808,7 +1793,13 @@ void Xivap::flightLoopCallback()
 		checkRadioAtis();
 		_nextRadioAtisCheck = XPLMGetElapsedTime() + RADIO_ATIS_CHECK_INTERVAL;
 	}
-
+/*
+	// grabar registro en caja negra
+	if(XPLMGetElapsedTime() > _siguienteRegistroCaja && caja.Activada()) {
+		caja.Graba();
+		_siguienteRegistroCaja = XPLMGetElapsedTime() + CAJA_INTERVALO;
+	}
+*/
 	// things that need to be done once, but cannot be done during start or enable
 	static bool initialized = false;
 	if(!initialized) {
@@ -1881,7 +1872,7 @@ void Xivap::handleAtisReply(const FSD::Message& m)
 	if(tuneAudio > 0 && isVoiceUrl(m.tokens[0]) && _useVoice) {
 		addText(colYellow,
 			"Com " + itostring(tuneAudio) + (primaryTune ? " (primaria) " : "") 
-				+ " debería ser sintonizada en " + m.tokens[0] + " ahora", true, true);
+				+ " deberia ser sintonizada en " + m.tokens[0] + " ahora", true, true);
 #ifdef HAVE_TEAMSPEAK
 		if(primaryTune) {
 			string channel = m.tokens[0];
@@ -2060,7 +2051,7 @@ void Xivap::aircraftChange()
 //	if(len > 1){ // changes the acType only if we found a working acType value
     _acType = icao; //otherwise, keep the value from the FPL
 	xivap.flightplanForm().setAcfIcao();
-
+/*
 	if (online())
 	{
 		std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
@@ -2073,10 +2064,11 @@ void Xivap::aircraftChange()
 	{
 		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, "dummy");
 	}
-
+*/
 //	}
 	
 	addText(colWhite, "Su ICAO: " + _acType, true, true);
+//	uiWindow.addMessage(colWhite, "Su ICAO: " + _acType, true, true);
 
 
 	/*
@@ -2091,6 +2083,9 @@ void Xivap::aircraftChange()
 	XPLMGetDatab(gAcfTailnum, byteBuf, 0, 40);
 	string tailnum = string(byteBuf);
 	addText(colWhite, "Su matricula: " + tailnum, true, true);
+
+	if (caja.Activada()) caja.Fin(); // Desactiva caja negra si estaba activada
+
 }
 
 void Xivap::handleCommand(string line)
@@ -2401,6 +2396,17 @@ void Xivap::handleCommand(string line)
 		tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), line);
 		return;
 
+	}	else if (command=="ICAO") { // Añadido comando para cambiar el ICAO de la aeronave propia para mostrar en red
+		line = trim(strupcase(line));
+		if (length(line) > 2 && length(line) < 5)
+		{
+			setAcType(line,"","");
+			XPSetWidgetDescriptor(_connectForm->acMTLTextField, pconst(_acType)); //  copia ICAO de la aeronave al "ICAO en red" de la ventana de conexión
+
+			uiWindow.addMessage(colWhite, "Nuevo ICAO de la aeronave para mostrar en la red: " + _acType, true, true);
+		}
+		return;
+
 	}	else if (command=="DEBUG") { // Añadido comando para aplicar niveles de debug al vuelo (parámetros separados por ":")
 		line = trim(strupcase(line));
 		if (line == "") // Si no hay parámetros
@@ -2421,6 +2427,7 @@ void Xivap::handleCommand(string line)
 					else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
 					else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
 					else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
+					else if (mdebug.tokens[0] == "BB") debug.bb = 1; // interfaz de usuario
 					else if (mdebug.tokens[0] == "OFF") debug.debuglevels = 0; // debug desactivado
 				} // if 1 parámetro
 				else if (mdebug.tokens.size() == 2) // Si hay 2 parámetros
@@ -2476,7 +2483,10 @@ void Xivap::handleCommand(string line)
 		uiWindow.addMessage(colYellow, ".X <code> - sintonizar el transponder en el código especificado", false, false);
 		uiWindow.addMessage(colYellow, ".C1 <freq> / .C2 <freq> - sintonizar COM1 o COM2 en freq", false, false);
 		uiWindow.addMessage(colYellow, ".QNH <QNH> .ALT <ALTIMETER> - Establecer el altímetro primario en el valor barómetrico dado", false, false);
-		uiWindow.addMessage(colYellow, ".TEST <mensaje> -probar mensaje como si viniera de la red (solo para desarrolladores)", false, false);
+		uiWindow.addMessage(colYellow, ".TEST MSG:<mensaje> - probar mensaje como si viniera de la red (solo para desarrolladores)", false, false);
+		uiWindow.addMessage(colYellow, ".SEND <mensaje> - enviar mensaje a la red (solo para desarrolladores)", false, false);
+		uiWindow.addMessage(colYellow, ".CAVOK / .CAVOK OFF - Activar o desactivar modo CAVOK forzado", false, false);
+		uiWindow.addMessage(colYellow, ".TS <canal> - Conectarse al canal del Teamspeak", false, false);
 		uiWindow.addMessage(colYellow, "Usar flecha-arriba y flecha-abajo para desplazar pantalla", false, false);
 		return;
 
@@ -2490,15 +2500,32 @@ void Xivap::setAcType(const string& aircraft, const string& airline, const strin
 	_acAirline = airline;
 	_acLivery = livery;
 	while(length(_acType) < 4) _acType = _acType + " ";
-// FIXME: Supongo que habría que mandar la información a la lista de pilotos conectados a la red de AHS, si es que existe una
-//	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery);
-//	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,"dummy");
 
-//	std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
-//	for (int i = 0; i < lista.size(); ++i) // Envía tipo de avión (ICAO, airline, livery) a cada piloto conectado
-//	{
-//		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,lista[i]);
-//	}
+	if (_connectForm != NULL)
+	{
+		XPSetWidgetDescriptor(_connectForm->acMTLTextField, pconst(_acType)); //  copia ICAO de la aeronave al "ICAO en red" de la ventana de conexión
+		_connectForm->hide();
+	}
+
+	if (online())
+	{
+		std::vector<string> lista = _multiplayer.listaConectados(); // Obtiene la lista de indicativos de pilotos conectados a la red
+		for (int i = 0; i < lista.size(); ++i) // Envía tipo de avión (ICAO, airline, livery) a cada piloto conectado
+		{
+			fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, lista[i]);
+		}	
+	}
+	else // Si no está conectado, llama a la función de envío para que inicialice la variable _mtl y se pueda conectar más adelante
+	{
+		fsd.sendPlaneInfo(_acType + _acAirline + _acLivery, "dummy");
+	}
+
+	ConfigFile config;
+	string filename = getXivapRessourcesDir() + CONFIG_FILE;
+	config.load(filename);
+	config.setConfig("PLANE", "ICAO",_acType);
+	config.save(filename);
+
 }
 
 // if we are using weather, this is being called once every WEATHER_UPDATE_INTERVAL secs
