@@ -304,7 +304,7 @@ int UiWindow::checkButton(int x, int y)
 	y=top-y;
 
 	int i=0;
-	while (i<11)  { //se amplia el ciclo de vueltas para incluir los nuevos botones
+	while (i<10)  { //se amplia el ciclo de vueltas para incluir los nuevos botones.
 		if (x>=ExtMouseFields[4*i] && x<=ExtMouseFields[4*i+2]) {
 			if (y>=ExtMouseFields[4*i+1] && y<=ExtMouseFields[4*i+3]) 
 			{
