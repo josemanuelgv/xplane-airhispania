@@ -166,6 +166,9 @@
     <ClCompile Include="ahsControl.cpp">
       <Filter>srcfiles</Filter>
     </ClCompile>
+    <ClCompile Include="caja.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="airlinesDB.h">
@@ -361,6 +364,9 @@
       <Filter>headers</Filter>
     </ClInclude>
     <ClInclude Include="ahsControl.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="caja.h">
       <Filter>headers</Filter>
     </ClInclude>
   </ItemGroup>

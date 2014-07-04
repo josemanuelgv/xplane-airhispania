@@ -43,7 +43,7 @@ public:
 	bool SetTextToClipboard(const std::string& inText);
 	int WidgetFunc_CutCopyPaste(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_t inParam1, intptr_t inParam2);
 
-
+	XPWidgetID getActypeTextField(){ return actypeTextField; }
 private:
 	XPWidgetID window;
 	XPWidgetID callsignTextField, actypeTextField,
