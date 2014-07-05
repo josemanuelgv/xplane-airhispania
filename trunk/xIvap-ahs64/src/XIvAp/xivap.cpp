@@ -425,6 +425,19 @@ void Xivap::XPluginStart()
 	}
 	else cfgICAO = "";
 
+	str = config.readConfig("AHSBOX", "CARPETA");
+	if(length(str) > 0)
+	{
+
+#ifdef WIN32
+		CreateDirectory(str, NULL); // En caso de no existir, sólo crea el último directorio, no el árbol entero
+#endif
+		
+		if (str[length(str)-1] != DIR_CHAR) str += DIR_CHAR;
+		caja.dir = str;
+	}		
+
+
 #ifdef HAVE_TEAMSPEAK
 	// Estado de AhsControl
 	_ahsControl = new AhsControl();
@@ -2039,6 +2052,9 @@ void Xivap::airportChange()
 	}
 	
 	xivap.flightplanForm().setFPTextFields();
+
+	if (caja.Activada()) caja.Fin(); // Desactiva la caja negra para iniciar nuevo archivo
+
 }
 
 /*Toma el modelo de avion actualmente en uso*/
@@ -2438,7 +2454,7 @@ void Xivap::handleCommand(string line)
 					else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
 					else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
 					else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
-					else if (mdebug.tokens[0] == "BB") debug.bb = 1; // interfaz de usuario
+					else if (mdebug.tokens[0] == "BB") debug.bb = 1; // caja negra
 					else if (mdebug.tokens[0] == "OFF") debug.debuglevels = 0; // debug desactivado
 				} // if 1 parámetro
 				else if (mdebug.tokens.size() == 2) // Si hay 2 parámetros
@@ -2451,6 +2467,7 @@ void Xivap::handleCommand(string line)
 						else if (mdebug.tokens[0] == "TS") debug.teamspeak = 0;
 						else if (mdebug.tokens[0] == "PARAMS") debug.params = 0;
 						else if (mdebug.tokens[0] == "UI") debug.ui = 0;
+						else if (mdebug.tokens[0] == "BB") debug.bb = 0; 
 					}
 					else if (mdebug.tokens[1] == "ON")
 					{
@@ -2460,6 +2477,7 @@ void Xivap::handleCommand(string line)
 						else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
 						else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
 						else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
+						else if (mdebug.tokens[0] == "BB") debug.bb = 1; 
 					}
 					else
 					{

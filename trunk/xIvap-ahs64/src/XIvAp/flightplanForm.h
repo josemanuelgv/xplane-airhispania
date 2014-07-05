@@ -38,11 +38,14 @@ public:
 	void setAcfIcao();
 	void FMcar(bool enable);
 
+	void updateACList(); // Movido a "public"
+	void updateALList(); // Movido a "public"
+
 	// CutCopyPaste functional
 	bool GetTextFromClipboard(std::string& outText);
 	bool SetTextToClipboard(const std::string& inText);
 	int WidgetFunc_CutCopyPaste(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_t inParam1, intptr_t inParam2);
-	XPWidgetID actypeTextField;
+	XPWidgetID actypeTextField; // Movido a "public"
 
 	XPWidgetID getActypeTextField(){ return actypeTextField; }
 private:
@@ -61,8 +64,8 @@ private:
 	AircraftDB::AircraftList acList;
 	AirlinesDB::AirlinesList alList;
 	AirlinesDB::LiveryList livList;
-	void updateACList();
-	void updateALList();
+//	void updateACList();
+//	void updateALList();
 	bool callUpdateAC, callUpdateAL;
 
 	void create();
