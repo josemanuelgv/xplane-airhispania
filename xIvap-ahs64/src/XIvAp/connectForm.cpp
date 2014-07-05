@@ -142,8 +142,9 @@ void ConnectForm::create()
 					1, "Indicativo:", 0, window, xpWidgetClass_Caption);
 	callsignTextField = XPCreateWidget(x+70, y-25, x+70+9*8, y-47,
 					1, "", 0, window, xpWidgetClass_TextField);
-	XPSetWidgetProperty(callsignTextField, xpProperty_TextFieldType, xpTextEntryField);
-	XPSetWidgetProperty(callsignTextField, xpProperty_MaxCharacters, 9);
+//	XPSetWidgetProperty(callsignTextField, xpProperty_TextFieldType, xpTextEntryField);
+//	XPSetWidgetProperty(callsignTextField, xpProperty_MaxCharacters, 9);
+	XPSetWidgetProperty(callsignTextField, xpProperty_MaxCharacters, 7);
 
 	// Pilot Account group
 	XPCreateWidget(x+10, y-50, x+70, y-62,
@@ -169,7 +170,8 @@ void ConnectForm::create()
 	XPSetWidgetProperty(baseTextField, xpProperty_MaxCharacters, 4);
 
 	// VID
-	XPCreateWidget(x+211, y-68, x+263, y-90,
+//	XPCreateWidget(x+211, y-68, x+263, y-90,
+	XPCreateWidget(x+230, y-68, x+263, y-90,
 					1, "AHS:", 0, window, xpWidgetClass_Caption);
 	vidTextField = XPCreateWidget(x+266, y-68, x+330, y-90,
 					1, "", 0, window, xpWidgetClass_TextField);
@@ -178,7 +180,8 @@ void ConnectForm::create()
 	XPSetWidgetProperty(vidTextField, xpProperty_MaxCharacters, 4);
 
 	// Password
-	XPCreateWidget(x+211, y-90, x+263, y-112,
+//	XPCreateWidget(x+211, y-90, x+263, y-112,
+	XPCreateWidget(x+222, y-90, x+263, y-112,
 					1, "Clave:", 0, window, xpWidgetClass_Caption);
 	passwdTextField = XPCreateWidget(x+266, y-90, x+330, y-112,
 					1, "", 0, window, xpWidgetClass_TextField);
@@ -317,8 +320,11 @@ void ConnectForm::create()
 	config.load(filename);
 
 	// load some presets
-	XPSetWidgetDescriptor(callsignTextField, pconst(config.readConfig("ACCOUNT", "CALLSIGN")));
-	XPSetWidgetDescriptor(vidTextField, pconst(config.readConfig("ACCOUNT", "VID")));
+	string usuario = config.readConfig("ACCOUNT", "VID");
+	XPSetWidgetDescriptor(vidTextField, pconst(usuario));
+	string indicativo = config.readConfig("ACCOUNT", "CALLSIGN");
+	if (length(indicativo) != 0) XPSetWidgetDescriptor(callsignTextField, pconst(indicativo));
+	else XPSetWidgetDescriptor(callsignTextField, "AHS" + usuario); // Si no hay indicativo en el fichero de configuración, lo coge del usuario de AHS
 	XPSetWidgetDescriptor(passwdTextField, pconst(config.readConfig("ACCOUNT", "PASSWORD")));
 	XPSetWidgetDescriptor(realNameTextField, pconst(config.readConfig("ACCOUNT", "REALNAME")));
 	XPSetWidgetDescriptor(baseTextField, pconst(config.readConfig("ACCOUNT", "BASE")));
@@ -352,6 +358,9 @@ void ConnectForm::create()
 	XPAddWidgetCallback(callsignTextField, connectFormHandler);
 	XPAddWidgetCallback(baseTextField, connectFormHandler);
 	XPAddWidgetCallback(portTextField, connectFormHandler);
+	XPAddWidgetCallback(acTypeTextField, connectFormHandler);
+	XPAddWidgetCallback(acMTLTextField, connectFormHandler);
+	XPAddWidgetCallback(vidTextField, connectFormHandler);
 	
 }
 
@@ -386,7 +395,12 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 		if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
 		{
 			xivap.fpl.aircrafttype = aircraftPV;
-			if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
+			if (&xivap.flightplanForm() != NULL)
+			{
+				XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
+				xivap.flightplanForm().updateACList();
+			}
+
 		}
 		hide();
 		return 1;
@@ -404,6 +418,11 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 		if(inParam1 == (intptr_t)connectButton) {
 
 			// read values from form
+			XPGetWidgetDescriptor(vidTextField, buffer, 4);
+			string indicativo = "AHS" + (string)buffer;
+			indicativo = copy(indicativo, 0, 7);
+			XPSetWidgetDescriptor(callsignTextField, pconst(indicativo)); // Actualiza el campo "callsign" automáticamente con el usuario de AHS
+
 			XPGetWidgetDescriptor(callsignTextField, buffer, sizeof(buffer));
 			string callsign = buffer;
 			XPGetWidgetDescriptor(vidTextField, buffer, sizeof(buffer));
@@ -451,7 +470,7 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			}
 
 			// validate callsign... a bit
-			callsign = trim(strupcase(callsign)); // FIXME: ¿Dejar que se pueda poner cualquier cosa o forzar a que sea "AHS"+vid?
+			callsign = trim(strupcase(callsign));
 			if(length(callsign) < 2) {
 				xivap.messageBox().show("Tu alias es demasiado corto.");
 				return 1;
@@ -460,6 +479,13 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			if(length(callsign) > 7) {
 				xivap.messageBox().show("Tu alias es demasiado largo.");
 				return 1; 
+			}
+
+			// validar VID
+			vid = trim(strupcase(vid));
+			if(length(vid) != 4) {
+				xivap.messageBox().show("Tu usuario de AHS debe tener 4 caracteres.");
+				return 1;
 			}
 
 			//validate base airport
@@ -489,7 +515,11 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 			if (length(aircraftPV) > 2 && length(aircraftPV) < 5)
 			{
 				xivap.fpl.aircrafttype = aircraftPV;
-				if (&xivap.flightplanForm() != NULL) XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
+				if (&xivap.flightplanForm() != NULL)
+				{
+					XPSetWidgetDescriptor(xivap.flightplanForm().getActypeTextField(), aircraftPV);
+					xivap.flightplanForm().updateACList();
+				}
 			}
 
 			bool fmcar = false;
@@ -504,6 +534,9 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 
 			xivap.flightplanForm().setUserCredentials();
 			xivap.flightplanForm().hide();
+
+			xivap.uiWindow.addMessage(colWhite, "ICAO de aeronave en plan de vuelo: " + xivap.fpl.aircrafttype, true, true);
+			xivap.uiWindow.addMessage(colWhite, "ICAO de aeronave para mostrar en la red: " + xivap.acType(), true, true);
 
 			ConfigFile config;
 			string filename = getXivapRessourcesDir() + CONFIG_FILE;
@@ -553,14 +586,22 @@ int	ConnectForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intptr_
 		// don't eat some special chars: backspace, del, leftarrow, rightarrow
 		if(key->key == 8 || key->key == 46 || key->key == 28 || key->key == 29) return 0;
 
+		if (widget == callsignTextField) return 1; // No escribir nada en el campo indicativo (se coge del VID, para no permitir identificarse con otra cosa que no sea el usuario de AHS)
+
 		// these should only get UPPERCASE characters
-		if(widget == callsignTextField || widget == baseTextField)
+		if(widget == baseTextField || widget == acTypeTextField || widget == acMTLTextField || widget == vidTextField)
 		{
 			key->key = pt::upcase(key->key);
 
-			if(widget == callsignTextField || widget == baseTextField) {
-				if(!((key->key >= '0' && key->key <= '9') || (key->key >= 'A' && key->key <= 'Z')))
+//			if(widget == callsignTextField || widget == baseTextField || widget == acTypeTextField || widget == acMTLTextField || widget == vidTextField) {
+			if(!((key->key >= '0' && key->key <= '9') || (key->key >= 'A' && key->key <= 'Z')))
 					return 1; // accept only 0-9 and A-Z
+//			}
+			if (widget == vidTextField) // Se actualiza el indicativo cada vez que se actualiza el VID
+			{
+				XPGetWidgetDescriptor(vidTextField, buffer, 4);
+				string indicativo = "AHS" + (string)buffer;
+				XPSetWidgetDescriptor(callsignTextField, pconst(indicativo));
 			}
 			return 0; // don't consume the keystroke
 		}
