@@ -65,7 +65,7 @@ public:
 	/** Destructor */
 	~Xivap();
 
-	double nextFSDPosUpdate, nextFSDPoll, nextStatusUpdate;
+	double nextFSDPosUpdate, nextFSDPoll, nextStatusUpdate, nextAhsControlUpdate;
 
 	int	menuConnect, menuDisconnect, menuFlightplan;
 	XPLMMenuID menuEntry;
@@ -266,6 +266,7 @@ public:
 	double altpeque, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
 
 	AhsControl _ahscontrol;
+	bool ahsControlLoaded;
 
 	CajaNegra caja; // Clase para grabación de caja negra
 

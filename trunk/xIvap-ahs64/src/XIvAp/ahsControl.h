@@ -23,20 +23,30 @@ public:
 
 	void saveToFile();
 
-	int numDep();
+	int countDep();
 
-	string findDep(string freq);
+	int countTSChannels();
+
+	string findChannel(string freq);
 
 	int getStatus();
 
+
 private:
 	
-	string html;
+	string html;	// Contenido de la página web de estado actual
 
-	std::list<string> deps;
-	std::list<string> freqs;
+	std::list<string> deps;			// Lista de dependencias abiertas
+	std::list<string> freqs;		// Lista de frecuencias de cada dependencia
+	std::list<string> tschannels;	// Lista de canales de TS
+	std::list<string> chDep;		// Lista de canales de TS que corresponden con cada dependencia
 
 	int status;
+
+	const int& minimo(const int& a, const int& b);
+
+	unsigned int lvdistance(const string& s1, const string& s2);
+
 };
 
 
