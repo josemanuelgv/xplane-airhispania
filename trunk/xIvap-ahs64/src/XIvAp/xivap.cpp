@@ -974,6 +974,7 @@ The return value is a series of bit flags, as follows:
 
 void Xivap::tuneCom(int radio, int freq, string name)
 {
+    string freqStr = freq2str(freq); // Salva la frecuencia en una string, para futuras operaciones
     if(debug.teamspeak > 0){
 					uiWindow.addMessage(colCyan, "Teamspeak: tunning freq " + freq2str(freq) + " and name " + name, true, true);
     }
@@ -984,35 +985,47 @@ void Xivap::tuneCom(int radio, int freq, string name)
 			uiWindow.addMessage(colCyan, "Teamspeak: resuelto canal de AhsControl " + ahsDep.stl_str(), true, true);
 		name = ahsDep.stl_str(); // AHS dependency
 	}
-	if(name == "") 	name = freq2name(freq); // Movido después de la búsqueda en la página de AHS, para que busque si falla la primera
-	AtcPosition p = _atcList.findName(name);
+	else if (freqStr != UNICOM_FREQ)
+	{
+		if(debug.teamspeak)
+		{
+			uiWindow.addMessage(colRed, "Teamspeak: canal no encontrado en AhsControl, buscando en nombres de dependencias conectadas a la red...", true, true);
+		}
+		name = freq2name(freq); // Movido después de la búsqueda en la página de AHS, para que busque si falla la primera
+		if(debug.teamspeak)
+		{
+			if (pos('.',name) == -1) uiWindow.addMessage(colCyan, "Teamspeak: estacion mas cercana con frecuencia " + freqStr + " MHz : " +  name, true, true);	
+			else uiWindow.addMessage(colRed, "Teamspeak: no encontrada estacion cercana conectada para la frecuencia " + freqStr + " MHz", true, true);
+		}
+	}
 
-        // if we failed to find a name, let's see whether we received the freq
-        // from XP in 25kHz format and attempt some 8.33 frequencies close to
-        // it.
-        string freqStr = freq2str(freq);
-        if(!p.isValid() && freq < 99999 && is25kHzFreq(freqStr)) {
-            AtcPosition q;
-            int lastDigit = freq % 10;
-            int freq833 = freq * 10;
-            for(int i = 0; i < 4; i++) {
-                if(0 == i && (lastDigit == 2 || lastDigit == 7)) {
-                    freq833 += 10;
-                } else {
-                    freq833 += 5;
-                }
-                freqStr = freq2str(freq833);
-                q = _atcList.findFreq(freqStr, lat, lon);
-                if(q.isValid()) {
-                    if(!p.isValid() || q.distance < p.distance)
-                        p = q;
-                        freq = freq833;
-                        name = freq2name(freq);
-                }
+		AtcPosition p = _atcList.findName(name);
+
+	    // if we failed to find a name, let's see whether we received the freq
+		// from XP in 25kHz format and attempt some 8.33 frequencies close to
+		// it.
+		if(!p.isValid() && freq < 99999 && is25kHzFreq(freqStr) && freqStr != UNICOM_FREQ) {
+			AtcPosition q;
+			int lastDigit = freq % 10;
+			int freq833 = freq * 10;
+			for(int i = 0; i < 4; i++) {
+				if(0 == i && (lastDigit == 2 || lastDigit == 7)) {
+					freq833 += 10;
+					} else {
+			            freq833 += 5;
+					}
+					freqStr = freq2str(freq833);
+					q = _atcList.findFreq(freqStr, lat, lon);
+					if(q.isValid()) {
+						if(!p.isValid() || q.distance < p.distance)
+						     p = q;
+				        freq = freq833;
+						name = freq2name(freq);
+					}
 				if (debug.teamspeak)
-                addText(colYellow, "Frecuencia 8.33 kHz estimada: " + freqStr, true, true);
-            }
-        } 
+		       addText(colYellow, "Frecuencia 8.33 kHz estimada: " + freqStr, true, true);
+			} // for
+		} // if !p.isValid
 
 	if(radio == 1) com1name=name;
 	else com2name=name;
@@ -1027,6 +1040,46 @@ void Xivap::tuneCom(int radio, int freq, string name)
 		}
 		else // TODO: ¿Qué hacer con el canal 121.500 de emergencia?
 		{
+			// Buscar coincidencia entre el nombre de la dependencia y el canal de Teamspeak
+			string ICAO_ATC, t_ATC, ICAO_TS, t_TS = "";
+			int psep = pos('_', name);
+			if (psep != -1 && length(name) > 6)
+			{
+				ICAO_ATC = copy(name, 0, psep); // "LEBB"
+				t_ATC = copy(name, psep + 1); // "TWR"
+			}
+
+/* FIXME: AÑADIR AQUI LA LLAMADA A LA RUTINA que saca el listado de canales de TS de la página de AirHispania */
+
+//			std::vector<string> names_TS = <rutina_que_devuelve_el_nombre_del_canal_TS>
+			std::vector<string> names_TS;
+			int i = 0;
+			bool found = false;
+			while (i < names_TS.size() && !found)
+			{
+				if (names_TS[i] == name) // Si el canal de TS coincide con el nombre, se detiene la búsqueda
+					found = true;
+				++i;
+			}
+			if (!found) // Si no hay canal de TS para el nombre que hay, se busca coincidencia sólo con el ICAO
+			{
+				while (i < names_TS.size() && !found)
+				{
+					psep = pos('_', names_TS[i]);
+					if (psep != -1 && length(names_TS[i]) > 6)
+					{
+						ICAO_TS = copy(names_TS[i], 0, psep); // "LEBB"
+						t_TS = copy(names_TS[i], psep + 1); // "TWR"
+						if (ICAO_ATC == ICAO_TS) // Si encuentra sólo el ICAO, asigna el canal completo como canal TS válido para la dependencia
+						{
+							name = ICAO_TS + t_TS;
+							found = true;
+						}
+					}
+					++i;
+				}
+			}
+
 			if(p.isValid()) {
 				if(_activeRadio == radio)  {
 					switch(radio) {
@@ -1034,13 +1087,15 @@ void Xivap::tuneCom(int radio, int freq, string name)
 					fsd.sendInfoRequest(com1name, _FSD_INFOREQ_ATIS_);
 					_atcList.setAtis(com1name, true);
 					// Añadido para cambiar al canal de TS de la dependencia correspondiente de AHS
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);		
+					if (!found) tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);		
+					else tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
 					break;
 					case 2:
 					fsd.sendInfoRequest(com2name, _FSD_INFOREQ_ATIS_);
 					_atcList.setAtis(com2name, true);
 					// Añadido para cambiar al canal de TS de la dependencia correspondiente de AHS
-					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);
+					if (!found) tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), p.callsign);
+					else tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
 					break;
 					}
 					caja.atc = p.callsign;
@@ -1049,7 +1104,6 @@ void Xivap::tuneCom(int radio, int freq, string name)
 //			if(_activeRadio == radio && copy(com1name,3,1) == ".") tsRemote.Disconnect(); //tune com1 where there is no atc -> disconnect TS
 			else 
 			{
-				caja.atc = "";
 				if(_activeRadio == radio && copy(com1name,3,1) == ".")
 				{
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
@@ -1061,6 +1115,8 @@ void Xivap::tuneCom(int radio, int freq, string name)
 //					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), TS_CANAL_GENERAL);
 					tsRemote.SwitchChannel("AHS"+fsd.vid(), fsd.password(), string(AHS_SERVER_URL), fsd.callsign(), name);
 				}
+				if (found) caja.atc = name;
+				else caja.atc = "";
 			}
 		}
 	} // if online
@@ -1697,6 +1753,7 @@ void Xivap::setComActive(int radio)
 	_activeRadio = radio;
 
 // Añadido para cambiar el canal TS automáticamente al cambiar el COM activo
+	/*
 	string name;
 	if(radio == 1)	
 	{
@@ -1707,6 +1764,19 @@ void Xivap::setComActive(int radio)
 	{
 		name = freq2name(_com2freq);
 		tuneCom(radio,_com2freq,name);
+	}
+	*/
+
+// Añadido para cambiar el canal TS automáticamente al cambiar el COM activo
+	if (radio == 1)
+	{
+		int freq = XPLMGetDatai(gCom1);
+		tuneCom(1, freq);
+	}
+	else
+	{
+		int freq = XPLMGetDatai(gCom2);
+		tuneCom(2, freq);
 	}
 }
 

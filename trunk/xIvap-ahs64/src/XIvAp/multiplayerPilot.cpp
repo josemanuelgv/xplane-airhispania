@@ -86,6 +86,8 @@ void MultiplayerPilot::init()
 
 	callsign = "";
 	mtl = "";
+	type = "";
+	cat = "";
 	mtlRequested = false;
 	XPregistered = false;
 	id = NULL;

@@ -128,8 +128,8 @@ void Flightplan::normalize()
 
 string Flightplan::aircraft()
 {
-// TODO: Habría que enviar el tipo de aeronave al estilo FSINN (¿o no?)
-	return number + "/" + aircrafttype + "/" + wtc + "-" + equip + "/" + transpondertype;
+	return number + "/" + aircrafttype + "/" + wtc + "-" + equip + "/" + transpondertype; // Recuperado del original, por si acaso, pero no se utiliza para enviar el PV
+//	return "T/" + aircrafttype + "/G"; // FIXME: Sacar de alguna parte las equivalencias "T,H,B,L,0..." y "F,G,R,A,..."
 }
 
 #define FPCHECK(b, m) { if(b) { _errorMessage = string(m); return false; } }
@@ -730,14 +730,67 @@ bool FsdAPI::sendFlightplan(Flightplan& fpl)
 {
 	if(!_connected) return false;
 
+//TODO: Sacar información del tipo de motor del avión para enviarlo
+	char t_aero, n_motores, t_motor, cat_et;
+	string icaoPV = fpl.aircrafttype;
+	if(length(icaoPV) > 4) {
+		icaoPV = copy(icaoPV, 0, 4); //B727aaaxxxxx -> B727
+	}
+	AircraftDB::Aircraft aeronave = xivap.aircraftDB.get(icaoPV); // Busca los datos de la aeronave del ICAO indicado
+	string tipo = aeronave.type; // Tipo de aeronave (formato "L2P")
+
+	if (xivap.debug.multiplayer)
+	{
+		xivap.addText(colRed, "Se ha encontrado el 'equipo' " + tipo + " para el ICAO " + icaoPV);
+	}
+
+	if (length(tipo) == 3)
+	{
+		t_aero = tipo[0]; // "L"
+		n_motores = tipo[1]; // "2"
+		t_motor = tipo[2]; // "P"
+	}
+	else // si no se encuentra el tipo, poner aeronave tipo avión con un motor de hélice simple
+	{
+		t_aero = 'L';
+		n_motores = '1';
+		t_motor = 'P';
+	}
+	switch (t_motor) { // FIXME: Especulación sobre la correspondencia de primer parámetro del "aircraft" del PV del FSInn con el tipo de motor de la aeronave (podría estar equivocado)
+		case 'P':
+			t_motor = 'T';
+			break;
+		case 'J':
+			t_motor = 'L';
+			break;
+		case 'H':
+			t_motor = 'H';
+			break;
+		case 'T':
+			t_motor = 'B';
+			break;
+		default:
+			t_motor = 'T';
+			break;
+	}
+
+//	cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
+	if (length(fpl.wtc) == 1) cat_et = fpl.wtc[0]; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
+	else cat_et = 'X';
+
+	char t_equipo = 'G';
+
 	// compose flightplan packet
 	FSD::Message m;
 	m.type = _FSD_FLIGHTPLAN_;
 	m.source = _callsign;
 	m.dest = _FSD_SERVERDEST_;
 	m.tokens.push_back(fpl.flightrules);
-	m.tokens.push_back(fpl.aircraft());
-	m.tokens.push_back(fpl.speedtype + fpl.cruisespeed);
+//	m.tokens.push_back(fpl.aircraft());
+	string ac_PV = string(t_motor) + '/' + icaoPV + '/' + string(t_equipo);
+	m.tokens.push_back(ac_PV); // Tipo de aeronave al estilo FSInn
+//	m.tokens.push_back(fpl.speedtype + fpl.cruisespeed); // El AhsRadar no reconoce el tipo de velocidad, sólo el número
+	m.tokens.push_back(fpl.cruisespeed);
 	m.tokens.push_back(fpl.departure);
 	m.tokens.push_back(fpl.deptimeest);
 	m.tokens.push_back(fpl.deptimeact);
@@ -991,8 +1044,10 @@ void FsdAPI::sendPlaneInfo(string mtl, string dcallsign)
 
 	// don't send 5 letter CSL livery codes. If the livery code exceeds
 	// 3 characters, remove it
-	if(length(_mtl) > 10) {
-		_mtl = copy(mtl, 0, 10); //B727aaaxxxxx -> B727aaaxxx
+//	if(length(_mtl) > 10) {
+//		_mtl = copy(mtl, 0, 10); //B727aaaxxxxx -> B727aaaxxx
+	if(length(_mtl) > 4) {
+		_mtl = copy(_mtl, 0, 4); //B727aaaxxxxx -> B727
 	}
 
 // No soportado por la red de AHS
@@ -1003,15 +1058,58 @@ void FsdAPI::sendPlaneInfo(string mtl, string dcallsign)
 //	m.tokens.push_back(_mtl);
 //	send(m);
 
+//TODO: Sacar información del tipo de motor del avión para enviarlo
+	char t_aero, n_motores, t_motor, cat_et;
+
+	if(length(mtl) > 4) {
+		mtl = copy(mtl, 0, 4); //B727aaaxxxxx -> B727
+	}
+	AircraftDB::Aircraft aeronave = xivap.aircraftDB.get(mtl); // Busca los datos de la aeronave del ICAO indicado
+	string tipo = aeronave.type; // Tipo de aeronave (formato "L2P")
+	if (length(tipo) == 3)
+	{
+		t_aero = tipo[0]; // "L"
+		n_motores = tipo[1]; // "2"
+		t_motor = tipo[2]; // "P"
+	}
+	else // si no se encuentra el tipo, poner aeronave tipo avión con un motor de hélice simple
+	{
+		t_aero = 'L';
+		n_motores = '1';
+		t_motor = 'P';
+	}
+	switch (t_motor) {
+		case 'P':
+			t_motor = '0';
+			break;
+		case 'J':
+			t_motor = '1';
+			break;
+		case 'H':
+			t_motor = '3';
+			break;
+		case 'T':
+			t_motor = '5';
+			break;
+		default:
+			t_motor = '0';
+			break;
+	}
+
+	cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
+
+
 // Envío de plane info (MTL-CSL) para la red AHS
 	FSD::Message m;
 	m.type = _FSD_CUSTOMPILOT_; // Comando de envío-recepción piloto a piloto
 	m.source = _callsign;
 	m.dest = dcallsign; // Se envía la información dirigida hacia el piloto (cliente) que la ha solicitado
 	m.tokens.push_back(_FSD_CUSTOMPILOT_PLANEINFO_); // Comando plane info ("PI")
-	m.tokens.push_back("X"); // Parámetro que al parecer se manda siempre
+//	m.tokens.push_back("X"); // Parámetro que al parecer se manda siempre (podría ser categoría de estela turbulenta "L", "M" o "H", siendo la "X" sin definir)
+	m.tokens.push_back(cat_et); // Manda la categoría de estela turbulenta -> ¡¡¡ PROBAR !!!
 	m.tokens.push_back("0"); // Parámetro que al parecer se manda siempre
-	m.tokens.push_back("0"); // Parámetro que creo que está entre 0 y 5 (Teóricamente: 0 =  avión Light; 1 = avión Medium; 2 = avión Heavy; 3 = Heli L; 4 = Heli M; 5 = Heli H)
+//	m.tokens.push_back("0"); // Parámetro que creo que está entre 0 y 5 (Tipo de motor: 0 =  Piston (P); 1 = Jet (J); 2 = None; 3 = Helo-turbine (H); 4 = Rocket (no soportado); 5 = Turboprop (T))
+	m.tokens.push_back(t_motor); // Parámetro que creo que está entre 0 y 5 (Tipo de motor: 0 =  Piston (P); 1 = Jet (J); 2 = None; 3 = Helo-turbine (H); 4 = Rocket (no soportado); 5 = Turboprop (T))
 	m.tokens.push_back("~"+_mtl);  // "~" (parece que se envía siempre) + ICAO de la aeronave
 	send(m);
 

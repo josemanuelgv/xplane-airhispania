@@ -53,6 +53,8 @@ public:
 	XPMPPlaneRadar_t radarStatus;
 	
 	string callsign, mtl;	// callsign and MTL code
+
+	string type, cat; // Tipo de aeronave (formato "L2J") y categoría de estela turbulenta ("L", "M", "H" o "X") para poder visualizarlo mejor a la hora de buscar el MTL correspondiente
 	bool mtlRequested; // true if we already requested the MTL for this guy
 	bool XPregistered; // true if this aircraft is registered with XPlane
 	XPMPPlaneID id;	// the XPlane ID

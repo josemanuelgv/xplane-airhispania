@@ -222,28 +222,35 @@ void ConnectForm::create()
 					1, "", 0, window, xpWidgetClass_SubWindow);
 
 	// Aircraft Type
-	XPCreateWidget(x+20, y-18, x+80, y-40,
-					1, "ICAO:", 0, window, xpWidgetClass_Caption);
-	acTypeTextField = XPCreateWidget(x+95, y-18, x+138, y-40,
+//	XPCreateWidget(x+20, y-18, x+80, y-40,
+	XPCreateWidget(x+28, y-18, x+147, y-40,
+					1, "ICAO en plan de vuelo:", 0, window, xpWidgetClass_Caption);
+//	acTypeTextField = XPCreateWidget(x+95, y-18, x+138, y-40,
+	acTypeTextField = XPCreateWidget(x+162, y-18, x+205, y-40,
 					1, pconst(xivap.fpl.aircrafttype), 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(acTypeTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(acTypeTextField, xpProperty_MaxCharacters, 4);
-	XPCreateWidget(x+143, y-18, x+200, y-40,
-					1, "(plan de vuelo)", 0, window, xpWidgetClass_Caption);
+//	XPCreateWidget(x+143, y-18, x+200, y-40,
+//					1, "(plan de vuelo)", 0, window, xpWidgetClass_Caption);
 
 	// MTL Model
-	XPCreateWidget(x+20, y-40, x+80, y-62,
-					1, "ICAO en red:", 0, window, xpWidgetClass_Caption);
-	acMTLTextField = XPCreateWidget(x+95, y-40, x+138, y-62,
+//	XPCreateWidget(x+30, y-40, x+80, y-62,
+	XPCreateWidget(x+12, y-40, x+147, y-62,
+					1, "ICAO para mostrar en red:", 0, window, xpWidgetClass_Caption);
+//	acMTLTextField = XPCreateWidget(x+95, y-40, x+138, y-62,
+	acMTLTextField = XPCreateWidget(x+162, y-40, x+205, y-62,
 					1, "C182", 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(acMTLTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(acMTLTextField, xpProperty_MaxCharacters, 4);
+	
+/* Eliminado de momento */
+/*
 	// livery
 	acLivTextField = XPCreateWidget(x+143, y-40, x+330, y-62,
 					1, "", 0, window, xpWidgetClass_TextField);
 	XPSetWidgetProperty(acLivTextField, xpProperty_TextFieldType, xpTextEntryField);
 	XPSetWidgetProperty(acLivTextField, xpProperty_MaxCharacters, 30);
-
+*/
 	y = y - 75;
 //	*/
 

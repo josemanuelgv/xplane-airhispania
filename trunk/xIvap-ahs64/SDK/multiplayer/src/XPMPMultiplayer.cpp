@@ -260,7 +260,12 @@ XPMPPlaneID		XPMPCreatePlane(
 	plane->airline = inAirline;
 	plane->dataFunc = inDataFunc;
 	plane->ref = inRefcon;
-	plane->model = CSL_MatchPlane(inICAOCode, inAirline, inLivery, &plane->good_livery, true);
+
+	// Inicializar variables de tipo y categoría de estela turbulenta
+	plane->type = "";
+	plane->cat = "";
+
+	plane->model = CSL_MatchPlane(inICAOCode, inAirline, inLivery, &plane->good_livery, true, plane->type.c_str(), plane->cat.c_str());
 	
 	plane->pos.size = sizeof(plane->pos);
 	plane->surface.size = sizeof(plane->surface);
@@ -298,7 +303,9 @@ void	XPMPChangePlaneModel(
 							XPMPPlaneID				inPlaneID,
 							const char *			inICAOCode,
 							const char *			inAirline,
-							const char *			inLivery)
+							const char *			inLivery,
+							const char *			type,
+							const char *			cat)
 {
 	XPMPPlanePtr plane = XPMPPlaneIsValid(inPlaneID, NULL);
 	if (plane)
@@ -306,7 +313,9 @@ void	XPMPChangePlaneModel(
 		plane->icao = inICAOCode;
 		plane->airline = inAirline;
 		plane->livery = inLivery;
-		plane->model = CSL_MatchPlane(inICAOCode, inAirline, inLivery, &plane->good_livery, true);
+		plane->model = CSL_MatchPlane(inICAOCode, inAirline, inLivery, &plane->good_livery, true, type, cat);
+		plane->type = type;
+		plane->cat = cat;
 		
 	}
 	
@@ -492,7 +501,7 @@ int	XPMPRenderMultiplayerPlanes(
 bool			XPMPIsICAOValid(
 							const char *				inICAO)
  {
-	return CSL_MatchPlane(inICAO, "", "", NULL, false) != NULL;
+	return CSL_MatchPlane(inICAO, "", "", NULL, false, "", "") != NULL;
  }
  
 void		XPMPDumpOneCycle(void)

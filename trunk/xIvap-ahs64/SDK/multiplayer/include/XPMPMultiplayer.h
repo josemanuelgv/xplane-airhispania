@@ -314,7 +314,9 @@ void			XPMPLoadPlanesIfNecessary(void);
 							XPMPPlaneID				inPlaneID,
 							const char *			inICAOCode,
 							const char *			inAirline,
-							const char *			inLivery);
+							const char *			inLivery,
+							const char *			type,
+							const char *			cat);
 
 /*
  * XPMPSetDefaultPlaneICAO
