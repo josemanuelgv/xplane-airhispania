@@ -162,6 +162,12 @@ struct	XPMPPlane_t {
 	XPMPPlaneSurfaces_t		surface;
 	int						radarAge;
 	XPMPPlaneRadar_t		radar;
+
+	// Tipo de aeronave (formato "L2J")
+	string type;
+
+	// Categoría de estela turbulenta (L,M,H,V(¡helis!),X...)
+	string cat;
 	
 };
 

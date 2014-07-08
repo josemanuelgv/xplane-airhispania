@@ -717,7 +717,7 @@ static	int kUseICAO[] = { 1, 1, 0, 0, 1, 0 };
 static	int kUseLivery[] = { 1, 0, 1, 0, 0, 0 };
 static	int kUseAirline[] = { 0, 1, 0, 1, 0, 0 };
 
-CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const char * inLivery, bool * got_livery, bool use_default)
+CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const char * inLivery, bool * got_livery, bool use_default, const char * inType, const char * inCat)
 {
 	XPLMPluginID	who;
 	int		total, active;
@@ -729,6 +729,9 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 	string	livery(inLivery ? inLivery : "");
 	string	group;
 	string	key;
+
+	string type(inType); // Tipo de motor
+	string cat(inCat); // Categoría de estela turbulenta
 
 	map<string, string>::iterator group_iter = gGroupings.find(inICAO);
 	if (group_iter != gGroupings.end())
@@ -876,7 +879,40 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 
 								return &gPackages[p].planes[it->second];
 							}
+						} // Fin búsqueda en "doc8643.txt" (ICAOs standard)
+						else // Buscar ahora por los datos que hemos recibido de la red sobre el tipo de motor de la aeronave y la categoría de estela turbulenta
+						{
+							// category
+							bool match = (cat[0] == model_it->second.category);
+
+							// make sure we have a valid equip type if we need it -> Se refiere al formato "L2J")
+							if(pass < 5 && type.size() != 3) match = false;
+
+							// engine type
+							if(match && (pass <= 2 || pass == 4))
+								match = (type[2] == model_it->second.equip[2]);
+
+							// #engines
+							if(match && pass <= 3)
+								match = (type[1] == model_it->second.equip[1]);
+
+							// full configuration string
+							if(match && pass == 1)
+								match = (type == model_it->second.equip);
+
+							if(match) {
+								// bingo
+								if (gIntPrefsFunc("debug", "model_matching", 0))
+								{
+									XPLMDebugString("XSB MATCH/acf - encontrado: (equipo y categoria recibidos de la red)");
+									XPLMDebugString(it->first.c_str());
+									XPLMDebugString("\n");
+								}
+
+								return &gPackages[p].planes[it->second];
+							}
 						}
+
 					}
 
 					++it;
@@ -895,7 +931,7 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 
 	if (!strcmp(inICAO, gDefaultPlane.c_str())) return NULL;
 	if (!use_default) return NULL;
-	return CSL_MatchPlane(gDefaultPlane.c_str(), "", "", got_livery, false);
+	return CSL_MatchPlane(gDefaultPlane.c_str(), "", "", got_livery, false, type.c_str(), cat.c_str());
 }
 
 void	CSL_Dump(void)

@@ -62,7 +62,8 @@ bool			CSL_LoadCSL(
  * the match has a valid paint job or not.
  *
  */
-CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const char * inLivery, bool * got_livery, bool use_default);
+//CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const char * inLivery, bool * got_livery, bool use_default);
+CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const char * inLivery, bool * got_livery, bool use_default, const char * inType, const char * inCat);
 
 /*
  * CSL_Dump

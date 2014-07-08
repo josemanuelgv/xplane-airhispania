@@ -393,7 +393,7 @@ void MultiplayerEngine::setAllModels(string aircraft, string airline, string liv
 			pilot->mtlRequested = true;		// just that we dont ask for the MTL code
 			pilot->setLightPattern(aircraft);
 
-			XPMPChangePlaneModel(pilot->id, aircraft, airline, livery);
+			XPMPChangePlaneModel(pilot->id, aircraft, airline, livery, "", "");
 			xivap.addText(colCyan, "MP: MODEL SET for " + pilot->callsign
 				+ " (" + aircraft + ":" + airline + ":" + livery + ")", true, true);
 		}
@@ -494,7 +494,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 		xivap.addText(colCyan, "MP: Received MTL from " + callsign + ": " + pilot->mtl, true, true);
 
 		if(pilot->XPregistered) {		// we already know this guy -> send the update to X-Plane
-			XPMPChangePlaneModel(pilot->id, icao, airline, livery);
+			XPMPChangePlaneModel(pilot->id, icao, airline, livery, "", "");
 			xivap.addText(colCyan, "MP: Update pilot information on X-Plane: " + callsign 
 				+ " (" + icao + ":" + airline + ":" + livery + ")", true, true);
 		}
@@ -517,11 +517,42 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 			icao = trim(icao);
 	
 			pilot->mtl = packet.tokens[4];
+			char t_motor = packet.tokens[3][0];
+			char t_aero, n_motores;
+			switch (t_motor) {
+				case '0':
+					t_motor = 'P';
+					t_aero = 'L';
+					n_motores = '1'; // FIXME: No creo que se pueda sacar de ninguna parte, así que se asume 1
+					break;
+				case '1':
+					t_motor = 'J';
+					t_aero = 'L';
+					n_motores = '4'; // FIXME: No creo que se pueda sacar de ninguna parte, así que se asumen 4
+					break;
+				case '3':
+					t_motor = 'H';
+					t_aero = 'H';
+					n_motores = '1'; // FIXME: No creo que se pueda sacar de ninguna parte, así que se asume 1
+					break;
+				case '5':
+					t_motor = 'T';
+					t_aero = 'L';
+					n_motores = '2'; // FIXME: No creo que se pueda sacar de ninguna parte, así que se asumen 2
+					break;
+				default:
+					t_motor = 'P';
+					t_aero = 'L';
+					n_motores = '1'; // FIXME: No creo que se pueda sacar de ninguna parte, así que se asume 1
+					break;
+			}
+			pilot->type = t_aero + n_motores + t_motor; // "L2J"
+			pilot->cat = packet.tokens[1];
 			pilot->mtlRequested = true;		// just that we dont ask again for the MTL code
 			xivap.addText(colCyan, "MP: Recibido MTL de " + callsign + ": " + pilot->mtl, true, true);
 
 			if(pilot->XPregistered) {		// we already know this guy -> send the update to X-Plane
-				XPMPChangePlaneModel(pilot->id, icao, airline, livery);
+				XPMPChangePlaneModel(pilot->id, icao, airline, livery, pconst(pilot->type), pconst(pilot->cat));
 				xivap.addText(colCyan, "MP: Actualizada información de Piloto en X-Plane: " + callsign 
 					+ " (" + icao + ":" + airline + ":" + livery + ")", true, true);
 			}
