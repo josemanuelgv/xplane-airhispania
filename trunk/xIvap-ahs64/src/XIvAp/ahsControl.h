@@ -27,10 +27,15 @@ public:
 
 	int countTSChannels();
 
+	int numDep(); // Recuperada la función de la versión anterior para mayor funcionalidad
+
+	string findDep(string freq); // Recuperada la función de la versión anterior para mayor funcionalidad
+
 	string findChannel(string freq);
 
 	int getStatus();
 
+	std::list<string> tschannels;	// Lista de canales de TS -> Pasada a public para acceder desde xivap.cpp
 
 private:
 	
@@ -38,7 +43,7 @@ private:
 
 	std::list<string> deps;			// Lista de dependencias abiertas
 	std::list<string> freqs;		// Lista de frecuencias de cada dependencia
-	std::list<string> tschannels;	// Lista de canales de TS
+//	std::list<string> tschannels;	// Lista de canales de TS
 	std::list<string> chDep;		// Lista de canales de TS que corresponden con cada dependencia
 
 	int status;

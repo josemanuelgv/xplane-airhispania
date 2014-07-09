@@ -145,7 +145,7 @@ void FlightplanForm::create()
    XPHideWidget(fmcarStaticText);
 	// WTC
 	XPCreateWidget(x+158, y, x+168, y-22, 1, "/", 0, window, xpWidgetClass_Caption);
-	wtcPopup = XPCreatePopup(x+174, y, x+220, y-22, 1, "L  (Light);M  (Medium);H  (Heavy);", window);	
+	wtcPopup = XPCreatePopup(x+174, y, x+220, y-22, 1, "L  (Light);M  (Medium);H  (Heavy);V  (Vertical-heli)", window);	
 
 	// Equipment
 	XPCreateWidget(x+221, y, x+233, y-22, 1, "-", 0, window, xpWidgetClass_Caption);
@@ -396,14 +396,17 @@ int	FlightplanForm::handler(XPWidgetMessage inMessage, XPWidgetID inWidget, intp
 				// set WTC
 				switch(acList[curItem].category) {
 					case 'L':
+					default:
 						XPSetWidgetProperty(wtcPopup, xpProperty_PopupCurrentItem, 0);
 						break;
 					case 'M':
 						XPSetWidgetProperty(wtcPopup, xpProperty_PopupCurrentItem, 1);
 						break;
 					case 'H':
-					default:
 						XPSetWidgetProperty(wtcPopup, xpProperty_PopupCurrentItem, 2);
+						break;
+					case 'V':
+						XPSetWidgetProperty(wtcPopup, xpProperty_PopupCurrentItem, 3);
 						break;
 				}
 				updateACList();
@@ -544,27 +547,30 @@ void FlightplanForm::fillForm(bool reset)
 
 	intptr_t i = 0;
 	switch(xivap.fpl.flightrules[0]) {
-		case 'V': i = 0; break;
+		default:
+		case 'V': i = 0; break; // V por defecto (VFR)
+		case 'I': i = 1; break;
 		case 'Y': i = 2; break;
 		case 'Z': i = 3; break;
-		default: i = 1; break; // default to I
 	}
 	XPSetWidgetProperty(flightRulesPopup, xpProperty_PopupCurrentItem, i);
 
 	switch(xivap.fpl.typeofflight[0]) {
 		case 'S': i = 0; break;
 		case 'N': i = 1; break;
-		case 'G': i = 2; break;
+		default:
+		case 'G': i = 2; break; // G por defecto (aviación general)
 		case 'M': i = 3; break;
-		default: i = 4; break;	// default to X
+		case 'X': i = 4; break;
 	}
 	XPSetWidgetProperty(typePopup, xpProperty_PopupCurrentItem, i);
 
 	switch(xivap.fpl.wtc[0]) {
-		case 'L': i = 0; break;
-		case 'M': i = 1; break;
 		default:
+		case 'L': i = 0; break; // L por defecto (categoría ligera)
+		case 'M': i = 1; break;
 		case 'H': i = 2; break;
+		case 'V': i = 3; break; // Añadida categoría de estela turbulenta de los helicópteros (Vertical)
 	}
 	XPSetWidgetProperty(wtcPopup, xpProperty_PopupCurrentItem, i);
 
@@ -726,6 +732,8 @@ void FlightplanForm::send(bool closeWindow)
 		case 0: xivap.fpl.wtc = "L"; break;
 		case 1: xivap.fpl.wtc = "M"; break;
 		case 2: xivap.fpl.wtc = "H"; break;
+		case 3: xivap.fpl.wtc = "V"; break;
+
 	}
 	
 	READFORM(equipTextField, xivap.fpl.equip);
