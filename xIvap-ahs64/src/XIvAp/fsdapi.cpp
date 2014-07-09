@@ -773,9 +773,10 @@ bool FsdAPI::sendFlightplan(Flightplan& fpl)
 			t_motor = 'T';
 			break;
 	}
+	if (t_aero == 'H') t_motor = 'H'; // Asegura que los helicópteros se envían como "H"
 
-//	cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
-	if (length(fpl.wtc) == 1) cat_et = fpl.wtc[0]; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
+//	cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H", "V" o "X", sin definir)
+	if (length(fpl.wtc) == 1) cat_et = fpl.wtc[0]; // Categoría de estela turbulenta ("L", "M", "H", "V" o "X", sin definir)
 	else cat_et = 'X';
 
 	char t_equipo = 'G';
@@ -1095,8 +1096,12 @@ void FsdAPI::sendPlaneInfo(string mtl, string dcallsign)
 			t_motor = '0';
 			break;
 	}
-
-	cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H" o "X", sin definir)
+	if (t_aero == 'H')
+	{
+		t_motor = '3'; // Asegura que los helicópteros se mandan como tipo "3"
+		cat_et = 'V';
+	}
+	else cat_et = aeronave.category; // Categoría de estela turbulenta ("L", "M", "H", "V" o "X", sin definir)
 
 
 // Envío de plane info (MTL-CSL) para la red AHS

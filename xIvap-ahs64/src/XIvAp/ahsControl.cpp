@@ -153,6 +153,10 @@ int AhsControl::countTSChannels(){
 	return tschannels.size();
 }
 
+int AhsControl::numDep(){
+	return deps.size();
+}
+
 void AhsControl::saveToFile()
 {
 	// Save data
@@ -161,6 +165,29 @@ void AhsControl::saveToFile()
 		fputs(html, fp);
 		fclose(fp);
 	}
+}
+
+string AhsControl::findDep(string freq)
+{
+	if(freqs.size() ==0)
+		return "";
+
+	std::list<string>::iterator itd = deps.begin();
+	std::list<string>::iterator itf = freqs.begin();
+	bool found = false;
+	while(itf != freqs.end() ) {
+		if(!(freq == (*itf))){
+			std::advance(itd, 1);
+		}else{
+			found = true;
+			break;
+		}
+		++itf;
+	}
+	if(found)
+		return (*itd);
+	else
+		return "";
 }
 
 string AhsControl::findChannel(string freq)
