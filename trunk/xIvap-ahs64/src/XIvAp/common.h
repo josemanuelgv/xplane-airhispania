@@ -97,6 +97,8 @@ inline float ntohf1( const float f )
 #define SOFTWARE_COPYRIGHT1	"(c)2005-2013 by Martin Domig, Kristof Provost, Andrew McGregor"
 #define	SOFTWARE_COPYRIGHT2	"Thijmen de Gooijer, Kenny Moens, X-AiR Team, XFMC Team"
 #define	SOFTWARE_COPYRIGHT3	"AHS version (c) 2014 by Mikel N'Dong (AHS120D)"
+#define SOFTWARE_COPYRIGHT4 "Tomas Garcia Fresno (AHS232D)"
+#define SOFTWARE_COPYRIGHT5 "Jose Manuel Garcia Valladolid (AHS018D)"
 
 #ifdef IVAO
 #define UNICOM_NAME       "UNICOM"

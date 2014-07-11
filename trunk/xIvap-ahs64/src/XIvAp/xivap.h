@@ -263,7 +263,9 @@ public:
 	};
 	Debuglevels debug;
 
-	double altpeque, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
+	double altpeque, altmedia, altgrande; // Altitudes añadidas para corrección de los aviones en tierra
+
+	bool ghost; // Activación de "avión fantasma" para pruebas
 
 	AhsControl _ahscontrol;
 	bool ahsControlLoaded;

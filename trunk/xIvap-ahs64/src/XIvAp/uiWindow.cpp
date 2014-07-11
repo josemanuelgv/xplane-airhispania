@@ -691,6 +691,7 @@ void UiWindow::buttonClicked(int button)
 /*Prepara el contenido de la ventana de comandos y de visualizacion*/
 void UiWindow::prepScreen()
 {
+	string copyrights;
 	clearText();
 	switch(screen) {
 		case SCREEN_INIT:
@@ -704,11 +705,17 @@ void UiWindow::prepScreen()
 				+ " (Rev. " + xivap.revision() + ")  for " + PLATFORM, true);
 			addText(AL_left, 5, colGreen, SOFTWARE_COPYRIGHT1, true); //splitted the copyrights to fit in the new resized window
 			addText(AL_left, 6, colGreen, SOFTWARE_COPYRIGHT2, true);
-			addText(AL_left, 7, colGreen, SOFTWARE_COPYRIGHT3, true);
+			addText(AL_left, 8, colGreen, SOFTWARE_COPYRIGHT3, true);
+			copyrights = SOFTWARE_COPYRIGHT4;
+			copyrights = "                        " + copyrights;
+			addText(AL_left, 9, colGreen, copyrights, true);
+			copyrights = SOFTWARE_COPYRIGHT5;
+			copyrights = "                        " + copyrights;
+			addText(AL_left, 10, colGreen, copyrights, true);
 			#if (X64) 
-			addText(AL_left, 8, colGreen, "(64 bit version)", true);
+			addText(AL_left, 11, colGreen, "(64 bit version)", true);
 			#else 
-			addText(AL_left, 8, colGreen, "(32 bit version)", true);
+			addText(AL_left, 11, colGreen, "(32 bit version)", true);
 			#endif	
 			addText(AL_right, 9, colWhite, "MAIN>", true);
 			

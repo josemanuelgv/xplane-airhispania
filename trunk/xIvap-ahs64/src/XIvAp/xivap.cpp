@@ -136,9 +136,11 @@ Xivap::Xivap()
 	// Niveles de debug iniciados a 0
 	debug.debuglevels = 0;
 
-	altpeque = 1.0f; // Altura añadida por defecto para corrección de aviones en tierra
-	altgrande = 5.0f; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
+	altpeque = 1.0; // Altura añadida por defecto para corrección de aviones en tierra
+	altmedia = 5.0;
+	altgrande = 10.0; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
 
+	ghost = false; // Desactiva avión fantasma de pruebas
 }
 
 Xivap::~Xivap()
@@ -433,7 +435,7 @@ void Xivap::XPluginStart()
 	{
 
 #ifdef WIN32
-		CreateDirectory(str, NULL); // En caso de no existir, sólo crea el último directorio, no el árbol entero
+		CreateDirectory(str, NULL); // FIXME: En caso de no existir, sólo crea el último directorio, no el árbol entero
 #endif
 		
 		if (str[length(str)-1] != DIR_CHAR) str += DIR_CHAR;
@@ -836,6 +838,8 @@ void Xivap::updatePosition(PlanePosition* position)
 
 	_onground = agl < 1.5; // anything that does not fly higher than 1.50cm is "on ground"
 	groundalt = el - agl;
+
+	if (ghost) test("PPOS"); // Envía posición de avión fantasma si está activado
 }
 
 void Xivap::updateStatus()
@@ -1525,7 +1529,6 @@ void Xivap::sendFlightplan()
 
 void Xivap::test(string linea) // Diversos tests relacionados con la simulación de recepción de mensajes desde la red
 {
-	
 	linea = "@*:" + trim(strupcase(linea)); // prepara texto para utilizar FSD::Message.decompose
 	FSD::Message m, mlinea;
 	mlinea.decompose(linea);
@@ -1545,14 +1548,18 @@ void Xivap::test(string linea) // Diversos tests relacionados con la simulación 
 		m.tokens.push_back("7400");
 		m.tokens.push_back("1");
 		m.tokens.push_back(ftoa(lat));
-		m.tokens.push_back(ftoa(lon + 0.002f)); // Varía un poco la posición respecto a la propia
-//		if (mlinea.tokens.size() > 1) m.tokens.push_back(itostring((int)(elevationft() + 1 + atof(mlinea.tokens[1])))); // 2º parámetro: altitud extra añadida para aviones grandes
-//		else m.tokens.push_back(itostring((int)(elevationft() + 1)));
+		m.tokens.push_back(ftoa(lon + 0.001f)); // Varía un poco la posición respecto a la propia
+		if (mlinea.tokens.size() > 0) m.tokens.push_back(itostring((int)(elevationft() + atof(mlinea.tokens[0])))); // 1er. parámetro: altitud extra añadida para aviones grandes
+		else m.tokens.push_back(itostring((int)(elevationft())));
 //		if (mlinea.tokens.size()> 1) altgrande = atof(mlinea.tokens[1]);
-		m.tokens.push_back(itostring((int)(elevationft() + 1)));
-		m.tokens.push_back("0");
-		m.tokens.push_back("4290774782"); // PBH de avión cogido al azar de una traza de la red
-		m.tokens.push_back("0");
+//		m.tokens.push_back(itostring((int)(elevationft())));
+		m.tokens.push_back("0"); // Velocidad
+		FSD::FS_PBH PBH;
+		PBH.pbh = 4290774782; // PBH de avión cogido al azar de una traza de la red
+		PBH.onground = 1; // Activar el flag de avión en tierra 
+		m.tokens.push_back(itostring(PBH.pbh)); // PBH de avión cogido al azar de una traza de la red
+//		m.tokens.push_back("4290774782"); // PBH de avión cogido al azar de una traza de la red
+		m.tokens.push_back("0"); // Diferencia de altura entre indicada y "real"
 	}
 	else if (mlinea.dest == "PI")
 	{
@@ -1587,12 +1594,32 @@ void Xivap::test(string linea) // Diversos tests relacionados con la simulación 
 			m.tokens.push_back(mlinea.tokens[0]); // 1er. parámetro: parámetros del avión en forma numérica
 		}
 	}
+	else if (mlinea.dest == "GHOST")
+	{
+		if (mlinea.tokens.size() > 0) 
+		{
+			if (strupcase(mlinea.tokens[0]) == "OFF") ghost = false; // 1er. parámetro: parámetros del avión en forma numérica
+		}
+		else ghost = !ghost;
+
+		if (debug.multiplayer)
+		{
+			if (ghost) addText(colYellow, "'Aeronave fantasma' activada", true, true);
+				else addText(colRed, "'Aeronave fantasma' desactivada", true, true);
+		}
+
+		m.type = _FSD_INVALID_;
+	}
 
 		if(m.type != _FSD_INVALID_ && m.source != fsd.callsign()) {
 			// ignore invalid packets or packets that are from myself
 
 //FIXME:DEBUG
-			addText(colRed, "No es invalid y no soy yo la fuente", true, true);
+			if (debug.net)
+			{
+				addText(colDarkGreen , "Mensaje ficticio: " + m.compose(), true, true);
+				addText(colRed, "No es invalid y no soy yo la fuente", true, true);
+			}
 
 			// handle message / fsd packet
 			switch(m.type) {

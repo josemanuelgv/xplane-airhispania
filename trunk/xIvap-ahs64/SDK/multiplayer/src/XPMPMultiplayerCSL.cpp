@@ -813,6 +813,7 @@ CSLPlane_t *	CSL_MatchPlane(const char * inICAO, const char * inAirline, const c
 				case 'L': XPLMDebugString(" light "); break;
 				case 'M': XPLMDebugString(" medium "); break;
 				case 'H': XPLMDebugString(" heavy "); break;
+				case 'V': XPLMDebugString(" 'vertical' "); break;
 				default: XPLMDebugString(" funny "); break;
 			}
 			XPLMDebugString(model_it->second.equip.c_str());

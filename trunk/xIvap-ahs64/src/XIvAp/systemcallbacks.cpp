@@ -32,7 +32,7 @@ PLUGIN_API int XPluginStart(char *outName, char *outSig, char *outDesc)
 	strcpy(outName, "X-IvAp");
 	strcpy(outSig, "ivao.xivap");
 	string desc = string(SOFTWARE_NAME) + " " 
-		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Vuela en la red de AHS " + SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3;
+		+ SOFTWARE_VERSION + " (" + SOFTWARE_REVISION + ") - Vuela en la red de AHS " + SOFTWARE_COPYRIGHT1 + " " + SOFTWARE_COPYRIGHT3 + " " + SOFTWARE_COPYRIGHT4 + " " + SOFTWARE_COPYRIGHT5;
 	strcpy(outDesc, pconst(desc));
 	if (!InitSound()) XPLMDebugString(" Xivap SoundInit error\r\n"); //added for sound init
 	if (!InitGraphics()) XPLMDebugString("XIvap Graphics init error\r\n");//added for graphics init
@@ -250,7 +250,7 @@ void MenuHandlerCallback(void *inMenuRef, void *inItemRef)
 			xivap.messageBox().show(string(FSD_SOFTWARE_NAME)
 				+ " " + SOFTWARE_VERSION + "(Rev. " + xivap.revision() + ")  -  " 
 //				+ SOFTWARE_COPYRIGHT1 + "     www.ivao.aero/softdev/X-IvAp");
-				+ SOFTWARE_COPYRIGHT1 + SOFTWARE_COPYRIGHT3);
+				+ SOFTWARE_COPYRIGHT1 + "; " + SOFTWARE_COPYRIGHT3 + " " + SOFTWARE_COPYRIGHT4 + "         " + SOFTWARE_COPYRIGHT5);
 			break;
 
 		default:
