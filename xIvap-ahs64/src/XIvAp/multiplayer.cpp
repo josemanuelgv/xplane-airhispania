@@ -639,10 +639,10 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 			double ant_elev = pos0->pos.elevation;
 //			pos0->pos.elevation = (xivap.elevationft() / 3.2808399) - (xivap.Getgroundalt() / 2.2) ; // Equiparar la altitud del avión de la red con la nuestra
 //			pos0->pos.elevation = xivap.elevationft() + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
-			pos0->pos.elevation = xivap.elevationft() - (xivap.Getgroundalt() / 2.2f * 3.2808399f) + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
+			pos0->pos.elevation = xivap.elevationft() - ((xivap.Getgroundalt() / 2.2f) * 3.2808399f) + xivap.altpeque; // Equiparar la altitud del avión de la red con la nuestra
 //FIXME: DEBUG
 		if (xivap.debug.multiplayer)
-				xivap.addText(colRed, "Corregida posicion en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "ft -> " + ftoa(pos0->pos.elevation) + "ft)", true, true);
+			xivap.addText(colRed, "Corregida posicion en tierra de " + callsign + "(" + pilot->mtl + "): " + ftoa(ant_elev) + "ft -> " + ftoa(pos0->pos.elevation) + "ft) (pilot->onground = " + itostring(pilot->onground) + ")", true, true);
 
 			PlaneMap::iterator pilotIter = _planes.find(STDSTRING(packet.dest));
 //			MultiplayerPilot *pilot;
@@ -651,7 +651,7 @@ void MultiplayerEngine::eatThis(const FSD::Message &packet)
 //				if (pilotIter->second->mtl[0] == 'A' || (pilotIter->second->mtl[0] != 'B' && pos("BE", pilotIter->second->mtl) == -1)  || pilotIter->second->mtl[0] != 'M') // Si es un Airbus, Boeing o MD
 				if (pilot->mtl[0] == 'A' || (pilot->mtl[0] == 'B' && pos("BE", pilot->mtl) == -1)  || pilot->mtl[0] == 'M') // Si es un Airbus, Boeing o MD
 				{
-					pos0->pos.elevation += xivap.altgrande; // Elevo el avión unos 4m para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
+					pos0->pos.elevation += xivap.altmedia; // Elevo el avión unos 5ft para que no salga hundido (FIXME: probar diferentes valores hasta hallar alguno más o menos ajustado)					
 //FIXME: DEBUG
 				if (xivap.debug.multiplayer)
 					xivap.addText(colRed, "Corregida otra vez al alza posicion en tierra de " + callsign + " (avion grande: " + pilot->mtl + ") a " + ftoa(pos0->pos.elevation) +" ft" , true, true);

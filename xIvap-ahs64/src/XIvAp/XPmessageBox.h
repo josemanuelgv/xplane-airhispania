@@ -28,6 +28,7 @@ public:
 
 private:
 	XPWidgetID window, text1, text2, text3;
+	XPWidgetID text4, text5, text6; //Añadidas tres líneas más de texto para los copyrights
 	XPWidgetID okButton;
 	void create();
 	
