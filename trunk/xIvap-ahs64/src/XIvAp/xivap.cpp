@@ -129,7 +129,7 @@ Xivap::Xivap()
 	_p2p_max_sendbps = P2P_DEFAULT_MAX_SENDBPS;
 	_p2p_max_recvbps = P2P_DEFAULT_MAX_RECVBPS;
 
-	_plane_resolution = 3;
+	_plane_resolution = 5;
 //	_default_icao = "A320";
 	_default_icao = "C182";
 
@@ -2328,7 +2328,11 @@ void Xivap::handleCommand(string line)
 		return;
 
 	} else if(command == "METAR") {
-		if(!online()) return;
+		if(!online())
+		{
+			uiWindow.addMessage(colRed, "No conectado", false, false);
+			return;
+		}
 		line = trim(strupcase(line));
 //		fsd.sendWxRequest(FSD::WX_METAR, line);
 //		Sleep(2000); // Espera 2 seg. para que se reciba el METAR y se guarde en la dB
@@ -2340,27 +2344,27 @@ void Xivap::handleCommand(string line)
 			{
 //				uiWindow.addMessage(colWhite, "METAR de " + line + ": " + rMETAR);
 //				msgWindow.addMessage(colWhite, "METAR de " + line + ": " + rMETAR);
-				uiWindow.addMessage(colWhite, rMETAR);
-//				msgWindow.addMessage(colWhite, rMETAR);
+				uiWindow.addMessage(colWhite, rMETAR, true, true);
+				msgWindow.addMessage(colWhite, rMETAR);
 			}
 			else
 			{
 				WxStation station = _weatherDB.findName(line);
 				if(station.name != "")
 				{
-					uiWindow.addMessage(colWhite, station.metar);
+					uiWindow.addMessage(colWhite, station.metar + " (almacenado previamente)", true, true);
 					msgWindow.addMessage(colWhite, station.metar);
 				}
 				else
 				{
-					uiWindow.addMessage(colWhite, "No hay datos de METAR para " + line);
-					msgWindow.addMessage(colWhite, "No hay datos de METAR para " + line);
+					uiWindow.addMessage(colRed, "No hay datos de METAR para " + line, true, true);
+//					msgWindow.addMessage(colWhite, "No hay datos de METAR para " + line);
 				}
 			}
 		}
 
 		return;
-
+/*
 	} else if(command == "TAF") {
 		if(!online()) return;
 		fsd.sendWxRequest(FSD::WX_TAF, line);
@@ -2370,7 +2374,7 @@ void Xivap::handleCommand(string line)
 		if(!online()) return;
 		fsd.sendWxRequest(FSD::WX_SHORTTAF, line);
 		return;
-
+*/
 	} else if(command == "ATIS") {
 		if(!online()) return;
 		fsd.sendInfoRequest(line, _FSD_INFOREQ_ATIS_);
@@ -2400,7 +2404,8 @@ void Xivap::handleCommand(string line)
 
 	} else if(command == "NOWX") {
 		setWeather(false);
-		uiWindow.addMessage(colDarkGreen, "Meteorología desactivada");
+		uiWindow.addMessage(colRed, "Meteorologia de la red AHS desactivada", true, true);
+		uiWindow.addMessage(colDarkGreen, "Meteorologia nativa de X-Plane activada", true, true);
 		return;
 
 	} else if(command == "CAVOK") {
@@ -2427,13 +2432,13 @@ void Xivap::handleCommand(string line)
 			{
 				cavok = false;
 				Graphics&=~32;
-				uiWindow.addMessage(colDarkGreen, "CAVOK desactivado");
+				uiWindow.addMessage(colDarkGreen, "CAVOK desactivado", true, true);
 			}
 			else // cualquier otro parámetro, se interpretará como activar CAVOK
 			{
 				cavok = true;
 				Graphics|=32;
-				uiWindow.addMessage(colDarkGreen, "CAVOK activado");
+				uiWindow.addMessage(colYellow, "CAVOK activado", true, true);
 			}
 		}
 		checkWeather(XPLMGetElapsedTime());
@@ -2441,7 +2446,9 @@ void Xivap::handleCommand(string line)
 
 	} else if(command == "YESWX") {
 		setWeather(true);
-		uiWindow.addMessage(colDarkGreen, "Meteorología activada");
+		uiWindow.addMessage(colDarkGreen, "Meteorologia de la red AHS activada");
+		uiWindow.addMessage(colRed, "Meteorologia nativa de X-Plane desactivada");
+
 		return;
 
 #ifdef HAVE_TEAMSPEAK
@@ -2576,7 +2583,7 @@ void Xivap::handleCommand(string line)
 
 	}	else if (command=="TEST") { //special inserted debugconsole command 22/02/2014 bvk
 		/*insert here the functions you whish to check*/
-		xivap.test(line); // Rehabilitado comando "TEST" para mandar un mensaje al plugin como si viniera de la red
+		xivap.test(line); // Rehabilitado comando "TEST" para varios usos
 		return;
 
 	}	else if (command=="SEND") { // Añadido para mandar un mensaje manualmente a la red
@@ -2616,45 +2623,172 @@ void Xivap::handleCommand(string line)
 			{
 				if (mdebug.tokens.size() == 1) // Si hay un parámetro
 				{
-					if (mdebug.tokens[0] == "NET") debug.net = 1; // mensajes de red
-					else if (mdebug.tokens[0] == "WX") debug.weather = 3; // sistema de meteorología debug completo
-					else if (mdebug.tokens[0] == "MP") debug.multiplayer = 1; // sistema multiplayer
-					else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
-					else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
-					else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
-					else if (mdebug.tokens[0] == "BB") debug.bb = 1; // caja negra
-					else if (mdebug.tokens[0] == "OFF") debug.debuglevels = 0; // debug desactivado
+					if (mdebug.tokens[0] == "NET")
+					{
+						debug.net = 1; // mensajes de red
+						addText(colDarkGreen, "Depuracion de mensajes de red activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "WX")
+					{
+						debug.weather = 3; // sistema de meteorología debug completo
+						addText(colDarkGreen, "Depuracion de mensajes de meteorologia activada (nivel maximo)", true, true);
+					}
+					else if (mdebug.tokens[0] == "MP")
+					{
+						debug.multiplayer = 1; // sistema multiplayer
+						addText(colDarkGreen, "Depuracion de multijugador activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "TS")
+					{
+						debug.teamspeak = 1; // teamspeak
+						addText(colDarkGreen, "Depuracion de Teamspeak activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "PARAMS")
+					{
+						debug.params = 1; // parámetros del avión
+						addText(colDarkGreen, "Depuracion de mensajes de parametros del avion activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "UI")
+					{
+						debug.ui = 1; // interfaz de usuario
+						addText(colDarkGreen, "Depuracion de interfaz de usuario activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "BB")
+					{
+						debug.bb = 1; // caja negra
+						addText(colDarkGreen, "Depuracion de caja negra activada", true, true);
+					}
+					else if (mdebug.tokens[0] == "OFF")
+					{
+						debug.debuglevels = 0; // debug desactivado
+						addText(colRed, "Depuracion desactivada", true, true);
+					}
+
 				} // if 1 parámetro
 				else if (mdebug.tokens.size() == 2) // Si hay 2 parámetros
 				{
 					if (mdebug.tokens[1] == "OFF")
 					{
-						if (mdebug.tokens[0] == "NET") debug.net = 0;
-						else if (mdebug.tokens[0] == "WX") debug.weather = 0;
-						else if (mdebug.tokens[0] == "MP") debug.multiplayer = 0;
-						else if (mdebug.tokens[0] == "TS") debug.teamspeak = 0;
-						else if (mdebug.tokens[0] == "PARAMS") debug.params = 0;
-						else if (mdebug.tokens[0] == "UI") debug.ui = 0;
-						else if (mdebug.tokens[0] == "BB") debug.bb = 0; 
+						if (mdebug.tokens[0] == "NET")
+						{
+							debug.net = 0; // mensajes de red
+							addText(colRed, "Depuracion de mensajes de red desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "WX")
+						{
+							debug.weather = 0; // sistema de meteorología
+							addText(colRed, "Depuracion de mensajes de meteorologia desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "MP")
+						{
+							debug.multiplayer = 0; // sistema multiplayer
+							addText(colRed, "Depuracion de multijugador desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "TS")
+						{
+							debug.teamspeak = 0; // teamspeak
+							addText(colRed, "Depuracion de Teamspeak desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "PARAMS")
+						{
+							debug.params = 0; // parámetros del avión
+							addText(colRed, "Depuracion de mensajes de parametros del avion desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "UI")
+						{
+							debug.ui = 0; // interfaz de usuario
+							addText(colRed, "Depuracion de interfaz de usuario desactivada", true, true);
+						}
+						else if (mdebug.tokens[0] == "BB")
+						{
+							debug.bb = 0; // caja negra
+							addText(colRed, "Depuracion de caja negra desactivada", true, true);
+						}
 					}
 					else if (mdebug.tokens[1] == "ON")
 					{
-						if (mdebug.tokens[0] == "NET") debug.net = 1; // mensajes de red
-						else if (mdebug.tokens[0] == "WX") debug.weather = 3; // sistema de meteorología debug completo
-						else if (mdebug.tokens[0] == "MP") debug.multiplayer = 1; // sistema multiplayer
-						else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
-						else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
-						else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
-						else if (mdebug.tokens[0] == "BB") debug.bb = 1; 
+						if (mdebug.tokens[0] == "NET")
+						{
+							debug.net = 1; // mensajes de red
+							addText(colDarkGreen, "Depuracion de mensajes de red activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "WX")
+						{
+							debug.weather = 3; // sistema de meteorología debug completo
+							addText(colDarkGreen, "Depuracion de mensajes de meteorologia activada (nivel maximo)", true, true);
+						}
+						else if (mdebug.tokens[0] == "MP")
+						{
+							debug.multiplayer = 1; // sistema multiplayer
+							addText(colDarkGreen, "Depuracion de multijugador activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "TS")
+						{
+							debug.teamspeak = 1; // teamspeak
+							addText(colDarkGreen, "Depuracion de Teamspeak activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "PARAMS")
+						{
+							debug.params = 1; // parámetros del avión
+							addText(colDarkGreen, "Depuracion de mensajes de parametros del avion activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "UI")
+						{
+							debug.ui = 1; // interfaz de usuario
+							addText(colDarkGreen, "Depuracion de interfaz de usuario activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "BB")
+						{
+							debug.bb = 1; // caja negra
+							addText(colDarkGreen, "Depuracion de caja negra activada", true, true);
+						}
 					}
 					else
 					{
-						if (mdebug.tokens[0] == "NET") debug.net = 1; // mensajes de red
-						else if (mdebug.tokens[0] == "WX") debug.weather = atoi(mdebug.tokens[1]); // nivel de debug para el sistema de meteorología (de 1 a 3)
-						else if (mdebug.tokens[0] == "MP") debug.multiplayer = 1; // sistema multiplayer
-						else if (mdebug.tokens[0] == "TS") debug.teamspeak = 1; // teamspeak
-						else if (mdebug.tokens[0] == "PARAMS") debug.params = 1; // parámetros del avión
-						else if (mdebug.tokens[0] == "UI") debug.ui = 1; // interfaz de usuario
+						if (mdebug.tokens[0] == "NET")
+						{
+							debug.net = 1; // mensajes de red
+							addText(colDarkGreen, "Depuracion de mensajes de red activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "WX")
+						{
+							int nivel = atoi(mdebug.tokens[1]);
+							if (nivel != 0)
+							{
+								debug.weather = atoi(mdebug.tokens[1]); // nivel de debug para el sistema de meteorología (de 1 a 3)
+								addText(colDarkGreen, "Depuracion de mensajes de meteorologia activada (nivel " + itostring(debug.weather) + ")", true, true);
+							}
+							else
+							{
+								debug.weather = 0; // sistema de meteorología
+								addText(colRed, "Depuracion de mensajes de meteorologia desactivada", true, true);
+							}
+						}
+						else if (mdebug.tokens[0] == "MP")
+						{
+							debug.multiplayer = 1; // sistema multiplayer
+							addText(colDarkGreen, "Depuracion de multijugador activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "TS")
+						{
+							debug.teamspeak = 1; // teamspeak
+							addText(colDarkGreen, "Depuracion de Teamspeak activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "PARAMS")
+						{
+							debug.params = 1; // parámetros del avión
+							addText(colDarkGreen, "Depuracion de mensajes de parametros del avion activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "UI")
+						{
+							debug.ui = 1; // interfaz de usuario
+							addText(colDarkGreen, "Depuracion de interfaz de usuario activada", true, true);
+						}
+						else if (mdebug.tokens[0] == "BB")
+						{
+							debug.bb = 1; // caja negra
+							addText(colDarkGreen, "Depuracion de caja negra activada", true, true);
+						}
 					}
 				} // if 2 parámetros
 			}
@@ -2665,26 +2799,29 @@ void Xivap::handleCommand(string line)
 		uiWindow.addMessage(colYellow, "Lista de comandos:", false, false);
 		uiWindow.addMessage(colYellow, ".R <text> - responder a mensaje privado", false, false);
 		uiWindow.addMessage(colYellow, ".MSG <callsign> <text> - enviar un mensaje privado a un callsign", false, false);
-		uiWindow.addMessage(colYellow, ".CHAT <callsign> - abrir una ventana de chat a un callsign (teclear .HELP allí)", false, false);
+		uiWindow.addMessage(colYellow, ".CHAT <callsign> - abrir una ventana de chat a un callsign (teclear .HELP alli)", false, false);
 		uiWindow.addMessage(colYellow, ".WALLOP <message> - enviar un mensaje a todos los SUPs online", false, false);
-		uiWindow.addMessage(colYellow, ".METAR <station> - solicitar METAR de una estación", false, false);
-		uiWindow.addMessage(colYellow, ".TAF <station - solicitar TAF de una estación", false, false);
-		uiWindow.addMessage(colYellow, ".SHORTTAF <station> - solicitar SHORTTAF de una estación", false, false);
+		uiWindow.addMessage(colYellow, ".METAR <station> - solicitar METAR de una estacion", false, false);
+//		uiWindow.addMessage(colYellow, ".TAF <station> - solicitar TAF de una estacion", false, false);
+//		uiWindow.addMessage(colYellow, ".SHORTTAF <station> - solicitar SHORTTAF de una estacion", false, false);
 		uiWindow.addMessage(colYellow, ".ATIS <callsign> - solicitar mensaje ATIS", false, false);
-		uiWindow.addMessage(colYellow, ".NOMP / .YESMP - modo Multijugador off/on", false, false);
-		uiWindow.addMessage(colYellow, ".NOWX / .YESWX - modo Meteorología off/on", false, false);
+		uiWindow.addMessage(colYellow, ".NOMP / .YESMP - Desactivar / activar modo Multijugador", false, false);
+		uiWindow.addMessage(colYellow, ".NOWX / .YESWX - Desactivar / activar meteorologia de la red de AHS", false, false);
 		uiWindow.addMessage(colYellow, ".VOICE / .NOVOICE - modo Voz off/on", false, false);
-		uiWindow.addMessage(colYellow, ".MODEL <aircraft>/<airline>/<livery> - ver a todos los demás jugadores como el avion especificado (para desarrolladores CSL)", false, false);
-		uiWindow.addMessage(colYellow, ".DUMPWX <ICAO> - volcar el perfil de clima actual y el perfil para ICAO en un fichero log y consola (para depuración WX )", false, false);
+		uiWindow.addMessage(colYellow, ".MODEL <aircraft>/<airline>/<livery> - ver a todos los demas pilotos conectados como la aeronave especificada (para desarrolladores CSL)", false, false);
+		uiWindow.addMessage(colYellow, ".DUMPWX <ICAO> - volcar el perfil de clima actual y el perfil para ICAO en un fichero log y consola (para depuracion WX)", false, false);
 		uiWindow.addMessage(colYellow, ".FIND <ID> - imprimir informacion sobre la NavId ID", false, false);
-		uiWindow.addMessage(colYellow, ".X <code> - sintonizar el transponder en el código especificado", false, false);
+		uiWindow.addMessage(colYellow, ".X <code> - sintonizar el transponder en el codigo especificado", false, false);
 		uiWindow.addMessage(colYellow, ".C1 <freq> / .C2 <freq> - sintonizar COM1 o COM2 en freq", false, false);
-		uiWindow.addMessage(colYellow, ".QNH <QNH> .ALT <ALTIMETER> - Establecer el altímetro primario en el valor barómetrico dado", false, false);
+		uiWindow.addMessage(colYellow, ".QNH <QNH_en_mb> .ALT <ALTIMETER_en_inHg> - Establecer el altimetro primario en el valor barometrico dado", false, false);
 		uiWindow.addMessage(colYellow, ".TEST MSG:<mensaje> - probar mensaje como si viniera de la red (solo para desarrolladores)", false, false);
+		uiWindow.addMessage(colYellow, ".TEST GHOST [OFF] - Activar / desactivar avion fantasma para pruebas de texturas (solo para desarrolladores)", false, false);
+		uiWindow.addMessage(colYellow, ".TEST PI:<ICAO> - probar mensaje como si viniera de la red (solo para desarrolladores)", false, false);
 		uiWindow.addMessage(colYellow, ".SEND <mensaje> - enviar mensaje a la red (solo para desarrolladores)", false, false);
-		uiWindow.addMessage(colYellow, ".CAVOK / .CAVOK OFF - Activar o desactivar modo CAVOK forzado", false, false);
-		uiWindow.addMessage(colYellow, ".TS <canal> - Conectarse al canal del Teamspeak", false, false);
-		uiWindow.addMessage(colYellow, "Usar flecha-arriba y flecha-abajo para desplazar pantalla", false, false);
+		uiWindow.addMessage(colYellow, ".CAVOK [OFF] - Activar o desactivar modo CAVOK forzado", false, false);
+		uiWindow.addMessage(colYellow, ".TS <canal> - Conectarse al canal del Teamspeak especificado", false, false);
+		uiWindow.addMessage(colYellow, ".ICAO <ICAO> - Definir ICAO de la aeronave para mostrar a los demas pilotos en la red", false, false);
+		uiWindow.addMessage(colYellow, "Use flecha-arriba y flecha-abajo para desplazar pantalla", false, false);
 		return;
 
 	}
@@ -2917,7 +3054,11 @@ void Xivap::setWeather(bool value)
 	_erwin.init();
 	_weatherDB.clear();
 	_useWeather = value;
-	if(!_useWeather) fsd.unsubscribeWeather();
+	if(!_useWeather)
+	{
+		fsd.unsubscribeWeather();
+		_erwin.disable(); // Reactiva el sistema de meteorologia nativo de X-Plane
+	}
 	else fsd.subscribeWeather();
 
 	ConfigFile config;

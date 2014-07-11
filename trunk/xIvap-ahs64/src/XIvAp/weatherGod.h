@@ -98,6 +98,9 @@ public:
 	WeatherGod(): initialized(false), haveWeather(false) {};
 
 	void init();
+
+	void disable(); // Añadido para restaurar sistema de meteorologia nativo de X-Plane en caso de no utilizar la de la red de AHS
+
 	void setWeather(const WxStation& station, float aircraftAltm, float groundAltm);
 
 	// call once per second

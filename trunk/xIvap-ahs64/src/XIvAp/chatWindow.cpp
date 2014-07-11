@@ -432,10 +432,14 @@ void ChatWindow::processLine(string line)
 {
 	string l2 = strupcase(line);
 	if(l2 == ".HELP") {
-		addMessage(colYellow, "Everything you type here goes to all callsigns in the titlebar. You don't have to use .MSG here.");
-		addMessage(colYellow, "To add a callsign to the list, type +<callsign>");
-		addMessage(colYellow, "To remove it, type -<callsign>");
-		addMessage(colYellow, "Use your arrow-up and -down keys to scroll up and down in this window");
+//		addMessage(colYellow, "Everything you type here goes to all callsigns in the titlebar. You don't have to use .MSG here.");
+//		addMessage(colYellow, "To add a callsign to the list, type +<callsign>");
+//		addMessage(colYellow, "To remove it, type -<callsign>");
+//		addMessage(colYellow, "Use your arrow-up and -down keys to scroll up and down in this window");
+		addMessage(colYellow, "Todo lo que teclea aqui se envia a todos los indicativos en la barra de titulo. No necesita usar '.MSG'.");
+		addMessage(colYellow, "Para agregar un idicativo a la lista, teclee +<indicativo>");
+		addMessage(colYellow, "Para eliminarlo, teclee -<indicativo>");
+		addMessage(colYellow, "Use las teclas de cursor (flecha) arriba y abajo para desplazar las lineas");
 	} else if(l2[0] == '.') {
 		xivap.handleCommand(line);
 	} else if(l2[0] == '+') {
