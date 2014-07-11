@@ -253,6 +253,13 @@ void WeatherGod::init()
 	oldWxStation = "";
 }
 
+/* Añadido para restaurar meteorologia nativa de X-Plane */
+void WeatherGod::disable()
+{
+	XPLMDataRef ref_use_real_weather_bool = XPLMFindDataRef("sim/weather/use_real_weather_bool");
+	XPLMSetDatai(ref_use_real_weather_bool, 1);
+}
+
 void WeatherGod::syncWx()
 {
 	current.getWeather();
