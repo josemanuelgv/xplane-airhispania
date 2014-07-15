@@ -23,6 +23,8 @@
  
 = Instalación =
 
+  <font color="red">Antes de instalar este plugin es importante asegurarnos de que no tenemos instalado la versión original del plugin XivAp para IVAO ya que ambos no pueden coexistir en el mismo simulador. Siempre podemos "mover" el plugin de IVAO a otra carpeta si no queremos borrarlo definitivamente.</font>
+
   En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
 
   # Descargamos la última versión del plugin: [https://drive.google.com/file/d/0By8c9o_8djGZN0ZYa0VHLWNWZEk/edit?usp=sharing XivAp AHS r82]
