@@ -67,7 +67,7 @@ Uso:
  # Ejecutar "MakeRwys.exe". Aparecerá una ventana de comandos en la que se rastrea la base de datos de aeródromos de nuestro simulador y se calcula la posición de las pistas y sus cabeceras.
  # Ejecutar "AhsBender.exe" para valorar vuelos. Este software se puede descargar desde la web de AirHispania. Todas las pruebas se han realizado con la versión para FS9 del mismo. Una vez instalado, hay que copiar el fichero AhsBender.exe al directorio de XPlane y, desde allí, ejecutarlo.
 
-Opcionalmente ejecutar "AptViewer" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite inspeccionar toda la base de datos de aeropuertos que tenemos instalada.
+Opcionalmente ejecutar "AptViewer.exe" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite realizar búsquedas sobre toda la base de datos de aeropuertos que tenemos instalada.
   
  
   === Elementos del terreno ===
