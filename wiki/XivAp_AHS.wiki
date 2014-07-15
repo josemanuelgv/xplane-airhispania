@@ -1,0 +1,40 @@
+#XivAp para AirHispania
+
+= Introducción =
+
+ Este tutorial proporciona una guía para la instalación y puesta en marcha del plugin de XivAP de AirHispania para XPlane 10 (64b). Este plugin es el resultado de la adaptación de la versión Open Source de XivAp disponible en sourceforge.net para el servidor de vuelo online de AirHispania.
+
+= Nuevas funcionalidades =
+
+ La versión de XivAp para AHS tiene básicamente las mismas características que su homólogo para IVAO, pero es importante resaltar algunas funcionalides específicas para AirHispania:
+
+ * Integración con AhsControl para la sintonización correcta de canales de TeamSpeak para cada dependencia activa.
+ * Integración en el propio plugin de la caja negra (AhsBox). Simplemente con activar la aviónica, nuestro plugin genera un archivo de caja negra totalmente compatible con AhsBox y AhsBender. No necesitamos tener AhsBox ejecutándose ni los plugins de los que depende (XPUIPC).
+ * Interfaz gráfica del plugin ampliada.
+ * Activación del modo CAVOK.
+
+= Requerimientos necesarios =
+
+  * XPlane 10 64 bits
+  * TeamSpeak 2 RC2
+ 
+= Instalación =
+
+  En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
+
+  # Abrimos el archivo zip de la distribución de XIvap para AHS.
+  # Copiamos el contenido de la carpeta "for_plugins_folder" en la carpeta %XPLANE10%/Resources/plugins.
+  
+  Aunque ya tenemos el plugin listo para ejecutar, es muy importante antes configurar algunos ficheros tal como expone la siguiente sección.
+
+= Configuración =
+
+  Abriermos el archivo %XPLANE10%/Resources/plugins/X-IvAp Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
+   * BASE: Indicaremos el ICAO de nuestro aeródromo base.
+   * REALNAME: Indicaremos nuestro nombre completo.
+   * PASSWORD: Indicaremos nuestra clave de acceso a AirHispania.
+   * VID: Indicaremos nuestro indicativo sin el prefijo AHS. Por ejemplo, 018D.
+   * CARPETA: 
+= Otros recursos =
+  
+= Puesta en marcha =
