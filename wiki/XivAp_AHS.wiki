@@ -14,6 +14,7 @@
  * Integración en el propio plugin de la caja negra (AhsBox). Simplemente con activar la aviónica, nuestro plugin genera un archivo de caja negra totalmente compatible con AhsBox y AhsBender. No necesitamos tener AhsBox ejecutándose ni los plugins de los que depende (XPUIPC).
  * Interfaz gráfica del plugin ampliada.
  * Activación del modo CAVOK.
+ * Incorporación de paquete de CSL's de las aeronaves de la flota de AirHispania.
 
 = Requerimientos necesarios =
 
@@ -24,6 +25,7 @@
 
   En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
 
+  # Descargamos la última versión del plugin:  
   # Abrimos el archivo zip de la distribución de XIvap para AHS.
   # Copiamos el contenido de la carpeta "for_plugins_folder" en la carpeta %XPLANE10%/Resources/plugins.
   
@@ -32,11 +34,11 @@
 = Configuración =
 
   Abriremos el archivo %XPLANE10%/Resources/plugins/X-IvAp Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
-   * BASE: Indicaremos el ICAO de nuestro aeródromo base.
-   * REALNAME: Indicaremos nuestro nombre completo.
-   * PASSWORD: Indicaremos nuestra clave de acceso a AirHispania.
-   * VID: Indicaremos nuestro indicativo sin el prefijo AHS. Por ejemplo, 018D.
-   * CARPETA: Indicaremos la ruta completa de la carpeta donde queremos que XivAp_AHS nos almacene los archivos de cajas negras.
+   * *BASE*: Indicaremos el ICAO de nuestro aeródromo base. Ejemplo LEVC.
+   * *REALNAME*: Indicaremos nuestro nombre completo.
+   * *PASSWORD*: Indicaremos nuestra clave de acceso a AirHispania.
+   * *VID*: Indicaremos nuestro indicativo sin el prefijo AHS. Por ejemplo, 018D.
+   * *CARPETA*: Indicaremos la ruta completa de la carpeta donde queremos que _XivAp_AHS_ nos almacene los archivos de cajas negras.
 
 = Puesta en marcha =
 
@@ -44,7 +46,7 @@
 
  En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de Aviónica de la aeronave.
 
- Nos aseguraremos antes de conectar a la red de AirHispania que tenemos el cliente de TeamSpeak abierto. Tras conectarlos a la red, es  "muy conveniente", tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
+ Nos aseguraremos antes de conectar a la red de AirHispania que tenemos el cliente de TeamSpeak abierto. Tras conectarlos a la red, es  *muy conveniente*, tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
 
  
 = Otros recursos importantes =
@@ -53,7 +55,7 @@
 
   === Valoración de vuelos con AHSBender ===
 
- En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con AHSBox y realizados con XPlane.
+ En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con la caja negra integrada de _XivAp_AHS_.
  
 Requisitos:
  # Sistema operativo Windows
