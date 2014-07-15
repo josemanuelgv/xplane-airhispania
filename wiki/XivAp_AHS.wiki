@@ -1,4 +1,6 @@
-#XivAp para AirHispania
+<h1> *Vuelo online en AirHispania con XPlane 10: XivAp AHS* </h1>
+
+<wiki:toc max_depth="1" />
 
 = Introducción =
 
@@ -6,7 +8,7 @@
 
 = Nuevas funcionalidades =
 
- La versión de XivAp para AHS tiene básicamente las mismas características que su homólogo para IVAO, pero es importante resaltar algunas funcionalides específicas para AirHispania:
+ La versión de XivAp para AHS tiene básicamente las mismas características que su homólogo para IVAO, pero es importante resaltar algunas funcionalidades específicas para AirHispania:
 
  * Integración con AhsControl para la sintonización correcta de canales de TeamSpeak para cada dependencia activa.
  * Integración en el propio plugin de la caja negra (AhsBox). Simplemente con activar la aviónica, nuestro plugin genera un archivo de caja negra totalmente compatible con AhsBox y AhsBender. No necesitamos tener AhsBox ejecutándose ni los plugins de los que depende (XPUIPC).
@@ -15,7 +17,7 @@
 
 = Requerimientos necesarios =
 
-  * XPlane 10 64 bits
+  * XPlane 10 (64 bits)
   * TeamSpeak 2 RC2
  
 = Instalación =
@@ -29,12 +31,53 @@
 
 = Configuración =
 
-  Abriermos el archivo %XPLANE10%/Resources/plugins/X-IvAp Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
+  Abriremos el archivo %XPLANE10%/Resources/plugins/X-IvAp Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
    * BASE: Indicaremos el ICAO de nuestro aeródromo base.
    * REALNAME: Indicaremos nuestro nombre completo.
    * PASSWORD: Indicaremos nuestra clave de acceso a AirHispania.
    * VID: Indicaremos nuestro indicativo sin el prefijo AHS. Por ejemplo, 018D.
-   * CARPETA: 
-= Otros recursos =
-  
+   * CARPETA: Indicaremos la ruta completa de la carpeta donde queremos que XivAp_AHS nos almacene los archivos de cajas negras.
+
 = Puesta en marcha =
+
+ Ya podemos ejecutar nuestro simulador. Al iniciarse veremos la ventana principal de XivAp_AHS disponible. 
+
+ En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de Aviónica de la aeronave.
+
+ Nos aseguraremos antes de conectar a la red de AirHispania que tenemos el cliente de TeamSpeak abierto. Tras conectarlos a la red, es  "muy conveniente", tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
+
+ 
+= Otros recursos importantes =
+  
+  Además del plugin, podemos incorporar a nuestro simulador XPlane 10 una serie de recursos que complementan el vuelo online en AirHispania. Estos recursos son:
+
+  === Valoración de vuelos con AHSBender ===
+
+ En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con AHSBox y realizados con XPlane.
+ 
+Requisitos:
+ # Sistema operativo Windows
+ # Máquina virtual Java JRE mínimo 1.5.0 de 32bits
+ # XPlane 9 o 10
+ 
+Uso: 
+ # Desempaquetar los archivos en la carpeta de instalación de XPlane.
+ # Ejecutar "MakeRwys.exe". Aparecerá una ventana de comandos en la que se rastrea la base de datos de aeródromos de nuestro simulador y se calcula la posición de las pistas y sus cabeceras.
+ # Ejecutar "AhsBender.exe" para valorar vuelos. Este software se puede descargar desde la web de AirHispania. Todas las pruebas se han realizado con la versión para FS9 del mismo. Una vez instalado, hay que copiar el fichero AhsBender.exe al directorio de XPlane y, desde allí, ejecutarlo.
+
+Opcionalmente ejecutar "AptViewer" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite inspeccionar toda la base de datos de aeropuertos que tenemos instalada.
+  
+ 
+  === Elementos del terreno ===
+   
+   # Paquetes de conversión de escenarios que contienen elementos del terreno que ayudan a la navegación. Simplemente debemos descomprimirlos en nuestra carpeta %XPLANE10%/CustomScenery:
+
+   * Puntos de notificación VFR 1.8: [https://mega.co.nz/#!qZIwFATS!GN-brkdy4pdOCxXxnHgN6x2VPVYwRegyE0kWfst70_U Descargar]
+   * Faros 1.4: [https://mega.co.nz/#!fd5F3YqT!QyVi9zz-XYCcDsksWEprK0XAViQnEvacqEj-imXpxpw Descargar]
+   * Toros de Osborne 1.0: [https://mega.co.nz/#!bd4XFZSC!borM5gxQMOIQaqoI8cxhdQ0HwZwwsI2XaJuwK47CkA8 Descargar]
+   * Castillos 1.0: [https://mega.co.nz/#!LcghHCDZ!ZNnA_lV3KcC-9CdIjhJcv0Ppo1JDr7LFtCFwZJiDoGg Descargar]
+   * Obstáculos 2.1: [https://mega.co.nz/#!DNAxDLCK!Cq8Gimxl2PaNDmh-3SWDrSBK7eEJEsnR6hcK7I3rmlk Descargar]
+
+  === Aeródromos convertidos de AirHispaniaSC ===
+
+   * Aeródromos 2.0 convertidos de FSX: [https://mega.co.nz/#!uNpXyLpJ!aB739TdWWxyYaIn4vO8uGUK5hbYdKzW06X7DQ_Dmxow Descarga]
