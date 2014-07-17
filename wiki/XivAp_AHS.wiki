@@ -23,7 +23,7 @@
  
 = Instalación =
 
-  <font color="red">Antes de instalar este plugin es importante asegurarnos de que no tenemos instalado la versión original del plugin XivAp para IVAO ya que ambos no pueden coexistir en el mismo simulador. Siempre podemos "mover" el plugin de IVAO a otra carpeta si no queremos borrarlo definitivamente.</font>
+  <font color="red">Antes de instalar este plugin es importante asegurarnos de que no tenemos instalada la versión original del plugin XivAp para IVAO ya que ambos no pueden coexistir en el mismo simulador. Siempre podemos "mover" el plugin de IVAO a otra carpeta si no queremos borrarlo definitivamente.</font>
 
   En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
 
@@ -46,9 +46,9 @@
 
  Ya podemos ejecutar nuestro simulador. Al iniciarse veremos la ventana principal de XivAp_AHS disponible. 
 
- En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de Aviónica de la aeronave.
+ En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de aviónica de la aeronave.
 
- Nos aseguraremos antes de conectar a la red de AirHispania que tenemos el cliente de TeamSpeak abierto. Tras conectarlos a la red, es  *muy conveniente*, tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
+ Tras conectarnos a la red, es  *muy conveniente*, tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
 
  
 = Otros recursos importantes =
