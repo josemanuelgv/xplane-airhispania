@@ -2,6 +2,7 @@
 
 <h1> *Tutorial de vuelo en red con XPlane en AirHispania* </h1>
 
+<font color="red">*ATENCION: Se recomienda acceder a una nueva versión de este tutorial [XivAp_AHS aquí]*</font>
 <wiki:toc max_depth="1" />
 
 = Introducción =
