@@ -1,0 +1,83 @@
+Flota Transporte
+<table border="1" cellpadding="2" cellspacing="1">
+<tr>
+ <th>Aeronave</th>
+ <th>Tipo modelo 3D</th>
+ <th>Matricula</th>
+ <th>ICAO</th>
+ <th>Carpeta</th>
+ <th>Autor</th>
+</tr>
+<tr>
+ <td>ATR 72-500</td>
+ <td>OBJ</td>
+ <td>EC-ATR</td>
+ <td>AT72</td>
+ <td>AT72</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Cessna Citation X</td>
+ <td>OBJ</td>
+ <td>EC-CCX</td>
+ <td>C750</td>
+ <td>C501</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Canadair CRJ-200 LR</td>
+ <td>OBJ</td>
+ <td>EC-CRJ</td>
+ <td>CRJ2</td>
+ <td>CRJ2</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>McDonnell-Douglas DC9-32</td>
+ <td>OBJ</td>
+ <td>EC-MCD</td>
+ <td>DC93</td>
+ <td>DC92</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>McDonnell-Douglas MD-81</td>
+ <td>OBJ</td>
+ <td>EC-SCH</td>
+ <td>MD81</td>
+ <td>MD81</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Boeing 737-800</td>
+ <td>OBJ</td>
+ <td>EC-STS</td>
+ <td>B738</td>
+ <td>B737_a</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Boeing 747-400</td>
+ <td>OBJ</td>
+ <td>EC-ABC</td>
+ <td>B744</td>
+ <td>B744</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Airbus A 320-200</td>
+ <td>OBJ</td>
+ <td>EC-ARB</td>
+ <td>A332</td>
+ <td>A333</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Airbus A 340-600</td>
+ <td>OBJ</td>
+ <td>EC-BUS</td>
+ <td>A346</td>
+ <td>A343</td>
+ <td>IVAO</td>
+</tr>
+</table>

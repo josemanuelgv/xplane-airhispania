@@ -1,0 +1,9 @@
+﻿Build started 09/06/2014 13:39:45.
+     1>Project "C:\Prog\FSD\x-ivap-code - pruebas\mdsplib-master\MDSPLib.vcxproj" on node 2 (Build target(s)).
+     1>Lib:
+         MDSPLib.vcxproj -> C:\Prog\FSD\x-ivap-code - pruebas\src\x64\Release\MDSPLib64.lib
+     1>Done Building Project "C:\Prog\FSD\x-ivap-code - pruebas\mdsplib-master\MDSPLib.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.08
