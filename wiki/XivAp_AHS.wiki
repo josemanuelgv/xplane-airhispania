@@ -62,7 +62,7 @@
  
 Requisitos:
  # Sistema operativo Windows
- # Máquina virtual Java JRE mínimo 1.5.0 de 32bits
+ # Máquina virtual Java JRE mínimo 1.5.0 de 32bits [http://www.oracle.com/technetwork/java/javase/downloads/jre7-downloads-1880261.html Descarga Windows x86]
  # XPlane 9 o 10
  
 Uso: 
@@ -73,16 +73,22 @@ Uso:
 Opcionalmente ejecutar "AptViewer.exe" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite realizar búsquedas sobre toda la base de datos de aeropuertos que tenemos instalada.
   
  
-  === Elementos del terreno ===
+  === Aeródromos y elementos del terreno: AirHispania SCX para XPlane 10 ===
    
-   # Paquetes de conversión de escenarios que contienen elementos del terreno que ayudan a la navegación. Simplemente debemos descomprimirlos en nuestra carpeta %XPLANE10%/CustomScenery:
+   Hemos realizado una conversión a XPlane 10 (usando la herramienta [http://marginal.org.uk/x-planescenery/tools.html FS2XPlane]) del magnífico proyecto AirHispania SCX, que contiene algunos aeropuertos, aeródromos y otros elementos del terreno que ayudan a la navegación aérea. Este paquete contiene:
 
-   * Puntos de notificación VFR 1.8: [https://mega.co.nz/#!qZIwFATS!GN-brkdy4pdOCxXxnHgN6x2VPVYwRegyE0kWfst70_U Descargar]
-   * Faros 1.4: [https://mega.co.nz/#!fd5F3YqT!QyVi9zz-XYCcDsksWEprK0XAViQnEvacqEj-imXpxpw Descargar]
-   * Toros de Osborne 1.0: [https://mega.co.nz/#!bd4XFZSC!borM5gxQMOIQaqoI8cxhdQ0HwZwwsI2XaJuwK47CkA8 Descargar]
-   * Castillos 1.0: [https://mega.co.nz/#!LcghHCDZ!ZNnA_lV3KcC-9CdIjhJcv0Ppo1JDr7LFtCFwZJiDoGg Descargar]
-   * Obstáculos 2.1: [https://mega.co.nz/#!DNAxDLCK!Cq8Gimxl2PaNDmh-3SWDrSBK7eEJEsnR6hcK7I3rmlk Descargar]
+   * Aeródromos 2.0
+   * Faros 1.4
+   * Toros de Osborne 2.0
+   * Puntos notificacion VFR 2.0 (Globos)
+   * Obstáculos 2.6
+   * Cambios AENA 2.1
+   * Varios 2.6
 
-  === Aeródromos convertidos de AirHispaniaSC ===
+  Enlace de descarga: [https://mega.co.nz/#!mAIhxaCD!DShGKmhJ4-PLRdCFoirZCJc_wQKz2zr0Bsol0Roy4gM aquí ]
 
-   * Aeródromos 2.0 convertidos de FSX: [https://mega.co.nz/#!uNpXyLpJ!aB739TdWWxyYaIn4vO8uGUK5hbYdKzW06X7DQ_Dmxow Descarga]
+  Instrucciones:
+   # Descomprimir el paquete en nuestra carpeta %XPLANE10%/CustomScenery.
+   # Incorporar los paquetes en el fichero _scenery_packs.ini_ en las primeras posiciones.
+   # Ejecutar XMakeRwys para actualizar la base de datos de AhsBender y poder valorar nuestros vuelos.
+   # Desactivar la opción de "pistas siguen los contornos del terreno" (en inglés "runways follow terrain contours") en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando.
