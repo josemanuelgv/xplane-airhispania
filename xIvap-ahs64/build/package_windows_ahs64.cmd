@@ -15,6 +15,8 @@ REM  Program
 mkdir %ROOT%\for_plugins_folder
 copy ..\src\IVAO\X-IvAp-64.xpl %ROOT%\for_plugins_folder
 copy ..\src\FMOD\FMODWindows\api\fmodex64.dll %ROOT%\for_plugins_folder
+copy .\msvc_64\msvcp110.dll %ROOT%\for_plugins_folder
+copy .\msvc_64\msvcr110.dll %ROOT%\for_plugins_folder
 mkdir "%ROOT%\for_plugins_folder\X-IvAp Resources\"
 xcopy /E "X-IvAp Resources" "%ROOT%\for_plugins_folder\X-IvAp Resources\"
 
