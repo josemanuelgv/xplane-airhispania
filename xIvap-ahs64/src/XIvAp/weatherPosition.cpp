@@ -702,38 +702,63 @@ std::vector<WxStation> WxDB::estacionesCercanas(double lat, double lon, float el
 			res.lat = i->second.lat;
 			res.lon = i->second.lon;
 			result.push_back(res); // Si la estación está lo sucifientemente cerca de la posición del avión (<=60Nm), la mete en la lista
+
+//FIXME: DEBUG
+			if (xivap.debug.weather > 1)
+				xivap.addText(colWhite, "Encontrado en la dB de X-IvAp ('icao.dat'): " + res.name + " a " + ftoa(res.distance) + " Nm", true, true);
 		}
 
 		++cuenta;
 	}
 	std::sort(result.begin(), result.end(), DistanceComparator());
 
+//FIXME: DEBUG
+	if (xivap.debug.weather > 1)
+		xivap.addText(colRed, "Estaciones totales = " + itostring(cuenta) + " - Estaciones cercanas a menos de 60 Nm = " + itostring((int)result.size()), true, true);
+
 	char aptBuf[64];
 	float latf = static_cast<float>(lat);
 	float lonf = static_cast<float>(lon);
-    XPLMNavRef ref = XPLMFindNavAid(NULL, NULL, &latf, &lonf, NULL, xplm_Nav_Airport); // Busca el aeropuerto más cercano en la dB cd X-Plane
+    XPLMNavRef ref = XPLMFindNavAid(NULL, NULL, &latf, &lonf, NULL, xplm_Nav_Airport); // Busca el aeropuerto más cercano en la dB de X-Plane
     if (ref != XPLM_NAV_NOT_FOUND){
         XPLMGetNavAidInfo(ref, NULL, &latf, &lonf, NULL, NULL, NULL, aptBuf, NULL, NULL); // Obtiene los datos del aeropuerto encontrado
 		string adcerca = trim(string(aptBuf));
 		distancia = deg2dist(lat, lon, static_cast<double>(latf), static_cast<double>(lonf));
-		if (distancia < result[0].distance) // Si el aeropuerto encontrado está a menos distancia que el más cercano de la base de posiciones
+
+		if (result.size() > 0)
 		{
-			WxStation res;
-			res.name = copy(adcerca,0,4);
-			res.distance = distancia;
-			res.lat = latf;
-			res.lon = lonf;
-			result.insert(result.begin(),res); // Se mete el AD el primero de la lista
+			if (distancia < result[0].distance) // Si el aeropuerto encontrado está a menos distancia que el más cercano de la base de posiciones
+			{
+				WxStation res;
+				res.name = copy(adcerca,0,4);
+				res.distance = distancia;
+				res.lat = latf;
+				res.lon = lonf;
+				result.insert(result.begin(),res); // Se mete el AD el primero de la lista
 
 //FIXME: DEBUG
-			if (xivap.debug.weather > 2)
-				xivap.addText(colWhite, "Encontrado en la dB de X-plane: " + res.name + " a " + ftoa(res.distance) + " Nm", true, true);
+				if (xivap.debug.weather > 1)
+					xivap.addText(colWhite, "Encontrado AD en la dB de X-plane: " + res.name + " a " + ftoa(res.distance) + " Nm", true, true);
+			}
+		}
+		else
+		{
+			if (distancia <= WEATHER_GLOB_TRESHOLD) // Si el aeropuerto encontrado está a un máximo de 60 Nm
+			{
+				WxStation res;
+				res.name = copy(adcerca,0,4);
+				res.distance = distancia;
+				res.lat = latf;
+				res.lon = lonf;
+				result.insert(result.begin(),res); // Se mete el AD el primero de la lista
+
+//FIXME: DEBUG
+				if (xivap.debug.weather > 1)
+					xivap.addText(colWhite, "Encontrado AD en la dB de X-plane: " + res.name + " a " + ftoa(res.distance) + " Nm", true, true);
+
+			}
 		}
     }
-
-//FIXME: DEBUG
-	if (xivap.debug.weather > 1)
-		xivap.addText(colRed, "Estaciones totales = " + itostring(cuenta) + " - Estaciones cercanas a menos de 60 Nm = " + itostring((int)result.size()), true, true);
 
 	return result;
 }

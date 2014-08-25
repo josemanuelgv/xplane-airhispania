@@ -141,10 +141,19 @@ public:
 	bool Activada() { return _activa;}
 
 	/* Activa caja negra */
-	bool Activar() { _activa = true;}
+	void Activar() { _activa = true;}
 
 	/* Desactiva caja negra */
-	bool Desactivar() { _activa = false;}
+	void Desactivar() { _activa = false;}
+
+	/* ¿Está la caja negra habilitada? */
+	bool Enabled() { return _enabled; }
+
+	/* Habilita la caja negra */
+	void Enable() { _enabled = true; }
+
+	/* Deshabilita la caja negra */
+	void Disable() { _enabled = false; }
 
 	/* Directorio donde se guardará el archivo de caja negra */
 	string dir;
@@ -207,6 +216,8 @@ public:
 private:
 
 	bool _activa; // ¿Está la caja negra activada?
+
+	bool _enabled; // ¿Está la caja negra habilitada para funcionar?
 
 	/* Cuenta de registros */
 	int _numreg;

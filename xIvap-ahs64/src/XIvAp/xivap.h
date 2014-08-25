@@ -239,6 +239,8 @@ public:
 	//Añadido para mostrar METARs de los ADs del plan de vuelo
 	string metarOrg, metarDest, metarAlt, metarAlt2;
 
+	bool infometars; // Añadido para activar/desactivar información de METARs en pantalla
+
 //	int debugLvl; // Añadido para implementar niveles de debug en comando DEBUG
 
 	//Añadido para recuperar versión de ATIS desde la red de AHS
