@@ -61,6 +61,8 @@ CajaNegra::CajaNegra()
 //	fichero.clear() = NULL;
 	atc = "";
 
+	_enabled = true; // Se habilita la caja negra por defecto
+
 	_activa = false; // Al inicio no está activada la caja
 
 }
@@ -71,7 +73,7 @@ CajaNegra::~CajaNegra()
 
 int CajaNegra::Inicio()
 {
-	if (!_activa)
+	if (!_activa && _enabled)
 	{
 //		char cdir[512];
 		if (length(dir) == 0) dir = getXplaneHomeDir();
@@ -88,7 +90,7 @@ int CajaNegra::Inicio()
 		fichero.open(ficheropath, std::ios::out | std::ios::binary);
 		if (fichero.is_open())
 		{
-			xivap.addText(colCyan, "Caja Negra: Grabacion activada en carpeta '" + dir + "'", true, true);
+			xivap.uiWindow.addMessage(colCyan, "Caja Negra: Grabacion activada en carpeta '" + dir + "'", true, true);
 			_numreg = 0;
 
 			_activa = true;
@@ -98,7 +100,7 @@ int CajaNegra::Inicio()
 			if (xivap.debug.bb)
 				xivap.addText(colRed,"Caja Negra: Abierto fichero '" + nfichero + "' para grabacion de caja negra", true, true);
 		}
-		else xivap.addText(colRed, "Caja Negra: Error intentando abrir archivo para grabacion en carpeta '" + dir + "'", true, true);
+		else xivap.uiWindow.addMessage(colRed, "Caja Negra: Error intentando abrir archivo para grabacion en carpeta '" + dir + "'", true, true);
 
 	}
 	return 0;
@@ -106,7 +108,7 @@ int CajaNegra::Inicio()
 
 int CajaNegra::Graba()
 {
-	if (XPLMGetDatai(gXp_Avionics) != 0)
+	if (XPLMGetDatai(gXp_Avionics) != 0 && _enabled)
 	{
 		Inicio();
 
@@ -186,11 +188,14 @@ int CajaNegra::Graba()
 		{
 			if (_numreg >= CAJA_INICIO_REG) // Sólo graba a partir de cierto registro, para que no empiece a registrar antes de que se "asiente" el avión
 			{
-				fichero.write((const char *)(&_rCaja), CAJA_TAM_REG);
+				if (_rCaja.sim != 0) // Sólo graba si el simulador NO está en pausa, compatibilidad con AHSBOX
+				{
+					fichero.write((const char *)(&_rCaja), CAJA_TAM_REG);
 
-				//FIXME: DEBUG
-				if (xivap.debug.bb)
-					xivap.addText(colRed, "Grabado registro num. " + itostring(_numreg) + " en fichero", true, true);
+					//FIXME: DEBUG
+					if (xivap.debug.bb)
+						xivap.addText(colRed, "Grabado registro num. " + itostring(_numreg) + " en fichero", true, true);
+				}
 			}
 			++_numreg;
 		}
@@ -207,7 +212,7 @@ int CajaNegra::Fin()
 	if (_activa)
 	{
 		fichero.close();
-		xivap.addText(colBlue, "Caja Negra: Grabacion finalizada", true, true);
+		xivap.uiWindow.addMessage(colBlue, "Caja Negra: Grabacion finalizada", true, true);
 		_activa = false;
 		Graphics &=~64;
 

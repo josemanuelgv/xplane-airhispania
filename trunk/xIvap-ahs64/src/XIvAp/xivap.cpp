@@ -316,11 +316,12 @@ void Xivap::XPluginStart()
 	debugWindowHotKey = XPLMRegisterHotKey(XPLM_VK_TAB, xplm_DownFlag | xplm_ShiftFlag,
 										  "Conmutar ventana de debug de X-IvAp AHS", debugToggleCallback, NULL);
 
+	uiWindow.pluginStart();
+//	uiWindow.addMessage(colWhite, "Pasado uiWindow", true, true);
+
 	string str = string(SOFTWARE_NAME) + " " + SOFTWARE_VERSION + " para " + PLATFORM + " (Rev. " + _revision + ")";
 	uiWindow.addMessage(colWhite, str + " listo", true, true);
 
-	uiWindow.pluginStart();
-//	uiWindow.addMessage(colWhite, "Pasado uiWindow", true, true);
 	msgWindow.pluginStart();
 //	uiWindow.addMessage(colWhite, "Pasado msgWindow", true, true);
 	Tcasbox.pluginStart(); //added for tcasplot 16/10/2012
@@ -440,7 +441,26 @@ void Xivap::XPluginStart()
 		
 		if (str[length(str)-1] != DIR_CHAR) str += DIR_CHAR;
 		caja.dir = str;
-	}		
+	}
+
+	str = config.readConfig("AHSBOX", "ENABLE");
+	if(length(str) > 0)
+	{
+		if (strupcase(str) == "OFF" || strupcase(str) == "NO" || strupcase(str) == "0")
+		{
+			caja.Disable(); // Deshabilita la caja negra
+		}
+	}
+
+	infometars = true;
+	str = config.readConfig("INFOS", "METAR");
+	if(length(str) > 0)
+	{
+		if (strupcase(str) == "OFF" || strupcase(str) == "NO" || strupcase(str) == "0")
+		{
+			infometars = false; // Desactiva información de METARs en pantalla
+		}
+	}
 
 #ifdef WIN32
 #ifdef HAVE_TEAMSPEAK
@@ -2451,6 +2471,62 @@ void Xivap::handleCommand(string line)
 
 		return;
 
+	} else if(command == "NOBB") {
+		if (caja.Enabled()) // Sólo hace algo si la caja está habilitada
+		{
+			if (caja.Activada()) caja.Fin(); // Finaliza la caja negra en caso de que esté activada
+			caja.Disable(); // Deshabilita caja negra
+			uiWindow.addMessage(colRed, "Caja negra DEShabilitada");
+
+			ConfigFile config;
+			string filename = getXivapRessourcesDir() + CONFIG_FILE;
+			config.load(filename);
+			config.setConfig("AHSBOX", "ENABLE", "0");
+			config.save(filename);
+		}
+
+		return;
+
+	} else if(command == "YESBB") {
+		if (!caja.Enabled()) // Sólo hace algo si la caja está deshabilitada
+		{
+			caja.Enable(); // Habilita caja negra
+			uiWindow.addMessage(colDarkGreen, "Caja negra habilitada");
+
+			ConfigFile config;
+			string filename = getXivapRessourcesDir() + CONFIG_FILE;
+			config.load(filename);
+			config.setConfig("AHSBOX", "ENABLE", "1");
+			config.save(filename);
+		}
+
+		return;
+
+	} else if(command == "NOINFOMETAR") {
+		infometars = false;
+		uiWindow.addMessage(colRed, "Informacion de METARs en pantalla desactivada");
+
+		ConfigFile config;
+		string filename = getXivapRessourcesDir() + CONFIG_FILE;
+		config.load(filename);
+		config.setConfig("INFOS", "METAR", "0");
+		config.save(filename);
+		
+
+		return;
+
+	} else if(command == "YESINFOMETAR") {
+		infometars = true;
+		uiWindow.addMessage(colDarkGreen, "Informacion de METARs en pantalla activada");
+
+		ConfigFile config;
+		string filename = getXivapRessourcesDir() + CONFIG_FILE;
+		config.load(filename);
+		config.setConfig("INFOS", "METAR", "1");
+		config.save(filename);
+		
+		return;
+
 #ifdef HAVE_TEAMSPEAK
 	} else if(command == "VOICE") {
 		setVoice(true);
@@ -2807,6 +2883,7 @@ void Xivap::handleCommand(string line)
 		uiWindow.addMessage(colYellow, ".ATIS <callsign> - solicitar mensaje ATIS", false, false);
 		uiWindow.addMessage(colYellow, ".NOMP / .YESMP - Desactivar / activar modo Multijugador", false, false);
 		uiWindow.addMessage(colYellow, ".NOWX / .YESWX - Desactivar / activar meteorologia de la red de AHS", false, false);
+		uiWindow.addMessage(colYellow, ".NOINFOMETAR / .YESINFOMETAR - Desactivar / activar informacion de METARs de origen, destino y actual en pantalla", false, false);
 		uiWindow.addMessage(colYellow, ".VOICE / .NOVOICE - modo Voz off/on", false, false);
 		uiWindow.addMessage(colYellow, ".MODEL <aircraft>/<airline>/<livery> - ver a todos los demas pilotos conectados como la aeronave especificada (para desarrolladores CSL)", false, false);
 		uiWindow.addMessage(colYellow, ".DUMPWX <ICAO> - volcar el perfil de clima actual y el perfil para ICAO en un fichero log y consola (para depuracion WX)", false, false);
@@ -2883,7 +2960,7 @@ void Xivap::checkWeather(double elapsed)
 	else 
 	{
 		use_glob = true;
-		while (iest < stations.size() && iest < 10) // Pedir datos del tiempoa las 10 primeras estaciones a menos de 60 Nm
+		while (iest < stations.size() && iest < 10) // Pedir datos del tiempo a las 10 primeras estaciones a menos de 60 Nm
 		{
 			// Petición de METAR para la estación para tener los datos del tiempo de la red de AHS
 			if (online())
@@ -2968,24 +3045,30 @@ void Xivap::checkWeather(double elapsed)
 			if (ADAlt.metar != "") metarAlt = ADAlt.metar;
 			else metarAlt = fpl.alternate + ": No hay METAR disponible";
 
-			// Muetra METARs en ventana de mensajes
-			msgWindow.addMessage(colGreen,"Origen: " + metarOrg + "\n\n"); // Muestra el METAR del AD origen en los mensajes
-			if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
-			else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
-			msgWindow.addMessage(colCyan,"Destino: " + metarDest + "\n\n"); // Muestra el METAR del AD de destino en los mensajes
-			msgWindow.addMessage(colRed,"Alternativo: " + metarAlt + "\n\n"); // Muestra el METAR del AD alternativo en los mensajes
-			if (xivap.fpl.alternate2 != "") // Si existe 2º AD alternativo, mostrar su METAR también
+			if (infometars == true)
 			{
-				ADAlt2 = _weatherDB.findName(fpl.alternate2,static_cast<float>(elapsed));
-				if (ADAlt2.metar != "") metarAlt2 = ADAlt2.metar;
-				else metarAlt2 = fpl.alternate2 + ": No hay METAR disponible";
-				msgWindow.addMessage(colWhite,"Alternativo 2: " + metarAlt2); // Muestra el METAR del 2º AD alternativo en los mensajes
+				// Muestra METARs en ventana de mensajes
+				msgWindow.addMessage(colGreen,"Origen: " + metarOrg + "\n\n"); // Muestra el METAR del AD origen en los mensajes
+				if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
+				else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
+				msgWindow.addMessage(colCyan,"Destino: " + metarDest + "\n\n"); // Muestra el METAR del AD de destino en los mensajes
+				msgWindow.addMessage(colRed,"Alternativo: " + metarAlt + "\n\n"); // Muestra el METAR del AD alternativo en los mensajes
+				if (xivap.fpl.alternate2 != "") // Si existe 2º AD alternativo, mostrar su METAR también
+				{
+					ADAlt2 = _weatherDB.findName(fpl.alternate2,static_cast<float>(elapsed));
+					if (ADAlt2.metar != "") metarAlt2 = ADAlt2.metar;
+					else metarAlt2 = fpl.alternate2 + ": No hay METAR disponible";
+					msgWindow.addMessage(colWhite,"Alternativo 2: " + metarAlt2); // Muestra el METAR del 2º AD alternativo en los mensajes
+				}
 			}
 		}
 		else
 		{
-			if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
-			else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
+			if (infometars == true)
+			{
+				if (!cavok) msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + "\n\n"); // Muestra el METAR del AD más próximo en los mensajes
+				else msgWindow.addMessage(colWhite,"METAR Actual: " + currentWxStation.metar + " (Tiempo CAVOK forzado)\n\n"); 
+			}
 		}
 		_erwin.setWeather(currentWxStation, static_cast<float>(el), static_cast<float>(groundalt));
 	}
@@ -3080,7 +3163,7 @@ void Xivap::setMultiplayer(bool value)
 	} else { // turn on MP
 		if(!_multiplayer.initialized()) {
 			if(!_multiplayer.init()) {
-				uiWindow.addMessage(colRed, "Falló al inicializar el multijugador: "
+				uiWindow.addMessage(colRed, "Fallo al inicializar el multijugador: "
 					+ _multiplayer.errorMessage(), true, true);
 				_useMultiplayer = false;
 				return;
