@@ -19,7 +19,7 @@
 #include "fsdmessage.h"
 
 // MDSPLib METAR decoder
-#include "../mdsplib/metar.h"
+#include "metar.h"
 
 //#define WX_DEBUG
 

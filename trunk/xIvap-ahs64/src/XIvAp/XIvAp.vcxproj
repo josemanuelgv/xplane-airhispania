@@ -312,7 +312,7 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>$(XplaneSDK)\CHeaders\XPLM;$(XplaneSDK)\CHeaders\Widgets;$(XplaneSDK)\multiplayer\src;$(XplaneSDK)\multiplayer\include;..\ptypes\include;..\WinIncludes;..\stund;..\FMOD\FMODWindows\api\inc;..\..\xsbsources\plugins;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(XplaneSDK)\CHeaders\XPLM;$(XplaneSDK)\CHeaders\Widgets;$(XplaneSDK)\multiplayer\src;$(XplaneSDK)\multiplayer\include;..\ptypes\include;..\WinIncludes;..\stund;..\FMOD\FMODWindows\api\inc;..\..\xsbsources\plugins;..\..\mdsplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IBM=1;XPLM200;_CRT_SECURE_NO_WARNINGS;X64=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
