@@ -37,8 +37,12 @@ public:
 
 	std::list<string> tschannels;	// Lista de canales de TS -> Pasada a public para acceder desde xivap.cpp
 
+	string getDepAsString();
+
 private:
 	
+	void download();
+
 	string html;	// Contenido de la página web de estado actual
 
 	std::list<string> deps;			// Lista de dependencias abiertas

@@ -5,12 +5,15 @@
 #include <regex>
 #include <algorithm>
 
+
 AhsControl::AhsControl():
 status(0),
 html("")
 {
 	deps.clear();
 	freqs.clear();
+	tschannels.clear();
+	chDep.clear();
 }
 
 bool compare_str (const string& first, const string& second)
@@ -43,8 +46,10 @@ unsigned int AhsControl::lvdistance(const string& s1, const string& s2)
 	return d[len1][len2];
 }
 
-void AhsControl::parse()
-{
+void AhsControl::download(){
+
+	// Versión simple de conexion a la web de airhispania que no soporta transferencia de datos tipo "chunk" del protocolo HTTP 1.1
+
 	WSADATA WSAData;
     WSAStartup(MAKEWORD(2,0), &WSAData);
 
@@ -54,7 +59,7 @@ void AhsControl::parse()
     char buffer[1024];
 
 
-    std::string sreq = "GET /modact01.php?tCod=mod_actahs HTTP/1.1\r\n";  
+    std::string sreq = "GET /modact01.php?tCod=mod_actahs HTTP/1.0\r\n";  
     sreq += "Host: www.airhispania.com\r\n";
     sreq += "Connection: close\r\n";
     sreq += "User-Agent: X-Ivap AHS\r\n";
@@ -66,7 +71,7 @@ void AhsControl::parse()
     strncpy( crequete, sreq.c_str(), requete_taille );
 
     int i = 0;
-	html = "";
+	this->html = "";
 
     sock = socket(AF_INET, SOCK_STREAM, 0);
 
@@ -75,18 +80,26 @@ void AhsControl::parse()
     sin.sin_port = htons(80); // port HTTP.
 
     connect(sock, (SOCKADDR *)&sin, sizeof(sin)); 
-    send(sock, crequete, strlen(crequete), 0); 
+    //send(sock, crequete, strlen(crequete), 0); 
+	send(sock, sreq.c_str(), strlen(sreq.c_str()), 0); 
 
     do
     {
         i = recv(sock, buffer, sizeof(buffer), 0); 
-        html += buffer;
+			  this->html += buffer;
     } while (i != 0);
 
 
     closesocket(sock); 
 
 	WSACleanup();
+	
+}
+
+void AhsControl::parse()
+{
+	
+	this->download();
 
 	// Obtiene los pares dependencia-frecuencia de la lista de controles activos
 	deps.clear();
@@ -126,12 +139,12 @@ void AhsControl::parse()
 		int d;
 		string c = "";
 		while(itd != deps.end() ) {
-			mi = -1;
+			mi = 999;
 			c = "";
 			itc = tschannels.begin();
 			while( itc != tschannels.end() ) {
 				d = this->lvdistance((*itd), (*itc));
-				if((mi < d)&&(d < 6)){           // Un valor de 6 para la distancia de levenstein significa que las cadenas son prácticamente distintas
+				if((mi > d)){           // Un valor de 6 para la distancia de levenstein significa que las cadenas son prácticamente distintas
 					mi = d;
 					c = (*itc);
 				}
@@ -140,7 +153,8 @@ void AhsControl::parse()
 			chDep.push_back(c);
 			++itd;
 		}
-	}
+	}else
+		status = 9;
 
 	status = 1;
 }
@@ -218,3 +232,16 @@ int AhsControl::getStatus()
 	return status;
 }
 
+string AhsControl::getDepAsString()
+{
+	pt::string d = "[";
+	std::list<string>::iterator itd = deps.begin();
+	std::list<string>::iterator itc = chDep.begin();
+	while(itd != deps.end() ) {
+		d = d + (*itd).stl_str() + "#" + (*itc).stl_str() + ", ";	
+		++itd;
+		++itc;
+	}
+	d = d + "]";
+	return d;
+}

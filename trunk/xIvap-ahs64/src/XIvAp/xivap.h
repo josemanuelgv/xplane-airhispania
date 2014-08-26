@@ -405,6 +405,8 @@ private:
 
 	
 	AhsControl *_ahsControl;
+
+	void updateAhsControl();
 };
 
 #endif

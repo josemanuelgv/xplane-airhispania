@@ -466,15 +466,10 @@ void Xivap::XPluginStart()
 #ifdef HAVE_TEAMSPEAK
 	// Estado de AhsControl
 	_ahsControl = new AhsControl();
-	_ahsControl->parse();
-	if(_ahsControl->getStatus() == 1){
-		string msg = "Estado actual de AhsControl: " + std::to_string(_ahsControl->numDep()) + " dependencias activas.";
-		uiWindow.addMessage(colGreen, msg , true, true);
-		//_ahsControl->saveToFile();
-	}
-	else
-		uiWindow.addMessage(colRed, "Fallo al intentar descargar el estado actual de AhsControl", true, true);
-	ahsControlLoaded = true;
+	this->updateAhsControl();
+
+	string msg = "Estado actual de AhsControl: " + std::to_string(_ahsControl->numDep()) + " dependencias activas = " + _ahsControl->getDepAsString().stl_str();
+	uiWindow.addMessage(colGreen, msg , true, true);
 #endif		
 #endif
 }
@@ -616,6 +611,9 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 		_tsLoaded = true;
 	}
 #endif
+
+	// Sincronizacion con AhsControl
+	this->updateAhsControl();
 }
 
 void Xivap::FSDPoll()
@@ -1004,9 +1002,9 @@ The return value is a series of bit flags, as follows:
 void Xivap::tuneCom(int radio, int freq, string name)
 {
     string freqStr = freq2str(freq); // Salva la frecuencia en una string, para futuras operaciones
-    if(debug.teamspeak > 0){
-					uiWindow.addMessage(colCyan, "Teamspeak: tunning freq " + freqStr + " and name <" + name + ">", true, true);
-    }
+	// Forzamos a actualizar la lista de canales de TeamSpeak para obtener el estado actualizado en el momento de sintonizar
+	this->updateAhsControl();
+
     // AHS dependency is prioritary
 	string ahsDep = _ahsControl->findDep(freq2str(freq));
 	bool ahsFound = false;
@@ -3260,5 +3258,24 @@ void Xivap::Selcal(string source)
 	uiWindow.addMessage(colYellow, source + ">S-E-L-C-A-L", true, true);
 	msgWindow.addMessage(colYellow, source + ">S-E-L-C-A-L");
 #endif
+}
+
+void Xivap::updateAhsControl(){
+	_ahsControl->parse();
+	if(_ahsControl->getStatus() == 1){
+		
+		//_ahsControl->saveToFile(); // Solo para depuración
+
+		if(debug.teamspeak > 0){
+					uiWindow.addMessage(colCyan, "Teamspeak: ahsControl channels available...");
+					for (std::list<string>::iterator it = _ahsControl->tschannels.begin(); it != _ahsControl->tschannels.end(); ++it){
+						uiWindow.addMessage(colCyan, "Teamspeak: " + (*it));
+					}
+		}
+	}
+	else{
+		uiWindow.addMessage(colRed, "Fallo al intentar descargar el estado actual de AhsControl", true, true);
+	}
+	ahsControlLoaded = true;
 }
 
