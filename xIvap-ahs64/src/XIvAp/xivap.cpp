@@ -2934,7 +2934,7 @@ void Xivap::setAcType(const string& aircraft, const string& airline, const strin
 	config.load(filename);
 	config.clearSection("PLANE");	//Borramos la seccion plane primero para que no se duplique
 	config.setConfig("PLANE", "ICAO",_acType);
-	config.setConfig("PLANE", "RESOLUTION",5);
+	config.setConfig("PLANE", "RESOLUTION", "5");
 	config.save(filename);
 
 }
