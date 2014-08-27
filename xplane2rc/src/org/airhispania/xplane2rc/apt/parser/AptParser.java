@@ -226,10 +226,14 @@ public class AptParser {
 			// First runway longitude
 			Double fr_longitude = Double.parseDouble(data.get(10).trim());
 
+			// DisplacedThreshold
+			Double displacedThreshold = Double.parseDouble(data.get(11).trim());
+
 			LandRunwayEnd lre = new LandRunwayEnd();
 			lre.setNumber(fr_endNumber);
 			lre.setLatitude(fr_latitude);
 			lre.setLongitude(fr_longitude);
+			lre.setDisplacedThreshold(displacedThreshold);
 
 			for (IAptParserListener lsn : listeners) {
 				lsn.runwayEndParsed();
@@ -248,10 +252,14 @@ public class AptParser {
 			// Second runway longitude
 			Double sc_longitude = Double.parseDouble(data.get(19).trim());
 
+			// DisplacedThreshold
+			Double displacedThreshold = Double.parseDouble(data.get(20).trim());
+
 			LandRunwayEnd lre = new LandRunwayEnd();
 			lre.setNumber(sc_endNumber);
 			lre.setLatitude(sc_latitude);
 			lre.setLongitude(sc_longitude);
+			lre.setDisplacedThreshold(displacedThreshold);
 
 			for (IAptParserListener lsn : listeners) {
 				lsn.runwayEndParsed();

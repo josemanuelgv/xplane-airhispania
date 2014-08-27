@@ -4,15 +4,20 @@
 package org.airhispania.xplane2rc.transformer;
 
 import java.io.File;
-import java.io.InputStream;
+import java.text.DecimalFormat;
+import java.text.DecimalFormatSymbols;
+import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Locale;
 import java.util.Map;
-import java.util.TreeMap;
+import java.util.Set;
 import java.util.Vector;
 
 import org.airhispania.xplane2rc.apt.model.LandAirport;
+import org.airhispania.xplane2rc.apt.model.LandRunway;
 import org.airhispania.xplane2rc.apt.model.LandRunwayEnd;
 import org.airhispania.xplane2rc.apt.parser.AptParser;
 import org.airhispania.xplane2rc.rc4.model.Airport;
@@ -25,10 +30,8 @@ import com.grum.geocalc.EarthCalc;
 /**
  * @author Jose Manuel García Valladolid - josemanuelgv@gmail.com
  * 
- *         This class generates a new r4.csv having the airports existing in the
- *         internal r4.csv (located in resources folder) with its coordinates
- *         recalculated from the multiple apt.dat files given to the
- *         transformer.
+ *         This class implements a transformation between apt.dat XP database
+ *         and r4.csv runways format.
  * 
  *         There is one apt.dat default database and a set of apt.dat's being
  *         custom airports the user has installed in XPlane installation There
@@ -45,11 +48,11 @@ import com.grum.geocalc.EarthCalc;
  */
 public class Apt2rcTransformer {
 
+	public static double feets_per_meter = 3.2808;
+
 	private File defaultAptDb;
 	private List<File> customAptDbs;
 	private List<String> excludedCustomIcaos;
-	private File baseR4Db;
-	private InputStream baseR4DbStream;
 	private File generatedR4Db;
 	private List<String> statistics = new ArrayList<String>();
 
@@ -57,19 +60,15 @@ public class Apt2rcTransformer {
 
 	// local db's
 	private Map<String, LandAirport> defApt;
-	private Map<String, Airport> baseR4;
 	private List<Map<String, LandAirport>> customApts;
 
 	/**
 	 * @param defaultAptDb
-	 * @param baseR4Db
 	 * @param generatedR4Db
 	 */
-	public Apt2rcTransformer(File defaultAptDb, File baseR4Db,
-			File generatedR4Db) {
+	public Apt2rcTransformer(File defaultAptDb, File generatedR4Db) {
 		super();
 		this.defaultAptDb = defaultAptDb;
-		this.baseR4Db = baseR4Db;
 		this.generatedR4Db = generatedR4Db;
 	}
 
@@ -77,34 +76,14 @@ public class Apt2rcTransformer {
 	 * @param defaultAptDb
 	 * @param customAptDbs
 	 * @param excludedCustomIcaos
-	 * @param baseR4Db
 	 * @param generatedR4Db
 	 */
 	public Apt2rcTransformer(File defaultAptDb, List<File> customAptDbs,
-			List<String> excludedCustomIcaos, File baseR4Db, File generatedR4Db) {
+			List<String> excludedCustomIcaos, File generatedR4Db) {
 		super();
 		this.defaultAptDb = defaultAptDb;
 		this.customAptDbs = customAptDbs;
 		this.excludedCustomIcaos = excludedCustomIcaos;
-		this.baseR4Db = baseR4Db;
-		this.generatedR4Db = generatedR4Db;
-	}
-
-	/**
-	 * @param defaultAptDb
-	 * @param customAptDbs
-	 * @param excludedCustomIcaos
-	 * @param baseR4Db
-	 * @param generatedR4Db
-	 */
-	public Apt2rcTransformer(File defaultAptDb, List<File> customAptDbs,
-			List<String> excludedCustomIcaos, InputStream baseR4Db,
-			File generatedR4Db) {
-		super();
-		this.defaultAptDb = defaultAptDb;
-		this.customAptDbs = customAptDbs;
-		this.excludedCustomIcaos = excludedCustomIcaos;
-		this.baseR4DbStream = baseR4Db;
 		this.generatedR4Db = generatedR4Db;
 	}
 
@@ -123,119 +102,64 @@ public class Apt2rcTransformer {
 
 		// Main loop
 		int i = 1;
-		int notFound = 0;
 
 		LandAirport targetLandAirport;
-		for (String customIcao : baseR4.keySet()) {
 
-			targetLandAirport = null;
-			if (this.excludedCustomIcaos.contains(customIcao)) {
-				if (defApt.containsKey(customIcao))
-					targetLandAirport = defApt.get(customIcao);
-			} else {
-				for (Map<String, LandAirport> customApt : customApts) {
-					if (customApt.containsKey(customIcao)) {
-						targetLandAirport = customApt.get(customIcao);
-						sendMessage("Airport " + customIcao
-								+ " processed from custom Apt ");
+		// Custom apt's
+		Set<String> icaos = new HashSet<String>();
+		icaos.addAll(defApt.keySet());
+
+		for (Map<String, LandAirport> customApt : customApts) {
+
+			icaos.addAll(customApt.keySet());
+
+			for (String icao : icaos) {
+
+				targetLandAirport = null;
+
+				if (!result.containsKey(icao)) {
+					if (this.excludedCustomIcaos.contains(icao)) {
+						if (defApt.containsKey(icao))
+							targetLandAirport = defApt.get(icao);
+					} else {
+						if (customApt.containsKey(icao)) {
+							targetLandAirport = customApt.get(icao);
+							sendMessage("Airport " + icao
+									+ " processed from custom Apt ");
+						} else if (defApt.containsKey(icao)) {
+							targetLandAirport = defApt.get(icao);
+							sendMessage("Airport " + icao
+									+ " processed from default Apt ");
+						}
 					}
 
+					if (targetLandAirport != null) {
+						try {
+							Airport rairport = transformAirport(targetLandAirport);
+							if (rairport != null)
+								result.put(icao, rairport);
+
+						} catch (Exception e) {
+							sendMessage("Error transforming Airport " + icao
+									+ ": " + e.getMessage());
+						}
+
+						i++;
+
+					}
 				}
-				if (targetLandAirport == null) {
-					if (defApt.containsKey(customIcao))
-						targetLandAirport = defApt.get(customIcao);
-				}
+
 			}
 
-			if (targetLandAirport != null) {
-				try {
-					Airport rairport = transformAirport(targetLandAirport,
-							baseR4.get(customIcao));
-					if (rairport != null)
-						result.put(customIcao, rairport);
-
-				} catch (Exception e) {
-					sendMessage("Error transforming Airport " + customIcao
-							+ ": " + e.getMessage());
-				}
-
-			} else {
-				sendMessage("Airport " + customIcao
-						+ " has not been found on apt.dat files");
-				notFound++;
-			}
-
-			i++;
 		}
 
 		statistics.add("Airports calculated = " + (i - 1));
-		statistics.add("Airports not found = " + notFound);
-		// statistics.add("Airports not similar = " + notSim);
 
 		sendMessage("Storing results on new r4.csv file ... ");
 		RC4Parser rc4Parser = new RC4Parser(this.generatedR4Db);
 		long ndata = rc4Parser.store(result);
 		statistics.add("Runways generated on r4.csv = " + ndata);
 
-	}
-
-	public void diff(String icaoFilter) throws Exception {
-
-		sendMessage("Begin diff calculation ");
-
-		if ((icaoFilter == null) || (icaoFilter.length() == 0)
-				|| (icaoFilter.equalsIgnoreCase("*"))) {
-			icaoFilter = ".*";
-		}
-
-		checkInputs();
-
-		parseInputs();
-
-		for (String customIcao : baseR4.keySet()) {
-
-			if (!customIcao.matches(icaoFilter))
-				continue;
-
-			LandAirport targetLandAirport = null;
-			if (this.excludedCustomIcaos.contains(customIcao)) {
-				if (defApt.containsKey(customIcao))
-					targetLandAirport = defApt.get(customIcao);
-			} else {
-				for (Map<String, LandAirport> customApt : customApts) {
-					if (customApt.containsKey(customIcao))
-						targetLandAirport = customApt.get(customIcao);
-				}
-				if (targetLandAirport == null) {
-					if (defApt.containsKey(customIcao))
-						targetLandAirport = defApt.get(customIcao);
-				}
-			}
-
-			if (targetLandAirport != null) {
-
-				Airport r4airport = baseR4.get(customIcao);
-				for (String customRwy : r4airport.getRunways().keySet()) {
-
-					RunwayEnd rwR4 = r4airport.getRunways().get(customRwy);
-
-					LandRunwayEnd rwApt = targetLandAirport
-							.getLandRunwayEndByNumber(rwR4.getNumberAsApt());
-
-					if (rwApt != null) {
-						double distance = EarthCalc.getDistance(
-								rwR4.getStartLocation(), rwApt.getLocation());
-						sendMessage("Airport " + customIcao + " Runway "
-								+ rwApt.getNumber() + " distance = " + distance
-								+ " meters");
-					}
-				}
-
-			}
-
-		}
-
-		sendMessage("End diff calculation ");
 	}
 
 	protected void checkInputs() throws Exception {
@@ -258,17 +182,6 @@ public class Apt2rcTransformer {
 		defApt = defAptParser.parse();
 
 		statistics.add("Default Apt: parsed " + defApt.size() + " airports");
-
-		sendMessage("Parsing base r4ref.csv database ...");
-		RC4Parser rc4Parser;
-		if (this.baseR4Db != null)
-			rc4Parser = new RC4Parser(this.baseR4Db);
-		else
-			rc4Parser = new RC4Parser(this.baseR4DbStream);
-		baseR4 = rc4Parser.parse();
-		baseR4 = new TreeMap<String, Airport>(baseR4);
-
-		statistics.add("Reference R4: parsed " + baseR4.size() + " airports");
 
 		customApts = new ArrayList<Map<String, LandAirport>>();
 		int customAptsCount = 0;
@@ -296,53 +209,81 @@ public class Apt2rcTransformer {
 		}
 	}
 
-	protected Airport transformAirport(LandAirport aptAirport, Airport r4Airport) {
+	protected Airport transformAirport(LandAirport aptAirport) {
 
-		Airport newAirport = null;
+		Airport newAirport = new Airport();
+		newAirport.setRunways(new HashMap<String, RunwayEnd>());
 
-		// First, verify the airport definitions are similar
-		// if (aptAirport.getRunwayEndCount() == r4Airport.getRunways().size())
-		// {
+		DecimalFormatSymbols otherSymbols = new DecimalFormatSymbols(
+				Locale.ENGLISH);
+		otherSymbols.setDecimalSeparator('.');
 
-		newAirport = r4Airport.clone();
+		NumberFormat formatter = new DecimalFormat("###.######", otherSymbols);
 
-		for (String customRwy : r4Airport.getRunways().keySet()) {
+		// ICAO
+		newAirport.setIcao_code(aptAirport.getIcao_code());
 
-			RunwayEnd rwR4 = newAirport.getRunways().get(customRwy);
-			LandRunwayEnd rwApt = aptAirport.getLandRunwayEndByNumber(rwR4
-					.getNumberAsApt());
+		// Runways
+		for (LandRunway aptRw : aptAirport.getRunways()) {
 
-			if (rwApt != null) {
+			// Calculamos el punto medio entre las dos cabeceras
 
-				// Calculamos el ángulo entre los dos puntos y su distancia
-				// para luego aplicar el desplazamiento adecuado a
-				// rwR4.endLocation
-				double bearing = EarthCalc.getBearing(rwR4.getStartLocation(),
-						rwApt.getLocation()); // in
-												// decimal
-												// degrees
-				double distance = EarthCalc.getDistance(
-						rwR4.getStartLocation(), rwApt.getLocation()); // in
-																		// meters
+			Point cab0 = aptRw.getEnds().get(0).getLocation();
+			Point cab1 = aptRw.getEnds().get(1).getLocation();
 
-				rwR4.setStartLocation(rwApt.getLocation());
+			Point pMedio = this.puntoMedioPista(cab0, cab1);
+			double distancia = EarthCalc.getDistance(cab0, cab1);
 
-				// Aplicamos el desplazamiento a rwR4.endLocation
-				com.grum.geocalc.Point endLocation = (com.grum.geocalc.Point) EarthCalc
-						.pointRadialDistance(rwR4.getEndLocation(), bearing,
-								distance);
+			for (LandRunwayEnd aptRwe : aptRw.getEnds()) {
 
-				rwR4.setEndLocation(new Point(endLocation.getLatitude(),
-						endLocation.getLongitude()));
+				RunwayEnd r4Rw = new RunwayEnd();
 
-			} else
-				sendMessage("Runway End " + rwR4.getNumber() + " of airport "
-						+ r4Airport.getIcao_code() + " not found on APT");
+				// Convert runway id format
+				String r4Number = "0" + aptRwe.getNumber();
+				if (r4Number.contains("R")) {
+					r4Number = r4Number.replace("R", "2");
+				} else if (r4Number.contains("L")) {
+					r4Number = r4Number.replace("L", "1");
+				} else if (r4Number.contains("C")) {
+					r4Number = r4Number.replace("C", "3");
+				} else
+					r4Number = r4Number + "0";
+
+				if (r4Number.length() == 3)
+					r4Number = "0" + r4Number;
+
+				r4Rw.setNumber(r4Number);
+
+				// Locations
+				r4Rw.setStartLocation(aptRwe.getLocation());
+				r4Rw.setEndLocation(pMedio);
+
+				// Elevation (ft)
+				r4Rw.setElevation(aptAirport.getElevation());
+
+				// Bearing
+				double bearing = 0;
+				if (aptRwe.getLocation().equals(cab0))
+					bearing = 360 - EarthCalc.getBearing(cab0, cab1);
+				else
+					bearing = 360 - EarthCalc.getBearing(cab1, cab0);
+				r4Rw.setBearing(formatter.format(bearing));
+
+				// Distance (ft)
+				Double d = distancia * feets_per_meter;
+				r4Rw.setLength(Integer.toString(d.intValue()));
+
+				r4Rw.setIlsloc("0");
+				r4Rw.setMagVar("0");
+				r4Rw.setWidth(formatter.format(aptRw.getWidth()
+						* feets_per_meter));
+				r4Rw.setThresholdOffset(formatter.format(aptRwe
+						.getDisplacedThreshold() * feets_per_meter));
+
+				newAirport.getRunways().put(r4Number, r4Rw);
+			}
 
 		}
-		// } else
-		// sendMessage("Airport " + aptAirport.getIcao_code()
-		// + " definition differs");
 
 		return newAirport;
 
@@ -365,6 +306,32 @@ public class Apt2rcTransformer {
 	 */
 	public List<String> getStatistics() {
 		return statistics;
+	}
+
+	/**
+	 * Calcula el punto medio de una pista dadas las coordenadas de sus
+	 * cabeceras
+	 * 
+	 * @param cab0
+	 * @param cab1
+	 * @return
+	 */
+	protected Point puntoMedioPista(Point cab0, Point cab1) {
+
+		// Calculamos el ángulo entre los dos puntos y su distancia
+		// para luego aplicar el desplazamiento adecuado a
+		// rwR4.endLocation
+		double bearing = EarthCalc.getBearing(cab0, cab1); // in
+															// decimal
+															// degrees
+		double distance = EarthCalc.getDistance(cab0, cab1); // in
+																// meters
+
+		// Desplazamos el punto de una de las cabeceras a la mitad de distancia
+		com.grum.geocalc.Point endLocation = (com.grum.geocalc.Point) EarthCalc
+				.pointRadialDistance(cab1, bearing, distance / 2);
+
+		return new Point(endLocation.getLatitude(), endLocation.getLongitude());
 	}
 
 }
