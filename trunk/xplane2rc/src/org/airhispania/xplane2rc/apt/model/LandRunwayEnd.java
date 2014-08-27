@@ -30,6 +30,11 @@ public class LandRunwayEnd {
 	private Double longitude;
 
 	/**
+	 * Length of displaced threshold in metres
+	 */
+	private Double displacedThreshold;
+
+	/**
 	 * @return the number
 	 */
 	public String getNumber() {
@@ -76,6 +81,21 @@ public class LandRunwayEnd {
 
 	public Point getLocation() {
 		return new Point(this.latitude, this.longitude);
+	}
+
+	/**
+	 * @return the displacedThreshold
+	 */
+	public Double getDisplacedThreshold() {
+		return displacedThreshold;
+	}
+
+	/**
+	 * @param displacedThreshold
+	 *            the displacedThreshold to set
+	 */
+	public void setDisplacedThreshold(Double displacedThreshold) {
+		this.displacedThreshold = displacedThreshold;
 	}
 
 	/*

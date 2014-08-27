@@ -5,7 +5,6 @@ package org.airhispania.xplane2rc;
 
 import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +28,7 @@ public class MakeR4 {
 	private static final String BENDER9_R4_CSV = "\\r4.csv";
 	private static final String FREQ_CSV = "\\frequencies.csv";
 
-	private static final String VERSION = "0.1.3";
+	private static final String VERSION = "0.3.0";
 
 	/**
 	 * @param args
@@ -117,13 +116,12 @@ public class MakeR4 {
 		logger.info("Generating R4 file ... ");
 		File rc4File = new File(currentDirectory + BENDER9_R4_CSV);
 		logger.info("Target RC4 file location = " + rc4File.getAbsolutePath());
-		InputStream referenceRC4 = MakeR4.class.getClassLoader()
-				.getResourceAsStream("r4ref.csv");
+
 		try {
 
 			Apt2rcTransformer transformer = new Apt2rcTransformer(
 					xplaneAptFile, customAptFiles, new ArrayList<String>(),
-					referenceRC4, rc4File);
+					rc4File);
 			transformer.registerListener(new IApt2rcTransformerListener() {
 
 				public void doMessage(String m) {

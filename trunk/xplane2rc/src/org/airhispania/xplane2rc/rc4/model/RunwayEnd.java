@@ -19,9 +19,9 @@ public class RunwayEnd {
 	private String length;
 	private String ilsloc;
 	private String width;
-	private String unk0;
+	private String magVar;
 	private Point endLocation;
-	private String unk1;
+	private String thresholdOffset;
 
 	/**
 	 * @return the number
@@ -129,18 +129,18 @@ public class RunwayEnd {
 	}
 
 	/**
-	 * @return the unk0
+	 * @return the MagVar
 	 */
-	public String getUnk0() {
-		return unk0;
+	public String getMagVar() {
+		return magVar;
 	}
 
 	/**
-	 * @param unk0
-	 *            the unk0 to set
+	 * @param MagVar
+	 *            the MagVar to set
 	 */
-	public void setUnk0(String unk0) {
-		this.unk0 = unk0;
+	public void setMagVar(String unk0) {
+		this.magVar = unk0;
 	}
 
 	/**
@@ -159,18 +159,18 @@ public class RunwayEnd {
 	}
 
 	/**
-	 * @return the unk1
+	 * @return the thresholdOffset
 	 */
-	public String getUnk1() {
-		return unk1;
+	public String getThresholdOffset() {
+		return thresholdOffset;
 	}
 
 	/**
-	 * @param unk1
-	 *            the unk1 to set
+	 * @param thresholdOffset
+	 *            the thresholdOffset to set
 	 */
-	public void setUnk1(String unk1) {
-		this.unk1 = unk1;
+	public void setThresholdOffset(String unk1) {
+		this.thresholdOffset = unk1;
 	}
 
 	/**
@@ -208,8 +208,8 @@ public class RunwayEnd {
 	@Override
 	public String toString() {
 		return number + "," + startLocation + "," + elevation + "," + bearing
-				+ "," + length + "," + ilsloc + "," + width + "," + unk0 + ","
-				+ endLocation + "," + unk1;
+				+ "," + length + "," + ilsloc + "," + width + "," + magVar
+				+ "," + endLocation + "," + thresholdOffset;
 	}
 
 	public RunwayEnd clone() {
@@ -223,8 +223,8 @@ public class RunwayEnd {
 		r.setIlsloc(this.getIlsloc());
 		r.setLength(this.getLength());
 		r.setNumber(this.getNumber());
-		r.setUnk0(this.getUnk0());
-		r.setUnk1(this.getUnk1());
+		r.setMagVar(this.getMagVar());
+		r.setThresholdOffset(this.getThresholdOffset());
 		r.setWidth(this.getWidth());
 		return r;
 	}

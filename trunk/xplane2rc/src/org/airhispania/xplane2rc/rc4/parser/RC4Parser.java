@@ -112,9 +112,9 @@ public class RC4Parser {
 		r.setLength(cols[6]);
 		r.setIlsloc(cols[7]);
 		r.setWidth(cols[8]);
-		r.setUnk0(cols[9]);
+		r.setMagVar(cols[9]);
 		r.setEndLocation(new Point(cols[10], cols[11]));
-		r.setUnk1(cols[12]);
+		r.setThresholdOffset(cols[12]);
 
 		this.currentAirport.getRunways().put(cols[1], r);
 	}
@@ -147,14 +147,14 @@ public class RC4Parser {
 				line = line + rwy.getLength() + ",";
 				line = line + rwy.getIlsloc() + ",";
 				line = line + rwy.getWidth() + ",";
-				line = line + rwy.getUnk0() + ",";
+				line = line + rwy.getMagVar() + ",";
 				line = line
 						+ formatter.format(rwy.getEndLocation().getLatitude())
 						+ ",";
 				line = line
 						+ formatter.format(rwy.getEndLocation().getLongitude())
 						+ ",";
-				line = line + rwy.getUnk1();
+				line = line + rwy.getThresholdOffset();
 				content.add(line);
 
 			}

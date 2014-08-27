@@ -1,24 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <launch4jConfig>
   <dontWrapJar>true</dontWrapJar>
   <headerType>console</headerType>
-  <jar>xplane2rc-0.1.3-jar-with-dependencies.jar</jar>
-  <outfile>F:\jdev\wk-xplane\xplane2rc\dist\MakeRwys.exe</outfile>
+  <jar>xplane2rc-0.3.0-jar-with-dependencies.jar</jar>
+  <outfile>F:\jdev\wk-xplane\xplane2rc\dist\XMakeRwys.exe</outfile>
   <errTitle></errTitle>
   <cmdLine></cmdLine>
   <chdir></chdir>
   <priority>normal</priority>
   <downloadUrl>http://java.com/download</downloadUrl>
   <supportUrl></supportUrl>
-  <customProcName>false</customProcName>
   <stayAlive>false</stayAlive>
   <manifest></manifest>
   <icon></icon>
+  <classPath>
+    <mainClass>org.airhispania.xplane2rc.MakeR4</mainClass>
+  </classPath>
   <jre>
     <path></path>
+    <bundledJre64Bit>false</bundledJre64Bit>
     <minVersion>1.5.0</minVersion>
     <maxVersion></maxVersion>
     <jdkPreference>preferJre</jdkPreference>
-    <initialHeapSize>64</initialHeapSize>
-    <maxHeapSize>256</maxHeapSize>
+    <runtimeBits>64/32</runtimeBits>
   </jre>
+  <messages>
+    <startupErr>An error occurred while starting the application.</startupErr>
+    <bundledJreErr>This application was configured to use a bundled Java Runtime Environment but the runtime is missing or corrupted.</bundledJreErr>
+    <jreVersionErr>This application requires a Java Runtime Environment</jreVersionErr>
+    <launcherErr>The registry refers to a nonexistent Java Runtime Environment installation or the runtime is corrupted.</launcherErr>
+    <instanceAlreadyExistsMsg>An application instance is already running.</instanceAlreadyExistsMsg>
+  </messages>
 </launch4jConfig>
