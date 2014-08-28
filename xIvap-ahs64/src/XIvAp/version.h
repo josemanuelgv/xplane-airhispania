@@ -17,7 +17,7 @@
 
 #define SOFTWARE_VERSION	"0.3.0"
 //#define SOFTWARE_REVISION	"140"
-#define SOFTWARE_REVISION	"r102"
+#define SOFTWARE_REVISION	"r108"
 #define SOFTWARE_VERSION_INT    30
 
 #endif

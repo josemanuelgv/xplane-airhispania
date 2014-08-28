@@ -157,7 +157,7 @@ inline float ntohf1( const float f )
 #define WEATHER_UPDATE_INTERVAL 30.0f
 
 // use GLOB weather if the nearest wx station is more than this many nm away
-#define WEATHER_GLOB_TRESHOLD 60
+#define WEATHER_GLOB_TRESHOLD 60.0f
 
 // if we are flying between 2 weather stations, switch to the closest station
 // only if the difference in distance to the current station is greater than this
