@@ -691,10 +691,18 @@ std::vector<WxStation> WxDB::estacionesCercanas(double lat, double lon, float el
 //FIXME: Cambiar el método para encontrar estaciones cercanas (¿búsqueda en la "nav" dB del XPlane?)
 	int cuenta = 0;
 	double distancia;
+	double mindist = 100000.0f;
+	string minicao = "";
 	for(PosMap::iterator i = _positions.begin(); i != _positions.end(); ++i)
 	{
 		distancia = deg2dist(lat, lon, static_cast<double>(i->second.lat), static_cast<double>(i->second.lon));
+		if (distancia < mindist)
+		{
+			mindist = distancia;
+			minicao = i->second.icao;
+		}
 		WxStation res;
+
 		if (distancia <= WEATHER_GLOB_TRESHOLD)
 		{
 			res.name = i->second.icao;
@@ -714,7 +722,7 @@ std::vector<WxStation> WxDB::estacionesCercanas(double lat, double lon, float el
 
 //FIXME: DEBUG
 	if (xivap.debug.weather > 1)
-		xivap.addText(colRed, "Estaciones totales = " + itostring(cuenta) + " - Estaciones cercanas a menos de 60 Nm = " + itostring((int)result.size()), true, true);
+		xivap.addText(colRed, "Estaciones totales = " + itostring(cuenta) + " - Estaciones cercanas a menos de 60 Nm = " + itostring((int)result.size()) + " - Distancia a la estacion mas cercana (" + minicao + ") = " + itostring((int)mindist) + " Nm", true, true);
 
 	char aptBuf[64];
 	float latf = static_cast<float>(lat);
@@ -808,13 +816,15 @@ void WxDB::loadPositions(const string& filename)
 			pos.icao = pconst(copy(line, 0, 4));
 			del(line, 0, 4);
 			line = trim(line);
-			int p = 0;
+//			int p = 0;
+			int p = 1; // La primera posición a buscar debería ser la 2ª, para que no confunda el signo menos ("-") de la latitud con el del número siguiente, que es el que busca
 			// search for first blank or - char
 			while(line[p] != ' ' && line[p] != '-' && p < length(line)) ++p;
 			if(p >= length(line)) continue;
 			pos.lat = static_cast<float>(atof(copy(line, 0, p)));
 			del(line, 0, p);
 			line = trim(line);
+			p = 1; // Añadido para que busque la longitud desde la 2ª posición del resto de la línea
 			while(line[p] != ' ' && line[p] != '-' && p < length(line)) ++p;
 			if(p >= length(line)) continue;
 			pos.lon = static_cast<float>(atof(copy(line, 0, p)));
