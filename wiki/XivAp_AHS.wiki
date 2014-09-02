@@ -28,7 +28,7 @@
 
   En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
 
-  # Descargamos la última versión del plugin: [https://drive.google.com/file/d/0By8c9o_8djGZN0ZYa0VHLWNWZEk XivAp AHS r82]
+  # Descargamos la última versión del plugin: [https://drive.google.com/file/d/0By8c9o_8djGZZ0RZRm9OM25yZDA XivAp AHS r108]
   # Abrimos el archivo zip de la distribución de XIvap para AHS.
   # Copiamos el contenido de la carpeta "for_plugins_folder" en la carpeta %XPLANE10%/Resources/plugins.
   
@@ -58,7 +58,7 @@
 
   === Valoración de vuelos con AHSBender ===
 
- En la [https://code.google.com/p/xplane-airhispania/downloads/list zona de descargas] está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con la caja negra integrada de _XivAp_AHS_.
+ En este [https://drive.google.com/file/d/0By8c9o_8djGZZDJFODJHc21QNEE enlace] está disponible la última versión de XMakeRwys (0.3.0), una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con la caja negra integrada de _XivAp_AHS_.
  
 Requisitos:
  # Sistema operativo Windows
@@ -67,7 +67,7 @@ Requisitos:
  
 Uso: 
  # Desempaquetar los archivos en la carpeta de instalación de XPlane.
- # Ejecutar "MakeRwys.exe". Aparecerá una ventana de comandos en la que se rastrea la base de datos de aeródromos de nuestro simulador y se calcula la posición de las pistas y sus cabeceras.
+ # Ejecutar "XMakeRwys.exe". Aparecerá una ventana de comandos en la que se rastrea la base de datos de aeródromos de nuestro simulador y se calcula la posición de las pistas y sus cabeceras.
  # Ejecutar "AhsBender.exe" para valorar vuelos. Este software se puede descargar desde la web de AirHispania. Todas las pruebas se han realizado con la versión para FS9 del mismo. Una vez instalado, hay que copiar el fichero AhsBender.exe al directorio de XPlane y, desde allí, ejecutarlo.
 
 Opcionalmente ejecutar "AptViewer.exe" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite realizar búsquedas sobre toda la base de datos de aeropuertos que tenemos instalada.
