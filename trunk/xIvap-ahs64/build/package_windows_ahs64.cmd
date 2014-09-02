@@ -1,4 +1,4 @@
-SET VERSION=030_AHSr82_64b
+SET VERSION=030_AHSr108_64b
 SET ROOT=X-IvAp_%VERSION%_win
 
 mkdir %ROOT%
@@ -13,7 +13,7 @@ copy ..\doc\*.gif %ROOT%\introduction
 
 REM  Program
 mkdir %ROOT%\for_plugins_folder
-copy ..\src\IVAO\X-IvAp-64.xpl %ROOT%\for_plugins_folder
+copy ..\src\IVAO\XIvAp_AHSx64.xpl %ROOT%\for_plugins_folder
 copy ..\src\FMOD\FMODWindows\api\fmodex64.dll %ROOT%\for_plugins_folder
 copy .\msvc_64\msvcp110.dll %ROOT%\for_plugins_folder
 copy .\msvc_64\msvcr110.dll %ROOT%\for_plugins_folder
