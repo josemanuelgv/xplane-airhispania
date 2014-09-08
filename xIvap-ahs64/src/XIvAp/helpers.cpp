@@ -145,6 +145,7 @@ string getXivapRessourcesDir()
 
 	path += ((pos(string(".app/Contents"), path) > 0) ? string("../../../") : string("")) 
 	        + string("Resources") + DIR_CHAR + "plugins" + DIR_CHAR
+			+ string(PLUGIN_DIR) + DIR_CHAR
 			+ string(RESOURCES_DIR) + DIR_CHAR;
 
 	if(firsttime) {

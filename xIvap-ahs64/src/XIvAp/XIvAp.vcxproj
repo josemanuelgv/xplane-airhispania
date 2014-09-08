@@ -30,6 +30,7 @@
     <ProjectGuid>{440B94E6-4FAD-4CFC-A8A4-D399BF9F08AE}</ProjectGuid>
     <RootNamespace>XIvAp</RootNamespace>
     <Keyword>Win32Proj</Keyword>
+    <ProjectName>X-IvAp</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'" Label="Configuration">
@@ -103,11 +104,10 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Configuration)\$(Platform)\obj</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(Configuration)\$(Platform)\bin</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(XplaneDir)\Resources\Plugins\</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(Configuration)\$(Platform)\obj</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(Configuration)$(Platform)\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(XplaneDir)\Resources\Plugins\X-IvAp AHS\32\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">$(XplaneDir)\Resources\Plugins\X-IvAp AHS\64\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">$(Platform)\$(Configuration)\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">false</LinkIncremental>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">false</LinkIncremental>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
     <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">AllRules.ruleset</CodeAnalysisRuleSet>
@@ -131,10 +131,10 @@
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">.xpl</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IVAO|Win32'">
-    <TargetName>X-IvAp-32</TargetName>
+    <TargetName>win</TargetName>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='IVAO|x64'">
-    <TargetName>$(ProjectName)_AHS$(Platform)</TargetName>
+    <TargetName>win</TargetName>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -280,22 +280,23 @@
       <Optimization>MaxSpeed</Optimization>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
       <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
-      <AdditionalIncludeDirectories>..\WinIncludes;..\..\SDK;..\..\SDK\multiplayer\src;..\ptypes\include;..\..\SDK\CHeaders\Widgets;..\..\SDK\CHeaders\XPLM;..\stund;..\..\SDK\multiplayer\include;..\FMOD\FMODWindows\api\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(XplaneSDK)\CHeaders\XPLM;$(XplaneSDK)\CHeaders\Widgets;$(XplaneSDK)\multiplayer\src;$(XplaneSDK)\multiplayer\include;..\ptypes\include;..\WinIncludes;..\stund;..\FMOD\FMODWindows\api\inc;..\..\xsbsources\plugins;..\..\mdsplib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;IBM=1;XPLM200;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <StringPooling>true</StringPooling>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <PrecompiledHeader>
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
-      <DebugInformationFormat>
-      </DebugInformationFormat>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <StructMemberAlignment>4Bytes</StructMemberAlignment>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
     </ClCompile>
     <Link>
       <AdditionalOptions>/DLL %(AdditionalOptions)</AdditionalOptions>
       <AdditionalDependencies>Opengl32.lib;odbc32.lib;odbccp32.lib;ptypes_ST.lib;MDSPLib.lib;ws2_32.lib;glu32.lib;comctl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>$(OutDir)X-IvAp-32.xpl</OutputFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
-      <AdditionalLibraryDirectories>../../SDK/Libraries/Win;../IVAO/;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(XplaneSDK)\Libraries\Win;../IVAO;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBCMT;LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
       <AddModuleNamesToAssembly>%(AddModuleNamesToAssembly)</AddModuleNamesToAssembly>
       <GenerateDebugInformation>false</GenerateDebugInformation>
