@@ -28,7 +28,8 @@ void CloseGauge(void);
 
 #define RESOURCES		"Resources" 
 #define PLUGINS			"plugins"
-#define RESOURCES_DIR	"X-IvAp Resources"
+#define PLUGIN_DIR "X-IvAp AHS" // Añadido para conversión a "Fat plugin"
+#define RESOURCES_DIR	"X-IvAp AHS Resources"
 #define SOUND_DIR		"sound"
 #define TEXTURE_DIR		"textures"
 #define PANEL_FILENAMEDAY	"xivapExtended.png" //Extendida la interfaz principal 

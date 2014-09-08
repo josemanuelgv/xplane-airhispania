@@ -147,6 +147,8 @@ int InitSound(void)
 	strcat(gPluginDataFileIV, XPLMGetDirectorySeparator());
 	strcat(gPluginDataFileIV, PLUGINS);
 	strcat(gPluginDataFileIV, XPLMGetDirectorySeparator());
+	strcat(gPluginDataFileIV, PLUGIN_DIR);
+	strcat(gPluginDataFileIV, XPLMGetDirectorySeparator());
 	strcat(gPluginDataFileIV, RESOURCES_DIR);
 	strcat(gPluginDataFileIV, XPLMGetDirectorySeparator());
 

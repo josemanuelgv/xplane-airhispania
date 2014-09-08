@@ -119,8 +119,9 @@ inline float ntohf1( const float f )
 #define TS_CANAL_GENERAL "LA CANTINA DEL PILOTO"
 #endif
 
-#define RESOURCES_DIR	"X-IvAp Resources"
-#define CONFIG_FILE		"X-IvAp.conf"
+#define PLUGIN_DIR "X-IvAp AHS" // Añadido para conversión a "Fat plugin"
+#define RESOURCES_DIR	"X-IvAp AHS Resources"
+#define CONFIG_FILE		"X-IvAp AHS.conf"
 #define STATIONS_FILE	"icao.dat"
 
 #define FLIGHTPLANS_DIR	"Flightplans"
