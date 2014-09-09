@@ -29,10 +29,11 @@ copy "%XPlaneDir%\Resources\Plugins\%FOLDER%\32\win.xpl" "%ROOT%\for_plugins_fol
 copy ..\src\FMOD\FMODWindows\api\fmodex.dll "%ROOT%\for_plugins_folder\%FOLDER%\32"
 copy .\msvc_32\msvcp110.dll "%ROOT%\for_plugins_folder\%FOLDER%\32"
 copy .\msvc_32\msvcr110.dll "%ROOT%\for_plugins_folder\%FOLDER%\32"
+copy .\TSRemote.dll "%ROOT%\for_plugins_folder\%FOLDER%\32"
 
 
-mkdir "%ROOT%\for_plugins_folder\%RESFOLDER%\"
-xcopy /E "X-IvAp Resources" "%ROOT%\for_plugins_folder\%RESFOLDER%\"
+mkdir "%ROOT%\for_plugins_folder\%FOLDER%\%RESFOLDER%\"
+xcopy /E "X-IvAp Resources" "%ROOT%\for_plugins_folder\%FOLDER%\%RESFOLDER%\"
 
 REM Compress
 del /s /q xivap_*.zip
