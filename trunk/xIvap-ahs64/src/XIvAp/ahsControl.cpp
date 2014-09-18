@@ -101,6 +101,22 @@ void AhsControl::parse()
 	
 	this->download();
 
+	// Limpia el contenido descargado eliminando trozos de texto no deseados derivados del uso indebido del protocolo HTTP 1.1
+	std::regex eclear ("GET\\s\\/modact01\\.php\\?tCod=mod_actahs\\sHTTP\\/1\\.0\\r");
+	this->html = std::regex_replace (this->html.stl_str(), eclear, "");
+
+	std::regex eclear2 ("Host:\\swww\\.airhispania\\.com\\r");
+	this->html = std::regex_replace (this->html.stl_str(), eclear2, "");
+
+	std::regex eclear3 ("Connection:\\sclose\\r");
+	this->html = std::regex_replace (this->html.stl_str(), eclear3, "");
+
+	std::regex eclear4 ("User-Agent:\\sX-Ivap\\sAHS\\r");
+	this->html = std::regex_replace (this->html.stl_str(), eclear4, "");
+
+	std::regex eclear5 ("\\r\\n");
+	this->html = std::regex_replace (this->html.stl_str(), eclear5, "");
+
 	// Obtiene los pares dependencia-frecuencia de la lista de controles activos
 	deps.clear();
 	freqs.clear();
@@ -132,7 +148,6 @@ void AhsControl::parse()
 		tschannels.unique();				// Eliminamos posibles repetidos
 
 		// Calcula los canales de TS más adecuados a cada dependencia usando la distancia de levenstein
-		
 		std::list<string>::iterator itd = deps.begin();
 		std::list<string>::iterator itc;
 		int mi;
@@ -144,7 +159,7 @@ void AhsControl::parse()
 			itc = tschannels.begin();
 			while( itc != tschannels.end() ) {
 				d = this->lvdistance((*itd), (*itc));
-				if((mi > d)){           // Un valor de 6 para la distancia de levenstein significa que las cadenas son prácticamente distintas
+				if((mi > d)){
 					mi = d;
 					c = (*itc);
 				}
