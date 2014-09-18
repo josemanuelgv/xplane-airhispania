@@ -1003,14 +1003,16 @@ void Xivap::tuneCom(int radio, int freq, string name)
 {
     string freqStr = freq2str(freq); // Salva la frecuencia en una string, para futuras operaciones
 	// Forzamos a actualizar la lista de canales de TeamSpeak para obtener el estado actualizado en el momento de sintonizar
-	this->updateAhsControl();
+	// Solo si no es UNICOM
+	if(freqStr != UNICOM_FREQ)
+		this->updateAhsControl();
 
     // AHS dependency is prioritary
 	string ahsDep = _ahsControl->findDep(freq2str(freq));
 	bool ahsFound = false;
     // AHS dependency resolution
 	ahsControlLoaded = false; // Evita actualizar el estado cuando tenemos que resolver un canal
-    string ahsChn = _ahsControl->findChannel(freq2str(freq));
+    //string ahsChn = _ahsControl->findChannel(freq2str(freq));
 	ahsControlLoaded = true;
 	if(ahsDep.stl_str().size()>0){                  
 		if(debug.teamspeak > 0)
@@ -3265,13 +3267,12 @@ void Xivap::updateAhsControl(){
 	_ahsControl->parse();
 	if(_ahsControl->getStatus() == 1){
 		
-		//_ahsControl->saveToFile(); // Solo para depuración
-
 		if(debug.teamspeak > 0){
 					uiWindow.addMessage(colCyan, "Teamspeak: ahsControl channels available...");
 					for (std::list<string>::iterator it = _ahsControl->tschannels.begin(); it != _ahsControl->tschannels.end(); ++it){
 						uiWindow.addMessage(colCyan, "Teamspeak: " + (*it));
 					}
+					_ahsControl->saveToFile(); // Solo para depuración
 		}
 	}
 	else{
