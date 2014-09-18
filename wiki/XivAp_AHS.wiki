@@ -36,7 +36,7 @@
 
 = Configuración =
 
-  Abriremos el archivo %XPLANE10%/Resources/plugins/X-IvAp Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
+  Abriremos el archivo %XPLANE10%/Resources/plugins/X-IvAp AHS/X-IvAp AHS Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
    * *BASE*: Indicaremos el ICAO de nuestro aeródromo base. Ejemplo LEVC.
    * *REALNAME*: Indicaremos nuestro nombre completo.
    * *PASSWORD*: Indicaremos nuestra clave de acceso a AirHispania.
