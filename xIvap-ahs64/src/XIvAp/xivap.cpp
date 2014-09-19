@@ -1114,7 +1114,7 @@ void Xivap::tuneCom(int radio, int freq, string name)
 				}
 				++i;
 			}
-			if (!found) // Si no hay canal de TS para el nombre que hay, se busca coincidencia sólo con el ICAO
+			if (!found && ICAO_ATC != "" && t_ATC != "") // Si no hay canal de TS para el nombre que hay, se busca coincidencia sólo con el ICAO
 			{
 				if (debug.teamspeak)
 					addText(colRed, "No encontrado canal de Teamspeak exacto para '" + name + "'", true, true);
@@ -1149,7 +1149,7 @@ void Xivap::tuneCom(int radio, int freq, string name)
 			}
 
 			if (ahsFound) uiWindow.addMessage(colCyan, "Teamspeak: Sintonizando canal '" + name + "'", true, true);
-				else uiWindow.addMessage(colCyan, "Teamspeak: Sintonizando canal '" + p.callsign + "'", true, true);
+				else if (found) uiWindow.addMessage(colCyan, "Teamspeak: Sintonizando canal '" + p.callsign + "'", true, true);
 
 			if(p.isValid()) {
 				if(_activeRadio == radio)  {
