@@ -1,0 +1,58 @@
+X-IVap para AirHispania
+=======================
+
+Introducción
+============
+Este plugin es el resultado de la adaptación de la versión Open Source de XivAp 0.3.0 para XPlane para ser compatible con el servidor de vuelo online de AirHispania.
+
+
+Nuevas funcionalidades
+======================
+
+La versión de XivAp para AHS tiene básicamente las mismas características que su homólogo para IVAO, pero es importante resaltar algunas funcionalidades específicas para AirHispania:
+
+* Integración con AhsControl para la sintonización correcta de canales de TeamSpeak para cada dependencia activa.
+* Integración en el propio plugin de la caja negra (AhsBox). Simplemente con activar la aviónica, nuestro plugin genera un archivo de caja negra totalmente compatible con AhsBox y AhsBender. 
+  No necesitamos tener AhsBox ejecutándose ni los plugins de los que depende (XPUIPC).
+* Interfaz gráfica del plugin ampliada.
+* Activación del modo CAVOK.
+* Incorporación de paquete de CSL's de las aeronaves de la flota de AirHispania.
+
+
+Requerimientos necesarios
+=========================
+
+* XPlane 9 o 10 (32 o 64 bits)
+* TeamSpeak 2 RC2
+
+Instalación
+===========
+
+Antes de instalar este plugin es importante asegurarnos de que no tenemos instalada la versión original del plugin XivAp para IVAO ya que ambos no pueden coexistir en el mismo simulador. 
+Siempre podemos "mover" el plugin de IVAO a otra carpeta si no queremos borrarlo definitivamente.
+
+En los siguientes pasos nos referimos a %XPLANE% como la ubicación física de la carpeta donde tenemos instalado XPlane en nuestro ordenador.
+
+ 1. Abrimos el archivo zip de la distribución de XIvap para AHS.
+ 2. Copiamos el contenido de la carpeta "for_plugins_folder" en la carpeta %XPLANE%/Resources/plugins.
+ 3. Aunque ya tenemos el plugin listo para ejecutar, es muy importante antes configurar algunos ficheros tal como expone la siguiente sección.
+ 
+Configuración
+=============
+
+Abriremos el archivo %XPLANE%/Resources/plugins/X-IvAp AHS/X-IvAp AHS Resources/X-IvAp.conf con nuestro editor de texto habitual. En él debemos completar las siguientes variables:
+
+ *BASE: Indicaremos el ICAO de nuestro aeródromo base. Ejemplo LEVC.
+ *REALNAME: Indicaremos nuestro nombre completo.
+ *PASSWORD: Indicaremos nuestra clave de acceso a AirHispania?.
+ *VID: Indicaremos nuestro indicativo sin el prefijo AHS. Por ejemplo, 018D.
+ *CARPETA: Indicaremos la ruta completa de la carpeta donde queremos que XivAp_AHS nos almacene los archivos de cajas negras.
+ 
+ 
+Puesta en marcha
+================
+
+Ya podemos ejecutar nuestro simulador. Al iniciarse veremos la ventana principal de XivAp_AHS disponible.
+En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de aviónica de la aeronave.
+Tras conectarnos a la red, es muy conveniente, tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. 
+Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
