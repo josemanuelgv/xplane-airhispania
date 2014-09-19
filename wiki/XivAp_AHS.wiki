@@ -28,7 +28,7 @@
 
   En los siguientes pasos nos referimos a %XPLANE10% como la ubicación física de la carpeta donde tenemos instalado XPlane 10 en nuestro ordenador.
 
-  # Descargamos la última versión del plugin: [https://drive.google.com/file/d/0By8c9o_8djGZZ0RZRm9OM25yZDA XivAp AHS r108]
+  # Descargamos la última versión del plugin: [https://drive.google.com/file/d/0By8c9o_8djGZSHQ3bjVkUEJMY2c XivAp AHS r118]
   # Abrimos el archivo zip de la distribución de XIvap para AHS.
   # Copiamos el contenido de la carpeta "for_plugins_folder" en la carpeta %XPLANE10%/Resources/plugins.
   
