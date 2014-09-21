@@ -1,4 +1,5 @@
 #summary Tutorial de vuelo en red con XPlane en AirHispania
+#labels Deprecated
 
 <h1> *Tutorial de vuelo en red con XPlane en AirHispania* </h1>
 
