@@ -1,0 +1,25 @@
+XMakeRwys: compatibilidad de AHSBender y XPlane (v 0.3.0)
+======================================================
+Requisitos
+ 1. Sistema operativo Windows
+ 2. Maquina virtual Java JRE 1.5.0 o superior (ojo, que no sea de 64bits!)
+    Descarga la versión x86: http://www.oracle.com/technetwork/java/javase/downloads/java-se-jre-7-download-432155.html
+ 3. Xplane 9 o 10
+
+Instrucciones de instalación:
+ 1. Copiar todos los archivos en la carpeta donde esté instalado XPlane.
+ 
+Instrucciones de uso:
+ 1. Ejecutar "XMakeRwys.exe" para generar la base de datos de aeropuertos que necesita AhsBender (es un fichero llamado r4.csv)
+ 2. Ejecutar "AhsBender.exe" para valorar vuelos de la caja negra.
+ 
+ Si incorporamos o quitamos escenarios en la carpeta "Custom scenery" de XPlane, debemos volver a ejecutar XMakeRwys.exe
+ para actualizar la base de datos de Bender y que éste aplique los nuevos aeródromos instalados.
+ 
+ La utilidad "AptViewer.bat" permite inspeccionar las bases de datos de aeropuertos disponibles en XPlane. Simplemente hay que indicarle el directorio
+ donde está instalado XPlane y puedes realizar búsquedas de aeródromos por su ICAO.
+ 
+Felices Vuelos!!
+
+Jose Manuel García Valladolid - AHS018D
+ 
