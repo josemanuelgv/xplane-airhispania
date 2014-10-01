@@ -24,8 +24,4 @@
     ** Autor Tdg, [http://forums.x-plane.org/index.php?app=downloads&showfile=24348]
 
 
-
-  == *ICAO1*, Descripción1 ==
-    ** Proveedor0, enlace descarga0
-    ** Proveedor1, enlace descarga1
         
