@@ -6,7 +6,7 @@
 
 = Paquetes de aeródromos =
 
-  * Descripcion del paquete
+  * Descripción del paquete 0
    ** Proveedor
    ** Descarga: enlace
    ** Listado de aeródromos que incluye:
@@ -18,4 +18,8 @@
   * ICAO0, Descripción0
     ** Proveedor0, enlace descarga0
     ** Proveedor1, enlace descarga1
-    
+
+  * ICAO1, Descripción1
+    ** Proveedor0, enlace descarga0
+    ** Proveedor1, enlace descarga1
+        
