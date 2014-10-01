@@ -19,7 +19,6 @@
 
   == *LEXJ*, Aeropuerto de Santander==
     ** Autor Tdg, [http://forums.x-plane.org/index.php?app=downloads&showfile=24365]
-    ** Proveedor1, enlace descarga1
 
   == *ICAO1*, Descripción1 ==
     ** Proveedor0, enlace descarga0
