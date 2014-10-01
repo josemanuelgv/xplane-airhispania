@@ -4,7 +4,6 @@
 
  Esta página pretende catalogar los escenarios para XPlane de aeródromos españoles. 
 
----- 
 
 = Paquetes de aeródromos =
 
@@ -14,7 +13,6 @@
    ** Listado de aeródromos que incluye:
     *** ICAO0, Descripción0
     *** ICAO1, Descripción1
----- 
 
 = Aeródromos individuales =
 
@@ -25,4 +23,4 @@
   * ICAO1, Descripción1
     ** Proveedor0, enlace descarga0
     ** Proveedor1, enlace descarga1
-----         
+        
