@@ -1,4 +1,4 @@
-#summary Aeródromos españoles para XPlane
+#AeródromosES Aeródromos españoles para XPlane
 
 = Lista de aeródromos españoles de libre uso para XPlane =
 
