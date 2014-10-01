@@ -4,7 +4,7 @@
 
  Esta página pretende catalogar los escenarios para XPlane de aeródromos españoles. 
 
-<wiki:toc max_depth="1" />
+<wiki:toc max_depth="2" />
 
 = Paquetes de aeródromos =
 
