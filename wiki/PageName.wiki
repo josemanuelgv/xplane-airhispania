@@ -1,8 +1,6 @@
 #summary Aeródromos españoles para XPlane
 
-<wiki:toc max_depth="1" />
-
-= Lista de aeródromos españoles de libre uso para XPlane =
+<h1> Lista de aeródromos españoles de libre uso para XPlane </h1>
 
  Esta página pretende catalogar los escenarios para XPlane de aeródromos españoles. 
 
