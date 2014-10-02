@@ -23,5 +23,9 @@
   == *LECO*, Aeropuerto de A Coruña==
     ** Autor Tdg, [http://forums.x-plane.org/index.php?app=downloads&showfile=24348]
 
+== *LEAL*, Aeropuerto de Alicante==
+    ** Autor Tdg, [== *LECO*, Aeropuerto de A Coruña==
+    ** Autor Tdg, [http://forums.x-plane.org/index.php?app=downloads&showfile=24348]
+
 
         
