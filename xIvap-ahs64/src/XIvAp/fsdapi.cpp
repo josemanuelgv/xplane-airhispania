@@ -714,6 +714,16 @@ void FsdAPI::decodePBH(const unsigned int pbh, float& pitch, float& bank, float&
 	onground = pbhstrct.onground == 1;
 }
 
+void FsdAPI::disconnectGhostPilot(string callsign)
+{
+	
+	string packet = FSD_HEADS[_FSD_DELPILOT_] + callsign;
+	_socket.writeln(packet);
+//	_socket.close();
+//	_connected = false;
+//	_params.params = 0;
+}
+
 void FsdAPI::disconnectPilot()
 {
 	

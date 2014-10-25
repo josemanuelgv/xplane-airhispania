@@ -517,6 +517,9 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 					const string& realname, bool hideadm, const string& server, const string& port,
 					bool voice, bool fmcar_)
 {
+	// Da órden de desconectar el piloto de la red por si acaso se había quedado conectado en un fallo de conexión
+//	fsd.disconnectGhostPilot(callsign);
+
 	// start the weather engine
 	_erwin.init();
 
@@ -590,7 +593,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 	
 	if(_useMultiplayer) {
 		if(!_multiplayer.init(_p2p_enabled, _p2p_max_sendbps, _p2p_max_recvbps, _p2p_forced_port, _default_icao)) {
-			uiWindow.addMessage(colRed, string("Falló al inicializar Multijugador: ")
+			uiWindow.addMessage(colRed, string("Fallo al inicializar Multijugador: ")
 				+ _multiplayer.errorMessage());
 			_useMultiplayer = false;
 		}
@@ -602,7 +605,7 @@ void Xivap::connect(const string& callsign_, const string& vid, const string& pa
 
 	if(_useMultiplayer) {
 		if(!_multiplayer.enable())
-			uiWindow.addMessage(colRed, "Falló al arrancar Multijugador: " + _multiplayer.errorMessage(), true, true);
+			uiWindow.addMessage(colRed, "Fallo al arrancar Multijugador: " + _multiplayer.errorMessage(), true, true);
 	}
 
 #ifdef HAVE_TEAMSPEAK
@@ -1384,15 +1387,18 @@ void Xivap::handleTextMessage(const FSD::Message& m)
 			message = m.source + " [bcast]> " + message;
 			Playsound("text.wav");
 		} else
-		if (message == "Esta es informacion") // Recuperar qué información ATIS hay después de ":"
-		{
-			if (m.tokens.size() > 1)
+//		if (message == "Esta es informacion") // Recuperar qué información ATIS hay después de ":"
+//		{
+//		if (m.tokens.size() > 1)
+//		{
+			for (int n = 1; n < m.tokens.size(); n++)
 			{
 				atisV_ant = atisV;
-				atisV = m.tokens[1];
-				message = message + ": " + atisV;
+				atisV = m.tokens[n];
+				message = message + ":" + atisV;
 			}
-		}
+//		}
+//		}
 		if(m.dest == fsd.callsign()) {
 			// private message
 			bool inChatWindow = false;
@@ -1513,8 +1519,13 @@ void Xivap::disconnect()
 #endif
 
 	// reset the plane info in fsd in case the user wants to reconnect again
-    xivap.flightplanForm().FMcar(false);
-	xivap.fmcar = false;
+	// Los datos de avión y por tanto la caja negra no se reinician si el usuario no era un "follow-me" (protege la caja negra de los fallos de conexión)
+    if (fmcar == true)
+	{
+		addText(colYellow, "Reiniciando parametros del avion y desactivando 'Follow-Me'", true, true);
+		flightplanForm().FMcar(false);
+		fmcar = false;
+	}
 // Quitado para la conexión de red de AHS
 //	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery);
 	fsd.sendPlaneInfo(_acType + _acAirline + _acLivery,"dummy");
@@ -2299,8 +2310,11 @@ void Xivap::aircraftChange()
 	string tailnum = string(byteBuf);
 	addText(colWhite, "Su matricula: " + tailnum, true, true);
 
-	if (caja.Activada()) caja.Fin(); // Desactiva caja negra si estaba activada
-
+	if (caja.Activada())
+	{
+		addText(colYellow, "Reiniciando caja negra por cambio de aeronave", true, true);
+		caja.Fin(); // Desactiva caja negra si estaba activada
+	}
 }
 
 void Xivap::handleCommand(string line)
@@ -2526,6 +2540,18 @@ void Xivap::handleCommand(string line)
 		config.save(filename);
 		
 		return;
+
+//	} else if(command == "RECONNECT") {
+//		if (online())
+//		{
+//			uiWindow.addMessage(colRed, "ERROR: Ya esta conectado a la red");
+//		}
+//		else
+//		{
+//			disconnect();
+//		}
+		
+//		return;
 
 #ifdef HAVE_TEAMSPEAK
 	} else if(command == "VOICE") {

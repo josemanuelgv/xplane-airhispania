@@ -426,7 +426,7 @@ void UiWindow::buttonClicked(int button)
 	case FMC_Capture: xivap.fmcForm().show();break;
 //	case BlackBox_Capture:xivap.ActivarCajaNegra();break;
 	case Chat_Capture: xivap.handleCommand(".CHAT");break;  
-	case AcercaDe_Capture:xivap.messageBox().show("AHS4XP se trata de una adaptacion del plugin Xivap de IVAO para conectar XPlane 10 64 bits a la red de Airhispania.");break;
+	case AcercaDe_Capture:xivap.messageBox().show("AHS4XP es una adaptacion del plugin Xivap de IVAO para conectar XPlane 10 32/64 bits a la red de Airhispania.");break;
 	case TCAS_Capture: {xivap.Tcasbox.hide();break;}
 	case Ident_Capture: {xivap.setXpdrIdent();break;}
 	case Connect_Capture: if(xivap.fsd.connected()) xivap.disconnectForm().show();
@@ -473,13 +473,57 @@ void UiWindow::buttonClicked(int button)
 		case SCREEN_ACARS:
 			switch(button) {
 				case LSK1:
-					xivap.fsd.sendWxRequest(FSD::WX_METAR, xivap.fpl.departure);
+//					xivap.fsd.sendWxRequest(FSD::WX_METAR, xivap.fpl.departure);
+					if(!xivap.online())
+					{
+						addMessage(colRed, "Error: No conectado", false, false);
+					}
+					else
+					{
+						string icaoAD = trim(strupcase(xivap.fpl.departure));
+						if (length(icaoAD) == 4)
+						{
+							string rMETAR = xivap.fsd.getMETAR(icaoAD); // Conseguir el METAR de la estación
+							if (rMETAR != "ERROR") // Si se ha recibido un METAR válido
+							{
+								addMessage(colWhite, rMETAR, true, true);
+								xivap.msgWindow.addMessage(colWhite, rMETAR);
+							}
+							else
+							{
+								addMessage(colRed, "Error: No hay datos de METAR para " + icaoAD, true, true);
+							}
+						}
+					}
 					screen = SCREEN_MAIN;
 					break;
 				case LSK2:
-					xivap.fsd.sendWxRequest(FSD::WX_METAR, xivap.fpl.destination);
+//					xivap.fsd.sendWxRequest(FSD::WX_METAR, xivap.fpl.destination);
+					if(!xivap.online())
+					{
+						addMessage(colRed, "Error: No conectado", false, false);
+					}
+					else
+					{
+						string icaoAD = trim(strupcase(xivap.fpl.destination));
+						if (length(icaoAD) == 4)
+						{
+							string rMETAR = xivap.fsd.getMETAR(icaoAD); // Conseguir el METAR de la estación
+							if (rMETAR != "ERROR") // Si se ha recibido un METAR válido
+							{
+								addMessage(colWhite, rMETAR, true, true);
+								xivap.msgWindow.addMessage(colWhite, rMETAR);
+							}
+							else
+							{
+								addMessage(colRed, "Error: No hay datos de METAR para " + icaoAD, true, true);
+							}
+						}
+					}
 					screen = SCREEN_MAIN;
 					break;
+// Eliminados botones que no funcionan (24-10-2014)
+/*
 				case LSK3:
 					xivap.fsd.sendWxRequest(FSD::WX_TAF, editLine);
 					editLine = "";
@@ -490,8 +534,30 @@ void UiWindow::buttonClicked(int button)
 					editLine = "";
 					screen = SCREEN_MAIN;
 					break;
+*/
 				case LSK5:
-					xivap.fsd.sendWxRequest(FSD::WX_METAR, editLine);
+//					xivap.fsd.sendWxRequest(FSD::WX_METAR, editLine);
+					if(!xivap.online())
+					{
+						addMessage(colRed, "Error: No conectado", false, false);
+					}
+					else
+					{
+						editLine = trim(strupcase(editLine));
+						if (length(editLine) == 4)
+						{
+							string rMETAR = xivap.fsd.getMETAR(editLine); // Conseguir el METAR de la estación
+							if (rMETAR != "ERROR") // Si se ha recibido un METAR válido
+							{
+								addMessage(colWhite, rMETAR, true, true);
+								xivap.msgWindow.addMessage(colWhite, rMETAR);
+							}
+							else
+							{
+								addMessage(colRed, "Error: No hay datos de METAR para " + editLine, true, true);
+							}
+						}
+					}
 					editLine = "";
 					screen = SCREEN_MAIN;
 					break;
@@ -500,7 +566,7 @@ void UiWindow::buttonClicked(int button)
 					screen = SCREEN_MAIN;
 					break;
 				case RSK2:
-					xivap.fsd.sendInfoRequest(editLine, _FSD_INFOREQ_ATIS_);
+					if(xivap.online()) xivap.fsd.sendInfoRequest(editLine, _FSD_INFOREQ_ATIS_);
 					editLine = "";
 					screen = SCREEN_MAIN;
 					break;
@@ -757,8 +823,8 @@ void UiWindow::prepScreen()
 				addText(AL_left, 1, colWhite, "<" + xivap.fpl.departure, true);
 				addText(AL_left, 2, colDarkGreen, "REQ WX ARR", false);
 				addText(AL_left, 3, colWhite, "<" + xivap.fpl.destination, true);
-				addText(AL_left, 5, colWhite, "<REQ TAF", true);
-				addText(AL_left, 7, colWhite, "<REQ SHORTTAF", true);
+//				addText(AL_left, 5, colWhite, "<REQ TAF", true);
+//				addText(AL_left, 7, colWhite, "<REQ SHORTTAF", true);
 				addText(AL_left, 9, colWhite, "<REQ METAR", true);
 				addText(AL_right, 1, colWhite, "SEND FPLN>", true);
 				addText(AL_right, 3, colWhite, "RQ ATIS>", true);
@@ -808,8 +874,8 @@ void UiWindow::prepScreen()
 
 		case SCREEN_PREFS:
 			addText(AL_ctr, 0, colDarkGreen, "PREFERENCES", true);
-			addText(AL_left, 0, colDarkGreen, "IVAO WX", false);
-			addText(AL_left, 1, colWhite, string("<WX ") + (xivap.usingWeather() ? "ON" : "OFF"), true);
+			addText(AL_left, 0, colDarkGreen, "AHS WX", false);
+			addText(AL_left, 1, colWhite, string("<WX ") + (xivap.usingWeather() ? "AHS" : "X-PLANE NATIVE"), true);
 			addText(AL_left, 2, colDarkGreen, "MULTIPLAYER", false);
 			addText(AL_left, 3, colWhite, string("<MP ") + (xivap.usingMultiplayer() ? "ON" : "OFF"), true);
 			addText(AL_left, 5, colWhite,string("<Tagging ") + (xivap.usingLabels() ? "ON" : "OFF"), true);

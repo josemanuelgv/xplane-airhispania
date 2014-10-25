@@ -77,6 +77,7 @@ public:
 	void connectPilot(string host, string port, string callsign, string id, string password,
 		bool hideadm, FSD::SimulatorType sim, string realname);
 	void disconnectPilot();
+	void disconnectGhostPilot(string callsign); // Desconecta un usuario fantasma proviniente de fallo de conexión
 
 	bool connected() { return _connected; };
 	bool verified() { return _verified; };
