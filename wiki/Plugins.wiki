@@ -13,4 +13,4 @@ Add your content here.  Format your content with:
   * Automatic links to other wiki pages
 
    ** Proveedor: xplane.org - Jens Ansorg
-   ** Descarga: [http://forums.x-plane.org/index.php?app=downloads&showfile=4930 enlace]
+   ** Descarga: [http://forums.x-plane.org/index.php?app=downloads&showfile=4930 Airport Navigator enlace]
