@@ -1,16 +1,4 @@
 #summary Recomendados para 64 bits.
 
-= Introduction =
-
-Add your content here.
-
-
-= Details =
-
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
-
    ** Proveedor: xplane.org - Jens Ansorg
    ** Descarga: [http://forums.x-plane.org/index.php?app=downloads&showfile=4930 Airport Navigator]
