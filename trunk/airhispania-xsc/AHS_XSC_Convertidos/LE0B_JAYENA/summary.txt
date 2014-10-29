@@ -20,7 +20,6 @@ Object cfcf641a475ac797de251b820bb0db72 not found
 Object e0b289334ff2a09df9b0c9bab4b3d5f5 not found
 Object ec72270a4de500b401b53881151cde50 not found
 Object Gen_Heli_Pad_Smalll_No_Outline is a built-in object
-Texture jayena_le0b_pista_0.bmp not found
 Object veg_tb_Chestnut1_10m_fa is a built-in object
 Object veg_tb_Chestnut1_8m_sp is a built-in object
 Object veg_tb_Cottonwood_12m is a built-in object
