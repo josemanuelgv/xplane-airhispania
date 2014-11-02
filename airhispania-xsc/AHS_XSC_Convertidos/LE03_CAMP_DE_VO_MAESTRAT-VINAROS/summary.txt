@@ -1,0 +1,15 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Object ag_warehouse is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Object veg_tc_NorwaySpruce1_11m is a built-in object
+Object veg_tc_Pine_Scrub_5m is a built-in object
+Object veg_tc_Pine_Scrub_6m is a built-in object
+Object veg_tc_Pine_Scrub_7m is a built-in object
+Using objects from the OpenSceneryX library

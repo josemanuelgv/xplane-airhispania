@@ -1,0 +1,35 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (3.73m) for object dab9276ef44c46e5a8254c0723b0c953 at ( 41.37162900,   -4.69713000) in file alcazaren_LE07_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Texture logos_2.bmp not found
+Object gen_sailplane_trailer02 is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Chestnut1_16m is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Cottonwood_12m is a built-in object
+Object veg_tb_Cottonwood_16m is a built-in object
+Object veg_tb_Maple_10m is a built-in object
+Object veg_tb_Maple_14m is a built-in object
+Object veg_tb_Oak1_20m is a built-in object
+Object veg_tb_OliveTree_10m is a built-in object
+Object veg_tb_OliveTree_4m is a built-in object
+Object veg_tb_OliveTree_5m is a built-in object
+Object veg_tb_OliveTree_5m_wi is a built-in object
+Object veg_tb_OliveTree_7m is a built-in object
+Object veg_tb_Poplar_10m is a built-in object
+Object veg_tb_Sagebrush_5ft is a built-in object
+Object veg_tb_Sagebrush_6ft is a built-in object
+Object veg_tb_Sycamore_11m is a built-in object
+Object veg_tb_Sycamore_12m is a built-in object
+Object veg_tb_Sycamore_14m is a built-in object
+Object veg_tb_Sycamore_15m is a built-in object
+Object veg_tb_Sycamore_18m is a built-in object
+Object veg_tc_DouglasFir1_12m is a built-in object
+Object veg_tc_DouglasFir1_27m is a built-in object
+Object veg_tc_LarchThin_set_20m is a built-in object
+Using objects from the OpenSceneryX library
