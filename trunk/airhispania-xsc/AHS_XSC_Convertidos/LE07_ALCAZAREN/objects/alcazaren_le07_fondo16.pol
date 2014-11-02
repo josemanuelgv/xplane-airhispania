@@ -1,0 +1,8 @@
+I
+850	# Converted by FS2XPlane 3.26
+DRAPED_POLYGON
+
+TEXTURE_NOWRAP		alcazaren_le07_fondo16.dds
+SCALE		128 128
+LAYER_GROUP	taxiways +1
+SURFACE		concrete
