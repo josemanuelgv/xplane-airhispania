@@ -1,0 +1,26 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 21c5bcfc45551f89867240a75e7ee5e5 in file murciaSJ_LELC_libreria_objetos.bgl scaled x2.6
+
+TEXTURE		San_Javier_fotoTerminal2_03.dds
+POINT_COUNTS	6 0 0 6
+
+VT	  -3.058    2.319    1.310	-1.000 -0.004 -0.029	0.6098 0.2617
+VT	  -3.047    0.000    1.300	-1.000  0.000 -0.025	0.6094 0.4922
+VT	  -3.047    0.000    1.300	-1.000 -0.004 -0.029	0.6094 0.4922
+VT	  -2.985    0.000   -1.394	-1.000  0.000 -0.025	0.8438 0.4884
+VT	  -2.985    2.319   -1.394	-1.000  0.000 -0.025	0.8433 0.2692
+VT	  -2.985    2.319   -1.394	-1.000 -0.004 -0.029	0.8433 0.2692
+
+IDX	5
+IDX	0
+IDX	2
+IDX	3
+IDX	4
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 6

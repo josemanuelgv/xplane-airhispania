@@ -1,0 +1,53 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Skipping terrain data in file murciaSJ_LELC_0_exclude_background.BGL
+Skipping terrain data in file murciaSJ_LELC_background.BGL
+Non-zero altitude (-1.21m) for object veg_p_DatePalm2_yng4 at ( 37.77508000,   -0.81733900) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-1.51m) for object Seto-1 at ( 37.77510500,   -0.81732800) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-1.6m) for object Seto-1 at ( 37.77525500,   -0.81752000) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77762600,   -0.81638300) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77728900,   -0.81680300) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 37.77724600,   -0.81719000) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77719500,   -0.81757600) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77686200,   -0.81799800) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77651000,   -0.81844200) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77615600,   -0.81889000) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77580300,   -0.81933800) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77545200,   -0.81978100) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77509900,   -0.82022800) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77474800,   -0.82067200) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 37.77796600,   -0.81596900) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-0.5m) for object Seto-1 at ( 37.77538400,   -0.81755800) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.7m) for object Seto-1 at ( 37.77381300,   -0.82040500) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-3.7m) for object Seto-1 at ( 37.77411600,   -0.82088700) in file murciaSJ_LELC_pc_arboles.bgl
+Non-zero altitude (-1.25m) for object Puerta_Valla_grande at ( 37.77675600,   -0.81626600) in file murciaSJ_LELC_pc_objetos.BGL
+Non-zero altitude (-0.15m) for object Puerta_1_hoja at ( 37.77321300,   -0.81948600) in file murciaSJ_LELC_pc_objetos.BGL
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 37.76929900,   -0.81772100) in file murciaSJ_LELC_pc_objetos.BGL
+Non-zero pitch/bank (1.0/0.0) for object c101 at ( 37.78439100,   -0.80348700) in file murciaSJ_LELC_pm_aviones.bgl
+Non-zero altitude (5.9m) for object AirHispaniaSC_Banderas12 at ( 37.78719200,   -0.80319400) in file murciaSJ_LELC_pm_objetos.BGL
+Skipping animation in object 1508733c4bae729aae676a965f040525 in file AHS_Farolas_FSX.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 3440f8694b584567c45f61ac43872056 in file AHS_Farolas_FSX.BGL
+Skipping animation in object 1dfa3c094370bb672dad959a1c7a0a38 in file AHS_Aeropuerto_varios_FSX.BGL
+Texture earmuffs.bmp not found
+Object 4c08ee5349f88cb376da0c9b1c99395a not found
+Texture skintone1.bmp not found
+Texture skintone1_lm.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_EMT1 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_ParkRanger1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station1 is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_p_DatePalm2_yng2 is a built-in object
+Object veg_p_DatePalm2_yng3 is a built-in object
+Object veg_p_DatePalm2_yng4 is a built-in object
+Object veg_tb_Aspen_7m is a built-in object
+Object veg_tb_Cottonwood_6m is a built-in object
+Using objects from the OpenSceneryX library
