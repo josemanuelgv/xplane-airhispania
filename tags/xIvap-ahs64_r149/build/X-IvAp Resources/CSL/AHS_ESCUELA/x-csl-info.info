@@ -1,0 +1,59 @@
+Flota de la Escuela
+<table border="1" cellpadding="2" cellspacing="1">
+<tr>
+ <th>Aeronave</th>
+ <th>Tipo modelo 3D</th>
+ <th>Matricula</th>
+ <th>ICAO</th>
+ <th>Carpeta</th>
+ <th>Autor</th>
+</tr>
+<tr>
+ <td>Piper PA28 181 Archeer II</td>
+ <td>OBJ</td>
+ <td>EC-PAR</td>
+ <td>PA28A</td>
+ <td>PA24</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Cessna 172 Skyhawk</td>
+ <td>OBJ</td>
+ <td></td>
+ <td>C172</td>
+ <td>C172</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Cessna 182 Skylane</td>
+ <td>ACF</td>
+ <td>EC-SKY</td>
+ <td>C182</td>
+ <td>C182</td>
+ <td>AIR.C74.NET</td>
+</tr>
+<tr>
+ <td>Beechcraft Baron 58</td>
+ <td>OBJ</td>
+ <td>EC-BJP</td>
+ <td>BE58</td>
+ <td>BE56</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Beechcraft King Air B-200</td>
+ <td>OBJ</td>
+ <td>EC-KIA</td>
+ <td>BE20</td>
+ <td>BE20</td>
+ <td>IVAO</td>
+</tr>
+<tr>
+ <td>Beechcraft King Air 350</td>
+ <td>OBJ</td>
+ <td>EC-KIN</td>
+ <td>BE35</td>
+ <td>BE35</td>
+ <td>IVAO</td>
+</tr>
+</table>

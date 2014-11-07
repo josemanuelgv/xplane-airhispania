@@ -1,0 +1,124 @@
+﻿Build started 17/06/2014 5:40:49.
+     1>Project "C:\Prog\FSD\x-ivap-ahs-estable\src\ptypes\win32\PTypes_ST.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I..\include /Zi /nologo /W1 /WX- /O2 /D WIN32 /D _CRT_SECURE_NO_WARNINGS /D PTYPES_ST /D _VC80_UPGRADE=0x0710 /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"IVAO\\" /Fd"IVAO\vc110.pdb" /Gd /TP /errorReport:prompt ..\src\pasync.cxx ..\src\patomic.cxx ..\src\pcomponent.cxx ..\src\pcset.cxx ..\src\pcsetdbg.cxx ..\src\pexcept.cxx ..\src\pfatal.cxx ..\src\pfdxstm.cxx ..\src\pinfile.cxx ..\src\pinfilter.cxx ..\src\pinmem.cxx ..\src\pinstm.cxx ..\src\pintee.cxx ..\src\piobase.cxx ..\src\pipbase.cxx ..\src\pipmsg.cxx ..\src\pipmsgsv.cxx ..\src\pipstm.cxx ..\src\pipstmsv.cxx ..\src\pipsvbase.cxx ..\src\pmd5.cxx ..\src\pmem.cxx ..\src\pmsgq.cxx ..\src\pmtxtable.cxx ..\src\pnpipe.cxx ..\src\pnpserver.cxx ..\src\pobjlist.cxx ..\src\poutfile.cxx ..\src\poutfilter.cxx ..\src\poutmem.cxx ..\src\poutstm.cxx ..\src\ppipe.cxx ..\src\ppodlist.cxx ..\src\pputf.cxx ..\src\prwlock.cxx ..\src\psemaphore.cxx ..\src\pstdio.cxx ..\src\pstrcase.cxx ..\src\pstrconv.cxx ..\src\pstring.cxx ..\src\pstrlist.cxx ..\src\pstrmanip.cxx ..\src\pstrtoi.cxx ..\src\pstrutils.cxx ..\src\ptextmap.cxx ..\src\pthread.cxx ..\src\ptime.cxx ..\src\ptimedsem.cxx ..\src\ptrigger.cxx ..\src\ptypes_test.cxx ..\src\punit.cxx ..\src\punknown.cxx ..\src\pvariant.cxx ..\src\pversion.cxx
+         pasync.cxx
+         patomic.cxx
+         pcomponent.cxx
+         pcset.cxx
+         pcsetdbg.cxx
+         pexcept.cxx
+         pfatal.cxx
+         pfdxstm.cxx
+         pinfile.cxx
+         pinfilter.cxx
+         pinmem.cxx
+         pinstm.cxx
+         pintee.cxx
+         piobase.cxx
+         pipbase.cxx
+         pipmsg.cxx
+         pipmsgsv.cxx
+         pipstm.cxx
+         pipstmsv.cxx
+         pipsvbase.cxx
+         Generating Code...
+         Compiling...
+         pmd5.cxx
+         pmem.cxx
+         pmsgq.cxx
+         pmtxtable.cxx
+         pnpipe.cxx
+         pnpserver.cxx
+         pobjlist.cxx
+         poutfile.cxx
+         poutfilter.cxx
+         poutmem.cxx
+         poutstm.cxx
+         ppipe.cxx
+         ppodlist.cxx
+         pputf.cxx
+         prwlock.cxx
+         psemaphore.cxx
+         pstdio.cxx
+         pstrcase.cxx
+         pstrconv.cxx
+         pstring.cxx
+         Generating Code...
+         Compiling...
+         pstrlist.cxx
+         pstrmanip.cxx
+         pstrtoi.cxx
+         pstrutils.cxx
+         ptextmap.cxx
+         pthread.cxx
+         ptime.cxx
+         ptimedsem.cxx
+         ptrigger.cxx
+         ptypes_test.cxx
+         punit.cxx
+         punknown.cxx
+         pvariant.cxx
+         pversion.cxx
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Prog\FSD\x-ivap-ahs-estable\src\IVAO\PTypes_ST64.lib" /NOLOGO /MACHINE:X64 IVAO\pasync.obj
+         IVAO\patomic.obj
+         IVAO\pcomponent.obj
+         IVAO\pcset.obj
+         IVAO\pcsetdbg.obj
+         IVAO\pexcept.obj
+         IVAO\pfatal.obj
+         IVAO\pfdxstm.obj
+         IVAO\pinfile.obj
+         IVAO\pinfilter.obj
+         IVAO\pinmem.obj
+         IVAO\pinstm.obj
+         IVAO\pintee.obj
+         IVAO\piobase.obj
+         IVAO\pipbase.obj
+         IVAO\pipmsg.obj
+         IVAO\pipmsgsv.obj
+         IVAO\pipstm.obj
+         IVAO\pipstmsv.obj
+         IVAO\pipsvbase.obj
+         IVAO\pmd5.obj
+         IVAO\pmem.obj
+         IVAO\pmsgq.obj
+         IVAO\pmtxtable.obj
+         IVAO\pnpipe.obj
+         IVAO\pnpserver.obj
+         IVAO\pobjlist.obj
+         IVAO\poutfile.obj
+         IVAO\poutfilter.obj
+         IVAO\poutmem.obj
+         IVAO\poutstm.obj
+         IVAO\ppipe.obj
+         IVAO\ppodlist.obj
+         IVAO\pputf.obj
+         IVAO\prwlock.obj
+         IVAO\psemaphore.obj
+         IVAO\pstdio.obj
+         IVAO\pstrcase.obj
+         IVAO\pstrconv.obj
+         IVAO\pstring.obj
+         IVAO\pstrlist.obj
+         IVAO\pstrmanip.obj
+         IVAO\pstrtoi.obj
+         IVAO\pstrutils.obj
+         IVAO\ptextmap.obj
+         IVAO\pthread.obj
+         IVAO\ptime.obj
+         IVAO\ptimedsem.obj
+         IVAO\ptrigger.obj
+         IVAO\ptypes_test.obj
+         IVAO\punit.obj
+         IVAO\punknown.obj
+         IVAO\pvariant.obj
+         IVAO\pversion.obj
+         PTypes_ST.vcxproj -> C:\Prog\FSD\x-ivap-ahs-estable\src\IVAO\PTypes_ST64.lib
+     1>Done Building Project "C:\Prog\FSD\x-ivap-ahs-estable\src\ptypes\win32\PTypes_ST.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:00.35

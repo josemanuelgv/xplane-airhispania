@@ -1,0 +1,270 @@
+; This file contains all the standard livery codes
+;
+; One code per line
+; Format:
+; <Airline> <Livery> <Description>
+;
+; <Airline> is a 3 digit ICAO standard code for the airline
+; <Livery> is a unique 5 digit alphanumeric code for the livery
+; <Description> is a text description of the livery, suitable for display in the SquawkBox UI.
+;   After the two codes, all content on the line (except trailing comments) are taken to be the description.
+;
+
+; Southwest Airlines liveries
+;
+SWA DGOLD Original "Desert Gold" colors
+SWA SHAMU Shamu One
+SWA LONES Lone Star One
+SWA ARIZN Airzona One
+SWA NEWMX New Mexico One
+SWA NEVAD Nevada One
+SWA SILVR Silver One
+SWA CLFRN California One
+SWA 3CRWN Triple Crown One
+SWA NREXP Nolan Ryan Express
+SWA NBAFN NBA Finals
+SWA JMORR June M. Morris
+SWA HEART Heroes of the Heart
+SWA KITTY Spirit of Kitty Hawk
+SWA HERBK Herbert D. Kelleher
+SWA WINSP The Winning Spirit
+SWA MORIS Morris Air
+
+; America West liveries
+;
+AWE OLDGR Old Grey colors
+AWE SOHIO Ohio
+AWE TEAMW Teamwork Coast to Coast
+AWE NEVAD Nevada
+AWE ACARD Arizona Cardinals
+AWE ARIZN Arizona
+AWE ADMBK Arizona Diamond Backs
+
+; Delta Airlines liveries
+;
+DAL DALNC Wavy Gravy
+DAL DALMC 1997-2001 Interim Livery
+DAL DALOC "Widget" Classic Livery
+DAL DALBC 1776-1976 US Bicentennial
+DAL DLXNC Delta Express "Wavy Gravy"
+DAL DLXPP Delta Express "Powder Puff Girls"
+DAL DSNNC Delta Shuttle "Wavy Gravy"
+DAL DALSS Soaring Spirit
+DAL DALSG Delta Song
+DAL DAL75 Delta 75th Anniversary
+
+; Delta Connection liveries
+;
+CAA ASANC Delta Connection "Wavy Gravy"
+CAA ASAOC Silver & Orange
+CAA ASASP Delta Connection Special Livery
+COM COMNC Delta Connection "Wavy Gravy"
+SKW SKYNC Delta Connection "Wavy Gravy"
+PRT PRTNC Delta Connection "Wavy Gravy"
+
+; Air France liveries
+;
+AFR AFR70 Air France 1970s
+
+; American Airlines liveries
+;
+AAL ASTRO "AstroJet" Retro
+
+; Alaska Airlines liveries
+;
+ASA ASAOC Alaska Airlines 1970s-era
+ASA ASANC Alasaka Airlines New Colors
+ASA SEAHK Seattle Seahawks
+ASA DISNY Spirit of Disneyland
+
+; Continental Airlines liveries
+;
+COA COA59 Continental Airlines 1959
+COA RDGLD Red and Gold
+BTA RJ100 Continental Express "100th ERJ"
+
+; Czech Air Lines liveries
+;
+CSA CSA80 80th Anniversary
+
+; Korean Air Lines liveries
+;
+KAL WDCUP FIFA World Cup 2002
+
+; Lufthansa Liveries
+;
+DLH LUBRD Lu the Bird
+DLH STARA Star Alliance
+DLH DLHOC Lufthansa Old Colors
+DLH CARGO Lufthansa Cargo
+
+; Northwest Airlines liveries
+;
+NWA WHITE Northwest Eurowhite
+NWA RDTOP Northwest Red Top Old Colors
+NWA CARGO Northwest Cargo
+NWA C3SPD Northwest Cargo Three Speed
+
+; United Air Lines liveries
+;
+UAL UALOC "Triple-U" 3 Stripe Fuselage
+UAL UALNC Blue and White
+UAL UAL67 Blue cheatline 1960s-era
+UAL SHUTL United Shuttle
+UAL UATED United "Ted"
+UAL STARA Star Alliance
+
+; United Parcel Service liveries
+;
+UPS UPSOC Brown Strip Old Colors
+
+; Air Canada & Air Canada Jazz liveries
+;
+ACA TRANS Trans Canada Airlines
+ACA FLAGS 9/11 Canada/US Flags
+ACA SYMPH Symphony of Voices
+ACA RAPTR Toronto Raptors
+ACA TANGO Air Canada "Tango"
+ACA STARA Star Alliance
+ACA BNOSE Black Nose 1970s Colors
+ACA RTAIL Vermillion Stripe 1980s Colors
+ACA CARGO Air Canada Cargo
+ACA FSPIR Free Spirit
+JZA GREEN Jazz "Green"
+JZA ORANG Jazz "Orange"
+JZA REDJZ Jazz "Red"
+JZA YELLO Jazz "Yellow"
+
+; British Airways liveries
+;
+BAW LNDOR Landor
+BAW RTAIL Red Tail
+BAW BHONE Benyhone
+BAW KGUTY Koguty Lowicke
+BAW TEAMB Team Britain
+BAW DREAM Water Dreaming
+BAW WINGS Wings
+BAW WHALE Whale Rider
+BAW WAVES Waves and Cranes
+BAW WCITY Waves of the City
+BAW ATREE Animals in Trees
+BAW CROSE Chelsea Rose
+BAW PAITH Paithani
+BAW RNDEZ Rendezvous
+BAW POOLE Blue Poole
+BAW COLUM Colum Ireland
+BAW DEFBL Delftblue Daybreak
+BAW EMELE Emele Ndebele
+BAW BLOMS Blomsterang
+BAW UNION Grand Union
+BAW WLCUP FIFA World Cup 2002
+
+; KLM Dutch Airlines liveries
+;
+KLM KLMWB Blue and White with Web URL
+KLM KASIA KLM Asia
+
+; AirTran liveries
+;
+TRS TRSNC Cream and Turquoise with Blue Belly
+
+; JetBlue liveries
+;
+JBU DIMND Diamond Tail
+JBU DOTTS Dots on the Tail
+JBU GRIDS Grid on the Tail
+
+; SAS Scandinavian Airline System liveries
+;
+SAS BTAIL Blue Tail
+SAS WTAIL White Tail
+SAS FLAKE Snowflake Yellow Tail
+
+; VASP liveries
+;
+VSP VSWEB Web URL on Fuselage
+
+; US Airways liveries
+;
+USA NAVTP Navy Fuselage Top
+USA SHUTL US Airways Shuttle
+
+; Varig liveries
+;
+VRG BBOTM Blue Fuselage Bottom
+VRG WHITE All-White Fuselage
+VRG VRG75 Varig 75th Anniversary
+VRG FLCD1 Felicidade 1
+VRG FLCD2 Felicidade 2
+VRG CEARA Ceara
+VRG BSTAR Blue Star Tail Old Colors
+VRG BR500 Brazil 500 Years
+VRG STARA Star Alliance
+
+; LOT Polish Airlines liveries
+;
+LOT STARA Star Alliance
+
+; DHL liveries
+;
+DHL RSTRP Red Fuselage Stripe Old Colors
+DHL YELLO Yellow Fuselage
+
+; Frontier liveries
+;
+FFT FLYNX Lynx Tail
+FFT FBEAR Bear Tail
+FFT BISON Bison Tail
+FFT COYOT Coyote Tail
+FFT DOLPH Dolphin Tail
+FFT EAGLE Eagle Tail
+FFT EGRET Egret Tail
+FFT FRELK Elk Tail
+FFT FRFOX Fox Tail
+FFT GOOSE Goose Tail
+FFT HSEAL Harbor Seal Tail
+FFT FHARE Hare Tail
+FFT HERON Heron Tail
+FFT HORSE Horse Tail
+FFT HMNGB Hummingbird Tail
+FFT MALRD Mallard Duck Tail
+FFT MOOSE Moose Tail
+FFT MGOAT Mountain Goat Tail
+FFT MLION Mountain Lion Tail
+FFT MDEER Mule Deer Tail
+FFT OCELT Ocelot Tail
+FFT PRNGH Pronghorn Tail
+FFT PUFFN Puffin Tail
+FFT RFOX1 Red Fox #1 Tail
+FFT RFOX2 Red Fox #2 Tail
+FFT SHARE Snow Hare Tail
+FFT SNOWL Snow Owl Tail
+FFT FSWAN Swan Tail
+FFT WDUCK Wood Duck Tail
+FFT WHALE Whale Tail
+FFT FWOLF Wolf Tail
+
+; Hawaiian Airlines liveries
+;
+HAL PURPL Purple Floral Tail
+HAL RAIDR Oakland Raiders
+HAL REDST Red Stripe & Silver Old Colors
+HAL HAL70 Hawaiian 70th Anniversary
+
+; Cathay Pacific liveries
+;
+CPA WHITE White Fuselage with Blue Tail
+CPA CARGO Cathay Pacific Cargo
+CPA STEAM Same Team Same Dream
+CPA WCITY Asia's World City
+
+; Singapore liveries
+;
+SIA GSTRP Gold Stripe
+SIA WPALM Waves and Palm
+
+; Swedish Armed Forces / Svenska Flygvapnet
+;
+SVF YELOW Saab Safir trainer yellow
+SVF CAMOU Saab Safir camouflage
+

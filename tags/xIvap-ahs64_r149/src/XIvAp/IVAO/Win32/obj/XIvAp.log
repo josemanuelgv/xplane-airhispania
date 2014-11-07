@@ -1,0 +1,291 @@
+﻿Build started 16/06/2014 18:52:18.
+     1>Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" on node 2 (Build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(345,5): warning MSB8004: Intermediate Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Intermediate Directory.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V110\Microsoft.CppBuild.targets(346,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /I..\WinIncludes /I..\..\SDK /I..\..\SDK\multiplayer\src /I..\ptypes\include /I..\..\SDK\CHeaders\Widgets /I..\..\SDK\CHeaders\XPLM /I..\stund /I..\..\SDK\multiplayer\include /I..\FMOD\FMODWindows\api\inc /nologo /W3 /WX- /O2 /Ob1 /Ot /Oy- /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IBM=1 /D XPLM200 /D _CRT_SECURE_NO_WARNINGS /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"IVAO\Win32\obj\\" /Fd"IVAO\Win32\obj\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt aircraftDB.cpp airlinesDB.cpp atcPosition.cpp awyFinder.cpp chatWindow.cpp configFile.cpp connectForm.cpp disconnectForm.cpp FlightLogger.cpp flightplanForm.cpp FMCform.cpp fsdapi.cpp fsdmessage.cpp helpers.cpp HTTPclient.cpp interpolator.cpp messageHandler.cpp messageWindow.cpp multiplayer.cpp multiplayerPilot.cpp navQuery.cpp planeposition.cpp refInspector.cpp SoundGraphics.cpp stb_image_aug.cpp systemcallbacks.cpp Tcas.cpp tcpsocket.cpp TeamSpeak.cpp TLVpacket.cpp uiWindow.cpp weatherGod.cpp weatherPosition.cpp WristWatch.cpp xivap.cpp xivapWin.cpp XPmessageBox.cpp ..\..\Sdk\multiplayer\src\TexUtils.cpp ..\..\Sdk\multiplayer\src\BitmapUtils.cpp ..\..\Sdk\multiplayer\src\PlatformUtils.win.cpp ..\..\Sdk\multiplayer\src\XObjDefs.cpp ..\..\Sdk\multiplayer\src\XObjReadWrite.cpp ..\..\Sdk\multiplayer\src\XOGLUtils.cpp ..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp ..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp ..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp ..\..\Sdk\multiplayer\src\XPMPMultiplayerVars.cpp ..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp ..\..\Sdk\multiplayer\src\XUtils.cpp ..\..\Sdk\XPListBox.cpp ..\..\Sdk\XPPopups.cpp ..\stund\stun.cxx ..\stund\StunClient.cpp ..\stund\udp.cxx
+         aircraftDB.cpp
+         airlinesDB.cpp
+         atcPosition.cpp
+         awyFinder.cpp
+         chatWindow.cpp
+         configFile.cpp
+         connectForm.cpp
+         disconnectForm.cpp
+         FlightLogger.cpp
+         flightplanForm.cpp
+         FMCform.cpp
+         fsdapi.cpp
+         fsdmessage.cpp
+         helpers.cpp
+         HTTPclient.cpp
+         interpolator.cpp
+         messageHandler.cpp
+         messageWindow.cpp
+         multiplayer.cpp
+     1>multiplayer.cpp(1127): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>multiplayer.cpp(1130): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>multiplayer.cpp(1133): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         multiplayerPilot.cpp
+         Generating Code...
+         Compiling...
+         navQuery.cpp
+         planeposition.cpp
+     1>planeposition.cpp(118): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(119): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(120): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(122): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>planeposition.cpp(123): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>planeposition.cpp(124): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>planeposition.cpp(139): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(140): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(141): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>planeposition.cpp(143): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>planeposition.cpp(144): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>planeposition.cpp(145): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+         refInspector.cpp
+         SoundGraphics.cpp
+         stb_image_aug.cpp
+     1>c:\prog\fsd\x-ivap-ahs-estable\src\xivap\stbi_DDS_aug_c.h(362): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\prog\fsd\x-ivap-ahs-estable\src\xivap\stbi_DDS_aug_c.h(366): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\prog\fsd\x-ivap-ahs-estable\src\xivap\stbi_DDS_aug_c.h(390): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\prog\fsd\x-ivap-ahs-estable\src\xivap\stbi_DDS_aug_c.h(427): warning C4018: '<' : signed/unsigned mismatch
+         systemcallbacks.cpp
+         Tcas.cpp
+     1>Tcas.cpp(422): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Tcas.cpp(423): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Tcas.cpp(424): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Tcas.cpp(425): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>Tcas.cpp(426): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+         tcpsocket.cpp
+         TeamSpeak.cpp
+         TLVpacket.cpp
+         uiWindow.cpp
+         weatherGod.cpp
+     1>weatherGod.cpp(310): warning C4018: '<' : signed/unsigned mismatch
+     1>weatherGod.cpp(452): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherGod.cpp(470): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherGod.cpp(490): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherGod.cpp(503): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         weatherPosition.cpp
+     1>weatherPosition.cpp(325): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(328): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(336): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(352): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(354): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(462): warning C4018: '<' : signed/unsigned mismatch
+     1>weatherPosition.cpp(541): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(543): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(552): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>weatherPosition.cpp(553): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         WristWatch.cpp
+         xivap.cpp
+     1>xivap.cpp(2330): warning C4018: '<' : signed/unsigned mismatch
+         xivapWin.cpp
+         XPmessageBox.cpp
+         TexUtils.cpp
+         BitmapUtils.cpp
+     1>..\..\Sdk\multiplayer\src\BitmapUtils.cpp(636): warning C4068: unknown pragma
+     1>..\..\Sdk\multiplayer\src\BitmapUtils.cpp(950): warning C4018: '<' : signed/unsigned mismatch
+         PlatformUtils.win.cpp
+     1>..\..\Sdk\multiplayer\src\PlatformUtils.win.cpp(218): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         XObjDefs.cpp
+         XObjReadWrite.cpp
+     1>..\..\Sdk\multiplayer\src\XObjReadWrite.cpp(325): warning C4018: '>' : signed/unsigned mismatch
+         XOGLUtils.cpp
+         XPMPMultiplayer.cpp
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(120): warning C4101: 'fi' : unreferenced local variable
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(118): warning C4101: 'line' : unreferenced local variable
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(117): warning C4101: 'airPath' : unreferenced local variable
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(116): warning C4101: 'myPath' : unreferenced local variable
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(119): warning C4101: 'sysPath' : unreferenced local variable
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(164): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(166): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(182): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(222): warning C4018: '>' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayer.cpp(335): warning C4018: '>=' : signed/unsigned mismatch
+         XPMPMultiplayerCSL.cpp
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(635): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(640): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(688): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(770): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(837): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(900): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(903): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(967): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(968): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(969): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(970): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerCSL.cpp(984): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         XPMPMultiplayerObj.cpp
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(53): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(54): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(55): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(56): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(63): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(76): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(122): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(216): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(218): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(230): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(242): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(325): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(395): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(401): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(402): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(403): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(411): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(427): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(433): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(442): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(459): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(476): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(478): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(504): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(683): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(702): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(727): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(728): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(729): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(758): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(759): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(760): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(761): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(771): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(772): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(773): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(774): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(785): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(786): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(787): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(788): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(799): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(800): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(801): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(802): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(821): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(823): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(824): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(825): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(826): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(834): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(835): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(836): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(837): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPMultiplayerObj.cpp(838): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+         XPMPMultiplayerVars.cpp
+         XPMPPlaneRenderer.cpp
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(336): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(362): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(383): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(384): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(385): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(414): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(415): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(417): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(418): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(419): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(420): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(521): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(621): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(622): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(623): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>..\..\Sdk\multiplayer\src\XPMPPlaneRenderer.cpp(625): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         XUtils.cpp
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(226): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(354): warning C4018: '>' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(355): warning C4018: '>' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(392): warning C4068: unknown pragma
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(504): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(509): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(524): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(545): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(561): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\multiplayer\src\XUtils.cpp(573): warning C4018: '<' : signed/unsigned mismatch
+         XPListBox.cpp
+     1>..\..\Sdk\XPListBox.cpp(48): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\Sdk\XPListBox.cpp(197): warning C4018: '>=' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(197): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(374): warning C4018: '>' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(397): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(399): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(474): warning C4018: '<' : signed/unsigned mismatch
+     1>..\..\Sdk\XPListBox.cpp(555): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>..\..\Sdk\XPListBox.cpp(565): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>..\..\Sdk\XPListBox.cpp(570): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         XPPopups.cpp
+         stun.cxx
+     1>..\stund\stun.cxx(1436): warning C4018: '>=' : signed/unsigned mismatch
+         StunClient.cpp
+         udp.cxx
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"IVAO\Win32\bin\X-IvAp-32.xpl" /INCREMENTAL /NOLOGO /LIBPATH:../../SDK/Libraries/Win /LIBPATH:../IVAO/ Opengl32.lib odbc32.lib odbccp32.lib ptypes_ST.lib MDSPLib.lib ws2_32.lib glu32.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBC /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"IVAO\Win32\bin\X-IvAp-32.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"IVAO\Win32\bin\X-IvAp-32.lib" /MACHINE:X86 /SAFESEH /DLL /DLL IVAO\Win32\obj\aircraftDB.obj
+         IVAO\Win32\obj\airlinesDB.obj
+         IVAO\Win32\obj\atcPosition.obj
+         IVAO\Win32\obj\awyFinder.obj
+         IVAO\Win32\obj\chatWindow.obj
+         IVAO\Win32\obj\configFile.obj
+         IVAO\Win32\obj\connectForm.obj
+         IVAO\Win32\obj\disconnectForm.obj
+         IVAO\Win32\obj\FlightLogger.obj
+         IVAO\Win32\obj\flightplanForm.obj
+         IVAO\Win32\obj\FMCform.obj
+         IVAO\Win32\obj\fsdapi.obj
+         IVAO\Win32\obj\fsdmessage.obj
+         IVAO\Win32\obj\helpers.obj
+         IVAO\Win32\obj\HTTPclient.obj
+         IVAO\Win32\obj\interpolator.obj
+         IVAO\Win32\obj\messageHandler.obj
+         IVAO\Win32\obj\messageWindow.obj
+         IVAO\Win32\obj\multiplayer.obj
+         IVAO\Win32\obj\multiplayerPilot.obj
+         IVAO\Win32\obj\navQuery.obj
+         IVAO\Win32\obj\planeposition.obj
+         IVAO\Win32\obj\refInspector.obj
+         IVAO\Win32\obj\SoundGraphics.obj
+         IVAO\Win32\obj\stb_image_aug.obj
+         IVAO\Win32\obj\systemcallbacks.obj
+         IVAO\Win32\obj\Tcas.obj
+         IVAO\Win32\obj\tcpsocket.obj
+         IVAO\Win32\obj\TeamSpeak.obj
+         IVAO\Win32\obj\TLVpacket.obj
+         IVAO\Win32\obj\uiWindow.obj
+         IVAO\Win32\obj\weatherGod.obj
+         IVAO\Win32\obj\weatherPosition.obj
+         IVAO\Win32\obj\WristWatch.obj
+         IVAO\Win32\obj\xivap.obj
+         IVAO\Win32\obj\xivapWin.obj
+         IVAO\Win32\obj\XPmessageBox.obj
+         IVAO\Win32\obj\TexUtils.obj
+         IVAO\Win32\obj\BitmapUtils.obj
+         IVAO\Win32\obj\PlatformUtils.win.obj
+         IVAO\Win32\obj\XObjDefs.obj
+         IVAO\Win32\obj\XObjReadWrite.obj
+         IVAO\Win32\obj\XOGLUtils.obj
+         IVAO\Win32\obj\XPMPMultiplayer.obj
+         IVAO\Win32\obj\XPMPMultiplayerCSL.obj
+         IVAO\Win32\obj\XPMPMultiplayerObj.obj
+         IVAO\Win32\obj\XPMPMultiplayerVars.obj
+         IVAO\Win32\obj\XPMPPlaneRenderer.obj
+         IVAO\Win32\obj\XUtils.obj
+         IVAO\Win32\obj\XPListBox.obj
+         IVAO\Win32\obj\XPPopups.obj
+         IVAO\Win32\obj\stun.obj
+         IVAO\Win32\obj\StunClient.obj
+         IVAO\Win32\obj\udp.obj
+         ..\FMOD\FMODWindows\api\lib\fmodex_vc.lib
+         ..\..\Sdk\Libraries\Win\XPLM.lib
+         ..\..\Sdk\Libraries\Win\XPWidgets.lib
+         ..\png\Windows\pnglib.lib
+         ..\zlib\win32\zlib.lib
+         "C:\Prog\FSD\x-ivap-ahs-estable\src\IVAO\PTypes_ST.lib"
+            Creating library IVAO\Win32\bin\X-IvAp-32.lib and object IVAO\Win32\bin\X-IvAp-32.exp
+         XIvAp.vcxproj -> C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\IVAO\Win32\bin\X-IvAp-32.xpl
+     1>Done Building Project "C:\Prog\FSD\x-ivap-ahs-estable\src\XIvAp\XIvAp.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:28.72
