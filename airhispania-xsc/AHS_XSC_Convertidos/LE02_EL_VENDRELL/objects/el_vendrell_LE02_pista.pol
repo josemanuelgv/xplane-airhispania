@@ -1,8 +1,0 @@
-I
-850	# Converted by FS2XPlane 3.26
-DRAPED_POLYGON
-
-TEXTURE		el_vendrell_LE02_pista.dds
-SCALE		256 256
-LAYER_GROUP	taxiways +1
-SURFACE		concrete
