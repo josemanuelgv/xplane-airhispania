@@ -1,0 +1,13 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Texture aldeacentenera_hangar_00.bmp not found
+Texture aldeacentenera_hangar_00_lm not found
+Texture aldeacentenera_edificio_00.bmp not found
+Texture aldeacentenera_edificio_00_lm not found
+Texture aldeacentenera_edificio_01.bmp not found
+Texture aldeacentenera_edificio_01_lm not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Sycamore_18m is a built-in object
