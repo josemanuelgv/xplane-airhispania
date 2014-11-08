@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Texture skintone1.bmp not found
+Texture skintone1_lm.bmp not found
+Object ppl_andreoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object

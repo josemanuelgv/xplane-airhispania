@@ -1,0 +1,5 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Using objects from the OpenSceneryX library
