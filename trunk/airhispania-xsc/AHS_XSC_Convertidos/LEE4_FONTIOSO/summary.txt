@@ -1,0 +1,16 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object 4c08ee5349f88cb376da0c9b1c99395a not found
+Object veg_b_mesquite_yng5 is a built-in object
+Object veg_b_rfcottonwood23m1 is a built-in object
+Object veg_b_sycamore_mat1 is a built-in object
+Object veg_b_sycamore_mat2 is a built-in object
+Object veg_b_sycamore_mat3 is a built-in object
+Object veg_b_sycamore_yng1 is a built-in object
+Object veg_b_sycamore_yng2 is a built-in object
+Object veg_b_sycamore_yng3 is a built-in object
+Object veg_b_sycamore_yng4 is a built-in object
+Object veg_b_sycamore_yng5 is a built-in object
