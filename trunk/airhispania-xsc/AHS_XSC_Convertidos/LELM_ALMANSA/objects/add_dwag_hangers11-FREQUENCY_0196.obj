@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object add_dwag_hangers11 in file AHS_Hangares_FSX.bgl scaled x1.96
+
+TEXTURE		FREQUENCY.dds
+TEXTURE_LIT	FREQUENCY_LIT.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -1.074    9.204   26.891	 0.000  0.000  1.000	0.0184 0.4872
+VT	  -1.074   10.412   26.891	 0.000  0.000  1.000	0.0184 0.6239
+VT	   0.721   10.412   26.891	 0.000  0.000  1.000	0.2595 0.6239
+VT	   0.721    9.204   26.891	 0.000  0.000  1.000	0.2595 0.4872
+
+IDX	0
+IDX	1
+IDX	2
+IDX	2
+IDX	3
+IDX	0
+
+ATTR_no_blend
+
+TRIS	0 6

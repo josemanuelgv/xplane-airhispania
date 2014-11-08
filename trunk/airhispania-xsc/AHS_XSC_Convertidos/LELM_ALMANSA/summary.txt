@@ -1,0 +1,72 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero pitch/bank (357.0/0.0) for object gen_sailplane_trailer01 at ( 38.89530700,   -1.11445800) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89580600,   -1.11434400) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89622300,   -1.11469300) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.08m) for object Seto-1 at ( 38.89673600,   -1.11509600) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89552300,   -1.11311600) in file almansa_LELM_objetos.bgl
+Non-zero altitude (0.37m) for object ag_barn_3 at ( 38.90426100,   -1.10999100) in file almansa_LELM_objetos.bgl
+Non-zero altitude (0.37m) for object e189f250bad74f67a8e53216b34e02f6 at ( 38.89452400,   -1.11625500) in file almansa_LELM_objetos.bgl
+Non-zero altitude (0.37m) for object AB_Buildings08 at ( 38.89444200,   -1.11646000) in file almansa_LELM_objetos.bgl
+Non-zero altitude (0.37m) for object AB_Buildings09 at ( 38.89395500,   -1.11615400) in file almansa_LELM_objetos.bgl
+Non-zero altitude (12.62m) for object sco_gen_windsock at ( 38.89444200,   -1.11529600) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-10.93m) for object ag_largebillboard at ( 38.89396800,   -1.11424000) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-8.4m) for object ag_lightpole at ( 38.89503432,   -1.11506591) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-8.4m) for object ag_lightpole at ( 38.89424005,   -1.11436396) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89523000,   -1.11497100) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89580000,   -1.11324300) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89531800,   -1.11287200) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89646500,   -1.11491700) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89599500,   -1.11458300) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.08m) for object Seto-1 at ( 38.89280700,   -1.11215400) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89257500,   -1.11209900) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89236300,   -1.11183500) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89213700,   -1.11175100) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89191500,   -1.11152200) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89309100,   -1.11136000) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89284900,   -1.11125300) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-3.37m) for object Seto-1 at ( 38.89260600,   -1.11099800) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89547600,   -1.11435900) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89535700,   -1.11463800) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89528200,   -1.11481100) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89541000,   -1.11449500) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89552800,   -1.11419900) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89524500,   -1.11395400) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89538400,   -1.11405200) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89503200,   -1.11400300) in file almansa_LELM_objetos.bgl
+Non-zero altitude (-1.21m) for object Seto-1 at ( 38.89496900,   -1.11532500) in file almansa_LELM_objetos.bgl
+Object ag_barn_3 is a built-in object
+Object ag_cob_barn is a built-in object
+Object ag_cob_house is a built-in object
+Object ag_largebillboard is a built-in object
+Object e189f250bad74f67a8e53216b34e02f6 not found
+Object e189f250bad74f67a8e53216b34e02f7 not found
+Object GEN_Plane_Schweizer2_maroonstripe is a built-in object
+Object GEN_Plane_Schweizer2_orange is a built-in object
+Object gen_sailplane_trailer01 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object sco_gen_windsock is a built-in object
+Object small_fuel_station1 is a built-in object
+Object veg_tb_bush_Evergreen1_7_5ft is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_10m_fa is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Chestnut1_8m is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Cottonwood_12m is a built-in object
+Object veg_tb_Cottonwood_8m is a built-in object
+Object veg_tb_Cottonwood_8m_fa is a built-in object
+Object veg_tb_Elm1_10m is a built-in object
+Object veg_tb_Elm1_12m is a built-in object
+Object veg_tb_Elm1_13m is a built-in object
+Object veg_tb_EucalyptusSav_12m is a built-in object
+Object veg_tb_EucalyptusSav_13m is a built-in object
+Object veg_tb_EucalyptusSav_14m is a built-in object
+Using objects from the OpenSceneryX library
