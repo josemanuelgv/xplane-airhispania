@@ -1,0 +1,17 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (3.3m) for object AirHispaniaSC_Banderas12 at ( 38.97896000,   -6.34463600) in file merida2_LE17_objetos.BGL
+Non-zero altitude (1.0m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 38.97911700,   -6.34487000) in file merida2_LE17_objetos.BGL
+Non-zero altitude (1.0m) for object ed15c77e49b4da6200f6fdacbaf3024d at ( 38.97839200,   -6.34463500) in file merida2_LE17_objetos.BGL
+Non-zero altitude (1.0m) for object ed24056c4b96d695972155860f96e4c3 at ( 38.97837100,   -6.34462800) in file merida2_LE17_objetos.BGL
+Non-zero altitude (1.0m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 38.97764600,   -6.34441300) in file merida2_LE17_objetos.BGL
+Non-zero altitude (3.3m) for object AirHispaniaSC_Banderas04 at ( 38.97894300,   -6.34462700) in file merida2_LE17_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object ed15c77e49b4da6200f6fdacbaf3024d not found
+Object ed24056c4b96d695972155860f96e4c3 not found
+Object fe448aa547da18b14367cc855ef6f0d1 not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object ppl_svenoilrig is a built-in object

@@ -1,0 +1,36 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (1.5m) for object b86cd9954673b85ddb3cc5868eb38e3b at ( 41.78712900,    2.13112700) in file moia_2_les_humbertes_LE96_objetos.BGL
+Non-zero altitude (1.0m) for object ed24056c4b96d695972155860f96e4c3 at ( 41.78707600,    2.13108000) in file moia_2_les_humbertes_LE96_objetos.BGL
+Non-zero altitude (1.0m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 41.78679100,    2.13173400) in file moia_2_les_humbertes_LE96_objetos.BGL
+Non-zero altitude (1.0m) for object ed15c77e49b4da6200f6fdacbaf3024d at ( 41.78703900,    2.13104300) in file moia_2_les_humbertes_LE96_objetos.BGL
+Non-zero altitude (1.0m) for object ed15c77e49b4da6200f6fdacbaf3024d at ( 41.78718200,    2.13117900) in file moia_2_les_humbertes_LE96_objetos.BGL
+Non-zero altitude (0.9m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 41.80313600,    2.11254800) in file moia_LE20_objetos.BGL
+Non-zero altitude (0.9m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 41.80200000,    2.11294300) in file moia_LE20_objetos.BGL
+Non-zero altitude (1.3m) for object b86cd9954673b85ddb3cc5868eb38e3b at ( 41.80173400,    2.11288200) in file moia_LE20_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 2f5c7cef409b25ecc8e0aab7adf1285a not found
+Object 47454f4657494c4cffff0001ffff00ba not found
+Object 47454f4657494c4cffff0001ffff00bb not found
+Object 621602d5cb690567aeebe4235533c699 not found
+Object b86cd9954673b85ddb3cc5868eb38e3b not found
+Object ed15c77e49b4da6200f6fdacbaf3024d not found
+Object ed24056c4b96d695972155860f96e4c3 not found
+Object fe448aa547da18b14367cc855ef6f0d1 not found
+Object gen_powertower01 is a built-in object
+Texture $pan not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_Bodyguard_Walk01 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_10m_sp is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Chestnut1_16m is a built-in object
+Object veg_tb_Chestnut1_18m is a built-in object
+Object veg_tb_Chestnut1_24m_sp is a built-in object
+Using objects from the OpenSceneryX library
