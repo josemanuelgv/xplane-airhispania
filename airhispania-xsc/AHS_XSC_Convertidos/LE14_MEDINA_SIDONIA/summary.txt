@@ -1,0 +1,16 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (8.4m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 36.44036500,   -5.93906800) in file medina_sidonia_LE14_objetos.BGL
+Non-zero altitude (0.7m) for object ed24056c4b96d695972155860f96e4c3 at ( 36.44024400,   -5.93874600) in file medina_sidonia_LE14_objetos.BGL
+Non-zero altitude (1.0m) for object ed15c77e49b4da6200f6fdacbaf3024d at ( 36.44045400,   -5.93899700) in file medina_sidonia_LE14_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object ed15c77e49b4da6200f6fdacbaf3024d not found
+Object ed24056c4b96d695972155860f96e4c3 not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
