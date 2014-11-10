@@ -1,0 +1,65 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (1.05m) for object veg_tb_Cottonwood_10m at ( 42.08060000,   -0.33178600) in file huesca_LEHC_arboles.bgl
+Non-zero altitude (1.05m) for object veg_tb_Cottonwood_10m at ( 42.08079500,   -0.33240300) in file huesca_LEHC_arboles.bgl
+Non-zero altitude (1.05m) for object veg_tb_Cottonwood_10m at ( 42.08097000,   -0.33295400) in file huesca_LEHC_arboles.bgl
+Non-zero altitude (2.11m) for object 86a29be245180f33ef4e4495ec18839f at ( 42.07193700,   -0.30959800) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08306900,   -0.32561700) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08298500,   -0.32543500) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08289700,   -0.32525400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08281300,   -0.32507300) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08272900,   -0.32489100) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08314100,   -0.32530200) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08297000,   -0.32493900) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08338200,   -0.32535000) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08329800,   -0.32516900) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08321400,   -0.32498700) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08312600,   -0.32480600) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08304200,   -0.32462500) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-2.0m) for object a8aa178c19ace7926f9db82b65518ba1 at ( 42.08262600,   -0.32330900) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-2.0m) for object a8aa178c19ace7926f9db82b65518ba1 at ( 42.08304600,   -0.32295300) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08237500,   -0.32308100) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08252000,   -0.32307400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08258400,   -0.32290400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08272600,   -0.32289600) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08279400,   -0.32272600) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08293500,   -0.32271900) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08285900,   -0.32255500) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08306900,   -0.32237800) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08231000,   -0.32326800) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08233300,   -0.32356100) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08251600,   -0.32369500) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08272900,   -0.32352200) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08293500,   -0.32334400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08314500,   -0.32316700) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08335500,   -0.32298400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08334300,   -0.32270100) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.08315700,   -0.32254800) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object Camion_bomberos_escalera at ( 42.08018300,   -0.31963900) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object Camion_bomberos-1 at ( 42.08022600,   -0.31974300) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 157dde6142ef8b2b27a572af504ac82f at ( 42.08282300,   -0.32177600) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object pai734 at ( 42.08217200,   -0.32195400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 157dde6142ef8b2b27a572af504ac82f at ( 42.08218100,   -0.32212200) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 54880eb04f70e7732d37f0afe8bcce29 at ( 42.08209100,   -0.32054000) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 54880eb04f70e7732d37f0afe8bcce29 at ( 42.08185900,   -0.32072800) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 54880eb04f70e7732d37f0afe8bcce29 at ( 42.08162500,   -0.32091600) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object 54880eb04f70e7732d37f0afe8bcce29 at ( 42.08139400,   -0.32110300) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object AirHispaniaSC_Banderas02 at ( 42.08279300,   -0.32205200) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object AirHispaniaSC_Banderas12 at ( 42.08274400,   -0.32209400) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object AirHispaniaSC_Banderas03 at ( 42.08269400,   -0.32213500) in file huesca_LEHC_objetos.BGL
+Non-zero altitude (0.15m) for object Pickup_AirHispania at ( 42.08273400,   -0.32133100) in file huesca_LEHC_objetos.BGL
+Skipping animation in object 1dfa3c094370bb672dad959a1c7a0a38 in file AHS_Aeropuerto_varios_FSX.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 1393892341304fff3dc4e2924542ff29 not found
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Maple_8m_sp is a built-in object
+Object veg_tb_Mesquite1_5m_fa is a built-in object
+Object veg_tb_OliveTree_4m_wi is a built-in object
+Object veg_tb_OliveTree_5m_sp is a built-in object
+Object veg_tb_OliveTree_9m is a built-in object
+Object veg_tb_Sycamore_10m is a built-in object
+Object VEH_land_CityBus_Grey is a built-in object
+Using objects from the OpenSceneryX library
