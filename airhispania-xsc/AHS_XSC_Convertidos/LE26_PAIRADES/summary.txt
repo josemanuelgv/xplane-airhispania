@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-1.81m) for object Seto-1 at ( 42.13772200,    3.05193200) in file pairades_LE26_objetos.BGL
+Non-zero altitude (-1.81m) for object Seto-1 at ( 42.13760100,    3.05216000) in file pairades_LE26_objetos.BGL
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object

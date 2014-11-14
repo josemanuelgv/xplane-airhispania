@@ -1,0 +1,14 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (1.0m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 36.62927300,   -6.01826400) in file la_ina_LE36_objetos.BGL
+Non-zero altitude (1.0m) for object b86cd9954673b85ddb3cc5868eb38e3b at ( 36.62933900,   -6.01858500) in file la_ina_LE36_objetos.BGL
+Object b86cd9954673b85ddb3cc5868eb38e3b not found
+Object fe448aa547da18b14367cc855ef6f0d1 not found
+Object gen_sailplane_trailer01 is a built-in object
+Object gen_sailplane_trailer03 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object

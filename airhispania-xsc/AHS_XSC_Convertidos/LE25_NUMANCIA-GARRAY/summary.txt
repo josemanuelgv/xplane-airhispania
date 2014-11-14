@@ -1,0 +1,42 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero pitch/bank (0.0/1.0) for object veg_tb_Sycamore_15m at ( 41.81935500,   -2.47374300) in file numancia-garray_LE25_arboles.bgl
+Non-zero altitude (-1.0m) for object veg_tc_LarchThin_18m at ( 41.81957300,   -2.47372800) in file numancia-garray_LE25_arboles.bgl
+Non-zero altitude (-1.0m) for object veg_tc_LarchThin_18m at ( 41.81971600,   -2.47365000) in file numancia-garray_LE25_arboles.bgl
+Non-zero altitude (-1.5m) for object small_tower2 at ( 41.81998937,   -2.47362418) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81986600,   -2.47386600) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81981700,   -2.47398500) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81972100,   -2.47394700) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81967600,   -2.47406500) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81956500,   -2.47412700) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81950000,   -2.47407100) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81945800,   -2.47393200) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81942400,   -2.47381300) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81938600,   -2.47369000) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81934400,   -2.47355000) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81944400,   -2.47340100) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81959100,   -2.47341000) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81954700,   -2.47325500) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81950200,   -2.47310000) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81945700,   -2.47294400) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81941200,   -2.47278900) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81982400,   -2.47373200) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81978600,   -2.47360800) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81975200,   -2.47348400) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81967900,   -2.47381000) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81964500,   -2.47368900) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81960700,   -2.47356500) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81953800,   -2.47388900) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81950000,   -2.47376900) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.81946200,   -2.47364600) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.82009900,   -2.47367500) in file numancia-garray_LE25_objetos.bgl
+Non-zero altitude (-3.0m) for object Numancia-Garray_LE25_13 at ( 41.82003400,   -2.47346100) in file numancia-garray_LE25_objetos.bgl
+Non-zero pitch/bank (1.0/0.0) for object PPL_Policeman1 at ( 41.81990200,   -2.47325600) in file numancia-garray_LE25_objetos.bgl
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Oak1_20m is a built-in object
+Object veg_tb_Sycamore_15m is a built-in object
+Object veg_tc_LarchThin_18m is a built-in object
+Using objects from the OpenSceneryX library
