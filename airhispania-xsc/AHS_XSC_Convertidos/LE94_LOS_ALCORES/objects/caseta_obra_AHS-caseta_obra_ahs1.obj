@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object caseta_obra_AHS in file AHS_Hangares_FSX.bgl
+
+TEXTURE		caseta_obra_ahs1.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   2.980    0.000    1.200	 0.000  0.000  1.000	1.0000 0.0000
+VT	  -3.020    0.000    1.200	 0.000  0.000  1.000	0.0000 0.0000
+VT	   2.980    2.600    1.200	 0.000  0.000  1.000	1.0000 1.0000
+VT	  -3.020    2.600    1.200	 0.000  0.000  1.000	0.0000 1.0000
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	2
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 6

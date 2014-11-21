@@ -1,0 +1,9 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (10.0m) for object gen_radio01 at ( 40.21083000,   -4.38644300) in file almorox_LE97_objetos.BGL
+Object Gen_Crowd_AircraftCrew is a built-in object
+Object Gen_Crowd_Security is a built-in object
+Object gen_radio01 is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object

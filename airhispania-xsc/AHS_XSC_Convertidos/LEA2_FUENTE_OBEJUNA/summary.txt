@@ -1,0 +1,16 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Object ag_barn_3 is a built-in object
+Object ag_barn_4 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_DiveCapt is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_Russian_Walk is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Cottonwood_14m is a built-in object
+Object veg_tb_Cottonwood_14m_sp is a built-in object
+Object veg_tb_Cottonwood_16m is a built-in object
