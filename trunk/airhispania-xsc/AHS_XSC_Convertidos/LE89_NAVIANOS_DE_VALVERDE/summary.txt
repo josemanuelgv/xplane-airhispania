@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.69m) for object Super_Koala_II at ( 41.96102500,   -5.83567400) in file navianos_de_valverde_LE89_aviones.bgl
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 41.96063800,   -5.83571700) in file navianos_de_valverde_LE89_objeto.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object PPL_friendVegas is a built-in object

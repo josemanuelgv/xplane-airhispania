@@ -1,0 +1,11 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 41.99391900,    0.09176300) in file barbastro_LE93_aviones.bgl
+Non-zero altitude (-0.25m) for object Pa28_180 at ( 41.99425300,    0.09214100) in file barbastro_LE93_aviones.bgl
+Non-zero altitude (-0.26m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 41.99478900,    0.09162000) in file barbastro_LE93_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object PPL_friendVegas is a built-in object
+Object veg_tb_Aspen_13m_sp is a built-in object
+Using objects from the OpenSceneryX library

@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 7fbbe45b4a6059c2c81e8585d0c3e0c8 in file pals_LE91_club.BGL scaled x2.5
+
+TEXTURE		Pals_Club_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -5.677    0.001    9.712	 0.000  0.000 -1.000	0.8827 1.0000
+VT	  -5.677    2.385    9.719	 0.000  0.000 -1.000	0.9023 0.2471
+VT	  -5.677    2.390    0.217	 0.000  0.000 -1.000	0.0098 0.2422
+VT	  -5.677    0.001    0.206	 0.000  0.000 -1.000	0.0000 0.9852
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6
