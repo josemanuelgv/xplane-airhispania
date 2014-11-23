@@ -49,7 +49,7 @@
 
  En la interfaz podemos ver un indicativo con la etiqueta "BB" que nos indica si la caja negra está grabando o no. Para activarla o desactivarla usaremos el conmutador de aviónica de la aeronave.
 
- Tras conectarnos a la red, es  *muy conveniente*, tras activar la aviónica y, en consecuencia, la caja negra, sintonizar la frecuencia de la dependencia de la cual partimos. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
+ Tras conectarnos a la red, es  *muy importante*, tras activar la aviónica y, en consecuencia, la caja negra, *sintonizar la frecuencia de la dependencia de la cual partimos*. Al hacerlo debemos ser redirigidos al canal de TeamSpeak de dicha dependencia. Con esto nos aseguramos que en la caja negra se anota que partimos de una dependencia activa.
 
  
 = Otros recursos importantes =
