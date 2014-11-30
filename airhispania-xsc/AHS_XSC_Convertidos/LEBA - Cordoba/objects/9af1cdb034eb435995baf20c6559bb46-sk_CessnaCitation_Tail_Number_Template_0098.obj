@@ -1,0 +1,26 @@
+I
+800	# Converted by FS2XPlane 3.23
+OBJ
+
+# object 9af1cdb034eb435995baf20c6559bb46 in file ga planes.bgl scaled x0.98
+
+TEXTURE		sk_CessnaCitation_Tail_Number_Template.dds
+TEXTURE_LIT	sk_CessnaCitation_Tail_Number_Template_LIT.dds
+POINT_COUNTS	8 0 0 12
+
+VT	  -0.055    3.101    4.888	-0.999 -0.009  0.040	0.5309 0.2231
+VT	  -0.047    3.610    5.245	-0.999 -0.012  0.039	0.6062 0.3353
+VT	   0.016    3.109    6.731	-0.999 -0.012  0.039	0.9528 0.2222
+VT	   0.016    3.634    6.860	-0.999 -0.015  0.037	0.9846 0.3354
+VT	   0.035    3.630    6.868	 0.999  0.009  0.033	0.0251 0.3365
+VT	   0.055    3.109    6.738	 0.999  0.026  0.029	0.0546 0.2234
+VT	   0.098    3.614    5.253	 0.999 -0.008  0.038	0.4044 0.3365
+VT	   0.106    3.105    4.892	 0.999  0.009  0.033	0.4816 0.2244
+
+IDX10	7 4 6 4 7 5 1 2 0 2
+IDX	1
+IDX	3
+
+ATTR_no_blend
+
+TRIS	0 12

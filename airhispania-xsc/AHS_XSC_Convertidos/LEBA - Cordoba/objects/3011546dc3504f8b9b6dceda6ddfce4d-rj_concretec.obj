@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.23
+OBJ
+
+# object 3011546dc3504f8b9b6dceda6ddfce4d in file LROP_BP gas station library.bgl
+
+TEXTURE	
+TEXTURE_DRAPED	rj_concretec.dds
+POINT_COUNTS	4 0 0 6
+
+VT	 -15.820    0.092    8.628	 0.000  1.000 -0.000	0.0117 2.9885
+VT	 -15.820    0.092   40.832	 0.000  1.000 -0.000	0.0117 0.0000
+VT	  16.380    0.092    8.628	 0.000  1.000 -0.000	2.9943 2.9885
+VT	  16.380    0.092   40.832	 0.000  1.000 -0.000	2.9943 0.0000
+
+IDX	0
+IDX	2
+IDX	1
+IDX	2
+IDX	3
+IDX	1
+
+ATTR_draped
+TRIS	0 6

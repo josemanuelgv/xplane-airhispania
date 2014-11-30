@@ -1,0 +1,45 @@
+FS2XPlane 3.23
+System:	MacOS 10.7.4 x86_64
+Wine:	Not installed
+Target:	X-Plane 10
+
+Non-zero altitude (-0.12m) for object 3011546dc3504f8b9b6dceda6ddfce4d at ( 37.84452700,   -4.84297200) in file bp_station.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bf5 at ( 37.84454500,   -4.84444600) in file people.bgl
+Non-zero altitude (-0.12m) for object 8c9957554d92cb3f313e1aad180df8b9 at ( 37.84448000,   -4.84443400) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bf6 at ( 37.84455500,   -4.84442700) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bf7 at ( 37.84457700,   -4.84438400) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bf8 at ( 37.84460300,   -4.84438600) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bf9 at ( 37.84467500,   -4.84443000) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bfa at ( 37.84468300,   -4.84441500) in file people.bgl
+Non-zero altitude (-0.12m) for object 781872f9c59c43a48ffec24069984bfb at ( 37.84471100,   -4.84436100) in file people.bgl
+Non-zero altitude (3.57m) for object small_tower1 at ( 37.84447100,   -4.84427300) in file tower_terminal.bgl
+Object 21efa00011d92a765000c5bfb136012c not found
+Object 26c09906d7be4771a5f1548b6615eb47 not found
+Object 26c09906d7be4771a5f1548b6615eb48 not found
+Object 26c09906d7be4771a5f1548b6615eb49 not found
+Object 2a1eb2a876314c01bbd911075e664758 not found
+Object 2a1eb2a876314c01bbd911075e664759 not found
+Object 2a1eb2a876314c01bbd911075e66475e not found
+Object 2a1eb2a876314c01bbd911075e664762 not found
+Texture ez_wall_n_winn.bmp not found
+Texture roadz.bmp not found
+Texture rj_concretec.bmp not found
+Texture ez_wall_n_winn2.bmp not found
+Texture fse2.bmp not found
+Object 33ae2aa011d92a765000c5bfb136012c not found
+Texture lfsteel.bmp not found
+Texture lfrock.bmp not found
+Object 781872f9c59c43a48ffec24069984bf5 not found
+Object 781872f9c59c43a48ffec24069984bf6 not found
+Object 781872f9c59c43a48ffec24069984bf7 not found
+Object 781872f9c59c43a48ffec24069984bf8 not found
+Object 781872f9c59c43a48ffec24069984bf9 not found
+Object 781872f9c59c43a48ffec24069984bfa not found
+Object 781872f9c59c43a48ffec24069984bfb not found
+Texture novasim01.bmp not found
+Object 8c9957554d92cb3f313e1aad180df8b9 not found
+Object ag_footballstadium_1 is a built-in object
+Texture tyres.bmp not found
+Object gen_amusementpark is a built-in object
+Object medium_fuel_station_overhang is a built-in object
+Using objects from the OpenSceneryX library

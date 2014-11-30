@@ -1,0 +1,23 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-1.4m) for object veg_tb_Poplar_16m at ( 41.61176600,    0.85418200) in file mollerussa_LEC3_arboles.bgl
+Non-zero altitude (-1.4m) for object veg_tb_Poplar_16m at ( 41.61175500,    0.85409100) in file mollerussa_LEC3_arboles.bgl
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 41.61150700,    0.85298300) in file mollerussa_LEC3_aviones.bgl
+Non-zero altitude (-0.2m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 41.61300200,    0.85408700) in file mollerussa_LEC3_objetos.BGL
+Non-zero altitude (-0.2m) for object PPL_RussianVillain at ( 41.61163300,    0.85424300) in file mollerussa_LEC3_objetos.BGL
+Non-zero altitude (-0.2m) for object PPL_JapaneseExec at ( 41.61162300,    0.85425200) in file mollerussa_LEC3_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Texture $pan not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_AmazonScientist is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_Bodyguard_Walk01 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Poplar_16m is a built-in object

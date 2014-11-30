@@ -1,0 +1,32 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-3.08m) for object 67677891dbc1cc0d5f111ee9c4cbf32b at ( 41.68733300,    1.24939100) in file cervera_LEC8_objetos.bgl
+Non-zero altitude (-1.8m) for object ez-vintage_hangers05 at ( 39.33012100,   -6.34241000) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Non-zero altitude (-1.21m) for object ez-vintage_hangers05 at ( 39.33033400,   -6.34366200) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Non-zero altitude (190.0m) for object gen_radio01 at ( 39.34875600,   -6.34239500) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Object 67677891dbc1cc0d5f111ee9c4cbf32b not found
+Object gen_radio01 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_acacia1_10m_hw is a built-in object
+Object veg_tb_acacia1_10m_sp is a built-in object
+Object veg_tb_acacia1_11m_sp is a built-in object
+Object veg_tb_acacia1_11m_thin_hw is a built-in object
+Object veg_tb_acacia1_11m_wi is a built-in object
+Object veg_tb_acacia1_6m_hw is a built-in object
+Object veg_tb_acacia1_6m_wi is a built-in object
+Object veg_tb_acacia1_8m_fa is a built-in object
+Object veg_tb_acacia1_8m_hw is a built-in object
+Object veg_tb_acacia1_8m_slanted_fa is a built-in object
+Object veg_tb_acacia1_8m_slanted_hw is a built-in object
+Object veg_tb_acacia1_8m_slanted_sp is a built-in object
+Object veg_tb_acacia1_8m_wi is a built-in object
+Using objects from the OpenSceneryX library

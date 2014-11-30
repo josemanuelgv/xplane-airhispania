@@ -1,0 +1,8 @@
+A
+850
+DRAPED_POLYGON
+
+LAYER_GROUP airports -1
+TEXTURE_NOWRAP w2p_-4.85321_37.83417.png
+SCALE 1 1
+DECAL_LIB lib/g10/decals/maquify_1_green_key.dcl
