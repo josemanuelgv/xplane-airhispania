@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 9e85bd3a49c9048d18e012a6f0d74509 in file calaf_LECF_edificio.bgl scaled x1.1
+
+TEXTURE		Calaf_edificio_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   4.941    0.004    3.205	 0.000  0.000 -1.000	0.5859 1.0000
+VT	   4.940    3.309    3.205	 0.000  0.000 -1.000	0.5568 0.6250
+VT	  -0.106    3.298    3.205	 0.000  0.000 -1.000	0.0000 0.6834
+VT	  -0.093    0.004    3.205	 0.000  0.000 -1.000	0.0146 1.0000
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6

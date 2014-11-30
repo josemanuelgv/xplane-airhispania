@@ -1,0 +1,6 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Object Bush_pilot is a built-in object
+Object small_fuel_station2 is a built-in object

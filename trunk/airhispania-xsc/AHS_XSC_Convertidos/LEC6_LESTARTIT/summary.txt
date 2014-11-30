@@ -1,0 +1,22 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-5.6m) for object Seto-1 at ( 42.03153700,    3.18019800) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-5.6m) for object Seto-1 at ( 42.03106500,    3.17998200) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-3.3m) for object Seto-1 at ( 42.03084500,    3.17967900) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-5.6m) for object Seto-1 at ( 42.03062000,    3.17936200) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-5.6m) for object Seto-1 at ( 42.03018700,    3.17916800) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-5.6m) for object Seto-1 at ( 42.02993200,    3.17905800) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-4.8m) for object Seto-1 at ( 42.02975800,    3.17869000) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-8.5m) for object Seto-1 at ( 42.03017500,    3.17858400) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-8.5m) for object Seto-1 at ( 42.03086700,    3.17889600) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-8.5m) for object Seto-1 at ( 42.03155600,    3.17921500) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-8.5m) for object Seto-1 at ( 42.03187800,    3.17936500) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-2.3m) for object Seto-1 at ( 42.03216700,    3.17967400) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (-2.3m) for object Seto-1 at ( 42.03212600,    3.17984100) in file lestartit_LEC6_objetos.BGL
+Non-zero altitude (0.4m) for object Barandilla_negra at ( 42.03179000,    3.17986500) in file lestartit_LEC6_objetos.BGL
+Object 67677891dbc1cc0d5f111ee9c4cbf35c not found
+Texture skintone1.bmp not found
+Texture skintone1_lm.bmp not found
+Texture $pan not found

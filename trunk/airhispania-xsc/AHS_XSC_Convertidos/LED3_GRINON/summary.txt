@@ -1,0 +1,11 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (20.52m) for object gen_radio01 at ( 40.22443300,   -3.86678100) in file grinon_LED3_objetos.BGL
+Object gen_radio01 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_10m_fa is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object

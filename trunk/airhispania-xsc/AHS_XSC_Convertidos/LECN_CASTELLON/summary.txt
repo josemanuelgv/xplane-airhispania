@@ -1,0 +1,183 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.17m) for object AS332_PP-MUM_NO_PX at ( 39.99553800,    0.02406800) in file castellon_LECN_aviones.bgl
+Non-zero altitude (6.1m) for object ea5696fe437db5e873c1949b116f36b3 at ( 39.99457200,    0.02680600) in file castellon_LECN_cartel.BGL
+Non-zero altitude (10.93m) for object gen_sign01 at ( 39.99457300,    0.02680900) in file castellon_LECN_cartel.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99414773,    0.02664451) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99281239,    0.02578625) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99251639,    0.02562425) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99223739,    0.02547325) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99189339,    0.02528625) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.5m) for object ag_lightpole at ( 39.99147839,    0.02506025) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.7m) for object Seto-1 at ( 39.99908000,    0.02832200) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.7m) for object Seto-1 at ( 39.99856400,    0.02814900) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.7m) for object Seto-1 at ( 39.99867400,    0.02818500) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.7m) for object Seto-1 at ( 39.99897000,    0.02829000) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99437944,    0.02670630) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99464544,    0.02684430) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99491544,    0.02700130) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99560044,    0.02734730) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99580744,    0.02746030) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99603544,    0.02758730) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99628244,    0.02773030) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99645744,    0.02782530) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99673644,    0.02797230) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99700344,    0.02812530) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99725044,    0.02825830) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99752844,    0.02839830) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99778644,    0.02852830) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99814644,    0.02868530) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99843244,    0.02880230) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99873344,    0.02892131) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99898444,    0.02902031) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99928444,    0.02914631) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99957144,    0.02925431) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 39.99984944,    0.02936031) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00015144,    0.02948131) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00046644,    0.02959931) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00081044,    0.02972931) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00109644,    0.02984831) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00137644,    0.02995931) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.28m) for object ag_lightpole at ( 40.00165444,    0.03007031) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99508796,    0.02690746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99528696,    0.02701546) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99548496,    0.02711846) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99568296,    0.02722546) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99587796,    0.02733046) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99607596,    0.02743746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99627496,    0.02754446) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99646896,    0.02764946) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99666396,    0.02775446) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99685996,    0.02786046) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99705796,    0.02796746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99725296,    0.02807846) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99745996,    0.02819046) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99766296,    0.02829346) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99786296,    0.02838946) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99806996,    0.02848046) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99827496,    0.02856746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99847896,    0.02864546) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99868496,    0.02872746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99889396,    0.02880546) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99909596,    0.02889246) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99930196,    0.02897546) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99951096,    0.02905646) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99971696,    0.02913646) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 39.99991796,    0.02921446) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00012396,    0.02929346) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00033296,    0.02937746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00053896,    0.02945746) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00074596,    0.02954045) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00095196,    0.02961945) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00115996,    0.02970345) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00136696,    0.02978345) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00157696,    0.02986845) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00178296,    0.02995045) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-2.53m) for object ag_lightpole at ( 40.00199096,    0.03003145) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-0.19m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 39.99623900,    0.02516900) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-6.4m) for object ag_lightpole at ( 39.99379431,    0.02631491) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-6.4m) for object ag_lightpole at ( 39.99367122,    0.02636967) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-6.4m) for object ag_lightpole at ( 39.99382527,    0.02605042) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-6.4m) for object ag_lightpole at ( 39.99385026,    0.02669494) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99400700,    0.02568400) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99407400,    0.02535200) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99414000,    0.02502100) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99420500,    0.02468900) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99427200,    0.02435500) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99433700,    0.02402300) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99440900,    0.02369200) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99447600,    0.02335700) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99454200,    0.02302200) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99460800,    0.02268800) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99468000,    0.02235600) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99474700,    0.02202000) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99481300,    0.02168600) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-1.21m) for object ag_doublelight at ( 39.99487900,    0.02135300) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.37m) for object ag_lightpole at ( 39.99313174,    0.02598243) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-3.37m) for object ag_lightpole at ( 39.99339874,    0.02612743) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-5.41m) for object 9b649f404de002360eed4ab219cbb114 at ( 40.00071200,    0.02878500) in file castellon_LECN_objetos.BGL
+Non-zero altitude (6.32m) for object 1531063b4017697b71abc18c37f20d00 at ( 39.99502200,    0.02455400) in file castellon_LECN_objetos.BGL
+Non-zero altitude (6.32m) for object 1531063b4017697b71abc18c37f20d00 at ( 39.99504800,    0.02445700) in file castellon_LECN_objetos.BGL
+Non-zero altitude (-6.62m) for object 9b649f404de002360eed4ab219cbb114 at ( 39.99563000,    0.02459900) in file castellon_LECN_objetos2.BGL
+Non-zero altitude (-1.04m) for object veg_tb_Cottonwood_12m at ( 39.99477000,    0.02528000) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.04m) for object veg_tb_Cottonwood_12m at ( 39.99455900,    0.02512100) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.04m) for object veg_tb_Cottonwood_12m at ( 39.99455200,    0.02493800) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.04m) for object veg_tb_Cottonwood_12m at ( 39.99469500,    0.02488900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-5.04m) for object veg_p_DatePalm2_mat1 at ( 39.99342900,    0.02683000) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.4m) for object Seto-1 at ( 40.00254500,    0.02648100) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.4m) for object Seto-1 at ( 40.00251500,    0.02680500) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.4m) for object Seto-1 at ( 40.00248500,    0.02712500) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.4m) for object Seto-1 at ( 40.00247700,    0.02620100) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object Seto-1 at ( 40.00226800,    0.02605200) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 40.00189600,    0.02601200) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 40.00139500,    0.02598400) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 40.00089800,    0.02596100) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 40.00040000,    0.02593700) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 39.99991000,    0.02591400) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 39.99944300,    0.02573900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 39.99901000,    0.02541400) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 39.99858300,    0.02507900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-0.48m) for object veg_tb_Cottonwood_12m at ( 39.99402900,    0.02631300) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-0.48m) for object veg_tb_Cottonwood_12m at ( 39.99403900,    0.02634500) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99720300,    0.02279700) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99723600,    0.02292200) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99725600,    0.02305000) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99729500,    0.02316400) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99715400,    0.02178000) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99725400,    0.02179900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99734900,    0.02186900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99750200,    0.02191700) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object veg_tb_Cottonwood_12m at ( 39.99759700,    0.02198700) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.68m) for object Seto-1 at ( 39.99820300,    0.02466500) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.88m) for object Seto-1 at ( 39.99789900,    0.02415200) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-4.88m) for object Seto-1 at ( 39.99766700,    0.02368400) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-3.68m) for object Seto-1 at ( 39.99741000,    0.02330200) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-1.6m) for object Seto-1 at ( 39.99721400,    0.02296000) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-6.62m) for object Seto-1 at ( 39.99756300,    0.02259900) in file castellon_LECN_vegetacion.bgl
+Non-zero altitude (-2.28m) for object veg_p_datepalm_yng4 at ( 39.99490900,    0.02517300) in file castellon_LECN_vegetacion.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 65e1e9d444d6d40fba1957a557a831ee in file AHS_Farolas_FSX.BGL
+Skipping animation in object 9b649f404de002360eed4ab219cbb114 in file AHS_Farolas_FSX.BGL
+Skipping animation in object 1531063b4017697b71abc18c37f20d00 in file AHS_Farolas_FSX.BGL
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a66 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a69 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6b not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6c not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6d not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6e not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6f not found
+Object 621602d5cb690567aeebe4235533c69a not found
+Object 832d8ba246f4d0070d011cb7e9242208 not found
+Object a149123e42317c73ac77399541c16296 not found
+Object c0e732044204268997e391b9006f2354 not found
+Texture sombrilla_00.bmp not found
+Object ff77a1874d30e6152783718d66a661d3 not found
+Object gen_sign01 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_AmazonScientist is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_Bodyguard_Walk01 is a built-in object
+Object ppl_Construction1 is a built-in object
+Object PPL_DiveCapt is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_Russian_Walk is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station1 is a built-in object
+Object veg_p_coconut_yng3 is a built-in object
+Object veg_p_coconut_yng4 is a built-in object
+Object veg_p_DatePalm2_mat1 is a built-in object
+Object veg_p_DatePalm2_yng2 is a built-in object
+Object veg_p_datepalm_yng4 is a built-in object
+Object veg_tb_Cottonwood_12m is a built-in object
+Using objects from the OpenSceneryX library

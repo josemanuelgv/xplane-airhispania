@@ -1,0 +1,40 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (3.7m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.75072500,    2.61065200) in file hostalric_LEC9_objetos.bgl
+Non-zero altitude (3.7m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.75059700,    2.61082500) in file hostalric_LEC9_objetos.bgl
+Non-zero altitude (3.7m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.75046200,    2.61100500) in file hostalric_LEC9_objetos.bgl
+Non-zero altitude (3.7m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.75033500,    2.61117500) in file hostalric_LEC9_objetos.bgl
+Non-zero altitude (4.0m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.75024300,    2.61129700) in file hostalric_LEC9_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 1531063b4017697b71abc18c37f20d00 in file AHS_Farolas_FSX.BGL
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a69 not found
+Object 47454f4657494c4cffff0001ffff00c0 not found
+Object 47454f4657494c4cffff0001ffff00c2 not found
+Object 47454f4657494c4cffff0001ffff00c3 not found
+Object 47454f4657494c4cffff0001ffff00ca not found
+Object 47454f4657494c4cffff0001ffff00ce not found
+Object 47454f4657494c4cffff0001ffff00d7 not found
+Object 47454f4657494c4cffff0001ffff00de not found
+Object 67677891dbc1cc0d5f111ee9c4cbf31b not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object veg_b_cherry_yng1 is a built-in object
+Object veg_b_maple_mat is a built-in object
+Object veg_b_maple_mat1 is a built-in object
+Object veg_b_mesquite_mat1 is a built-in object
+Object veg_c_pinepinon_mat2 is a built-in object
+Object veg_cfirdouglas2_yng2 is a built-in object
+Object veg_cfirdouglas2_yng3 is a built-in object
+Object veg_cfirdouglas_yng1 is a built-in object
+Object veg_g_rf_grove1 is a built-in object
+Object veg_g_rf_grove2 is a built-in object
+Object veg_tb_Chestnut1_18m is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Mesquite1_10m_sp is a built-in object
+Using objects from the OpenSceneryX library

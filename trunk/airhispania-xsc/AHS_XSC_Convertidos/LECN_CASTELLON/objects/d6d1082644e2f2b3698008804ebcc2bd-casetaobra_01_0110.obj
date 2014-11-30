@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object d6d1082644e2f2b3698008804ebcc2bd in file ribadeo_LEVF_libreria.bgl scaled x1.1
+
+TEXTURE		casetaobra_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   3.120    0.004   -1.381	 0.000  0.000 -1.000	0.9492 0.9856
+VT	   3.120    2.647   -1.379	 0.000  0.000 -1.000	0.9463 0.1186
+VT	   3.120    2.644    1.372	 0.000  0.000 -1.000	0.0058 0.0898
+VT	   3.120    0.001    1.366	 0.000  0.000 -1.000	0.0000 1.0000
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6

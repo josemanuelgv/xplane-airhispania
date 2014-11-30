@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 92cd317b4efc3ead53ce649b5246ee21 in file mollerussa_LEC3_hangares.bgl scaled x1.15
+
+TEXTURE		Mollerussa_bar_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   1.838    0.000   -7.399	 0.000  0.000 -1.000	0.9922 1.0000
+VT	   1.838    3.120   -7.397	 0.000  0.000 -1.000	0.9891 0.6016
+VT	   1.838    3.119    6.662	 0.000  0.000 -1.000	0.0000 0.6093
+VT	   1.838    0.001    6.663	 0.000  0.000 -1.000	0.0000 0.9960
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6
