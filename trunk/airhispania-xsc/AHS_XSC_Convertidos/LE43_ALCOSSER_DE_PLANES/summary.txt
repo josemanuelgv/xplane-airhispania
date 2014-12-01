@@ -1,0 +1,34 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (300.0m) for object HotAirBalloon_3 at ( 38.79302700,   -0.38869800) in file alcosser de Planes_LE43_objetos.bgl
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 38.78841500,   -0.40091200) in file alcosser de Planes_LE43_objetos.bgl
+Object 4d119def4590e68a0ffc95a73530bf16 not found
+Texture alcosser_hangar3_00.bmp not found
+Texture alcosser_hangar2_00.bmp not found
+Object Bush_pilot is a built-in object
+Object d9a036bf480a3a532dd223a2b50b63c1 not found
+Object gen_airshow_largetent2 is a built-in object
+Object gen_airshow_smalltent1_1 is a built-in object
+Object gen_hangar09 is a built-in object
+Object GEN_Jodel_Ski is a built-in object
+Object gen_logpile01 is a built-in object
+Object GEN_Plane_Schweizer2_bluestripe is a built-in object
+Texture $pan not found
+Object PPL_DiveCapt is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object veg_tb_Cottonwood_16m is a built-in object
+Object veg_tb_Elm1_20m_sp is a built-in object
+Object veg_tb_Maple_19m is a built-in object
+Object veg_tb_OliveTree_9m_sp is a built-in object
+Object veg_tb_OliveTree_9m_wi is a built-in object
+Object veg_tb_Sycamore_20m is a built-in object
+Object veg_tb_Sycamore_21m is a built-in object
+Object Veh_CigaretteBoat is a built-in object
+Object Veh_CigaretteBoat02 is a built-in object
+Object Veh_Greek_Fishingboat_05 is a built-in object
+Object veh_redtractor is a built-in object
+Object veh_truck_logging is a built-in object
+Using objects from the OpenSceneryX library
