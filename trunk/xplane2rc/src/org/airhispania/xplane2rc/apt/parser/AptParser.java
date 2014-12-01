@@ -103,8 +103,11 @@ public class AptParser {
 
 			// Check for LandAirport line
 			if ((l.length() > 2)
-					&& (LandAirport.APT_CODE == Integer.parseInt(l.substring(0,
-							3).trim()))) {
+					&& (LandAirport.APT_CODE_LANDAIRPORT == Integer.parseInt(l
+							.substring(0, 3).trim())
+							|| LandAirport.APT_CODE_SEAPLANE == Integer
+									.parseInt(l.substring(0, 3).trim()) || LandAirport.APT_CODE_HELIPORT == Integer
+							.parseInt(l.substring(0, 3).trim()))) {
 				parseLandAirportLine(l);
 			}
 

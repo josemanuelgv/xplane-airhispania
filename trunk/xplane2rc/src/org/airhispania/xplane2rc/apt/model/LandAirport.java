@@ -12,7 +12,20 @@ import java.util.List;
  */
 public class LandAirport {
 
-	public static int APT_CODE = 1;
+	/**
+	 * Land airport
+	 */
+	public static int APT_CODE_LANDAIRPORT = 1;
+
+	/**
+	 * Seaplane base
+	 */
+	public static int APT_CODE_SEAPLANE = 16;
+
+	/**
+	 * Heliport
+	 */
+	public static int APT_CODE_HELIPORT = 17;
 
 	/**
 	 * Elevation of airport in feet above mean sea level (AMSL)

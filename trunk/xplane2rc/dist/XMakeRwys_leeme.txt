@@ -1,4 +1,4 @@
-XMakeRwys: compatibilidad de AHSBender y XPlane (v 0.3.0)
+XMakeRwys: compatibilidad de AHSBender y XPlane (v 0.3.1)
 ======================================================
 Requisitos
  1. Sistema operativo Windows
