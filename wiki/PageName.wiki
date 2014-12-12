@@ -30,5 +30,16 @@
   == *LEVC*, Aeropuerto de Valencia==
     ** Conversion de Akesoft, [http://forums.x-plane.org/index.php?app=downloads&showfile=20675]
 
+  == *LELL*, Aeropuerto de Sabadell==
+    ** zxplane, [http://www.x-plane.es/modules/TDMDownloads/singlefile.php?cid=1&lid=111]
+
+  == *LEJR*, Aeropuerto de Jerez==
+    ** Fagundo, [http://forums.x-plane.org/index.php?app=downloads&showfile=15979]
+
+  == *LEIB*, Aeropuerto de Ibiza==
+    ** Montes, [http://forums.x-plane.org/index.php?app=downloads&showfile=19976]
+
+  == *LEGR*, Aeropuerto de Granada==
+    ** zxplane, [http://www.x-plane.es/modules/TDMDownloads/singlefile.php?cid=1&lid=47]
 
         
