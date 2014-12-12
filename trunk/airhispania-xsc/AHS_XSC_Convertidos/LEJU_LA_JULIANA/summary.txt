@@ -1,0 +1,96 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Skipping terrain data in file la_juliana_LEJU_LWM2.BGL
+Non-zero altitude (3.2m) for object La_Juliana_LEJU_objetos20 at ( 37.29499900,   -6.15982800) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (0.0/175.0) for object La_Juliana_LEJU_objetos20 at ( 37.29499900,   -6.15982800) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (3.21m) for object La_Juliana_LEJU_objetos07 at ( 37.29500100,   -6.15950700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (87.0/0.0) for object La_Juliana_LEJU_objetos07 at ( 37.29500100,   -6.15950700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (3.21m) for object La_Juliana_LEJU_objetos32 at ( 37.29500100,   -6.15933700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (87.0/0.0) for object La_Juliana_LEJU_objetos32 at ( 37.29500100,   -6.15933700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (3.21m) for object La_Juliana_LEJU_objetos17 at ( 37.29500200,   -6.15966700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (87.0/0.0) for object La_Juliana_LEJU_objetos17 at ( 37.29500200,   -6.15966700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (0.5m) for object La_Juliana_LEJU_objetos26 at ( 37.29508500,   -6.15983000) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (0.5m) for object La_Juliana_LEJU_objetos21 at ( 37.29508500,   -6.15965700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (0.5m) for object La_Juliana_LEJU_objetos06 at ( 37.29508900,   -6.15953100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (0.5m) for object La_Juliana_LEJU_objetos08 at ( 37.29508500,   -6.15917800) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (0.5m) for object La_Juliana_LEJU_objetos18 at ( 37.29508500,   -6.15931600) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (-0.17m) for object La_Juliana_LEJU_objetos01 at ( 37.29508500,   -6.15999100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (-0.2m) for object La_Juliana_LEJU_objetos09 at ( 37.29508400,   -6.15944500) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (90.0/0.0) for object La_Juliana_LEJU_objetos09_suelo at ( 37.29572500,   -6.15946300) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (90.0/0.0) for object La_Juliana_LEJU_objetos01_suelo at ( 37.29572000,   -6.16039500) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (90.0/0.0) for object La_Juliana_LEJU_objetos26_suelo at ( 37.29570000,   -6.15999400) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (90.0/0.0) for object La_Juliana_LEJU_objetos06_suelo at ( 37.29562000,   -6.16004600) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (90.0/0.0) for object La_Juliana_LEJU_objetos21_suelo at ( 37.29562000,   -6.16030700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (750.0m) for object add_balloons07 at ( 37.29557000,   -6.16269700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (500.0m) for object add_balloons05 at ( 37.29865000,   -6.16379100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (650.0m) for object add_balloons16 at ( 37.29227000,   -6.16068000) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (550.0m) for object add_balloons10 at ( 37.29562000,   -6.16593700) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (400.0m) for object add_balloons07 at ( 37.29575000,   -6.15904900) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (600.0m) for object add_balloons13 at ( 37.29763000,   -6.16020800) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (450.0m) for object add_balloons13 at ( 37.29298000,   -6.16364100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (3.35m) for object La_Juliana_LEJU_objetos12 at ( 37.29507700,   -6.15916100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (87.99/0.0) for object La_Juliana_LEJU_objetos12 at ( 37.29507700,   -6.15916100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (3.35m) for object La_Juliana_LEJU_objetos12 at ( 37.29508900,   -6.15999100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero pitch/bank (87.0/0.0) for object La_Juliana_LEJU_objetos12 at ( 37.29508900,   -6.15999100) in file la_juliana_LEJU_aniversario.BGL
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29621000,   -6.16158300) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29610500,   -6.16210700) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29594500,   -6.16293000) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29586000,   -6.16353800) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29579300,   -6.16430100) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29573300,   -6.16512800) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29576800,   -6.16597800) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29580400,   -6.16671000) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29594000,   -6.16748900) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29613300,   -6.16757200) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29627800,   -6.16798000) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29649700,   -6.16798800) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29629700,   -6.16105500) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29637100,   -6.16047000) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29642600,   -6.15990500) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (-2.6m) for object Seto-1 at ( 37.29644100,   -6.15938500) in file la_juliana_LEJU_arboles.bgl
+Non-zero altitude (6.41m) for object dab9276ef44c46e5a8254c0723b0c953 at ( 37.29631000,   -6.15986300) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (8.55m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29614000,   -6.15966300) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (6.75m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29614000,   -6.15981500) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (6.75m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29613900,   -6.15951100) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29614000,   -6.15998500) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29614000,   -6.15939900) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.13m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29605600,   -6.15921200) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29603000,   -6.16017100) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29603100,   -6.16035600) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29602900,   -6.16054100) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29603000,   -6.16072600) in file la_juliana_LEJU_objetos.BGL
+Non-zero altitude (5.15m) for object 1531063b4017697b71abc18c37f20d00 at ( 37.29602400,   -6.16118600) in file la_juliana_LEJU_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 1531063b4017697b71abc18c37f20d00 in file AHS_Farolas_FSX.BGL
+Object 1cc94d3744ae4a392d93f88fbf30ab7f not found
+Object 2553c910453a9b7dda69b8ad8f85133b not found
+Object 2f5c7cef409b25ecc8e0aab7adf1285a not found
+Object 67700591dbc1cc0d5f111ee9c4cbf10a not found
+Object ani_birds_gulls_x28 is a built-in object
+Object dab9276ef44c46e5a8254c0723b0c908 not found
+Object gen_sailplane_trailer03 is a built-in object
+Texture vallaleju.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_tb_Aspen_6m is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Chestnut1_8m is a built-in object
+Object veg_tb_EucalyptusSav_10m_fa is a built-in object
+Object veg_tb_Mesquite1_3m is a built-in object
+Object veg_tb_OliveTree_4_5m_hw is a built-in object
+Object veg_tb_OliveTree_8m is a built-in object
+Texture leju_foto1.bmp not found
+Texture leju_foto2.bmp not found
+Texture leju_foto3.bmp not found
+Texture leju_foto4.bmp not found
+Texture leju_foto5.bmp not found
+Texture leju_foto6.bmp not found
+Using objects from the OpenSceneryX library

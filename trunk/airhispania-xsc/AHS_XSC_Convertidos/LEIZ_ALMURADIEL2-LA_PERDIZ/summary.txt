@@ -1,0 +1,7 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Elm1_13m_sp is a built-in object

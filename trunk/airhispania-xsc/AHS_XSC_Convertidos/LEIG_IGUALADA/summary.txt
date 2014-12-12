@@ -1,0 +1,25 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (0.14m) for object add_dwag_hangers04 at ( 41.58759200,    1.65230900) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.14m) for object hangarcd6 at ( 41.58820300,    1.65192900) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.3m) for object Pickup_AirHispania at ( 41.58514200,    1.65351300) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.3m) for object Autocaravana at ( 41.58515900,    1.65356600) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.37m) for object caseta_seguridad at ( 41.58793000,    1.65188400) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.3m) for object 70b43ae74a01cb86655c2998200160bf at ( 41.58787700,    1.65192900) in file igualada_LEIG_objetos.bgl
+Non-zero altitude (0.3m) for object 70b43ae74a01cb86655c2998200160bf at ( 41.58777800,    1.65198500) in file igualada_LEIG_objetos.bgl
+Skipping animation in object bc22ad4341df01b5584978a0f1305d9f in file AHS_Farolas_FSX.BGL
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Chestnut1_16m is a built-in object
+Object veg_tb_Cottonwood_10m is a built-in object
+Object veg_tb_Cottonwood_5m is a built-in object
+Object veg_tb_Elm1_10m is a built-in object
+Object veg_tc_DouglasFir2_7m is a built-in object
+Object veg_tc_DouglasFir2_9m is a built-in object
+Object veg_tc_Pine_Scrub_11m is a built-in object
+Object veg_tc_Pine_Scrub_13m is a built-in object
+Using objects from the OpenSceneryX library

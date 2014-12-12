@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object La_Juliana_LEJU_objetos09 in file la_juliana_LEJU_libreria.BGL scaled x0.4
+
+TEXTURE		leju.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -1.749    0.000   -0.000	 0.000  0.000  1.000	0.4929 0.0352
+VT	  -1.749    3.200   -0.000	 0.000  0.000  1.000	0.4930 0.4491
+VT	   1.792    3.200   -0.000	 0.000  0.000  1.000	0.9380 0.4493
+VT	   1.792    0.000   -0.000	 0.000  0.000  1.000	0.9381 0.0349
+
+IDX	0
+IDX	1
+IDX	2
+IDX	2
+IDX	3
+IDX	0
+
+ATTR_no_blend
+
+TRIS	0 6

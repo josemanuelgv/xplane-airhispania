@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object hangar_LECD_0 in file AHS_Hangares_FSX.bgl scaled x1.35
+
+TEXTURE		Hangarleju2.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -4.466    5.832   13.338	-0.001  0.000  1.000	0.0238 0.0305
+VT	  -4.466    7.970   13.338	-0.001  0.000  1.000	0.0238 0.1879
+VT	   4.536    7.970   13.343	-0.001  0.000  1.000	0.6495 0.1889
+VT	   4.536    5.832   13.343	-0.001  0.000  1.000	0.6495 0.0310
+
+IDX	0
+IDX	1
+IDX	2
+IDX	2
+IDX	3
+IDX	0
+
+ATTR_no_blend
+
+TRIS	0 6

@@ -1,0 +1,27 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (34.06m) for object gen_radio01 at ( 40.56878700,   -6.22371800) in file el_maillo_LEF7_objetos.bgl
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 40.57108600,   -6.22215000) in file el_maillo_LEF7_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 62c0fa79418f26945eb6b1bc4e365564 not found
+Object Bush_pilot is a built-in object
+Object gen_powertower01 is a built-in object
+Object gen_radio01 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station1 is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_tb_Cottonwood_10m_fa is a built-in object
+Object veg_tb_EucalyptusSav_12m_wi is a built-in object
+Object veg_tb_EucalyptusSav_19m_sp is a built-in object
+Object veg_tb_EucalyptusSav_9m_sp is a built-in object
+Object veg_tb_OliveTree_10m_fa is a built-in object
+Object veg_tb_OliveTree_12m is a built-in object
+Object veg_tb_OliveTree_12m_wi is a built-in object
+Object veg_tb_OliveTree_4_5m_fa is a built-in object
+Using objects from the OpenSceneryX library

@@ -1,0 +1,11 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (-0.2m) for object d851b9074af82608349950bc9c4023c7 at ( 39.56667600,   -1.36209700) in file fuenterrobles_LEF1_objetos.BGL
+Non-zero altitude (-0.2m) for object 98488af54eab552244b97aa2b661af56 at ( 39.56661500,   -1.36220600) in file fuenterrobles_LEF1_objetos.BGL
+Object 47454f4657494c4cffff0001ffff00c3 not found
+Object 621602d5cb690567aeebe4235533c69a not found
+Texture sf25_01.bmp not found
+Object PPL_BushPilot is a built-in object
+Object PPL_IceFisherman1 is a built-in object
