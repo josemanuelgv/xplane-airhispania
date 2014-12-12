@@ -1,0 +1,5 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl

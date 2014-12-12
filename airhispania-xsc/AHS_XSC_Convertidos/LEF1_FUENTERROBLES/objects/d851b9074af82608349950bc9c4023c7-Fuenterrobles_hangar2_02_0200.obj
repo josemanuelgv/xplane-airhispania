@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object d851b9074af82608349950bc9c4023c7 in file fuenterrobles_LEF1_hangares.BGL scaled x2.0
+
+TEXTURE		Fuenterrobles_hangar2_02.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -2.929    0.000    8.199	 0.000  0.000 -1.000	0.0000 1.0000
+VT	   2.961    0.004    8.199	 0.000  0.000 -1.000	0.5637 0.9979
+VT	   2.947    5.272    8.199	 0.000  0.000 -1.000	0.5742 0.4844
+VT	  -2.929    4.583    8.199	 0.000  0.000 -1.000	0.0000 0.5517
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6

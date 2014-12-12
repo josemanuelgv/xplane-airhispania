@@ -1,0 +1,19 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (3.45m) for object PPL_RussianVillain at ( 43.17788600,   -4.67582700) in file camaleno-artenin_LEH7_objetos.BGL
+Non-zero altitude (3.45m) for object PPL_JapaneseExec at ( 43.17788700,   -4.67584100) in file camaleno-artenin_LEH7_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object Bush_pilot is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_24m_sp is a built-in object
+Object veg_tb_Maple_14m_sp is a built-in object
+Object veg_tb_Maple_19m is a built-in object
+Object veg_tb_Maple_29m_sp is a built-in object
+Object veg_tb_Maple_8m_sp is a built-in object
+Object veg_tb_Mesquite1_7m_fa is a built-in object
+Object veg_tb_Sycamore_18m is a built-in object
