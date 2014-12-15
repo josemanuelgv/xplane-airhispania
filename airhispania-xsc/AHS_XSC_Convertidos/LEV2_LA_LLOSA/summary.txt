@@ -1,0 +1,29 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Arbol8 at ( 39.74961000,   -0.18176800) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75046400,   -0.18088500) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75050300,   -0.18077300) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75054100,   -0.18068100) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75056600,   -0.18058000) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75059500,   -0.18050700) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object Arbol8 at ( 39.75051700,   -0.18045600) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.75002400,   -0.18022100) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-1.0m) for object encina1 at ( 39.74996900,   -0.18028100) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.75028200,   -0.18027500) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.75072700,   -0.18057700) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.75116800,   -0.18088000) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.75160500,   -0.18119000) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.75203800,   -0.18151000) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.74984400,   -0.18030000) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.74943700,   -0.18063400) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-2.0m) for object Seto-1 at ( 39.74910600,   -0.18090400) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-8.0m) for object Seto-1 at ( 39.75076300,   -0.18343800) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-8.0m) for object Seto-1 at ( 39.75135400,   -0.18300800) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-8.0m) for object Seto-1 at ( 39.75199900,   -0.18254400) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-8.0m) for object Seto-1 at ( 39.75227100,   -0.18234700) in file la_llosa_LEV2_objetos.BGL
+Non-zero altitude (-8.0m) for object Seto-1 at ( 39.75229500,   -0.18169600) in file la_llosa_LEV2_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object PPL_RussianVillain is a built-in object
+Using objects from the OpenSceneryX library
