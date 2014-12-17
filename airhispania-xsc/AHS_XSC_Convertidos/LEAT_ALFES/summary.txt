@@ -1,0 +1,21 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-4.68m) for object 65e1e9d444d6d40fba1957a557a831ee at ( 41.54970100,    0.65197800) in file alfes_LEAT_objetos.BGL
+Non-zero altitude (3.75m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.54970900,    0.65198800) in file alfes_LEAT_objetos.BGL
+Non-zero altitude (3.75m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.54986800,    0.65208400) in file alfes_LEAT_objetos.BGL
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 41.54903000,    0.65175500) in file alfes_LEAT_objetos.BGL
+Non-zero altitude (-0.29m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 41.54903000,    0.65175500) in file alfes_LEAT_objetos.BGL
+Skipping animation in object 65e1e9d444d6d40fba1957a557a831ee in file AHS_Farolas_FSX.BGL
+Skipping animation in object 1531063b4017697b71abc18c37f20d00 in file AHS_Farolas_FSX.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object bbdfc1eb4e4a96b235b0efbfd43cd7fa not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_8m_fa is a built-in object
+Object veg_tb_Cottonwood_12m is a built-in object
+Using objects from the OpenSceneryX library

@@ -1,0 +1,58 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.18m) for object veg_tb_OliveTree_9m_wi at ( 38.27141200,   -2.94507600) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_Poplar_12m_sp at ( 38.27141300,   -2.94511500) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_Poplar_12m_sp at ( 38.27139800,   -2.94516100) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_OliveTree_9m_wi at ( 38.27140500,   -2.94521100) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_OliveTree_9m_wi at ( 38.27170700,   -2.94477200) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_Mesquite1_9m at ( 38.27171200,   -2.94481500) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object veg_tb_Mesquite1_7m_fa at ( 38.27167100,   -2.94484400) in file beas de segura_LEBE_arboles.bgl
+Non-zero altitude (0.18m) for object PPL_IceFisherman1 at ( 38.27299400,   -2.94957100) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object ppl_alexeyoilrig at ( 38.27293300,   -2.94964700) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object PPL_RussianVillain at ( 38.27291800,   -2.94964800) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_suv6_brown at ( 38.27160000,   -2.94627100) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_suv1_white at ( 38.27155300,   -2.94659500) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_suv5_darkgreen at ( 38.27165800,   -2.94547900) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_compact1_red at ( 38.27354900,   -2.94977600) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_midsize1_grey at ( 38.27352100,   -2.94980900) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object VEH_Land_car_compact3_navy at ( 38.27169800,   -2.94547000) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object ExtraObjects16 at ( 38.27234400,   -2.94992500) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object ExtraObjects19 at ( 38.27239700,   -2.94994800) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object ExtraObjects02 at ( 38.27236500,   -2.94994700) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object ExtraObjects04 at ( 38.27236600,   -2.94991000) in file beas de segura_LEBE_objetos.bgl
+Non-zero altitude (0.18m) for object GA-Hangers_lib09 at ( 38.27234300,   -2.94996900) in file beas de segura_LEBE_objetos.bgl
+Non-zero pitch/bank (0.0/356.0) for object GEN_Plane_Schweizer2_yellstripe at ( 38.27312500,   -2.94842200) in file beas de segura_LEBE_veleros.bgl
+Non-zero pitch/bank (0.0/345.0) for object GEN_Plane_Schweizer2_orngstripe at ( 38.27291500,   -2.94821200) in file beas de segura_LEBE_veleros.bgl
+Non-zero pitch/bank (0.0/351.0) for object GEN_Plane_Schweizer2_bluestripe at ( 38.27381400,   -2.94910200) in file beas de segura_LEBE_veleros.bgl
+Texture car_vw_bus.bmp not found
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Texture sf25_01.bmp not found
+Object c1e9625f4e4ce7d7a73eefae05b0a682 not found
+Texture torrebeas_00.bmp not found
+Texture torrebeas_01.bmp not found
+Texture diana_00.bmp not found
+Object e189f250bad74f67a8e53216b34e02f9 not found
+Object e189f250bad74f67a8e53216b34e0300 not found
+Object GEN_Plane_Schweizer2_bluestripe is a built-in object
+Object GEN_Plane_Schweizer2_maroonstripe is a built-in object
+Object GEN_Plane_Schweizer2_orange is a built-in object
+Object GEN_Plane_Schweizer2_orngstripe is a built-in object
+Object GEN_Plane_Schweizer2_redstripe is a built-in object
+Object GEN_Plane_Schweizer2_yellstripe is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_tb_Mesquite1_12m_fa is a built-in object
+Object veg_tb_Mesquite1_3m is a built-in object
+Object veg_tb_Mesquite1_3m_sp is a built-in object
+Object veg_tb_Mesquite1_7m_fa is a built-in object
+Object veg_tb_Mesquite1_9m is a built-in object
+Object veg_tb_OliveTree_9m_wi is a built-in object
+Object veg_tb_Poplar_12m_sp is a built-in object
+Object veg_tb_Snag1_18m_wi is a built-in object
+Object veg_tb_Sycamore_15m is a built-in object
+Using objects from the OpenSceneryX library

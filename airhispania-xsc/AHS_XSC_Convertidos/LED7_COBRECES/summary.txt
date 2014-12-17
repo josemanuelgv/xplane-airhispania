@@ -1,0 +1,7 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.22m) for object ani_birds_gulls_x28 at ( 43.39132100,   -4.20327100) in file cobreces_LED7_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object ani_birds_gulls_x28 is a built-in object
