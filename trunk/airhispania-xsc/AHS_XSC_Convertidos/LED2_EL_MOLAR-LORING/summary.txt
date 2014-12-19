@@ -1,0 +1,17 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-2.1m) for object Seto-1 at ( 40.65981200,   -3.59682600) in file el_molar-loring_LED2_objetos.BGL
+Non-zero altitude (-2.1m) for object Seto-1 at ( 40.65975000,   -3.59714700) in file el_molar-loring_LED2_objetos.BGL
+Non-zero altitude (-2.1m) for object Seto-1 at ( 40.65968900,   -3.59746300) in file el_molar-loring_LED2_objetos.BGL
+Non-zero altitude (-0.6m) for object Seto-1 at ( 40.65990100,   -3.59669400) in file el_molar-loring_LED2_objetos.BGL
+Non-zero altitude (-0.14m) for object AB_Buildings08 at ( 40.66011100,   -3.59660700) in file el_molar-loring_LED2_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 67677891dbc1cc0d5f111ee9c4cbf35b not found
+Texture loring_caseta_00.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_8m is a built-in object
+Using objects from the OpenSceneryX library
