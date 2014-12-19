@@ -1,0 +1,27 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 41.36792900,    1.76776100) in file avinyone_LEAV_aviones.bgl
+Non-zero altitude (3.9m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.36864500,    1.76732400) in file avinyone_LEAV_objetos.bgl
+Non-zero altitude (4.4m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.36904200,    1.76765200) in file avinyone_LEAV_objetos.bgl
+Non-zero altitude (3.0m) for object 1531063b4017697b71abc18c37f20d00 at ( 41.36822500,    1.76790000) in file avinyone_LEAV_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 1531063b4017697b71abc18c37f20d00 in file AHS_Farolas_FSX.BGL
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 25795bb37358d9355a37260e55bc1f57 not found
+Object 621602d5cb690567aeebe4235533c69a not found
+Object 621602d5cb690567aeebe4235533c69b not found
+Object 7472b9ba8975e767e45c449e6dbaa138 not found
+Object ag_highpower is a built-in object
+Object Gen_Crowd_AircraftCrew is a built-in object
+Object Gen_Crowd_Restroom01 is a built-in object
+Object Gen_Crowd_Security is a built-in object
+Object Gen_Crowd_ShirtCream is a built-in object
+Object Gen_Crowd_ShirtFlannel is a built-in object
+Object Gen_Crowd_ShirtGrey is a built-in object
+Object Gen_Crowd_ShirtLime is a built-in object
+Object Gen_Crowd_ShirtSalmon is a built-in object
+Object Gen_Crowd_ShirtWhite is a built-in object
+Object Gen_Crowd_ShirtYellow is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object

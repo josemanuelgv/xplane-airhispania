@@ -1,0 +1,7 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.17m) for object Pa28_180 at ( 38.97853400,   -5.86283200) in file don_benito_LEE1_aviones.bgl
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
