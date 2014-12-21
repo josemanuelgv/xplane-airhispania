@@ -1,0 +1,21 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 70bc8386c6a14b20b8806f1e1112a1d0 in file CEVegetac.bgl scaled x0.89
+
+TEXTURE		Canas.png
+POINT_COUNTS	4 0 0 12
+
+VT	 -12.361    0.000    0.000	 0.000  0.000  1.000	4.2092 0.1204
+VT	 -12.361    2.884    0.000	 0.000  0.000  1.000	4.2092 0.9946
+VT	  12.361    0.000    0.000	 0.000  0.000  1.000	-3.2092 0.1204
+VT	  12.361    2.884    0.000	 0.000  0.000  1.000	-3.2092 0.9946
+
+IDX10	2 3 0 3 2 0 1 0 3 0
+IDX	1
+IDX	3
+
+ATTR_no_blend
+
+TRIS	0 12

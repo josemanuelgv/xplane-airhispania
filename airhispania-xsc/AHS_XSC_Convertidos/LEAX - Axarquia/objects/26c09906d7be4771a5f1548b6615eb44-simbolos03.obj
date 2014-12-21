@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 26c09906d7be4771a5f1548b6615eb44 in file CEelement.bgl
+
+TEXTURE		simbolos03.png
+POINT_COUNTS	4 0 0 6
+
+VT	  -0.191   -0.117   -0.024	 0.000 -0.199  0.980	0.0205 0.0340
+VT	  -0.191    0.117    0.024	 0.000 -0.199  0.980	0.0204 0.1654
+VT	   0.191   -0.117   -0.024	 0.000 -0.199  0.980	0.2252 0.0344
+VT	   0.191    0.117    0.024	 0.000 -0.199  0.980	0.2248 0.1654
+
+IDX	3
+IDX	0
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+
+ATTR_poly_os	2
+
+ATTR_shiny_rat	0.898
+TRIS	0 6

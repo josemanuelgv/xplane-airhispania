@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# file La_Cerdana_LECD.BGL
+
+TEXTURE		asphalt.r8.png
+POINT_COUNTS	4 0 0 6
+
+VT	 -24.000    0.000   -5.000	 0.000  1.000  0.000	-0.0938 0.0195
+VT	 -14.000    0.000   19.000	 0.000  1.000  0.000	-0.0547 -0.0742
+VT	  23.000    0.000    4.000	 0.000  1.000  0.000	0.0898 -0.0156
+VT	  14.000    0.000  -20.000	 0.000  1.000  0.000	0.0547 0.0781
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_poly_os	2
+
+TRIS	0 6

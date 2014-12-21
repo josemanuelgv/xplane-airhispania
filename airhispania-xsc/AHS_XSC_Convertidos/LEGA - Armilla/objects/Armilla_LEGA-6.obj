@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# file Armilla_LEGA.bgl
+
+TEXTURE		FS2X-palette.png
+POINT_COUNTS	4 0 0 6
+
+VT	 -28.700    0.000   51.410	 0.000  1.000  0.000	0.5703 0.0859
+VT	  12.400    0.000   58.200	 0.000  1.000  0.000	0.5703 0.0859
+VT	  28.900    0.000  -51.490	 0.000  1.000  0.000	0.5703 0.0859
+VT	 -11.700    0.000  -58.320	 0.000  1.000  0.000	0.5703 0.0859
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_poly_os	2
+
+TRIS	0 6

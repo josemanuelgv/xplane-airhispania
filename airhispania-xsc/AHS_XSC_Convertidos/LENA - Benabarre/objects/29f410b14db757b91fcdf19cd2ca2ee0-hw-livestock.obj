@@ -1,0 +1,21 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 29f410b14db757b91fcdf19cd2ca2ee0 in file Benabarre_LENA_.BGL
+
+TEXTURE		hw-livestock.png
+POINT_COUNTS	4 0 0 12
+
+VT	   0.000    0.000   -1.124	 1.000  0.000  0.000	0.2215 0.2208
+VT	   0.000    0.000    1.124	 1.000  0.000  0.000	0.0112 0.2207
+VT	   0.000    1.500   -1.124	 1.000  0.000  0.000	0.2215 0.3538
+VT	   0.000    1.500    1.124	 1.000  0.000  0.000	0.0111 0.3540
+
+IDX10	2 3 0 3 2 0 1 0 3 0
+IDX	1
+IDX	3
+
+ATTR_no_blend
+
+TRIS	0 12

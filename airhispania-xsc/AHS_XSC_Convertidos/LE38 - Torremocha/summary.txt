@@ -1,0 +1,6 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (0.15m) for object 8e166040427fc5abfaf569b2a3607237 at ( 40.604080,   -1.266497) in file Torremocha de Jiloca_LE38_.BGL
+Skipping animation in object 3e2295d54d2d23cde88c42a023e86a82 in file Torremocha de Jiloca_LE38_.BGL
+Texture tyres.bmp not found

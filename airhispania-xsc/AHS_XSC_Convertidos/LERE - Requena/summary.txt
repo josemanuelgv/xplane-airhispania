@@ -1,0 +1,213 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (-0.2m) for object cc3e07b24a9c9539a098c2a4048f5180 at ( 39.473486,   -1.038630) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.04m) for object 5fae346011d92a765000c5bfb136012c at ( 39.472823,   -1.036404) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.04m) for object 5fae346011d92a765000c5bfb136012c at ( 39.472382,   -1.038020) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.04m) for object 06a9340011d92a765000c5bfb136012c at ( 39.471984,   -1.036975) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.04m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.473310,   -1.039955) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473596,   -1.038259) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473769,   -1.038135) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473909,   -1.038022) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473984,   -1.037669) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474169,   -1.037536) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.474494,   -1.037757) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.474789,   -1.038402) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.475067,   -1.039027) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.474965,   -1.039595) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 33ae2aa011d92a765000c5bfb136012c at ( 39.474431,   -1.040045) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.21m) for object 06a9340011d92a765000c5bfb136012c at ( 39.474114,   -1.040110) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (0.6m) for object 06a9340011d92a765000c5bfb136012c at ( 39.474149,   -1.040213) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471122,   -1.030329) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471313,   -1.029183) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471602,   -1.031434) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472220,   -1.032900) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471967,   -1.030642) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472386,   -1.031599) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-9.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472851,   -1.032654) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.470707,   -1.029367) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472749,   -1.034150) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473233,   -1.035280) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473412,   -1.033929) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473921,   -1.035062) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474389,   -1.036133) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474865,   -1.037205) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475340,   -1.038290) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475829,   -1.039367) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.41m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475616,   -1.040164) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475072,   -1.040170) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 39.474700,   -1.039826) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.2m) for object 21efa00011d92a765000c5bfb136012c at ( 39.472881,   -1.039129) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.2m) for object gen_hutopen at ( 39.474022,   -1.038519) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.2m) for object gen_hutopen at ( 39.473874,   -1.038615) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.2m) for object gen_hutopen at ( 39.474314,   -1.038491) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.2m) for object gen_hutopen at ( 39.474451,   -1.038389) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473664,   -1.038783) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.88m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473745,   -1.038468) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.88m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474031,   -1.039596) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-0.88m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474170,   -1.039915) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474376,   -1.038110) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.08m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474240,   -1.038195) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473948,   -1.038107) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.28m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473978,   -1.038011) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.6m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474399,   -1.037697) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-1.6m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474199,   -1.037842) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-15.68m) for object ag_billboard at ( 39.473051,   -1.039590) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (2.04m) for object ag_genericsign at ( 39.472974,   -1.039307) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero pitch/bank (275.0/90.0) for object ag_genericsign at ( 39.472974,   -1.039307) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473902,   -1.033343) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474229,   -1.033103) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475180,   -1.035288) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474834,   -1.035516) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474346,   -1.035334) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474074,   -1.034719) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473786,   -1.034082) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473740,   -1.033971) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475384,   -1.034816) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475137,   -1.034258) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-2.04m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474691,   -1.033274) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (7.47m) for object 82f673774ff535855240b181637f796c at ( 39.440369,   -1.064542) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (90.44m) for object 82f673774ff535855240b181637f796c at ( 39.525545,   -1.000679) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (0.14m) for object 98dfd7704517f1d07e0d799fe53cd181 at ( 39.473628,   -1.037781) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (0.6m) for object d2b30c664d60aee0b2ab539e43e53dc9 at ( 39.473011,   -1.037149) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472519,   -1.029173) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472498,   -1.029085) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472474,   -1.029003) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472458,   -1.028926) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472442,   -1.028862) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472422,   -1.028793) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472411,   -1.028737) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472388,   -1.028666) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472212,   -1.028015) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472197,   -1.028035) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472168,   -1.028073) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472143,   -1.028107) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472120,   -1.028137) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472100,   -1.028164) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472077,   -1.028194) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472057,   -1.028221) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472036,   -1.028250) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472015,   -1.028278) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471989,   -1.028309) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471959,   -1.028345) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471932,   -1.028376) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471712,   -1.029013) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471697,   -1.028984) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471674,   -1.028938) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471651,   -1.028892) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471635,   -1.028858) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471608,   -1.028805) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471582,   -1.028752) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471548,   -1.028683) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471570,   -1.028727) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471534,   -1.028654) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471515,   -1.028616) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471498,   -1.028582) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471482,   -1.028551) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471468,   -1.028523) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.471456,   -1.028499) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472386,   -1.030017) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472367,   -1.029969) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472317,   -1.029844) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472349,   -1.029925) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472297,   -1.029795) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472259,   -1.029702) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472240,   -1.029656) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472220,   -1.029606) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472195,   -1.029544) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-5.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.472163,   -1.029465) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473090,   -1.031457) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473123,   -1.031433) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473200,   -1.031376) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473170,   -1.031398) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473236,   -1.031350) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473279,   -1.031319) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473315,   -1.031293) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473342,   -1.031273) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473369,   -1.031253) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473393,   -1.031235) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473444,   -1.031199) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473498,   -1.031159) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473687,   -1.032604) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473749,   -1.032560) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473802,   -1.032521) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473844,   -1.032490) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473923,   -1.032433) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473983,   -1.032389) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473997,   -1.032378) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474060,   -1.032333) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.473864,   -1.032476) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475159,   -1.036183) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475087,   -1.036233) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475021,   -1.036279) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474925,   -1.036345) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474888,   -1.036370) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474838,   -1.036405) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474770,   -1.036452) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-6.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.474681,   -1.036514) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475924,   -1.038526) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475901,   -1.038492) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475800,   -1.038372) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475861,   -1.038428) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475823,   -1.038280) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475772,   -1.038200) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475757,   -1.038145) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475722,   -1.038085) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475694,   -1.038039) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475684,   -1.037981) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475663,   -1.037949) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475639,   -1.037921) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475618,   -1.037896) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475602,   -1.037877) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475549,   -1.037672) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475516,   -1.037578) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475482,   -1.037482) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475433,   -1.037431) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475425,   -1.037255) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475387,   -1.037195) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475337,   -1.037091) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475337,   -1.037091) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475330,   -1.037085) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475291,   -1.037038) in file RequenaJMA2004_LERE_Instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 39.475256,   -1.036944) in file RequenaJMA2004_LERE_Instant.bgl
+Skipping animation in object bbff743048724758ce980faab620b839 in file add_dwag_hangers.BGL
+Object 1571e1b8167c4b1ab0d1a932085d73b1 not found
+Texture bmp.bmp not found
+Object 327bc763ab48463d8599c5b9ff6c89ec not found
+Texture fs9_greenld90.bmp not found
+Texture l901.bmp not found
+Texture fs9_ld90tyre.bmp not found
+Texture fs9_redld90.bmp not found
+Texture tyres.bmp not found
+Texture sk_cessnacitation_tail number template.bmp not found
+Texture tree_conic_sp.bmp not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dcf not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd1 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd3 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd4 not found
+Object 82f673774ff535855240b181637f796c not found
+Texture sk_c172sp_white-orange_n88379.bmp not found
+Object ag_barn_3 is a built-in object
+Object ag_billboard is a built-in object
+Object ag_fastfood_3 is a built-in object
+Object ag_genericsign is a built-in object
+Texture frequency.bmp not found
+Texture redhangerconcrete.bmp not found
+Texture airport_beacon_tower_h.bmp not found
+Texture sk_archer_door_n388pz.bmp not found
+Texture tow_trac_tex.bmp not found
+Object e96e8a571a694e83a1b4680e8c378458 not found
+Object e96e8a571a694e83a1b4680e8c378470 not found
+Object e96e8a571a694e83a1b4680e8c378476 not found
+Object e96e8a571a694e83a1b4680e8c37847f not found
+Object e96e8a571a694e83a1b4680e8c378482 not found
+Object e96e8a571a694e83a1b4680e8c378483 not found
+Object efc4b1a7429aadac78fceb97e8c9ab1c not found
+Object f7e96e7151314d558f79b9edecb8344f not found
+Object gen_hutopen is a built-in object
+Object large_fuel_tank is a built-in object
+Object sco_noaa_portcrane is a built-in object
+Object small_fuel_station1 is a built-in object
+Object small_fuel_station2 is a built-in object
+Object tempcontrol_tower is a built-in object
+Object veh_air_fueltruck is a built-in object

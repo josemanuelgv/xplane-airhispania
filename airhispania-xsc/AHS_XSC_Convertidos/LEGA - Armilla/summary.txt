@@ -1,0 +1,11 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Can't parse area #65 in file Armilla_LEGA.bgl
+Skipping pre-FS2004 runways and/or roads in file Armilla_LEGA.bgl
+Non-zero altitude (2.0m) for object a7a8727646e358746322bf9303f4809d at ( 37.138563,   -3.631342) in file Armilla_LEGA_.BGL
+Non-zero pitch/bank (352.0/15.0) for object a7a8727646e358746322bf9303f4809d at ( 37.138563,   -3.631342) in file Armilla_LEGA_.BGL
+Non-zero altitude (2.0m) for object Bell_206B at ( 37.137233,   -3.631677) in file Armilla_LEGA_.BGL
+Texture tyres.bmp not found
+Object large_fuel_tank is a built-in object
+Object small_tower2 is a built-in object

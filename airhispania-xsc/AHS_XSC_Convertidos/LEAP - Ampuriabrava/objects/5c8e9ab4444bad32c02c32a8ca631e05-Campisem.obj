@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 5c8e9ab4444bad32c02c32a8ca631e05 in file Ampuriabrava_LEAP_.BGL
+
+TEXTURE		Campisem.png
+POINT_COUNTS	4 0 0 6
+
+VT	 -36.312    0.028  263.128	 0.000  1.000  0.000	0.6203 0.7268
+VT	 -26.368    0.028  296.552	 0.000  1.000  0.000	0.6200 0.0055
+VT	 -19.856    0.028  258.232	 0.000  1.000  0.000	0.9754 0.7268
+VT	  -9.912    0.028  291.656	 0.000  1.000  0.000	0.9752 0.0055
+
+IDX	2
+IDX	3
+IDX	1
+IDX	1
+IDX	0
+IDX	2
+
+ATTR_poly_os	2
+
+TRIS	0 6

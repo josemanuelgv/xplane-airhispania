@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 2e78a23a425a0a99bb580b968078845f in file Ampuriabrava_LEAP_.BGL scaled x3.0
+
+TEXTURE		127b2su1.png
+POINT_COUNTS	4 0 0 6
+
+VT	 -18.000    0.228    9.000	 0.000  1.000  0.000	0.0005 0.0005
+VT	 -18.000    0.228   -9.000	 0.000  1.000  0.000	0.0005 0.9995
+VT	  18.000    0.228    9.000	 0.000  1.000  0.000	0.9995 0.0005
+VT	  18.000    0.228   -9.000	 0.000  1.000  0.000	0.9995 0.9995
+
+IDX	0
+IDX	1
+IDX	3
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_poly_os	2
+
+TRIS	0 6

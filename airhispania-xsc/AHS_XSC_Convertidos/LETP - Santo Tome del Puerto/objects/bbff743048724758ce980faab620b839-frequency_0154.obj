@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object bbff743048724758ce980faab620b839 in file add_dwag_hangers.BGL scaled x1.54
+
+TEXTURE		frequency.png
+POINT_COUNTS	4 0 0 6
+
+VT	  14.895    1.984   20.322	 0.000  0.000  1.000	0.4170 0.8500
+VT	  14.895    2.760   20.322	 0.000  0.000  1.000	0.4170 0.9870
+VT	  16.022    1.984   20.322	 0.000  0.000  1.000	0.6610 0.8500
+VT	  16.022    2.760   20.322	 0.000  0.000  1.000	0.6610 0.9870
+
+IDX	3
+IDX	2
+IDX	0
+IDX	0
+IDX	1
+IDX	3
+
+ATTR_no_blend
+
+TRIS	0 6

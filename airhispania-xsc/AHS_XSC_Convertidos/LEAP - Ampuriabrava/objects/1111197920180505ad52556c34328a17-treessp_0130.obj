@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 1111197920180505ad52556c34328a17 in file ag_tree_lib.BGL scaled x1.3
+
+TEXTURE		trees.png
+POINT_COUNTS	4 0 0 6
+
+VT	  -5.200    0.000    0.000	 0.000  0.000 -1.000	0.2500 0.7500
+VT	  -5.200   13.000    0.000	 0.000  0.000 -1.000	0.2500 1.0000
+VT	   5.200    0.000    0.000	 0.000  0.000 -1.000	0.0000 0.7500
+VT	   5.200   13.000    0.000	 0.000  0.000 -1.000	0.0000 1.0000
+
+IDX	2
+IDX	3
+IDX	1
+IDX	1
+IDX	0
+IDX	2
+
+ATTR_no_blend
+
+TRIS	0 6

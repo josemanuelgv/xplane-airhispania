@@ -1,0 +1,6 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero pitch/bank (357.0/0.0) for object 67700591dbc1cc0d5f111ee9c4cbf10c at ( 42.023154,    0.479830) in file Benabarre_LENA_.BGL
+Skipping animation in object 218ba21de1534c7daa1bd45d2113991e in file Benabarre_LENA_.BGL
+Texture tyres.bmp not found

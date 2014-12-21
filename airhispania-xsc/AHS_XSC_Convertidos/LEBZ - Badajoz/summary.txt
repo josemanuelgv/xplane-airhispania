@@ -1,0 +1,9 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (6.0m) for object small_tower2 at ( 38.883332,   -6.816658) in file Badajoz_LEBZ_.BGL
+Non-zero altitude (11.6m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.882690,   -6.821088) in file Badajoz_LEBZ_.BGL
+Non-zero altitude (11.6m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.882460,   -6.820140) in file Badajoz_LEBZ_.BGL
+Texture semitransblu.bmp not found
+Texture tyres.bmp not found
+Object small_tower2 is a built-in object

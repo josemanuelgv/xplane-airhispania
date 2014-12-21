@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 583b28e4460c003b260819bf4ca8d721 in file Badajoz_LEBZ_.BGL scaled x1.5
+
+TEXTURE		Inplasa.png
+POINT_COUNTS	4 0 0 6
+
+VT	   1.500    0.030    1.500	 0.000  1.000  0.000	0.1900 0.8090
+VT	  -1.500    0.030    1.500	 0.000  1.000  0.000	0.0045 0.8090
+VT	   1.500    0.030   -1.500	 0.000  1.000  0.000	0.1900 0.9954
+VT	  -1.500    0.030   -1.500	 0.000  1.000  0.000	0.0045 0.9954
+
+IDX	0
+IDX	1
+IDX	3
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_poly_os	2
+
+TRIS	0 6

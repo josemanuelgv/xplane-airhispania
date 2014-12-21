@@ -1,0 +1,70 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (3.08m) for object 1a5ffb40eb4c11d98cd60800200c9a6f at ( 37.140405,   -4.272536) in file Loja_T6_LELJ_instant.bgl
+Non-zero pitch/bank (10.0/0.0) for object 1a5ffb40eb4c11d98cd60800200c9a6d at ( 37.140041,   -4.274737) in file Loja_T6_LELJ_instant.bgl
+Non-zero pitch/bank (349.0/0.0) for object 1a5ffb40eb4c11d98cd60800200c9a6c at ( 37.139649,   -4.275276) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (3.24m) for object e189f250bad74f67a8e53216b34e02f4 at ( 37.140295,   -4.272492) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (0.48m) for object ag_barn_3 at ( 37.135869,   -4.278647) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (0.48m) for object ag_cob_house at ( 37.135649,   -4.281241) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (0.48m) for object ag_cob_house at ( 37.135743,   -4.281325) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (0.48m) for object ag_cob_house at ( 37.135843,   -4.281406) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.37m) for object ag_cob_house at ( 37.135918,   -4.281518) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (0.6m) for object ag_shoppingcenter at ( 37.136650,   -4.280252) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (2.53m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140285,   -4.272592) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (2.53m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140158,   -4.272504) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140010,   -4.273160) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.74m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140222,   -4.270572) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.2m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140359,   -4.270653) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.14m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.140214,   -4.270744) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.2m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.139305,   -4.270105) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-2.04m) for object 67677891dbc1cc0d5f111ee9c4cbf14b at ( 37.135500,   -4.282103) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.135876,   -4.282259) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.136196,   -4.281778) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.136500,   -4.281331) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.136867,   -4.280699) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.137368,   -4.279675) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.137660,   -4.279274) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.138127,   -4.278504) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.138347,   -4.278054) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.138654,   -4.277441) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.139228,   -4.276242) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-4.0m) for object ag_telephonepole at ( 37.139454,   -4.275587) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.139817,   -4.274582) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.139900,   -4.274258) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.140127,   -4.273440) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.140280,   -4.272843) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.140048,   -4.272901) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-9.38m) for object ag_telephonepole at ( 37.139839,   -4.272767) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.28m) for object ag_doublelight at ( 37.139737,   -4.273224) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object ag_building_1 at ( 37.136182,   -4.280164) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf11c at ( 37.135898,   -4.278942) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf11c at ( 37.135964,   -4.278866) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf11c at ( 37.135736,   -4.278413) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf11c at ( 37.137313,   -4.274370) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-0.48m) for object 67677891dbc1cc0d5f111ee9c4cbf11c at ( 37.137093,   -4.274246) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 37.139439,   -4.273266) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 37.139997,   -4.273343) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-3.37m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 37.139283,   -4.273982) in file Loja_T6_LELJ_instant.bgl
+Non-zero altitude (-1.4m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 37.139775,   -4.273701) in file Loja_T6_LELJ_instant.bgl
+Texture bmp.bmp not found
+Object 31b3e12a4164ef61567cedbe43215e36 not found
+Texture fs9_cone.bmp not found
+Texture tree_conic_sp.bmp not found
+Texture redhangerconcrete.bmp not found
+Object ag_barn_3 is a built-in object
+Object ag_cob_house is a built-in object
+Object ag_gas_1 is a built-in object
+Object ag_school is a built-in object
+Object ag_shoppingcenter is a built-in object
+Object ag_stripmall_1 is a built-in object
+Object ag_warehouse is a built-in object
+Texture tyres.bmp not found
+Object fb6cec45492a6ded9088af8ac73f6ab4 not found
+Object gen_barn01 is a built-in object
+Object gen_elevator01 is a built-in object
+Object gen_factory01 is a built-in object
+Object gen_trans01 is a built-in object
+Object gen_watertower01 is a built-in object
+Object gen_windmill01 is a built-in object
+Object hstcb is a built-in object

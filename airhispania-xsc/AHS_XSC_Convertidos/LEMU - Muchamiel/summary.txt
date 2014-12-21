@@ -1,0 +1,33 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (-0.18m) for object 06a9340011d92a765000c5bfb136012c at ( 38.439862,   -0.468781) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.42m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.437278,   -0.468916) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 06a9340011d92a765000c5bfb136012c at ( 38.437264,   -0.469165) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 06a9340011d92a765000c5bfb136012c at ( 38.437323,   -0.469315) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 06a9340011d92a765000c5bfb136012c at ( 38.437383,   -0.469471) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 06a9340011d92a765000c5bfb136012c at ( 38.437442,   -0.469627) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 06a9340011d92a765000c5bfb136012c at ( 38.437501,   -0.469782) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 5fae346011d92a765000c5bfb136012c at ( 38.438017,   -0.471134) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 5fae346011d92a765000c5bfb136012c at ( 38.438996,   -0.473690) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 5fae346011d92a765000c5bfb136012c at ( 38.439974,   -0.476241) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 5fae346011d92a765000c5bfb136012c at ( 38.440952,   -0.478794) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-1.35m) for object 5fae346011d92a765000c5bfb136012c at ( 38.441917,   -0.481316) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.89m) for object 21efa00011d92a765000c5bfb136012c at ( 38.442632,   -0.482408) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.89m) for object 21efa00011d92a765000c5bfb136012c at ( 38.443064,   -0.482072) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.21m) for object db38d00c4e40cc14ca90f08c8bfa8383 at ( 38.440784,   -0.471751) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.21m) for object 977b1ab044721fe589ec3c8e4e149781 at ( 38.440413,   -0.470994) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.439034,   -0.468346) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.439292,   -0.468481) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.439677,   -0.468684) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.439421,   -0.468551) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.42m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.437373,   -0.468584) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.82m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.437541,   -0.468331) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 21efa00011d92a765000c5bfb136012c at ( 38.437898,   -0.468062) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.438265,   -0.467949) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.438520,   -0.468082) in file LEMU_Hangares_posicion.bgl
+Non-zero altitude (-0.18m) for object 60fa58e011d92a755000c5bfb136012c at ( 38.438779,   -0.468217) in file LEMU_Hangares_posicion.bgl
+Skipping animation in object 977b1ab044721fe589ec3c8e4e149781 in file add_dwag_hangers.BGL
+Texture tyres.bmp not found
+Texture redhangerconcrete.bmp not found
+Texture frequency.bmp not found
