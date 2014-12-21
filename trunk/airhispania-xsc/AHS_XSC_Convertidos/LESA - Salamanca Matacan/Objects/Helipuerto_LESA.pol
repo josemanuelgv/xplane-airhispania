@@ -1,0 +1,8 @@
+I
+850	# Converted by FS2XPlane 3.26
+DRAPED_POLYGON
+
+TEXTURE_NOWRAP		Helipuerto_LESA.dds
+SCALE		256 256
+LAYER_GROUP	objects -1
+SURFACE		concrete
