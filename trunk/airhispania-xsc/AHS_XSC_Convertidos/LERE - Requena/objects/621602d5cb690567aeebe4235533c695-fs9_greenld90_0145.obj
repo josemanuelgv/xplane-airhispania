@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 621602d5cb690567aeebe4235533c695 in file Objects01_lib.bgl scaled x1.45
+
+TEXTURE		fs9_greenld90.png
+POINT_COUNTS	4 0 0 6
+
+VT	  -1.282    0.818    2.233	 0.000 -0.889  0.458	0.2571 0.9625
+VT	  -1.282    0.632    1.862	 0.000 -0.889  0.458	0.2571 0.9167
+VT	   1.282    0.818    2.233	 0.000 -0.889  0.458	0.0376 0.9625
+VT	   1.282    0.632    1.862	 0.000 -0.889  0.458	0.0376 0.9167
+
+IDX	3
+IDX	1
+IDX	0
+IDX	0
+IDX	2
+IDX	3
+
+ATTR_no_blend
+
+TRIS	0 6

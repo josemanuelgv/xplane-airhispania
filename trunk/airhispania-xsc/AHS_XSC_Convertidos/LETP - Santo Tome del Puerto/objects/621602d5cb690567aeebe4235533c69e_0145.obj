@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 621602d5cb690567aeebe4235533c69e in file Objects01_lib.bgl scaled x1.45
+
+TEXTURE		FS2X-palette.png
+POINT_COUNTS	4 0 0 6
+
+VT	   1.612    2.047   -2.987	-1.000  0.000  0.000	0.9922 0.9922
+VT	   1.612    2.047   -1.717	-1.000  0.000  0.000	0.9922 0.9922
+VT	   1.612    2.865   -2.987	-1.000  0.000  0.000	0.9922 0.9922
+VT	   1.612    2.865   -1.717	-1.000  0.000  0.000	0.9922 0.9922
+
+IDX	1
+IDX	0
+IDX	2
+IDX	2
+IDX	3
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 6

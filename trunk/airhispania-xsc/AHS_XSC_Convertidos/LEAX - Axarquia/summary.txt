@@ -1,0 +1,221 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Skipping terrain data in file 0_leax2006_G2_.bgl
+Skipping terrain data in file leax2006_G2__2.bgl
+Skipping terrain data in file leax2006_G2__3.bgl
+Skipping terrain data in file leax2006_G2__5.bgl
+Skipping terrain data in file leax2006_G2__9.bgl
+Non-zero altitude (11.0m) for object d5f280694642d14862eeae85d3c39f70 at ( 36.802862,   -4.135808) in file CEmanga2.BGL
+Non-zero altitude (13.0m) for object d5f280694642d14862eeae85d3c39f70 at ( 36.802871,   -4.135797) in file CEmanga2.BGL
+Non-zero altitude (-8.92m) for object 04d740424cbfc17845117c9a6ad9eceb at ( 36.756711,   -4.094392) in file POScarret.bgl
+Non-zero altitude (-2.09m) for object hstcb at ( 36.804437,   -4.133846) in file POSexternal.BGL
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d2 at ( 36.804401,   -4.133272) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.804450,   -4.133124) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d2 at ( 36.808258,   -4.149753) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d2 at ( 36.808228,   -4.150026) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d2 at ( 36.808684,   -4.148994) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d2 at ( 36.808631,   -4.148897) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808659,   -4.148498) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808626,   -4.148300) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808582,   -4.148155) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808543,   -4.147967) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808366,   -4.147822) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808438,   -4.147327) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808332,   -4.146789) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.808242,   -4.146156) in file POSexternal.BGL
+Non-zero altitude (-0.72m) for object ag_barn_2 at ( 36.808264,   -4.149195) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.795968,   -4.125677) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.796031,   -4.125655) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.796243,   -4.125670) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.810447,   -4.130102) in file POSexternal.BGL
+Non-zero altitude (-0.3m) for object ag_barn_2 at ( 36.809320,   -4.129926) in file POSexternal.BGL
+Non-zero altitude (-0.16m) for object ag_barn_2 at ( 36.798708,   -4.131620) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.800023,   -4.137899) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.800046,   -4.137821) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.800147,   -4.137706) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.800143,   -4.137594) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799754,   -4.137161) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799563,   -4.136736) in file POSexternal.BGL
+Non-zero altitude (-2.53m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799180,   -4.136453) in file POSexternal.BGL
+Non-zero altitude (-5.47m) for object 1a2bfaff4fc9ee8bc020d9abe5eb34c3 at ( 36.806619,   -4.127671) in file POSexternal.BGL
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.803009,   -4.135802) in file POSfarollight.bgl
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.803073,   -4.135742) in file POSfarollight.bgl
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802687,   -4.135182) in file POSfarollight.bgl
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802762,   -4.135121) in file POSfarollight.bgl
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802862,   -4.135512) in file POSfarollight.bgl
+Non-zero altitude (9.21m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802928,   -4.135455) in file POSfarollight.bgl
+Non-zero altitude (2.7m) for object 26c09906d7be4771a5f1548b6615eb44 at ( 36.803012,   -4.135913) in file POSluces.bgl
+Non-zero altitude (8.92m) for object 26c09906d7be4771a5f1548b6615eb44 at ( 36.802839,   -4.135780) in file POSluces.bgl
+Non-zero altitude (4.58m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802839,   -4.135857) in file POSluces.bgl
+Non-zero altitude (4.37m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802840,   -4.135857) in file POSluces.bgl
+Non-zero altitude (4.37m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802720,   -4.135978) in file POSluces.bgl
+Non-zero altitude (4.16m) for object 26c09906d7be4771a5f1548b6615eb4a at ( 36.802720,   -4.135978) in file POSluces.bgl
+Non-zero altitude (3.17m) for object d5f280694642d14862eeae85d3c39f70 at ( 36.800420,   -4.134299) in file POSobjetos.bgl
+Non-zero altitude (-3.21m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.804193,   -4.141897) in file POStorretas.bgl
+Non-zero altitude (-3.21m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.804656,   -4.141298) in file POStorretas.bgl
+Non-zero altitude (-5.23m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.804661,   -4.141295) in file POStorretas.bgl
+Non-zero altitude (-1.43m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.805155,   -4.140738) in file POStorretas.bgl
+Non-zero altitude (-1.67m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.805155,   -4.140738) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.805643,   -4.140167) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.805643,   -4.140167) in file POStorretas.bgl
+Non-zero altitude (-2.86m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.806148,   -4.139623) in file POStorretas.bgl
+Non-zero altitude (-2.86m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.806147,   -4.139623) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.806662,   -4.139091) in file POStorretas.bgl
+Non-zero altitude (-2.86m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.806661,   -4.139091) in file POStorretas.bgl
+Non-zero altitude (-2.86m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.807173,   -4.138556) in file POStorretas.bgl
+Non-zero altitude (-2.86m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.807172,   -4.138556) in file POStorretas.bgl
+Non-zero altitude (-3.03m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.807684,   -4.138019) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.807684,   -4.138019) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808195,   -4.137482) in file POStorretas.bgl
+Non-zero altitude (-2.7m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.808194,   -4.137482) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808527,   -4.136758) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.808527,   -4.136758) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808758,   -4.135975) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.808758,   -4.135975) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808988,   -4.135196) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.808987,   -4.135196) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808693,   -4.134445) in file POStorretas.bgl
+Non-zero altitude (-2.38m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.808692,   -4.134445) in file POStorretas.bgl
+Non-zero altitude (-13.19m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.808690,   -4.133606) in file POStorretas.bgl
+Non-zero altitude (-3.21m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.804187,   -4.141902) in file POStorretas.bgl
+Non-zero altitude (0.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.803682,   -4.142457) in file POStorretas.bgl
+Non-zero altitude (0.7m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.803682,   -4.142457) in file POStorretas.bgl
+Non-zero altitude (0.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.803163,   -4.142945) in file POStorretas.bgl
+Non-zero altitude (17.88m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.803163,   -4.142945) in file POStorretas.bgl
+Non-zero altitude (-6.19m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.802630,   -4.143444) in file POStorretas.bgl
+Non-zero altitude (-6.19m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.802630,   -4.143443) in file POStorretas.bgl
+Non-zero altitude (-0.2m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.802100,   -4.143939) in file POStorretas.bgl
+Non-zero altitude (-0.2m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.801564,   -4.144442) in file POStorretas.bgl
+Non-zero altitude (-0.2m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.801564,   -4.144441) in file POStorretas.bgl
+Non-zero altitude (-2.53m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.801026,   -4.144945) in file POStorretas.bgl
+Non-zero altitude (-2.53m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.801026,   -4.144944) in file POStorretas.bgl
+Non-zero altitude (-6.7m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.800486,   -4.145449) in file POStorretas.bgl
+Non-zero altitude (-6.7m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.800486,   -4.145448) in file POStorretas.bgl
+Non-zero altitude (-7.49m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.799966,   -4.145971) in file POStorretas.bgl
+Non-zero altitude (-7.49m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.799966,   -4.145970) in file POStorretas.bgl
+Non-zero altitude (-8.62m) for object 26c09906d7be4771a5f1548b6615eb39 at ( 36.799446,   -4.146495) in file POStorretas.bgl
+Non-zero altitude (-3.03m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.804656,   -4.141298) in file POStorretas.bgl
+Non-zero altitude (-5.23m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.804656,   -4.141291) in file POStorretas.bgl
+Non-zero altitude (17.06m) for object 26c09906d7be4771a5f1548b6615eb38 at ( 36.803155,   -4.142947) in file POStorretas.bgl
+Non-zero altitude (-0.36m) for object 70bc8386c6a14b20b8806f1e1112a1d0 at ( 36.798983,   -4.130041) in file POSvegeta.bgl
+Non-zero altitude (-0.36m) for object 70bc8386c6a14b20b8806f1e1112a1d0 at ( 36.798720,   -4.130146) in file POSvegeta.bgl
+Non-zero altitude (-1.2m) for object 70bc8386c6a14b20b8806f1e1112a1d0 at ( 36.798515,   -4.130209) in file POSvegeta.bgl
+Non-zero altitude (-1.2m) for object 70bc8386c6a14b20b8806f1e1112a1d0 at ( 36.798345,   -4.130276) in file POSvegeta.bgl
+Non-zero altitude (-0.8m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.802822,   -4.135125) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.799281,   -4.130069) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799268,   -4.130117) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799259,   -4.129987) in file POSvegeta.bgl
+Non-zero altitude (-1.2m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799282,   -4.130237) in file POSvegeta.bgl
+Non-zero altitude (-1.2m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799268,   -4.130213) in file POSvegeta.bgl
+Non-zero altitude (-1.2m) for object 70bc8386c6a14b20b8806f1e1112a1d5 at ( 36.799253,   -4.130187) in file POSvegeta.bgl
+Non-zero altitude (-0.63m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.802856,   -4.135827) in file POSvegeta.bgl
+Non-zero altitude (-0.63m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.802838,   -4.135850) in file POSvegeta.bgl
+Non-zero altitude (2.13m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.801352,   -4.136466) in file POSvegeta.bgl
+Non-zero altitude (0.38m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802741,   -4.136162) in file POSvegeta.bgl
+Non-zero altitude (0.25m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802750,   -4.135983) in file POSvegeta.bgl
+Non-zero altitude (0.25m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802790,   -4.135992) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802719,   -4.134881) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802695,   -4.134814) in file POSvegeta.bgl
+Non-zero altitude (1.75m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802695,   -4.134813) in file POSvegeta.bgl
+Non-zero altitude (1.75m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802710,   -4.134845) in file POSvegeta.bgl
+Non-zero altitude (1.75m) for object 70bc8386c6a14b20b8806f1e1112a1d1 at ( 36.802714,   -4.134891) in file POSvegeta.bgl
+Non-zero altitude (-16.65m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.799102,   -4.134004) in file POSvegeta.bgl
+Non-zero altitude (-16.65m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.799151,   -4.134041) in file POSvegeta.bgl
+Non-zero altitude (-1.43m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.799158,   -4.134108) in file POSvegeta.bgl
+Non-zero altitude (-0.36m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799810,   -4.134569) in file POSvegeta.bgl
+Non-zero altitude (-1.09m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801166,   -4.135610) in file POSvegeta.bgl
+Non-zero altitude (-1.09m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801319,   -4.135880) in file POSvegeta.bgl
+Non-zero altitude (-1.94m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801475,   -4.136200) in file POSvegeta.bgl
+Non-zero altitude (-1.67m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801677,   -4.136555) in file POSvegeta.bgl
+Non-zero altitude (-2.38m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801875,   -4.136927) in file POSvegeta.bgl
+Non-zero altitude (-2.08m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802046,   -4.137231) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802239,   -4.137581) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802421,   -4.137928) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802611,   -4.138352) in file POSvegeta.bgl
+Non-zero altitude (-2.86m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802805,   -4.138777) in file POSvegeta.bgl
+Non-zero altitude (-2.86m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.803009,   -4.139241) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804501,   -4.140843) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804549,   -4.140803) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804599,   -4.140769) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804644,   -4.140730) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804631,   -4.140768) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804701,   -4.140707) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804732,   -4.140680) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804767,   -4.140650) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804604,   -4.140891) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804692,   -4.140884) in file POSvegeta.bgl
+Non-zero altitude (-0.56m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.804753,   -4.140864) in file POSvegeta.bgl
+Non-zero altitude (-2.86m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801716,   -4.135077) in file POSvegeta.bgl
+Non-zero altitude (-2.86m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.801546,   -4.134749) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799027,   -4.131283) in file POSvegeta.bgl
+Non-zero altitude (-0.89m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799195,   -4.131643) in file POSvegeta.bgl
+Non-zero altitude (-0.89m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799315,   -4.131944) in file POSvegeta.bgl
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799219,   -4.132188) in file POSvegeta.bgl
+Non-zero altitude (-0.48m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799026,   -4.132213) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799536,   -4.133750) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799319,   -4.133280) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799136,   -4.132897) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799029,   -4.132640) in file POSvegeta.bgl
+Non-zero altitude (-1.43m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798912,   -4.131022) in file POSvegeta.bgl
+Non-zero altitude (-1.81m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798778,   -4.130726) in file POSvegeta.bgl
+Non-zero altitude (-1.09m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799371,   -4.130415) in file POSvegeta.bgl
+Non-zero altitude (-1.09m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.799468,   -4.130606) in file POSvegeta.bgl
+Non-zero altitude (-0.48m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798189,   -4.130318) in file POSvegeta.bgl
+Non-zero altitude (-0.8m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798042,   -4.130407) in file POSvegeta.bgl
+Non-zero altitude (-0.16m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.797910,   -4.130441) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802577,   -4.135026) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802369,   -4.135252) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802556,   -4.135082) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802262,   -4.135346) in file POSvegeta.bgl
+Non-zero altitude (-0.2m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802161,   -4.135444) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798257,   -4.130908) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798267,   -4.130879) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798303,   -4.130888) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798341,   -4.130905) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798351,   -4.130876) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798381,   -4.130885) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798406,   -4.130874) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798500,   -4.131060) in file POSvegeta.bgl
+Non-zero altitude (-3.39m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798466,   -4.130995) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798443,   -4.130924) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798410,   -4.130887) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798384,   -4.130835) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798451,   -4.130846) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798476,   -4.130836) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798533,   -4.130869) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798557,   -4.130838) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798605,   -4.130838) in file POSvegeta.bgl
+Non-zero altitude (-3.76m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798646,   -4.130795) in file POSvegeta.bgl
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802634,   -4.136427) in file POSvegeta.bgl
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802530,   -4.136511) in file POSvegeta.bgl
+Non-zero altitude (-0.3m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802424,   -4.136591) in file POSvegeta.bgl
+Non-zero altitude (-0.63m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.802318,   -4.136675) in file POSvegeta.bgl
+Non-zero altitude (-3.21m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798205,   -4.130855) in file POSvegeta.bgl
+Non-zero altitude (-3.21m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798182,   -4.130867) in file POSvegeta.bgl
+Non-zero altitude (-3.21m) for object 70bc8386c6a14b20b8806f1e1112a1d7 at ( 36.798163,   -4.130869) in file POSvegeta.bgl
+Non-zero altitude (0.19m) for object 70bc8386c6a14b20b8806f1e1112a1d6 at ( 36.800420,   -4.144507) in file POSvegeta.bgl
+Skipping animation in object eda8e33e44da4603a906a73c7a182400 in file CE_Edificios.bgl
+Can't parse object 26c09906d7be4771a5f1548b6615eb48 in file CEelement.bgl
+Can't parse object 26c09906d7be4771a5f1548b6615eb47 in file CEelement.bgl
+Can't parse object 26c09906d7be4771a5f1548b6615eb49 in file CEelement.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da394 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da393 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da395 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da396 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da397 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da398 in file CE_leax2006.bgl
+Skipping animation in object 57b79f35dde74a349a488d0d857da392 in file CE_leax2006.bgl
+Object 04d740424cbfc17845117c9a6ad9eceb not found
+Object 1a2bfaff4fc9ee8bc020d9abe5eb34c3 not found
+Object 26c09906d7be4771a5f1548b6615eb43 not found
+Object a97baed5ddd647c6a7a7045fac4db2d6 not found
+Object a97baed5ddd647c6a7a7045fac4db2d7 not found
+Object a97baed5ddd647c6a7a7045fac4db2d9 not found
+Object a97baed5ddd647c6a7a7045fac4db2da not found
+Object ag_barn_2 is a built-in object
+Object ag_barn_4 is a built-in object
+Object ag_cob_house is a built-in object
+Object ag_fastfood_3 is a built-in object
+Object hstcb is a built-in object
+Object hstcc is a built-in object

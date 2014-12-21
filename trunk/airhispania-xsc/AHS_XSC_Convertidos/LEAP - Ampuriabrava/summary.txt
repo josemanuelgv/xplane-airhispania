@@ -1,0 +1,7 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Skipping animation in object 218ba21de1534c7daa1bd45d2113991e in file Ampuriabrava_LEAP_.BGL
+Texture bmp.bmp not found
+Texture tyres.bmp not found
+Object large_fuel_tank is a built-in object

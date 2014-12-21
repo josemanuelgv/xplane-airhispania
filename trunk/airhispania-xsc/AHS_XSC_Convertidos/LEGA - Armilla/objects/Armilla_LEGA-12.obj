@@ -1,0 +1,16 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# file Armilla_LEGA.bgl
+
+TEXTURE	
+POINT_COUNTS	0 0 5 0
+
+VLIGHT	  -9.281    0.125   -9.156	 1.000  0.933  1.000
+VLIGHT	   9.156    0.125   -9.156	 1.000  0.933  1.000
+VLIGHT	   9.406    0.125    9.281	 1.000  0.933  1.000
+VLIGHT	  -9.031    0.125    9.281	 1.000  0.933  1.000
+VLIGHT	   0.000    0.063    0.000	 1.000  0.933  1.000
+
+LIGHTS	0 5

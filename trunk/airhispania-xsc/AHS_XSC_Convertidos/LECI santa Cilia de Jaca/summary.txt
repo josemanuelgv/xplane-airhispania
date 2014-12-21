@@ -1,0 +1,43 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.727259) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.727006) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.726752) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567200,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567101,   -0.726609) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567101,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567101,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567101,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567005,   -0.727006) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566860,   -0.727006) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566860,   -0.726807) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566918,   -0.726609) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566772,   -0.726609) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566593,   -0.726609) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566975,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566975,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566856,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566856,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.567021,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566811,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566730,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566685,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566685,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566498,   -0.726499) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566452,   -0.726279) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566452,   -0.726060) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566593,   -0.725901) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566772,   -0.725901) in file Santa Cilia de Jaca LECI.BGL
+Non-zero altitude (-3.0m) for object a8aa178c19ace7926f9db82b65518b9f at ( 42.566918,   -0.725901) in file Santa Cilia de Jaca LECI.BGL
+Non-zero pitch/bank (353.0/6.0) for object 7cb66e26a61a298ab1dec0695d685103 at ( 42.567616,   -0.726758) in file Santa Cilia de Jaca LECI.BGL
+Non-zero pitch/bank (353.0/6.0) for object 7cb66e26a61a298ab1dec0695d685103 at ( 42.567409,   -0.726758) in file Santa Cilia de Jaca LECI.BGL
+Texture tl_metal1.bmp not found
+Texture 258b2su1.bmp not found
+Texture sailplane_window1.bmp not found
+Texture taxi_asphalt.bmp not found
+Texture tyres.bmp not found
+Object large_fuel_tank is a built-in object
+Object small_tower2 is a built-in object

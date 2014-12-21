@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# file Armilla_LEGA.bgl
+
+TEXTURE		taxi_concrete.png
+POINT_COUNTS	4 0 0 6
+
+VT	  -9.000    0.000  -12.000	 0.000  1.000  0.000	-0.0352 0.0469
+VT	 -11.000    0.000    8.000	 0.000  1.000  0.000	-0.0430 -0.0313
+VT	   9.000    0.000   11.000	 0.000  1.000  0.000	0.0352 -0.0430
+VT	  11.000    0.000   -9.000	 0.000  1.000  0.000	0.0430 0.0352
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_poly_os	2
+
+TRIS	0 6

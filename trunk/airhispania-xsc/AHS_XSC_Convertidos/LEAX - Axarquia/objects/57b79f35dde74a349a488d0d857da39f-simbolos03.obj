@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 57b79f35dde74a349a488d0d857da39f in file CE_leax2006.bgl
+
+TEXTURE		simbolos03.png
+POINT_COUNTS	4 0 0 6
+
+VT	  11.311    0.075    0.007	 0.000  0.000  1.000	0.0770 0.3825
+VT	  11.311    2.051    0.007	 0.000  0.000  1.000	0.0770 0.9361
+VT	  14.485    0.075    0.007	 0.000  0.000  1.000	0.9076 0.3825
+VT	  14.485    2.051    0.007	 0.000  0.000  1.000	0.9076 0.9361
+
+IDX	0
+IDX	1
+IDX	3
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+TRIS	0 6

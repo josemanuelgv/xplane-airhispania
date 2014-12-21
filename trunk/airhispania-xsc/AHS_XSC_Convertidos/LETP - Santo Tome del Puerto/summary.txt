@@ -1,0 +1,57 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Non-zero altitude (-15.68m) for object ag_billboard at ( 41.199056,   -3.588921) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.199336,   -3.588330) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.199925,   -3.588961) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.199997,   -3.586952) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.200295,   -3.587171) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.199753,   -3.587430) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.200095,   -3.587712) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-4.0m) for object ag_doublelight at ( 41.199802,   -3.587934) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198286,   -3.582820) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198344,   -3.583502) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198398,   -3.584275) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198442,   -3.585038) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198523,   -3.585823) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198572,   -3.586399) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198632,   -3.587010) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198707,   -3.587807) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198768,   -3.588481) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.198831,   -3.589194) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.199050,   -3.589519) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.199354,   -3.589435) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-8.88m) for object ag_telephonepole at ( 41.199665,   -3.588843) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-6.2m) for object ag_silo at ( 41.199144,   -3.586482) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (0.6m) for object ag_barn_3 at ( 41.205769,   -3.591034) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (0.6m) for object ag_barn_3 at ( 41.201167,   -3.597638) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Non-zero altitude (-15.68m) for object ag_billboard at ( 41.199060,   -3.588925) in file Santo Tomé del Puerto_LETP_T6_Instant.bgl
+Skipping animation in object bbff743048724758ce980faab620b839 in file add_dwag_hangers.BGL
+Skipping animation in object 977b1ab044721fe589ec3c8e4e149781 in file add_dwag_hangers.BGL
+Object 5380ec3c492c6985c1abe5a3bfb8a331 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd0 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd1 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd4 not found
+Object 6da13239f60f4a5ab5f2f2c5698a5dd9 not found
+Texture frequency.bmp not found
+Texture redhangerconcrete.bmp not found
+Object 98266bfd42f7b9bbf276e9abc2aed4f0 not found
+Object ag_barn is a built-in object
+Object ag_barn_3 is a built-in object
+Object ag_barn_4 is a built-in object
+Object ag_billboard is a built-in object
+Object ag_cob_house is a built-in object
+Object ag_gas_1 is a built-in object
+Object ag_school is a built-in object
+Object e96e8a571a694e83a1b4680e8c378471 not found
+Object e96e8a571a694e83a1b4680e8c378476 not found
+Object e96e8a571a694e83a1b4680e8c37847d not found
+Object e96e8a571a694e83a1b4680e8c378480 not found
+Object e96e8a571a694e83a1b4680e8c378483 not found
+Texture tyres.bmp not found
+Object gen_elevator01 is a built-in object
+Object hstcb is a built-in object
+Object hstcc is a built-in object
+Object large_fuel_tank is a built-in object
+Object small_fuel_station2 is a built-in object
+Object tempcontrol_tower is a built-in object

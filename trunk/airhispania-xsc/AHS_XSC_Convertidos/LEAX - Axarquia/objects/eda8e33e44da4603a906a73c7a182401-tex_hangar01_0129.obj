@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object eda8e33e44da4603a906a73c7a182401 in file CE_Edificios.bgl scaled x1.29
+
+TEXTURE		tex_hangar01.png
+POINT_COUNTS	4 0 0 6
+
+VT	   2.035    0.014   -3.993	 0.000  0.000 -1.000	0.6841 0.0003
+VT	   2.035    1.985   -3.993	 0.000  0.000 -1.000	0.6841 0.5150
+VT	   2.861    0.014   -3.993	 0.000  0.000 -1.000	0.3324 0.0003
+VT	   2.861    1.985   -3.993	 0.000  0.000 -1.000	0.3324 0.5150
+
+IDX	2
+IDX	3
+IDX	1
+IDX	1
+IDX	0
+IDX	2
+
+ATTR_no_blend
+
+ATTR_shiny_rat	0.898
+TRIS	0 6

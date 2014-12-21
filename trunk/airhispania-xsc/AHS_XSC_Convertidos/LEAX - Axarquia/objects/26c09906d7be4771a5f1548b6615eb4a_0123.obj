@@ -1,0 +1,13 @@
+I
+800	# Converted by FS2XPlane 3.11
+OBJ
+
+# object 26c09906d7be4771a5f1548b6615eb4a in file CEelement.bgl scaled x1.23
+
+TEXTURE	
+POINT_COUNTS	0 0 1 0
+
+VLIGHT	   0.000    0.000    0.000	 0.000  0.000  0.000
+
+ATTR_LOD	0 1000
+LIGHTS	0 1

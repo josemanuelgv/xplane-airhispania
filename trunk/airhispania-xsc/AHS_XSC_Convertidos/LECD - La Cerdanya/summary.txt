@@ -1,0 +1,11 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Can't parse area #11 in file La_Cerdaña_LECD.BGL
+Can't parse area #14 in file La_Cerdaña_LECD.BGL
+No airport definition found!
+Object ag_warehouse is a built-in object
+Texture tow_trac_tex.bmp not found
+Texture tyres.bmp not found
+Object large_fuel_tank is a built-in object
+Object small_tower2 is a built-in object

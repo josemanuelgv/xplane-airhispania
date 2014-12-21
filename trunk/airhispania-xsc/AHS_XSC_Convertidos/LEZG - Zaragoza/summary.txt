@@ -1,0 +1,27 @@
+FS2XPlane 3.11
+System:	Windows 5.1 Service Pack 3
+
+Can't parse area #1 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #2 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #3 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #4 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #5 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #6 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #7 in file Zaragoza_LEZG_militar.BGL
+Can't parse area #8 in file Zaragoza_LEZG_militar.BGL
+Non-zero altitude (10.54m) for object 3d69f62145ee19e06ad70986751552f2 at ( 41.662569,   -1.006819) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (10.54m) for object 3d69f62145ee19e06ad70986751552f2 at ( 41.662416,   -1.006542) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (6.2m) for object 5cc5f5ce4009e5900ebcdbad9309bcd8 at ( 41.662619,   -1.007134) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (6.2m) for object 48f8b2d14c84b36a23052abd16caf3d0 at ( 41.662598,   -1.007097) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (6.2m) for object 4a31ab514a15991559a0799fad279426 at ( 41.662578,   -1.007060) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (6.2m) for object c9caa5934495fd911ab0598e61b72c54 at ( 41.662558,   -1.007023) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (0.65m) for object 1111197920180505ad52556c34328a1d at ( 41.662433,   -1.006751) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (0.65m) for object 1111197920180505ad52556c34328a1c at ( 41.662472,   -1.006825) in file Zaragoza_LEZG_.BGL
+Non-zero altitude (0.65m) for object 1111197920180505ad52556c34328a1e at ( 41.662517,   -1.006896) in file Zaragoza_LEZG_.BGL
+Can't parse file Zaragoza_LEZG_AF2.BGL
+No airport definition found!
+Texture tl_metal1.bmp not found
+Texture bmp.bmp not found
+Texture tyres.bmp not found
+Object large_fuel_tank is a built-in object
+Texture semitransblu.bmp not found
