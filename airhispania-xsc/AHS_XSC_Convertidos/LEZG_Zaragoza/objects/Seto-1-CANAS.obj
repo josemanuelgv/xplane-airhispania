@@ -1,0 +1,21 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object Seto-1 in file AHS_Vegatacion_FSX.bgl
+
+TEXTURE		CANAS.dds
+POINT_COUNTS	4 0 0 12
+
+VT	  13.889    0.000   -0.000	 0.000  0.000  1.000	-3.2092 0.1204
+VT	  13.889    3.241   -0.000	 0.000  0.000  1.000	-3.2092 0.9946
+VT	 -13.889    0.000   -0.000	 0.000  0.000  1.000	4.2092 0.1204
+VT	 -13.889    3.241   -0.000	 0.000  0.000  1.000	4.2092 0.9946
+
+IDX10	0 1 2 1 0 2 3 2 1 2
+IDX	3
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 12
