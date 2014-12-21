@@ -1,0 +1,83 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (10.54m) for object 3d69f62145ee19e06ad70986751552f2 at ( 41.66256900,   -1.00681900) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (10.54m) for object 3d69f62145ee19e06ad70986751552f2 at ( 41.66241600,   -1.00654200) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (6.2m) for object zaragoza_LEZG_libreria13 at ( 41.66262000,   -1.00713100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.66462400,   -1.04770100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.67819200,   -1.07903500) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.67904000,   -1.07838100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.66790600,   -1.03587100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.66707500,   -1.03654400) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.66545500,   -1.04703500) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (6.2m) for object AirHispaniaSC_Banderas02 at ( 41.66256200,   -1.00702500) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (6.2m) for object AirHispaniaSC_Banderas12 at ( 41.66258100,   -1.00706100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (6.2m) for object AirHispaniaSC_Banderas03 at ( 41.66260000,   -1.00709500) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.65655300,   -1.01228100) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object 86a29be245180f33ef4e4495ec18839f at ( 41.65740000,   -1.01163500) in file zaragoza_LEZG_objetos.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.67416300,   -1.07039300) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.67934800,   -1.08269700) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66293200,   -1.02348400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66632200,   -1.03130000) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66968800,   -1.03909400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66841100,   -1.04007900) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66409100,   -1.04341600) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.67540500,   -1.06944100) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66289000,   -1.04434400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.66817800,   -1.05654400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66387500,   -1.04329500) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67515600,   -1.06934500) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67533400,   -1.06975700) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67966900,   -1.08272000) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67948600,   -1.08230500) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67427000,   -1.07004300) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66276400,   -1.02389300) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66257900,   -1.02345900) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66596400,   -1.03129000) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66615300,   -1.03172400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66933800,   -1.03907700) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66952800,   -1.03951200) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66846100,   -1.03975200) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66864600,   -1.04018900) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66314000,   -1.04443700) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66302500,   -1.04384400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66827600,   -1.05618800) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66845400,   -1.05662100) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.67444600,   -1.07047000) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.66406100,   -1.04372300) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.65961700,   -1.01663300) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.65943100,   -1.01620700) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.65600700,   -1.00830500) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object 1dfa3c094370bb672dad959a1c7a0a38 at ( 41.65582000,   -1.00788600) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.65977900,   -1.01622800) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (0.15m) for object Bilbao_LEBB_Senalizacion33 at ( 41.65617400,   -1.00790400) in file zaragoza_LEZG_senalizacion.BGL
+Non-zero altitude (1.0m) for object veg_tb_Bush_DesertSpiky2_3_5ft at ( 41.66241500,   -1.00671400) in file zaragoza_LEZG_arboles.bgl
+Non-zero altitude (2.0m) for object veg_tc_DouglasFir1_5m at ( 41.66252700,   -1.00693300) in file zaragoza_LEZG_arboles.bgl
+Non-zero altitude (2.0m) for object veg_tc_DouglasFir1_5m at ( 41.66249000,   -1.00688500) in file zaragoza_LEZG_arboles.bgl
+Non-zero altitude (2.09m) for object veg_tc_DouglasFir1_5m at ( 41.66244000,   -1.00679800) in file zaragoza_LEZG_arboles.bgl
+Non-zero altitude (2.09m) for object veg_tb_Bush_DesertSpiky2_3_5ft at ( 41.66246400,   -1.00684800) in file zaragoza_LEZG_arboles.bgl
+Non-zero altitude (-3.5m) for object Seto-1 at ( 41.66048600,   -1.00385500) in file zaragoza_LEZG_arboles.bgl
+Skipping animation in object bc22ad4341df01b5584978a0f1305d9f in file AHS_Farolas_FSX.BGL
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Skipping animation in object 1dfa3c094370bb672dad959a1c7a0a38 in file AHS_Aeropuerto_varios_FSX.BGL
+Object 1111197920180505ad52556c34328a17 not found
+Object 1111197920180505ad52556c34328a1a not found
+Object 1111197920180505ad52556c34328a1d not found
+Object air_papi_01 is a built-in object
+Texture 260-fuse.bmp not found
+Object veg_tb_Aspen_13m is a built-in object
+Object veg_tb_Aspen_16m is a built-in object
+Object veg_tb_Bush_DesertSpiky2_3_5ft is a built-in object
+Object veg_tb_Bush_DesertSpiky2_3ft is a built-in object
+Object veg_tb_Bush_DesertSpiky2_5ft is a built-in object
+Object veg_tb_Elm1_12m is a built-in object
+Object veg_tb_EucalyptusSav_12m is a built-in object
+Object veg_tb_EucalyptusSav_7m is a built-in object
+Object veg_tb_Oak1_14m is a built-in object
+Object veg_tb_Sycamore_11m is a built-in object
+Object veg_tc_DouglasFir1_5m is a built-in object
+Object veg_tc_DouglasFir2_9m is a built-in object
+Object veg_tc_NorwaySpruce1_8m is a built-in object
+Texture bmp.bmp not found
+Using objects from the OpenSceneryX library
