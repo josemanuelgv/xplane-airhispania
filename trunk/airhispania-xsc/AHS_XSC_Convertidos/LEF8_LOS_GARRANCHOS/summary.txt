@@ -1,0 +1,28 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (-2.28m) for object Seto-1 at ( 37.84529100,   -0.88165300) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (-2.28m) for object Seto-1 at ( 37.84506300,   -0.88154700) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 37.84571700,   -0.88172200) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.88m) for object b598e9bd4ba856333f64fb80a1935f15 at ( 37.84536700,   -0.88127400) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.88m) for object b598e9bd4ba856333f64fb80a1935f15 at ( 37.84534600,   -0.88135000) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object add_lenshanger_311 at ( 37.84536200,   -0.88126900) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object 14f71087423dab6a2b8c278378a97845 at ( 37.84536200,   -0.88128500) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object 9ee4f29f4b58e9cd760e829575a96df7 at ( 37.84535400,   -0.88131000) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object c5e32ff5495d09effda379a0c7d3537c at ( 37.84533000,   -0.88133700) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object PPL_IceFisherman1 at ( 37.84534700,   -0.88131400) in file los_garranchos_LEF8_objetos.BGL
+Non-zero altitude (2.8m) for object b5afc6e3474d4ee3f0a81199356de7bf at ( 37.84532500,   -0.88132400) in file los_garranchos_LEF8_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object ag_warehouse is a built-in object
+Object b598e9bd4ba856333f64fb80a1935f15 not found
+Object GEN_equip_cart is a built-in object
+Object GEN_equip_ladder_06foot_01 is a built-in object
+Object GEN_equip_mobile_wing_rack is a built-in object
+Object GEN_equip_toolbox_red_big is a built-in object
+Object GEN_equip_toolbox_red_med is a built-in object
+Object GEN_equip_toolbox_red_small is a built-in object
+Object GEN_equip_wing_wall_rack is a built-in object
+Object GEN_equip_workbench is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Using objects from the OpenSceneryX library
