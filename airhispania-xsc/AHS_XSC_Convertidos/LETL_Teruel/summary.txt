@@ -1,0 +1,19 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (3.4m) for object Douglas_DC3 at ( 40.40998900,   -1.22771700) in file teruel_LETL_aviones.bgl
+Non-zero altitude (3.4m) for object Learjet_4500 at ( 40.41012600,   -1.22831000) in file teruel_LETL_aviones.bgl
+Skipping animation in object 65e1e9d444d6d40fba1957a557a831ee in file AHS_Farolas_FSX.BGL
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Texture earmuffs.bmp not found
+Texture concrete.bmp not found
+Texture 260-fuse.bmp not found
+Object GEN_Plane_B787 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_EMT1 is a built-in object
+Object PPL_ParkRanger1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Using objects from the OpenSceneryX library

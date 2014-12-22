@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object Teruel_LETE_Hangares00 in file teruel_LETL_hangares.bgl scaled x1.6
+
+TEXTURE		HangaresPlata2_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  19.355   13.322   10.718	 0.000  0.000 -1.000	0.0008 0.3328
+VT	  19.355   13.329    3.201	 0.000  0.000 -1.000	0.9219 0.3320
+VT	  19.355   10.096    3.201	 0.000  0.000 -1.000	0.9219 0.7305
+VT	  19.355   10.096   10.725	 0.000  0.000 -1.000	0.0000 0.7305
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	0
+IDX	2
+
+ATTR_no_blend
+
+TRIS	0 6
