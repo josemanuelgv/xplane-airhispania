@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 07025a96433fc625577908916491685a in file los_garranchos_LEF8_edificios.BGL
+
+TEXTURE		Los_Garranchos_caseta_01.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -7.061    0.001    2.349	 0.000  0.000 -1.000	0.0000 0.9981
+VT	  -7.061    3.216    2.354	 0.000  0.000 -1.000	0.0037 0.4009
+VT	  -7.061    4.796   -2.370	 0.000  0.000 -1.000	0.8380 0.2188
+VT	  -7.061    0.001   -2.377	 0.000  0.000 -1.000	0.8398 1.0000
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6
