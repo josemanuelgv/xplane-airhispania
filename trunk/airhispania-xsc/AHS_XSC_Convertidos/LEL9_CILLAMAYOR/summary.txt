@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (-0.29m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 42.85121600,   -4.27870500) in file cillamayor_LEL9_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
