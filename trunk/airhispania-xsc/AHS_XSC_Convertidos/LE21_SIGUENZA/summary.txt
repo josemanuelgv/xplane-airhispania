@@ -1,0 +1,51 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04395100,   -2.62769900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04395100,   -2.62800300) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04408300,   -2.62787100) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04415500,   -2.62779900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04415500,   -2.62774800) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04444100,   -2.62820000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04447000,   -2.62820000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04444400,   -2.62824500) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04448600,   -2.62824300) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04466700,   -2.62819700) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04465600,   -2.62815800) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04465600,   -2.62835600) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04471000,   -2.62835700) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04477800,   -2.62851100) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04477800,   -2.62844900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04443200,   -2.62667400) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04438200,   -2.62660800) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04638900,   -2.62959300) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04644100,   -2.62962000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04649900,   -2.62971000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04648300,   -2.62965200) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04646000,   -2.62969900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04642700,   -2.62970000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04640100,   -2.62965100) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04462700,   -2.62914900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04443600,   -2.62914900) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04341200,   -2.62899400) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04345900,   -2.62893100) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04351800,   -2.62883500) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04277300,   -2.62740200) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Sycamore_10m_sp at ( 41.04351200,   -2.62675000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Snag1_8m_sp at ( 41.04534200,   -2.62727200) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Snag1_8m_sp at ( 41.04562400,   -2.62748000) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (-0.6m) for object veg_tb_Snag1_8m_sp at ( 41.04491500,   -2.62697500) in file siguenza_LE21_arboles.bgl
+Non-zero altitude (12.04m) for object gen_tv01 at ( 41.04412300,   -2.62814100) in file siguenza_LE21_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object gen_tv01 is a built-in object
+Texture $pan not found
+Object ppl_andreoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Snag1_8m_sp is a built-in object
+Object veg_tb_Sycamore_10m is a built-in object
+Object veg_tb_Sycamore_10m_sp is a built-in object

@@ -1,0 +1,18 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (9.35m) for object tinajeros_LE18_edificios00 at ( 39.09843500,   -1.72156100) in file tinajeros_LE18_objetos.BGL
+Non-zero altitude (4.5m) for object tinajeros_LE18_edificios01 at ( 39.09841300,   -1.72157300) in file tinajeros_LE18_objetos.BGL
+Non-zero altitude (0.6m) for object DornierDo27 at ( 39.09742300,   -1.71879300) in file tinajeros_LE18_aviones.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 1a5ffb40eb4c11d98cd60800200c9a6d not found
+Object ani_birds_gulls_x28 is a built-in object
+Texture wood_cherry_original.bmp not found
+Texture wood_cherry_original1noculling.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station2 is a built-in object
+Using objects from the OpenSceneryX library
