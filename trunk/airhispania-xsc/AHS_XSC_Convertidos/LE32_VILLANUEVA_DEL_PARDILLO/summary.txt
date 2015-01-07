@@ -1,0 +1,34 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (5.2m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 40.50190500,   -3.99349600) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-1.21m) for object Seto-1 at ( 40.50203200,   -3.99397100) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-1.21m) for object Seto-1 at ( 40.50179200,   -3.99396000) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-1.21m) for object Seto-1 at ( 40.50172100,   -3.99395800) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-1.81m) for object Seto-1 at ( 40.50173700,   -3.99381300) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-0.75m) for object Seto-1 at ( 40.50156400,   -3.99369300) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (-0.75m) for object Seto-1 at ( 40.50154500,   -3.99349100) in file villanueva_del_pardillo_LE32_objetos.BGL
+Non-zero altitude (0.74m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 40.50208000,   -3.99314900) in file villanueva_del_pardillo_LE32_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 2f5c7cef409b25ecc8e0aab7adf1285a not found
+Object 47454f4657494c4cffff0001ffff00d6 not found
+Object ani_birds_gulls_x28 is a built-in object
+Object fe448aa547da18b14367cc855ef6f0d1 not found
+Texture wood_cherry_original.bmp not found
+Texture wood_cherry_original1noculling.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Object veg_tb_Cottonwood_6m is a built-in object
+Object veg_tb_Cottonwood_8m is a built-in object
+Object veg_tb_Maple_10m is a built-in object
+Object veg_tb_Poplar_10m is a built-in object
+Object veg_tb_Poplar_12m is a built-in object
+Using objects from the OpenSceneryX library
