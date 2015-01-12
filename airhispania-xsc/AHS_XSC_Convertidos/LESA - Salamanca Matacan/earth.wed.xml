@@ -43,7 +43,7 @@
             <children/>
             <hierarchy name="selection"/>
             <selection>
-                <sel id="905"/>
+                <sel id="549"/>
             </selection>
         </object>
         <object class="WED_AirportNode" id="1026" parent_id="1022">
@@ -373,7 +373,7 @@
             <sources/>
             <viewers/>
             <children/>
-            <hierarchy hidden="0" locked="0" name="Objects/MatacanAsphaltDirt.obj"/>
+            <hierarchy hidden="1" locked="0" name="Objects/MatacanAsphaltDirt.obj"/>
             <point heading="0.00" latitude="40.942418173" longitude="-5.509174487"/>
             <obj_placement custom_msl="0" msl="0.000" resource="Objects/MatacanAsphaltDirt.obj" show_level="1 Default"/>
         </object>
@@ -6316,15 +6316,15 @@
         <pref name="PropertyPane0/Closed"/>
         <pref name="doc/export_target" value="2"/>
         <pref name="doc/use_feet" value="1"/>
-        <pref name="map/east" value="-5.495995"/>
-        <pref name="map/north" value="40.947210"/>
+        <pref name="map/east" value="-5.496801"/>
+        <pref name="map/north" value="40.946559"/>
         <pref name="map/obj_density" value="6"/>
         <pref name="map/pavement_alpha" value="2"/>
         <pref name="map/preview_vis" value="1"/>
         <pref name="map/real_lines_vis" value="1"/>
-        <pref name="map/south" value="40.943336"/>
+        <pref name="map/south" value="40.944418"/>
         <pref name="map/vertices_vis" value="1"/>
-        <pref name="map/west" value="-5.500571"/>
+        <pref name="map/west" value="-5.498621"/>
         <pref name="map/world_map_vis" value="1"/>
         <pref name="map_Airport Beacon_Kind" value="69"/>
         <pref name="map_Boundary_.Markings" value=""/>
@@ -6346,7 +6346,7 @@
         <pref name="map_Light Fixture_Approach Angle" value="3.000000"/>
         <pref name="map_Light Fixture_Fixture Type" value="40"/>
         <pref name="map_Lines_Resource" value="opensceneryx/placeholder.lin"/>
-        <pref name="map_Objects_Object" value="Objects/9788a871157244f59b4586487e00dce1-vgse1.obj"/>
+        <pref name="map_Objects_Object" value="Objects/TorreHelipad.obj"/>
         <pref name="map_Objects_Show with" value="532"/>
         <pref name="map_Polygons_Heading" value="0.000000"/>
         <pref name="map_Polygons_Resource" value="objects\parar.pol"/>
@@ -6390,10 +6390,10 @@
         <pref name="map_Vertex_Snap To Vertices" value="1"/>
         <pref name="map_Windsock_Lit" value="0"/>
         <pref name="window/height" value="1038"/>
-        <pref name="window/main_split" value="303"/>
+        <pref name="window/main_split" value="551"/>
         <pref name="window/main_split2" value="1293"/>
-        <pref name="window/prev_split" value="160"/>
-        <pref name="window/prop_split" value="375"/>
+        <pref name="window/prev_split" value="200"/>
+        <pref name="window/prop_split" value="415"/>
         <pref name="window/width" value="1920"/>
         <pref name="window/x_loc" value="-8"/>
         <pref name="window/y_loc" value="-8"/>
