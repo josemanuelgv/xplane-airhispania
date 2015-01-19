@@ -1,0 +1,22 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (1.0m) for object fe448aa547da18b14367cc855ef6f0d1 at ( 42.47862500,   -2.87439900) in file san_torcuato_LE55_objetos.BGL
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 4d119def4590e68a0ffc95a73530bf16 not found
+Object Bush_pilot is a built-in object
+Object fe448aa547da18b14367cc855ef6f0d1 not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_EucalyptusSav_13m is a built-in object
+Object veg_tb_EucalyptusSav_13m_sp is a built-in object
+Object veg_tb_EucalyptusSav_18m is a built-in object
+Object veg_tb_EucalyptusSav_21m is a built-in object
+Object veg_tb_EucalyptusSav_21m_wi is a built-in object
+Object veg_tb_EucalyptusSav_9m_sp is a built-in object
+Object veg_tb_OliveTree_10m is a built-in object
+Object veg_tb_OliveTree_10m_fa is a built-in object
+Object veg_tb_OliveTree_7m is a built-in object
+Object veg_tb_OliveTree_9m_wi is a built-in object
+Using objects from the OpenSceneryX library
