@@ -1,0 +1,15 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Object 52aa98614f0a6452058db893e540e449 not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_JapaneseExec_Walk01 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_p_datepalm_yng3 is a built-in object
+Object veg_tb_Aspen_21m is a built-in object
+Object veg_tb_Cottonwood_5m is a built-in object
+Object veg_tb_Cottonwood_5m_fa is a built-in object
+Object veg_tb_EucalyptusSav_16mthin_fa is a built-in object
+Object veg_tb_Sycamore_11m_sp is a built-in object
