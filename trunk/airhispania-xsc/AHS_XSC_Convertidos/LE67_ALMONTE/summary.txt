@@ -1,0 +1,26 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (15.04m) for object gen_radio01 at ( 37.25720200,   -6.56260800) in file almonte_LE67_objetos.BGL
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a66 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a68 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6d not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6f not found
+Object 47454f4657494c4cffff0001ffff00b7 not found
+Object 47454f4657494c4cffff0001ffff00c0 not found
+Object 47454f4657494c4cffff0001ffff00c1 not found
+Object 47454f4657494c4cffff0001ffff00c2 not found
+Object 47454f4657494c4cffff0001ffff00c4 not found
+Object 47454f4657494c4cffff0001ffff00c9 not found
+Object 47454f4657494c4cffff0001ffff00cd not found
+Object 47454f4657494c4cffff0001ffff00ce not found
+Object 47454f4657494c4cffff0001ffff00d7 not found
+Object 47454f4657494c4cffff0001ffff00e9 not found
+Object d4f94d70429c0215361b17946616380b not found
+Object f40ad1374eb82d07be3de7981f130575 not found
+Object f91796f84a7ad603864d8f8200f240bd not found
+Object gen_radio01 is a built-in object

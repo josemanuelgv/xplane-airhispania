@@ -1,0 +1,9 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object AGN_DocObj_Boards18Foot is a built-in object
+Object PPL_EMT1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object veg_tb_Cottonwood_20m is a built-in object
