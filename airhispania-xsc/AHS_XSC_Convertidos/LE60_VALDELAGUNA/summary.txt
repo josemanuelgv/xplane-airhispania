@@ -1,0 +1,10 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 65e1e9d444d6d40fba1957a557a831ee in file AHS_Farolas_FSX.BGL
+No airport definition found!
+Texture concrete.bmp not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_svenoilrig is a built-in object

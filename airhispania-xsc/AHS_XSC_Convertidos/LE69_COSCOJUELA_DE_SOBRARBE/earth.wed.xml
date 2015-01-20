@@ -1,0 +1,938 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <objects>
+        <object class="WED_Root" id="1" parent_id="0">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="2"/>
+                <child id="3"/>
+                <child id="4"/>
+            </children>
+            <hierarchy name="root"/>
+        </object>
+        <object class="WED_ObjPlacement" id="65" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="lib/cars/car.obj"/>
+            <point heading="266.99" latitude="42.351150149" longitude="0.184044785"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="lib/cars/car.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_Taxiway" id="9" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="10"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Apron"/>
+            <taxiway heading="154.24" roughness="0.25" surface="Grass"/>
+        </object>
+        <object class="WED_Select" id="2" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy name="selection"/>
+            <selection>
+                <sel id="54"/>
+            </selection>
+        </object>
+        <object class="WED_KeyObjects" id="3" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy name="choices"/>
+            <keys>
+                <key id="5" name="airport"/>
+            </keys>
+        </object>
+        <object class="WED_Group" id="4" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="5"/>
+                <child id="54"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="world"/>
+        </object>
+        <object class="WED_Airport" id="5" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="94"/>
+                <child id="93"/>
+                <child id="6"/>
+                <child id="9"/>
+                <child id="22"/>
+                <child id="28"/>
+                <child id="37"/>
+                <child id="50"/>
+                <child id="51"/>
+                <child id="52"/>
+                <child id="53"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Coscojuela de Sobrarbe"/>
+            <airport elevation="532.8" has_atc="0" icao="LE69" kind="Airport"/>
+            <WED_airport scenery_id="-1"/>
+        </object>
+        <object class="WED_Runway" id="6" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="7"/>
+                <child id="8"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="15/33"/>
+            <line width="30.00"/>
+            <runway REIL1="None" REIL2="None" TDZL1="0" TDZL2="0" app_lites1="None" app_lites2="None" blastpad1="0.0" blastpad2="0.0" center_lites="0" displaced1="0.0" displaced2="0.0" distance_signs="0" edge_lites="None" markings1="None" markings2="None" roughness="0.25" shoulder="None" surface="Grass"/>
+        </object>
+        <object class="WED_RunwayNode" id="7" parent_id="6">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point latitude="42.345877100" longitude="0.187860650"/>
+        </object>
+        <object class="WED_RunwayNode" id="8" parent_id="6">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point latitude="42.351306900" longitude="0.184321350"/>
+        </object>
+        <object class="WED_AirportChain" id="10" parent_id="9">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="11"/>
+                <child id="12"/>
+                <child id="13"/>
+                <child id="14"/>
+                <child id="15"/>
+                <child id="16"/>
+                <child id="17"/>
+                <child id="18"/>
+                <child id="19"/>
+                <child id="20"/>
+                <child id="21"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <airport_chain closed="1"/>
+        </object>
+        <object class="WED_AirportNode" id="11" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351204000" longitude="0.184186000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="12" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351314000" longitude="0.184509000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="13" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351442000" longitude="0.184479000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="14" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351676000" longitude="0.184514000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="15" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351797000" longitude="0.184509000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="16" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351817000" longitude="0.184473000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="17" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351839000" longitude="0.184282000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="18" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351841000" longitude="0.184213000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="19" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351828000" longitude="0.184175000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="20" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351783000" longitude="0.184154000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="21" parent_id="10">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351303000" longitude="0.184042000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_Taxiway" id="22" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="23"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Apron"/>
+            <taxiway heading="154.24" roughness="0.25" surface="Concrete"/>
+        </object>
+        <object class="WED_AirportChain" id="23" parent_id="22">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="24"/>
+                <child id="25"/>
+                <child id="26"/>
+                <child id="27"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <airport_chain closed="1"/>
+        </object>
+        <object class="WED_AirportNode" id="24" parent_id="23">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350843000" longitude="0.184124000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="25" parent_id="23">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350822000" longitude="0.184257000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="26" parent_id="23">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350991000" longitude="0.184296000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="27" parent_id="23">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351007000" longitude="0.184161000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_Taxiway" id="28" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="29"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Apron"/>
+            <taxiway heading="154.24" roughness="0.25" surface="Grass"/>
+        </object>
+        <object class="WED_AirportChain" id="29" parent_id="28">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="30"/>
+                <child id="31"/>
+                <child id="32"/>
+                <child id="33"/>
+                <child id="34"/>
+                <child id="35"/>
+                <child id="36"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <airport_chain closed="1"/>
+        </object>
+        <object class="WED_AirportNode" id="30" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351352000" longitude="0.184055000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="31" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351190000" longitude="0.184014000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="32" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351099000" longitude="0.184029000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="33" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350995000" longitude="0.184164000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="34" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350977000" longitude="0.184298000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="35" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350962000" longitude="0.184337000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="36" parent_id="29">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351229000" longitude="0.184204000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_Taxiway" id="37" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="38"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Apron"/>
+            <taxiway heading="154.24" roughness="0.25" surface="Grass"/>
+        </object>
+        <object class="WED_AirportChain" id="38" parent_id="37">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="39"/>
+                <child id="40"/>
+                <child id="41"/>
+                <child id="42"/>
+                <child id="43"/>
+                <child id="44"/>
+                <child id="45"/>
+                <child id="46"/>
+                <child id="47"/>
+                <child id="48"/>
+                <child id="49"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <airport_chain closed="1"/>
+        </object>
+        <object class="WED_AirportNode" id="39" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351332000" longitude="0.184438000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="40" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351247000" longitude="0.184160000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="41" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.350971000" longitude="0.184320000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="42" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345878000" longitude="0.187643000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="43" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345833000" longitude="0.187691000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="44" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345824000" longitude="0.187748000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="45" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345888000" longitude="0.187924000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="46" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345919000" longitude="0.188010000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="47" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.345956000" longitude="0.188016000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="48" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.349433000" longitude="0.185747000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="49" parent_id="38">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="42.351325000" longitude="0.184486000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_RampPosition" id="50" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="GA Ramp  1"/>
+            <point heading="52.38" latitude="42.351065000" longitude="0.184258000"/>
+            <ramp_start traffic="24" type="Misc"/>
+        </object>
+        <object class="WED_RampPosition" id="51" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="GA Ramp  2"/>
+            <point heading="84.74" latitude="42.351364000" longitude="0.184159000"/>
+            <ramp_start traffic="24" type="Misc"/>
+        </object>
+        <object class="WED_RampPosition" id="52" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="GA Ramp  3"/>
+            <point heading="99.89" latitude="42.351531000" longitude="0.184175000"/>
+            <ramp_start traffic="24" type="Misc"/>
+        </object>
+        <object class="WED_TowerViewpoint" id="53" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="Coscojuela de Sobrarbe Tower"/>
+            <point latitude="42.351913097" longitude="0.183865647"/>
+            <tower_viewpoint height="2"/>
+        </object>
+        <object class="WED_Group" id="54" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="57"/>
+                <child id="58"/>
+                <child id="59"/>
+                <child id="60"/>
+                <child id="61"/>
+                <child id="62"/>
+                <child id="63"/>
+                <child id="64"/>
+                <child id="65"/>
+                <child id="66"/>
+                <child id="67"/>
+                <child id="68"/>
+                <child id="69"/>
+                <child id="70"/>
+                <child id="71"/>
+                <child id="72"/>
+                <child id="73"/>
+                <child id="74"/>
+                <child id="75"/>
+                <child id="76"/>
+                <child id="77"/>
+                <child id="78"/>
+                <child id="79"/>
+                <child id="80"/>
+                <child id="81"/>
+                <child id="82"/>
+                <child id="83"/>
+                <child id="84"/>
+                <child id="85"/>
+                <child id="86"/>
+                <child id="87"/>
+                <child id="88"/>
+                <child id="89"/>
+                <child id="90"/>
+                <child id="91"/>
+                <child id="92"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="C:\X-Plane 10 Tests\Custom Scenery\LE69_COSCOJUELA_DE_SOBRARBE\Earth nav data\+40+000\+42+000.dsf"/>
+        </object>
+        <object class="WED_ObjPlacement" id="57" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/Cessna_152.obj"/>
+            <point heading="200.00" latitude="42.351743343" longitude="0.184458686"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/Cessna_152.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="58" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/Cessna_152-HTAI_C152.obj"/>
+            <point heading="200.00" latitude="42.351743343" longitude="0.184458686"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/Cessna_152-HTAI_C152.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="59" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/Pa28_180.obj"/>
+            <point heading="200.00" latitude="42.351617456" longitude="0.184458686"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/Pa28_180.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="60" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/Pa28_180-PA28_180_T.obj"/>
+            <point heading="200.00" latitude="42.351617456" longitude="0.184458686"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/Pa28_180-PA28_180_T.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="61" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/A1_FOR_AI-KAT_1.obj"/>
+            <point heading="10.00" latitude="42.350886931" longitude="0.184395743"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/A1_FOR_AI-KAT_1.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="62" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/A1_FOR_AI.obj"/>
+            <point heading="10.00" latitude="42.350886931" longitude="0.184395743"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/A1_FOR_AI.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="63" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/c0453f3742cfe4e0eb75f28090ce885f-Terrano_GCivil.obj"/>
+            <point heading="257.98" latitude="42.351070039" longitude="0.184044785"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/c0453f3742cfe4e0eb75f28090ce885f-Terrano_GCivil.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="64" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="lib/cars/car.obj"/>
+            <point heading="259.00" latitude="42.351112001" longitude="0.184044785"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="lib/cars/car.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="66" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="lib/cars/car.obj"/>
+            <point heading="266.99" latitude="42.351195926" longitude="0.184044785"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="lib/cars/car.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="67" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="68" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11-FREQUENCY.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11-FREQUENCY.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="69" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11-OASAIR1.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11-OASAIR1.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="70" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11-OASAIR3.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11-OASAIR3.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="71" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11-OASAIR2.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11-OASAIR2.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="72" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/ezhangers11-REDHANGERCONCRETE.obj"/>
+            <point heading="187.00" latitude="42.350984207" longitude="0.184218357"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/ezhangers11-REDHANGERCONCRETE.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="73" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="63.00" latitude="42.351218814" longitude="0.184380484"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="74" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="63.00" latitude="42.351232166" longitude="0.184420539"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="75" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="63.00" latitude="42.351247425" longitude="0.184462501"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="76" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="63.00" latitude="42.351205463" longitude="0.184340429"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="77" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="63.00" latitude="42.351190204" longitude="0.184296559"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="78" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="64.00" latitude="42.345967803" longitude="0.187804227"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="79" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="64.00" latitude="42.345981155" longitude="0.187844282"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="80" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="64.00" latitude="42.345996414" longitude="0.187884337"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="81" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="64.00" latitude="42.345954452" longitude="0.187767987"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="82" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj"/>
+            <point heading="64.00" latitude="42.345939193" longitude="0.187726024"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4-Texmarpis_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="83" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="63.00" latitude="42.351218814" longitude="0.184380484"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="84" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="63.00" latitude="42.351232166" longitude="0.184420539"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="85" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="63.00" latitude="42.351247425" longitude="0.184462501"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="86" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="63.00" latitude="42.351205463" longitude="0.184340429"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="87" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="63.00" latitude="42.351190204" longitude="0.184296559"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="88" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="64.00" latitude="42.345967803" longitude="0.187804227"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="89" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="64.00" latitude="42.345981155" longitude="0.187844282"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="90" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="64.00" latitude="42.345996414" longitude="0.187884337"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="91" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="64.00" latitude="42.345954452" longitude="0.187767987"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="92" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj"/>
+            <point heading="64.00" latitude="42.345939193" longitude="0.187726024"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/72794c224e82744eb917d5a097c6c2c4_0040.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_Windsock" id="93" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="New Windsock 14"/>
+            <point latitude="42.351447866" longitude="0.184936212"/>
+            <windsock lit="0"/>
+        </object>
+        <object class="WED_ExclusionZone" id="94" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="95"/>
+                <child id="96"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Exclusion Zone 13"/>
+            <excluzions>
+                <exclusion value="Objects"/>
+                <exclusion value="Facades"/>
+                <exclusion value="Forests"/>
+                <exclusion value="Road Networks"/>
+            </excluzions>
+        </object>
+        <object class="WED_SimpleBoundaryNode" id="95" parent_id="94">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="Start"/>
+            <point latitude="42.352262063" longitude="0.183127187"/>
+        </object>
+        <object class="WED_SimpleBoundaryNode" id="96" parent_id="94">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="End"/>
+            <point latitude="42.345562536" longitude="0.188472831"/>
+        </object>
+    </objects>
+    <prefs>
+        <pref name="PropertyPane0/Closed"/>
+        <pref name="doc/export_target" value="2"/>
+        <pref name="doc/use_feet" value="1"/>
+        <pref name="map/east" value="0.198835"/>
+        <pref name="map/north" value="42.358804"/>
+        <pref name="map/obj_density" value="6"/>
+        <pref name="map/pavement_alpha" value="4"/>
+        <pref name="map/preview_vis" value="1"/>
+        <pref name="map/real_lines_vis" value="1"/>
+        <pref name="map/south" value="42.344603"/>
+        <pref name="map/vertices_vis" value="1"/>
+        <pref name="map/west" value="0.180512"/>
+        <pref name="map/world_map_vis" value="1"/>
+        <pref name="map_Airport Beacon_Kind" value="69"/>
+        <pref name="map_Boundary_.Markings" value=""/>
+        <pref name="map_Boundary_Lights" value=""/>
+        <pref name="map_Boundary_Markings" value=""/>
+        <pref name="map_Exclusions_Exclusions" value="113"/>
+        <pref name="map_Facades_Height" value="10.000000"/>
+        <pref name="map_Facades_Resource" value="lib/airport/Modern_Airports/Facades/modern1.fac"/>
+        <pref name="map_Forests_Density" value="1.000000"/>
+        <pref name="map_Forests_Resource" value="Vegetacion/hierba1.for"/>
+        <pref name="map_Helipad_Edge Lights" value="15"/>
+        <pref name="map_Helipad_Markings" value="67"/>
+        <pref name="map_Helipad_Roughness" value="0.000000"/>
+        <pref name="map_Helipad_Shoulder" value="56"/>
+        <pref name="map_Helipad_Surface" value="26"/>
+        <pref name="map_Hole_.Markings" value="96"/>
+        <pref name="map_Hole_Lights" value="96"/>
+        <pref name="map_Hole_Markings" value=""/>
+        <pref name="map_Light Fixture_Approach Angle" value="3.000000"/>
+        <pref name="map_Light Fixture_Fixture Type" value="40"/>
+        <pref name="map_Lines_Resource" value="lib/airport/lines/4_double_hold.lin"/>
+        <pref name="map_Objects_Object" value="lib/g10/global_objects/rooftop_helipad_2A.obj"/>
+        <pref name="map_Objects_Show with" value="532"/>
+        <pref name="map_Polygons_Heading" value="0.000000"/>
+        <pref name="map_Polygons_Resource" value="lib/g10/terrain10/any_cld_dry_fl.pol"/>
+        <pref name="map_Polygons_Use Texture Map" value="0"/>
+        <pref name="map_Ramp Start_Equipment Type" value=""/>
+        <pref name="map_Ramp Start_Ramp Start Type" value="136"/>
+        <pref name="map_Runway_Appch" value="42"/>
+        <pref name="map_Runway_Center" value="1"/>
+        <pref name="map_Runway_Dist" value="1"/>
+        <pref name="map_Runway_Edge" value="5"/>
+        <pref name="map_Runway_Marks" value="61"/>
+        <pref name="map_Runway_REIL" value="10"/>
+        <pref name="map_Runway_Rough" value="0.000000"/>
+        <pref name="map_Runway_Shoulder" value="56"/>
+        <pref name="map_Runway_Surface" value="26"/>
+        <pref name="map_Runway_TDZL" value="0"/>
+        <pref name="map_Sealane_Buoys" value="1"/>
+        <pref name="map_Sign_Size" value="18"/>
+        <pref name="map_Sign_Style" value="23"/>
+        <pref name="map_Sign_Text" value="{@L}H_A{@Y}{^u}H|T{^r}"/>
+        <pref name="map_Sign_Use Clipboard" value="0"/>
+        <pref name="map_Strings_Resource" value="lib/airport/lights/slow/105_centerline_twy_YG.str"/>
+        <pref name="map_Strings_Spacing" value="5.000000"/>
+        <pref name="map_Taxi Routes_Arrival" value=""/>
+        <pref name="map_Taxi Routes_Departure" value=""/>
+        <pref name="map_Taxi Routes_ILS" value=""/>
+        <pref name="map_Taxi Routes_Name" value="N"/>
+        <pref name="map_Taxi Routes_Oneway" value="1"/>
+        <pref name="map_Taxi Routes_Runway" value="287"/>
+        <pref name="map_Taxi Routes_Slop" value="10"/>
+        <pref name="map_Taxilines_.Markings" value="77"/>
+        <pref name="map_Taxilines_Lights" value=""/>
+        <pref name="map_Taxilines_Markings" value="77"/>
+        <pref name="map_Taxiway_.Markings" value=""/>
+        <pref name="map_Taxiway_Heading" value="117.000000"/>
+        <pref name="map_Taxiway_Lights" value=""/>
+        <pref name="map_Taxiway_Markings" value=""/>
+        <pref name="map_Taxiway_Pavement" value="27"/>
+        <pref name="map_Taxiway_Roughness" value="0.000000"/>
+        <pref name="map_Tower Viewpoint_Tower Height" value="25.000000"/>
+        <pref name="map_Vertex_Snap To Vertices" value="1"/>
+        <pref name="map_Windsock_Lit" value="0"/>
+        <pref name="window/height" value="1038"/>
+        <pref name="window/main_split" value="223"/>
+        <pref name="window/main_split2" value="1274"/>
+        <pref name="window/prev_split" value="180"/>
+        <pref name="window/prop_split" value="659"/>
+        <pref name="window/width" value="1920"/>
+        <pref name="window/x_loc" value="-8"/>
+        <pref name="window/y_loc" value="-8"/>
+    </prefs>
+</doc>
