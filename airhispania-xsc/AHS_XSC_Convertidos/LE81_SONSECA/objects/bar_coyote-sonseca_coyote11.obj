@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object bar_coyote in file sonseca_LE81_hangar.bgl
+
+TEXTURE		sonseca_coyote11.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -1.056    0.230   15.885	 1.000  0.000 -0.000	-156.3502 2.2638
+VT	  -1.056    2.270   15.885	 1.000  0.000 -0.000	-156.3502 22.3425
+VT	  -1.056    0.230   11.835	 1.000  0.000 -0.000	-116.4880 2.2638
+VT	  -1.056    2.270   11.835	 1.000  0.000 -0.000	-116.4880 22.3425
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	2
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 6
