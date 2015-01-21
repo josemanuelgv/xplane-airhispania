@@ -1,0 +1,46 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-1.8m) for object Seto-1 at ( 41.25097400,    1.24049600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-1.8m) for object Seto-1 at ( 41.25081500,    1.24061300) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.25050100,    1.24087800) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.25026900,    1.24099800) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.25004400,    1.24112600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24982400,    1.24124900) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24958800,    1.24134300) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24935000,    1.24144000) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24911700,    1.24153600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24888200,    1.24163200) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24864600,    1.24172500) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24841600,    1.24180800) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24818100,    1.24189600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24794200,    1.24197900) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.3m) for object Seto-1 at ( 41.24779500,    1.24203200) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-1.6m) for object Seto-1 at ( 41.24764900,    1.24217700) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-1.7m) for object Seto-1 at ( 41.24764900,    1.24240900) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24779800,    1.24248100) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24803500,    1.24239700) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24826700,    1.24231700) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24850000,    1.24223200) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24873800,    1.24214900) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24897300,    1.24206400) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24920900,    1.24198200) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24944700,    1.24188500) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24967700,    1.24177300) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.24991200,    1.24167700) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25014200,    1.24157400) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25036300,    1.24145600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25058800,    1.24133600) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25082300,    1.24122500) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25106000,    1.24113100) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25129400,    1.24103800) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25152600,    1.24094500) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25171300,    1.24086900) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25183500,    1.24065800) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25183900,    1.24048400) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25194100,    1.24022300) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25213300,    1.24001200) in file vallmoll_LEC2_objetos.bgl
+Non-zero altitude (-2.0m) for object Seto-1 at ( 41.25215300,    1.23977000) in file vallmoll_LEC2_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object PPL_IceFisherman1 is a built-in object

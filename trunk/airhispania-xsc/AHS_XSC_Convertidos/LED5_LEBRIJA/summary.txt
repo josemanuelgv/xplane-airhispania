@@ -1,0 +1,13 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.2m) for object cessna182s at ( 36.89546200,   -6.03959800) in file lebrija_LED5_aviones.bgl
+Non-zero altitude (2.5m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 36.89601300,   -6.03883300) in file lebrija_LED5_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+No airport definition found!
+Object ani_birds_gulls_x28 is a built-in object
+Object c989966be1094629a9830a5c54ab0713 not found
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object

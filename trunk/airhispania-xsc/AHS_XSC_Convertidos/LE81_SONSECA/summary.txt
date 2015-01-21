@@ -1,0 +1,38 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (5.41m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 39.69308900,   -3.93184400) in file sonseca_LE81_objetos.bgl
+Non-zero altitude (-0.2m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 39.69309100,   -3.93184600) in file sonseca_LE81_objetos.bgl
+Non-zero altitude (8.0m) for object gen_radio01 at ( 39.69309100,   -3.93184600) in file sonseca_LE81_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Texture sonseca_coyote8.bmp not found
+Texture sonseca_coyote3.bmp not found
+Texture bar_coyote_0.bmp not found
+Texture sonseca_coyote2.bmp not found
+Texture sonseca_coyote0.bmp not found
+Texture sonseca_coyote4.bmp not found
+Texture sonseca_coyote9.bmp not found
+Texture sonseca_coyote12.bmp not found
+Texture sonseca_coyote11.bmp not found
+Texture sonseca_coyote1.bmp not found
+Texture sonseca_coyote7.bmp not found
+Texture sonseca_coyote5.bmp not found
+Texture sonseca_coyote6.bmp not found
+Object gen_radio01 is a built-in object
+Texture sonseca_hangar2.bmp not found
+Texture sonseca_hangar0.bmp not found
+Texture sonseca_hangar1.bmp not found
+Object veg_p_DatePalm_yng1 is a built-in object
+Object veg_p_datepalm_yng3 is a built-in object
+Object veg_tb_Aspen_19m_sp is a built-in object
+Object veg_tb_Aspen_6m is a built-in object
+Object veg_tb_Aspen_7m_sp is a built-in object
+Object veg_tb_Aspen_9m_sp is a built-in object
+Object veg_tb_bush_Bayberry_3_5ft is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Cottonwood_26m_fa is a built-in object
+Object veg_tb_Cottonwood_8m_fa is a built-in object
+Object veg_tb_Elm1_30m_sp is a built-in object
+Using objects from the OpenSceneryX library

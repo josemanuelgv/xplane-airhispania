@@ -1,0 +1,15 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-1.8m) for object ez-vintage_hangers05 at ( 39.33012100,   -6.34241000) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Non-zero altitude (-1.21m) for object ez-vintage_hangers05 at ( 39.33033400,   -6.34366200) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Non-zero altitude (190.0m) for object gen_radio01 at ( 39.34875600,   -6.34239500) in file la_cervera-valdesalor_LEE3_objetos.BGL
+Object gen_radio01 is a built-in object
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
