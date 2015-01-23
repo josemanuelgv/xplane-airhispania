@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+    <objects>
+        <object class="WED_Root" id="1" parent_id="0">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="2"/>
+                <child id="3"/>
+                <child id="4"/>
+            </children>
+            <hierarchy name="root"/>
+        </object>
+        <object class="WED_ObjPlacement" id="9" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU___Metal_Aluminum_Anodized_2.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU___Metal_Aluminum_Anodized_2.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_Select" id="2" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy name="selection"/>
+            <selection>
+                <sel id="31"/>
+            </selection>
+        </object>
+        <object class="WED_KeyObjects" id="3" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy name="choices"/>
+            <keys>
+                <key id="31" name="airport"/>
+            </keys>
+        </object>
+        <object class="WED_Group" id="4" parent_id="1">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="61"/>
+                <child id="5"/>
+                <child id="54"/>
+                <child id="31"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="world"/>
+        </object>
+        <object class="WED_Group" id="5" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="60"/>
+                <child id="6"/>
+                <child id="8"/>
+                <child id="9"/>
+                <child id="10"/>
+                <child id="11"/>
+                <child id="12"/>
+                <child id="14"/>
+                <child id="15"/>
+                <child id="16"/>
+                <child id="18"/>
+                <child id="19"/>
+                <child id="20"/>
+                <child id="21"/>
+                <child id="22"/>
+                <child id="24"/>
+                <child id="47"/>
+                <child id="26"/>
+                <child id="27"/>
+                <child id="28"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="C:\SIMULADORES\X-Plane 10\Custom Scenery\Airhispania LEGU Helipuerto\Earth nav data\+30-010\+39-006.dsf"/>
+        </object>
+        <object class="WED_ObjPlacement" id="6" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Brick_Antique_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Brick_Antique_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="8" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_AsphaltCloseups0048_3_thumbhuge.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_AsphaltCloseups0048_3_thumbhuge.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="10" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Roofing_Tile_Spanish_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Roofing_Tile_Spanish_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="11" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_MetalPlatesNew0014_1_thumbhuge.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_MetalPlatesNew0014_1_thumbhuge.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="12" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Valla.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Valla.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="14" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Piedras_Casa.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Piedras_Casa.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="15" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Wood_Cherry_Original_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Wood_Cherry_Original_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="16" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="1" name="objects/LEGU_BUILDING-LEGU_Blinds_Roman_Hobbled_Blue_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Blinds_Roman_Hobbled_Blue_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="18" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU_PuertaMetal.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_PuertaMetal.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="19" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU_Fencing_Mesh_Blue_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Fencing_Mesh_Blue_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="20" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU___Metal_Rough_1.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU___Metal_Rough_1.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="21" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU_BLOQUES2.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_BLOQUES2.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="22" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU_MetalBase0121_9_thumbhuge.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_MetalBase0121_9_thumbhuge.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="24" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LEGU_BUILDING-LEGU_Metal_Seamed_.obj"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LEGU_BUILDING-LEGU_Metal_Seamed_.obj" show_level="2 A lot"/>
+        </object>
+        <object class="WED_ObjPlacement" id="26" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/TanqueLEGU-TanqueLEGU_TanqueLEGU_0.obj"/>
+            <point heading="0.00" latitude="39.460902571" longitude="-5.327748531"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/TanqueLEGU-TanqueLEGU_TanqueLEGU_0.obj" show_level="1 Default"/>
+        </object>
+        <object class="WED_ObjPlacement" id="27" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/TanqueLEGU-TanqueLEGU_Water_Deep_.obj"/>
+            <point heading="0.00" latitude="39.460902571" longitude="-5.327748531"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/TanqueLEGU-TanqueLEGU_Water_Deep_.obj" show_level="1 Default"/>
+        </object>
+        <object class="WED_ObjPlacement" id="28" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/TanqueLEGU-TanqueLEGU_Piedras_Casa.obj"/>
+            <point heading="0.00" latitude="39.460902571" longitude="-5.327748531"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/TanqueLEGU-TanqueLEGU_Piedras_Casa.obj" show_level="1 Default"/>
+        </object>
+        <object class="WED_Airport" id="31" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="57"/>
+                <child id="32"/>
+                <child id="33"/>
+                <child id="46"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Guadalupe Helipuerto"/>
+            <airport elevation="800.0" has_atc="0" icao="LEGU" kind="Heliport"/>
+            <WED_airport scenery_id="-1"/>
+        </object>
+        <object class="WED_Helipad" id="32" parent_id="31">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="H1"/>
+            <point heading="92.00" latitude="39.461301000" length="18.3" longitude="-5.328300000" width="18.3"/>
+            <helipad lights="Yellow" markings="Default" roughness="0.25" shoulder="None" surface="Concrete"/>
+        </object>
+        <object class="WED_Taxiway" id="33" parent_id="31">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="34"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Apron"/>
+            <taxiway heading="0.00" roughness="0.25" surface="Concrete"/>
+        </object>
+        <object class="WED_AirportChain" id="34" parent_id="33">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="35"/>
+                <child id="36"/>
+                <child id="37"/>
+                <child id="38"/>
+                <child id="39"/>
+                <child id="40"/>
+                <child id="41"/>
+                <child id="42"/>
+                <child id="43"/>
+                <child id="44"/>
+                <child id="45"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <airport_chain closed="1"/>
+        </object>
+        <object class="WED_AirportNode" id="35" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.462205000" longitude="-5.328544000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="36" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.462136000" longitude="-5.328839000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="37" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461510000" longitude="-5.328704000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="38" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461505000" longitude="-5.328500000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="39" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461146000" longitude="-5.328510000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="40" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461142000" longitude="-5.328092000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="41" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461333000" longitude="-5.328060000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="42" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461372000" longitude="-5.328012000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="43" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461770000" longitude="-5.328230000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="44" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461811000" longitude="-5.328290000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_AirportNode" id="45" parent_id="34">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="unnamed entity"/>
+            <point ctrl_latitude_hi="0.000000000" ctrl_latitude_lo="0.000000000" ctrl_longitude_hi="0.000000000" ctrl_longitude_lo="0.000000000" latitude="39.461884000" longitude="-5.328320000" split="0"/>
+            <markings/>
+        </object>
+        <object class="WED_TowerViewpoint" id="46" parent_id="31">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="Guadalupe Tower"/>
+            <point latitude="39.462019000" longitude="-5.328640000"/>
+            <tower_viewpoint height="2"/>
+        </object>
+        <object class="WED_ObjPlacement" id="47" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="MuroExterior.OBJ"/>
+            <point heading="0.00" latitude="39.462218662" longitude="-5.328536278"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/MuroExterior.OBJ" show_level="1 Default"/>
+        </object>
+        <object class="WED_ExclusionZone" id="54" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children>
+                <child id="55"/>
+                <child id="56"/>
+            </children>
+            <hierarchy hidden="0" locked="0" name="Exclusion Zone 3"/>
+            <excluzions>
+                <exclusion value="Facades"/>
+                <exclusion value="Forests"/>
+            </excluzions>
+        </object>
+        <object class="WED_SimpleBoundaryNode" id="55" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="Start"/>
+            <point latitude="39.462256853" longitude="-5.328926700"/>
+        </object>
+        <object class="WED_SimpleBoundaryNode" id="56" parent_id="54">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="End"/>
+            <point latitude="39.460862256" longitude="-5.327678974"/>
+        </object>
+        <object class="WED_Windsock" id="57" parent_id="31">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="New Windsock 2"/>
+            <point latitude="39.461747468" longitude="-5.328269019"/>
+            <windsock lit="0"/>
+        </object>
+        <object class="WED_ObjPlacement" id="60" parent_id="5">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="objects/LuzAzul.OBJ"/>
+            <point heading="0.00" latitude="39.462220008" longitude="-5.328535028"/>
+            <obj_placement custom_msl="0" msl="0.000" resource="objects/LuzAzul.OBJ" show_level="1 Default"/>
+        </object>
+        <object class="WED_ObjPlacement" id="61" parent_id="4">
+            <sources/>
+            <viewers/>
+            <children/>
+            <hierarchy hidden="0" locked="0" name="2_horiz_tanks.agp"/>
+            <point heading="152.58" latitude="39.461632474" longitude="-5.328189126"/>
+            <obj_placement custom_msl="1" msl="4488.000" resource="lib/airport/Common_Elements/Fueling_Stations/2_horiz_tanks.agp" show_level="1 Default"/>
+        </object>
+    </objects>
+    <prefs>
+        <pref name="PropertyPane0/Closed">
+            <item value="5"/>
+        </pref>
+        <pref name="doc/export_target" value="1"/>
+        <pref name="doc/use_feet" value="0"/>
+        <pref name="map/east" value="-5.327332"/>
+        <pref name="map/north" value="39.462110"/>
+        <pref name="map/obj_density" value="6"/>
+        <pref name="map/pavement_alpha" value="2"/>
+        <pref name="map/preview_vis" value="1"/>
+        <pref name="map/real_lines_vis" value="1"/>
+        <pref name="map/south" value="39.460858"/>
+        <pref name="map/vertices_vis" value="1"/>
+        <pref name="map/west" value="-5.329276"/>
+        <pref name="map/world_map_vis" value="1"/>
+        <pref name="map_Airport Beacon_Kind" value="69"/>
+        <pref name="map_Boundary_.Markings" value=""/>
+        <pref name="map_Boundary_Lights" value=""/>
+        <pref name="map_Boundary_Markings" value=""/>
+        <pref name="map_Exclusions_Exclusions" value=""/>
+        <pref name="map_Facades_Height" value="10.000000"/>
+        <pref name="map_Facades_Resource" value=""/>
+        <pref name="map_Forests_Density" value="1.000000"/>
+        <pref name="map_Forests_Resource" value=""/>
+        <pref name="map_Helipad_Edge Lights" value="15"/>
+        <pref name="map_Helipad_Markings" value="67"/>
+        <pref name="map_Helipad_Roughness" value="0.000000"/>
+        <pref name="map_Helipad_Shoulder" value="56"/>
+        <pref name="map_Helipad_Surface" value="26"/>
+        <pref name="map_Hole_.Markings" value="96"/>
+        <pref name="map_Hole_Lights" value="96"/>
+        <pref name="map_Hole_Markings" value=""/>
+        <pref name="map_Light Fixture_Approach Angle" value="3.000000"/>
+        <pref name="map_Light Fixture_Fixture Type" value="40"/>
+        <pref name="map_Lines_Resource" value=""/>
+        <pref name="map_Objects_Object" value="lib/airport/Common_Elements/Fueling_Stations/2_horiz_tanks.agp"/>
+        <pref name="map_Objects_Show with" value="527"/>
+        <pref name="map_Polygons_Heading" value="0.000000"/>
+        <pref name="map_Polygons_Resource" value=""/>
+        <pref name="map_Polygons_Use Texture Map" value="0"/>
+        <pref name="map_Ramp Start_Equipment Type" value=""/>
+        <pref name="map_Ramp Start_Ramp Start Type" value="136"/>
+        <pref name="map_Runway_Appch" value="51"/>
+        <pref name="map_Runway_Center" value="1"/>
+        <pref name="map_Runway_Dist" value="1"/>
+        <pref name="map_Runway_Edge" value="7"/>
+        <pref name="map_Runway_Marks" value="62"/>
+        <pref name="map_Runway_REIL" value="10"/>
+        <pref name="map_Runway_Rough" value="0.000000"/>
+        <pref name="map_Runway_Shoulder" value="56"/>
+        <pref name="map_Runway_Surface" value="26"/>
+        <pref name="map_Runway_TDZL" value="0"/>
+        <pref name="map_Sealane_Buoys" value="1"/>
+        <pref name="map_Sign_Size" value="18"/>
+        <pref name="map_Sign_Style" value="23"/>
+        <pref name="map_Sign_Text" value="{@L}H_A{@Y}{^u}H|T{^r}"/>
+        <pref name="map_Sign_Use Clipboard" value="0"/>
+        <pref name="map_Strings_Resource" value=""/>
+        <pref name="map_Strings_Spacing" value="5.000000"/>
+        <pref name="map_Taxi Routes_Arrival" value=""/>
+        <pref name="map_Taxi Routes_Departure" value=""/>
+        <pref name="map_Taxi Routes_ILS" value=""/>
+        <pref name="map_Taxi Routes_Name" value="N"/>
+        <pref name="map_Taxi Routes_Oneway" value="1"/>
+        <pref name="map_Taxi Routes_Runway" value="287"/>
+        <pref name="map_Taxi Routes_Slop" value="10"/>
+        <pref name="map_Taxilines_.Markings" value="74,95"/>
+        <pref name="map_Taxilines_Lights" value="95"/>
+        <pref name="map_Taxilines_Markings" value="74"/>
+        <pref name="map_Taxiway_.Markings" value=""/>
+        <pref name="map_Taxiway_Heading" value="117.000000"/>
+        <pref name="map_Taxiway_Lights" value=""/>
+        <pref name="map_Taxiway_Markings" value=""/>
+        <pref name="map_Taxiway_Pavement" value="26"/>
+        <pref name="map_Taxiway_Roughness" value="0.000000"/>
+        <pref name="map_Tower Viewpoint_Tower Height" value="25.000000"/>
+        <pref name="map_Vertex_Snap To Vertices" value="1"/>
+        <pref name="map_Windsock_Lit" value="0"/>
+        <pref name="window/height" value="992"/>
+        <pref name="window/main_split" value="0"/>
+        <pref name="window/main_split2" value="1239"/>
+        <pref name="window/prev_split" value="10"/>
+        <pref name="window/prop_split" value="465"/>
+        <pref name="window/width" value="1664"/>
+        <pref name="window/x_loc" value="0"/>
+        <pref name="window/y_loc" value="0"/>
+    </prefs>
+</doc>

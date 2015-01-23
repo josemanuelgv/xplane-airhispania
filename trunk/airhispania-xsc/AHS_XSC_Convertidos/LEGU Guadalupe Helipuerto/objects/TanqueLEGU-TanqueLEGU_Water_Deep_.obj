@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object TanqueLEGU in file TanqueLEGU.BGL
+
+TEXTURE		TanqueLEGU_Water_Deep_.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -3.544    2.570    3.216	 0.000  1.000 -0.000	13.4433 -21.2185
+VT	  -3.544    2.570   -3.254	 0.000  1.000 -0.000	13.4433 -19.0958
+VT	   3.556    2.570    3.216	 0.000  1.000 -0.000	15.7727 -21.2185
+VT	   3.556    2.570   -3.254	 0.000  1.000 -0.000	15.7727 -19.0958
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	2
+IDX	1
+
+ATTR_no_blend
+
+TRIS	0 6
