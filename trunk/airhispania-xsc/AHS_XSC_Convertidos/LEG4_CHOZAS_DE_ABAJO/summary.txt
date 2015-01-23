@@ -1,0 +1,28 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (4.0m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 42.49784800,   -5.68184800) in file chozas_de_abajo_LEG4_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 67677891dbc1cc0d5f111ee9c4cbf14b not found
+Object 67677891dbc1cc0d5f111ee9c4cbf15b not found
+Texture chozas_de_abajo_hangar1_01.bmp not found
+Texture chozas_de_abajo_hangar1_01_lm not found
+Texture chozas_de_abajo_hangar1_00.bmp not found
+Texture chozas_de_abajo_hangar1_00_lm not found
+Object gen_airshow_BigRV_01 is a built-in object
+Object gen_airshow_BigRV_02 is a built-in object
+Object Gen_patio_furniture is a built-in object
+Object gen_tent_dome_10 is a built-in object
+Object gen_tent_dome_12 is a built-in object
+Object gen_tent_dome_3 is a built-in object
+Object gen_tent_dome_4 is a built-in object
+Object gen_tent_dome_8 is a built-in object
+Object veg_tb_Elm1_12m_sp is a built-in object
+Object veg_tb_Elm1_13m is a built-in object
+Object veg_tb_Elm1_13m_fa is a built-in object
+Object veg_tb_Elm1_13m_sp is a built-in object
+Object veg_tb_Elm1_13m_wi is a built-in object
+Object veg_tb_Elm1_15m is a built-in object
+Object veg_tb_Sycamore_12m is a built-in object
+Using objects from the OpenSceneryX library

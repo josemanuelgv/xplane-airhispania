@@ -1,0 +1,17 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Object ag_observe is a built-in object
+Object ebd3d98247eea625c26032a3ef071e2b not found
+Object veg_tb_Mesquite1_4m_fa is a built-in object
+Object veg_tb_Mesquite1_5m_fa is a built-in object
+Object veg_tb_Mesquite1_5m_sp is a built-in object
+Object veg_tb_Mesquite1_7m_fa is a built-in object
+Object veg_tb_Mesquite1_9m_sp is a built-in object
+Object veg_tb_Mesquite1_set_10m is a built-in object
+Object veg_tb_Mesquite1_set_10m_sp is a built-in object
+Object veg_tb_Mesquite1_set_15m_sp is a built-in object
+Object veg_tb_Mesquite1_set_5m is a built-in object
+Object veg_tb_Mesquite1_set_5m_fa is a built-in object
+Using objects from the OpenSceneryX library

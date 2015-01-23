@@ -1,0 +1,25 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 40.78234100,   -4.46065200) in file villacastin_LEEV_aviones.bgl
+Non-zero pitch/bank (0.0/356.0) for object GEN_Plane_Schweizer2_orngstripe at ( 40.78282800,   -4.46178700) in file villacastin_LEEV_objetos.bgl
+Non-zero pitch/bank (0.0/356.0) for object GEN_Plane_Schweizer2_orange at ( 40.78288200,   -4.46206700) in file villacastin_LEEV_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Object 7472b9ba8975e767e45c449e6dbaa134 not found
+Object GEN_Plane_Schweizer2_maroonstripe is a built-in object
+Object GEN_Plane_Schweizer2_orange is a built-in object
+Object GEN_Plane_Schweizer2_orngstripe is a built-in object
+Object gen_powertower01 is a built-in object
+Object gen_sailplane_trailer01 is a built-in object
+Object gen_sailplane_trailer02 is a built-in object
+Object gen_sailplane_trailer03 is a built-in object
+Object gen_tent_dome_5 is a built-in object
+Object gen_tent_dome_6 is a built-in object
+Object ppl_Construction1 is a built-in object
+Object PPL_EMT1 is a built-in object
+Object PPL_Fisherman1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object veg_p_DatePalm2_mat3 is a built-in object
+Object veg_p_DatePalm2_yng2 is a built-in object

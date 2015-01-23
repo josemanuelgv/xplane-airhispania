@@ -1,0 +1,13 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Object 5690e1764415b2159a85488519a11089 not found
+Object ag_barn is a built-in object
+Object ag_barn_3 is a built-in object
+Object veg_tb_bush_Evergreen1_7_5ft is a built-in object
+Object veg_tb_Elm1_10m is a built-in object
+Object veg_tc_DouglasFir1_10m is a built-in object
+Object veg_tc_DouglasFir1_12m is a built-in object
+Object veg_tc_DouglasFir1_14m is a built-in object
+Object veg_tc_DouglasFir1_8m is a built-in object

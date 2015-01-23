@@ -1,0 +1,26 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 9dd4f9fc467ad09d8c44e2924fda1c1c in file chozas_de_abajo_LEG4_hangares.bgl scaled x1.6
+
+TEXTURE		chozas_de_abajo_hangar1_01.dds
+TEXTURE_LIT	chozas_de_abajo_hangar1_01_LIT.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  11.694    0.000  -13.083	 0.000  0.000 -1.000	0.6852 1.0000
+VT	  11.694    5.226  -13.076	 0.000  0.000 -1.000	0.6875 0.8360
+VT	  11.694    5.184   13.150	 0.000  0.000 -1.000	0.0000 0.7461
+VT	  11.694    0.000   13.151	 0.000  0.000 -1.000	0.0000 0.9089
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6

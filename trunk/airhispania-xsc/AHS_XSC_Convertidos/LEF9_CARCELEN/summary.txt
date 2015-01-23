@@ -1,0 +1,12 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 67677891dbc1cc0d5f111ee9c4cbf16c not found
+Object e189f250bad74f67a8e53216b34e02fb not found
+Object ebd3d98247eea625c26032a3ef071e2b not found
+Object gen_powertower01 is a built-in object
+Object GEN_rangerstaion_02 is a built-in object
+Using objects from the OpenSceneryX library
