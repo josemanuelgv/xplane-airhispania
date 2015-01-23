@@ -1,0 +1,16 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (-3.08m) for object 67677891dbc1cc0d5f111ee9c4cbf35d at ( 40.60806900,   -4.79324700) in file el_salobral-valle_ambles_LEL1_objetos.BGL
+Non-zero altitude (-3.08m) for object 67677891dbc1cc0d5f111ee9c4cbf35d at ( 40.60823700,   -4.79337300) in file el_salobral-valle_ambles_LEL1_objetos.BGL
+Non-zero altitude (-0.2m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 40.60415900,   -4.79167700) in file el_salobral-valle_ambles_LEL1_objetos.BGL
+Non-zero altitude (-1.04m) for object ez-vintage_hangers13 at ( 40.60330700,   -4.79056300) in file el_salobral-valle_ambles_LEL1_objetos.BGL
+Non-zero altitude (2.68m) for object Barandilla_negra at ( 40.60324100,   -4.79120400) in file el_salobral-valle_ambles_LEL1_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Texture elsalobraltorre_03.bmp not found
+Object 67677891dbc1cc0d5f111ee9c4cbf33c not found
+Object 67677891dbc1cc0d5f111ee9c4cbf35d not found
+Object 67677891dbc1cc0d5f111ee9c4cbf37e not found
+Object gen_tent_dome_8 is a built-in object
+Object gen_tent_dome_9 is a built-in object
