@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object 5ed6519b4804937c6fc103a75ae0f4b3 in file el_salobral-valle_ambles_LEL1_libreria.bgl scaled x1.1
+
+TEXTURE		ElSalobraltorre_04.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   3.163    5.928    0.287	 0.000  0.000 -1.000	0.9336 0.9912
+VT	   3.163    9.165    0.294	 0.000  0.000 -1.000	0.9336 0.1260
+VT	   3.163    9.147   -4.170	 0.000  0.000 -1.000	0.0117 0.0938
+VT	   3.163    5.944   -4.170	 0.000  0.000 -1.000	0.0000 1.0000
+
+IDX	2
+IDX	1
+IDX	0
+IDX	3
+IDX	2
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6

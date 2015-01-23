@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Can't parse file villamarco_LEL2_AFX.BGL
+Non-zero altitude (4.33m) for object dab9276ef44c46e5a8254c0723b0c954 at ( 42.45204100,   -5.28851200) in file villamarco_LEL2_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Texture villamarco_hangares_00.bmp not found
