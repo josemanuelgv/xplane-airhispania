@@ -1,0 +1,112 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (5.0m) for object AirHispaniaSC_Banderas13 at ( 38.86619800,   -3.99018200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (17.5m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.86685600,   -3.99261700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (17.5m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.86675900,   -3.99208200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (8.0m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.86599400,   -3.98861500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (8.5m) for object 3d69f62145ee19e06ad70986751552f2 at ( 38.86586800,   -3.98739700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (5.0m) for object AirHispaniaSC_Banderas13 at ( 38.86617000,   -3.99004000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (5.0m) for object AirHispaniaSC_Banderas13 at ( 38.86612400,   -3.98975800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (5.0m) for object AirHispaniaSC_Banderas13 at ( 38.86614500,   -3.98991000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86768500,   -3.99334100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86741400,   -3.99277900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86738100,   -3.99145200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86707200,   -3.99109600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86690300,   -3.98981600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86678800,   -3.98952400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86663500,   -3.98858200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86663700,   -3.98774100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 4f521de140bce423d18511aad3b91c9d at ( 38.86646600,   -3.99118700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 6ed709de4f0b30f6693847acb705f0bc at ( 38.86648200,   -3.99139800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86640600,   -3.99132500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86629100,   -3.99068000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86626400,   -3.99056400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86636400,   -3.99101900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86653300,   -3.99127600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86640100,   -3.99144700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86781600,   -3.99408700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 38.86681800,   -3.99357600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86763000,   -3.99393400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86746500,   -3.99320700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86748900,   -3.99249000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86745500,   -3.99192200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86711700,   -3.99138400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86710900,   -3.99082800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86711800,   -3.99026900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86711100,   -3.98971100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86678200,   -3.98925000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86679500,   -3.98867400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86669400,   -3.98810100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86646700,   -3.98757500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86646000,   -3.98699800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86624100,   -3.98646400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_12m_sp at ( 38.86560900,   -3.98661900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86584700,   -3.98640000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86634300,   -3.98630300) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86644000,   -3.98675300) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object veg_tb_Elm1_13m_sp at ( 38.86641500,   -3.98723000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86687300,   -3.99428600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86687400,   -3.99428600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86667700,   -3.99319200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86677400,   -3.99373300) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86639900,   -3.99166800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86629300,   -3.99107700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86618200,   -3.99045900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86606900,   -3.98983200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86596300,   -3.98924100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86585100,   -3.98861900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86558500,   -3.98688900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86568600,   -3.98745100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86578500,   -3.98800500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86617900,   -3.98886100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86629000,   -3.98947600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86639900,   -3.99008200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86651100,   -3.99070900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86662100,   -3.99132400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86699000,   -3.99337500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 38.86709400,   -3.99395500) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86741400,   -3.99414000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86731100,   -3.99356600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86721700,   -3.99304200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86694000,   -3.99151000) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86684200,   -3.99096400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86672200,   -3.99029600) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86661200,   -3.98968400) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-0.55m) for object 3440f8694b584567c45f61ac43872056 at ( 38.86650300,   -3.98908100) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib04 at ( 38.86252200,   -3.97259800) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib04 at ( 38.86245800,   -3.97225300) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib05 at ( 38.86211400,   -3.97247900) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib05 at ( 38.86284300,   -3.97226300) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib00 at ( 38.86287400,   -3.97243200) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (-1.4m) for object FenceLib00 at ( 38.86214400,   -3.97264700) in file ciudad_real_LERL_objetos.BGL
+Non-zero altitude (1.0m) for object 4b12fbf24a791e9cd5d141b2e9ac695a at ( 38.86212500,   -3.97165700) in file ciudad_real_LERL_objetos.BGL
+Skipping animation in object 1dfa3c094370bb672dad959a1c7a0a38 in file AHS_Aeropuerto_varios_FSX.BGL
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Skipping animation in object 1508733c4bae729aae676a965f040525 in file AHS_Farolas_FSX.BGL
+Skipping animation in object bc22ad4341df01b5584978a0f1305d9f in file AHS_Farolas_FSX.BGL
+Skipping animation in object 3440f8694b584567c45f61ac43872056 in file AHS_Farolas_FSX.BGL
+Object 17a858f1472563109a4b9e8e84396daf not found
+Object 438fd2974b0794d81733b7a51363ec04 not found
+Object 4f521de140bce423d18511aad3b91c9d not found
+Object 6a4b66e6420054f35d750188b18b3123 not found
+Object 6ed709de4f0b30f6693847acb705f0bc not found
+Object a149123e42317c73ac77399541c16296 not found
+Texture edihub1__lm.bmp not found
+Object f5dee87499bd1c549016f1ad5c7f69c8 not found
+Object small_fuel_station2 is a built-in object
+Object veg_tb_Aspen_11m is a built-in object
+Object veg_tb_Aspen_12m is a built-in object
+Object veg_tb_Aspen_16m is a built-in object
+Object veg_tb_Bush_DesertSpiky2_3ft is a built-in object
+Object veg_tb_Bush_DesertSpiky2_5ft is a built-in object
+Object veg_tb_Elm1_12m_sp is a built-in object
+Object veg_tb_Elm1_13m_sp is a built-in object
+Object veg_tb_Sycamore_11m is a built-in object
+Object veg_tc_DouglasFir1_5m is a built-in object
+Object veg_tc_DouglasFir2_9m is a built-in object
+Object veg_tc_NorwaySpruce1_8m is a built-in object
+Object VEH_land_CityBus02_Grey is a built-in object
+Object VEH_land_CityBus_Grey is a built-in object
+Using objects from the OpenSceneryX library
