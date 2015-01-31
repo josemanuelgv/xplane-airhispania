@@ -1,0 +1,32 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71251900,   -5.21466100) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71261600,   -5.21468800) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71272200,   -5.21471400) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71283000,   -5.21474000) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71293500,   -5.21476500) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71304400,   -5.21479100) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71295500,   -5.21491500) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71285000,   -5.21489000) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71274700,   -5.21486500) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71264300,   -5.21484000) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71255400,   -5.21481900) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (-4.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 37.71246200,   -5.21479700) in file palma del rio_LEPR_arboles.bgl
+Non-zero altitude (0.14m) for object AS332_PP-MUM_NO_PX at ( 37.71386800,   -5.21556000) in file palma del rio_LEPR_aviones.bgl
+Skipping animation in object 65e1e9d444d6d40fba1957a557a831ee in file AHS_Farolas_FSX.BGL
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Object 863089fe44dba6a6eb0d46968c475f61 not found
+Object c1e9625f4e4ce7d7a73eefae05b0a682 not found
+Object PPL_EMT1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station1 is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_p_DatePalm2_mat2 is a built-in object
+Object veg_p_DatePalm2_yng2 is a built-in object
+Object veg_tb_Bush_DesertSpiky2_5ft is a built-in object
+Object veg_tb_Cottonwood_5m is a built-in object
+Object veg_tb_Cottonwood_5m_fa is a built-in object
+Object veg_tb_Poplar_10m_sp is a built-in object
+Object veg_tb_Sycamore_15m_sp is a built-in object

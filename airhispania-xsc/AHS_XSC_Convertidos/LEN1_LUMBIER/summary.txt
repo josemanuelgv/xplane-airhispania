@@ -1,0 +1,12 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 42.66645000,   -1.30342700) in file Lumbier_LEN1_aviones.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_bush_Evergreen1_5_5ft is a built-in object
+Object veg_tb_bush_Evergreen1_8ft is a built-in object
+Object veg_tb_Bush_General_5_5ft is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Using objects from the OpenSceneryX library
