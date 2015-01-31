@@ -1,0 +1,24 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object AirTractor_AT802 in file ahs_aviones_estaticos_fsx.bgl
+
+TEXTURE		$VC2.dds
+POINT_COUNTS	4 0 0 6
+
+VT	  -0.236    1.646    1.218	 0.000  0.350  0.937	1.0000 0.9999
+VT	  -0.686    1.646    1.218	 0.000  0.350  0.937	0.0000 0.9999
+VT	  -0.686    2.068    1.061	 0.000  0.350  0.937	0.0000 -0.0001
+VT	  -0.236    2.068    1.061	 0.000  0.350  0.937	1.0000 -0.0001
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	0
+IDX	2
+
+ATTR_no_blend
+
+TRIS	0 6

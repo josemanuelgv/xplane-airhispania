@@ -1,0 +1,175 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (2.11m) for object veg_tb_Elm1_13m_sp at ( 43.30762200,   -2.90675800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.49m) for object veg_tb_Elm1_13m_sp at ( 43.30732900,   -2.90727400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.21m) for object veg_tb_Elm1_12m at ( 43.30727500,   -2.90717400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (6.41m) for object veg_tb_Elm1_12m at ( 43.30582800,   -2.90297900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.36m) for object veg_tb_Elm1_12m at ( 43.30617100,   -2.90287400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.11m) for object veg_tb_Elm1_10m at ( 43.30756500,   -2.90708300) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.6m) for object veg_tb_Sycamore_11m at ( 43.30734700,   -2.90710700) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.18m) for object veg_tb_Elm1_10m at ( 43.30643900,   -2.90759100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (4.48m) for object veg_tb_Sycamore_11m at ( 43.30574700,   -2.90289000) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (6.41m) for object veg_tb_Elm1_10m at ( 43.30573800,   -2.90302900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.49m) for object veg_tb_Sycamore_11m at ( 43.30547400,   -2.90342000) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (0.76m) for object veg_tb_Elm1_10m at ( 43.30507700,   -2.90225500) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (10.75m) for object veg_tb_Bush_General_6ft at ( 43.30697000,   -2.90694100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.9m) for object veg_tb_Bush_General_6ft at ( 43.30625400,   -2.90726600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.45m) for object veg_tb_Bush_General_6ft at ( 43.30593300,   -2.90805900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.21m) for object veg_tb_Bush_General_6ft at ( 43.30578000,   -2.90736200) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (10.21m) for object veg_tb_Bush_General_6ft at ( 43.30630000,   -2.90326800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (0.76m) for object veg_tb_Bush_General_6ft at ( 43.30517000,   -2.90337800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.21m) for object veg_tb_Bush_General_6ft at ( 43.30500500,   -2.90408600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.45m) for object veg_tb_Bush_General_6ft at ( 43.30495600,   -2.90240300) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (4.48m) for object veg_tb_Bush_General_6ft at ( 43.30459200,   -2.90350600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (0.21m) for object veg_tb_Bush_General_6ft at ( 43.30692000,   -2.90773800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (8.2m) for object veg_tb_Bush_General_6ft at ( 43.30711500,   -2.90702500) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.36m) for object veg_tb_Bush_General_6ft at ( 43.30758700,   -2.90648000) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.9m) for object veg_tb_Bush_General_6ft at ( 43.30675900,   -2.90713400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.88m) for object veg_tb_Bush_General_6ft at ( 43.30707800,   -2.90744100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.65m) for object veg_tb_Bush_General_6ft at ( 43.30655100,   -2.90841600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.8m) for object veg_tb_Bush_General_6ft at ( 43.30608900,   -2.90795900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.99m) for object veg_tb_Bush_General_6ft at ( 43.30595300,   -2.90759100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (2.11m) for object veg_tb_Bush_General_6ft at ( 43.30571800,   -2.90769800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (12.43m) for object veg_tb_Bush_General_6ft at ( 43.30609600,   -2.90337500) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (11.86m) for object veg_tb_Bush_General_6ft at ( 43.30583500,   -2.90347800) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.21m) for object veg_tb_Bush_General_6ft at ( 43.30558700,   -2.90312700) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.18m) for object veg_tb_Bush_General_6ft at ( 43.30501300,   -2.90297100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (4.48m) for object veg_tb_Bush_General_6ft at ( 43.30494400,   -2.90351700) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.25m) for object veg_tb_Bush_General_6ft at ( 43.30513500,   -2.90369400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.21m) for object veg_tb_Bush_General_6ft at ( 43.30513600,   -2.90447200) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.25m) for object veg_tb_Bush_General_6ft at ( 43.30516100,   -2.90284300) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.45m) for object veg_tb_Bush_General_6ft at ( 43.30475000,   -2.90260900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.18m) for object veg_tb_Bush_General_6ft at ( 43.30471300,   -2.90287600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (0.91m) for object veg_tb_Bush_General_6ft at ( 43.30457400,   -2.90293900) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (1.65m) for object veg_tb_Bush_General_6ft at ( 43.30450200,   -2.90328000) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.49m) for object veg_tb_Bush_General_6ft at ( 43.30448600,   -2.90388600) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.49m) for object veg_tb_Bush_General_6ft at ( 43.30449200,   -2.90416000) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.6m) for object veg_tb_Bush_General_6ft at ( 43.30466800,   -2.90425400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (3.49m) for object veg_tb_Bush_General_6ft at ( 43.30456100,   -2.90443400) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (5.99m) for object veg_tb_Bush_General_6ft at ( 43.30485100,   -2.90475100) in file bilbao_LEBB_arboles.bgl
+Non-zero altitude (-1.7m) for object 2a4931a040a9acb1325b849051865945 at ( 43.30483100,   -2.90626300) in file bilbao_LEBB_loiu_objetos.BGL
+Non-zero altitude (1.25m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30519600,   -2.90262300) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (2.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30506900,   -2.90276800) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (3.8m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30493700,   -2.90305100) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (5.21m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30487400,   -2.90339000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (5.99m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30487800,   -2.90377600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.41m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30495900,   -2.90411700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.83m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30506000,   -2.90441600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.83m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30516400,   -2.90467300) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.83m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30602700,   -2.90702600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.41m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30619800,   -2.90745100) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (5.21m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30640800,   -2.90779000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (3.18m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30667900,   -2.90800400) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (1.45m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30694800,   -2.90808400) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30718300,   -2.90805700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (0.29m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30739500,   -2.90791800) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30760700,   -2.90732200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30768900,   -2.90704200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30769300,   -2.90673700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30764600,   -2.90644100) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30758000,   -2.90616200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30746600,   -2.90586900) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30734700,   -2.90555700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30725200,   -2.90528600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30715300,   -2.90501200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30704500,   -2.90472500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30692300,   -2.90442000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30681600,   -2.90413900) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30671300,   -2.90386300) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30660100,   -2.90353200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30702000,   -2.90357500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30720100,   -2.90405600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30737200,   -2.90451600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30754100,   -2.90497500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30771100,   -2.90542500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30648000,   -2.90321600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30634200,   -2.90293800) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30615700,   -2.90272100) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30593700,   -2.90259200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30572400,   -2.90258600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30554400,   -2.90270200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30541200,   -2.90294800) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30537500,   -2.90320700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30537800,   -2.90345500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30540200,   -2.90373400) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30542400,   -2.90402000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30548200,   -2.90434100) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30635300,   -2.90668400) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30654900,   -2.90695800) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30669600,   -2.90713700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30683500,   -2.90731700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30697000,   -2.90746000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30713200,   -2.90756600) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.14m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30743900,   -2.90753000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (5.85m) for object 832d8ba246f4d0070d011cb7e9242208 at ( 43.30474700,   -2.90365500) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (4.15m) for object 2384716e48ea6ff1ae0f4499fa00fd3a at ( 43.30487900,   -2.90293700) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.95m) for object ebd3d98247eea625c26032a3ef071e2b at ( 43.30487200,   -2.90443400) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (5.25m) for object a149123e42317c73ac77399541c16296 at ( 43.30634200,   -2.90792200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero pitch/bank (357.99/0.0) for object a149123e42317c73ac77399541c16296 at ( 43.30634200,   -2.90792200) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (6.9m) for object d9a036bf480a3a532dd223a2b50b63c1 at ( 43.30598000,   -2.90743900) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero pitch/bank (357.99/0.0) for object d9a036bf480a3a532dd223a2b50b63c1 at ( 43.30598000,   -2.90743900) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero pitch/bank (357.99/0.0) for object ae86a9cd48ad34e85727cf8a2eb15518 at ( 43.30658100,   -2.90716000) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero pitch/bank (357.99/0.0) for object d9a036bf480a3a532dd223a2b50b63c1 at ( 43.30543500,   -2.90276900) in file bilbao_LEBB_loiu_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30010900,   -2.93056200) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30032200,   -2.93014800) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30054700,   -2.92971900) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30066200,   -2.92922900) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30077600,   -2.92873100) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30089300,   -2.92823900) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30100800,   -2.92774400) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30112000,   -2.92725300) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30123700,   -2.92675700) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30106900,   -2.92438800) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30087700,   -2.92394100) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30068000,   -2.92348300) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30140900,   -2.92547000) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30147200,   -2.92614700) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30134300,   -2.92479100) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30115800,   -2.92831300) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.62m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.30121800,   -2.92897000) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29922600,   -2.91309300) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29918700,   -2.91264800) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29881200,   -2.91054200) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29905100,   -2.91121400) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29802200,   -2.91180800) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29838100,   -2.91126800) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29832500,   -2.91265300) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (-0.7m) for object bd6f7f2d458e30f9bc00bc91cfa8cdf5 at ( 43.29880600,   -2.91257500) in file bilbao_LEBB_sondica_opcional_objetos.BGL
+Non-zero altitude (6.15m) for object 3d69f62145ee19e06ad70986751552f2 at ( 43.30025700,   -2.93212200) in file bilbao_LEBB_sondika_objetos.BGL
+Non-zero altitude (6.15m) for object 3d69f62145ee19e06ad70986751552f2 at ( 43.30020600,   -2.93152300) in file bilbao_LEBB_sondika_objetos.BGL
+Non-zero altitude (-3.8m) for object 3e602e4242234eaf07f160bb43556ded at ( 43.30085000,   -2.92241000) in file bilbao_LEBB_sondika_objetos.BGL
+Non-zero altitude (-3.8m) for object 3e602e4242234eaf07f160bb43556ded at ( 43.30097300,   -2.92310600) in file bilbao_LEBB_sondika_objetos.BGL
+Skipping animation in object 2a4931a040a9acb1325b849051865945 in file AHS_Farolas_FSX.BGL
+Skipping animation in object bd6f7f2d458e30f9bc00bc91cfa8cdf5 in file AHS_Farolas_FSX.BGL
+Skipping animation in object 3440f8694b584567c45f61ac43872056 in file AHS_Farolas_FSX.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Skipping animation in object 1dfa3c094370bb672dad959a1c7a0a38 in file AHS_Aeropuerto_varios_FSX.BGL
+Skipping animation in object bc22ad4341df01b5584978a0f1305d9f in file AHS_Farolas_FSX.BGL
+Skipping animation in object 3e602e4242234eaf07f160bb43556ded in file AHS_Farolas_FSX.BGL
+Object 2384716e48ea6ff1ae0f4499fa00fd3a not found
+Texture sk_archer_n24768.bmp not found
+Object 4f521de140bce423d18511aad3b91c9d not found
+Texture sk_archer_n99457.bmp not found
+Object 6db55ca44bfbdf0376ca0ba37bec735a not found
+Object 6ed709de4f0b30f6693847acb705f0bc not found
+Object 7b2880924e678daf1942748cea3009d5 not found
+Object 832d8ba246f4d0070d011cb7e9242208 not found
+Object 98037f1e4201564e38cef0a6e24655a5 not found
+Object a149123e42317c73ac77399541c16296 not found
+Object ae86a9cd48ad34e85727cf8a2eb15518 not found
+Texture taxi_asphalt.bmp not found
+Texture bmp.bmp not found
+Object c22123f642d5dbbceedef78f4fb987f5 not found
+Object c2ccf1ee4431b72fdfeb2a99784ad799 not found
+Object d9a036bf480a3a532dd223a2b50b63c1 not found
+Object ebd3d98247eea625c26032a3ef071e2b not found
+Object ef6fb5f641ea5fbb10fa04b84f036995 not found
+Object gen_powerstation01 is a built-in object
+Object veg_tb_Bush_General_6ft is a built-in object
+Object veg_tb_Elm1_10m is a built-in object
+Object veg_tb_Elm1_12m is a built-in object
+Object veg_tb_Elm1_13m_sp is a built-in object
+Object veg_tb_Sycamore_11m is a built-in object
+Using objects from the OpenSceneryX library
