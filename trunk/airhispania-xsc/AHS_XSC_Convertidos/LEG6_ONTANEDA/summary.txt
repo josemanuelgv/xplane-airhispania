@@ -1,0 +1,5 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+"H:\XPlane10\Custom Scenery\LEG6_ONTANEDA" already exists and is not empty
