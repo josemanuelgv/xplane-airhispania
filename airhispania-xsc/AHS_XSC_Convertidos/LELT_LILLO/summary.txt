@@ -1,0 +1,33 @@
+FS2XPlane 3.26
+System:	Windows 6.1 
+Target:	X-Plane 10
+
+Non-zero altitude (0.6m) for object Pilatus_Porter at ( 39.71700400,   -3.31869300) in file lillo_LELT_aviones.bgl
+Non-zero pitch/bank (0.0/342.0) for object GEN_Plane_Schweizer2_orange at ( 39.71636800,   -3.31735400) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer02 at ( 39.71714200,   -3.31815000) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer02 at ( 39.71716500,   -3.31819800) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer01 at ( 39.71718600,   -3.31826600) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer03 at ( 39.71720600,   -3.31832700) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer02 at ( 39.71722600,   -3.31839100) in file lillo_LELT_veleros.bgl
+Non-zero pitch/bank (0.0/342.0) for object gen_sailplane_trailer01 at ( 39.71723900,   -3.31844800) in file lillo_LELT_veleros.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 863089fe44dba6a6eb0d46968c475f61 not found
+Object ani_birds_crow_x10 is a built-in object
+Object gen_barrelkeg01 is a built-in object
+Object GEN_Plane_Schweizer2_bluestripe is a built-in object
+Object GEN_Plane_Schweizer2_maroonstripe is a built-in object
+Object GEN_Plane_Schweizer2_orange is a built-in object
+Object GEN_Plane_Schweizer2_orngstripe is a built-in object
+Object GEN_Plane_Schweizer2_redstripe is a built-in object
+Object gen_sailplane_trailer01 is a built-in object
+Object gen_sailplane_trailer02 is a built-in object
+Object gen_sailplane_trailer03 is a built-in object
+Object PPL_Bodyguard is a built-in object
+Object ppl_Construction1 is a built-in object
+Object PPL_DiveCapt2 is a built-in object
+Object PPL_EMT1 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Using objects from the OpenSceneryX library
