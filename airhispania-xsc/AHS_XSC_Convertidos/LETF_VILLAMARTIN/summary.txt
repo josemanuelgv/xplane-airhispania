@@ -1,0 +1,31 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (2.72m) for object dab9276ef44c46e5a8254c0723b0c953 at ( 36.87214800,   -5.64975200) in file villamartin_LETF_objetos.bgl
+Non-zero altitude (2.6m) for object AirHispaniaSC_Banderas12 at ( 36.87218700,   -5.64965400) in file villamartin_LETF_objetos.bgl
+Non-zero altitude (2.6m) for object AirHispaniaSC_Banderas01 at ( 36.87219600,   -5.64963100) in file villamartin_LETF_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object GEN_Plane_Schweizer2_orange is a built-in object
+Object GEN_Plane_Schweizer2_yellstripe is a built-in object
+Object veg_tb_Aspen_16m is a built-in object
+Object veg_tb_Elm1_10m is a built-in object
+Object veg_tb_Elm1_13m is a built-in object
+Object veg_tb_Elm1_15m is a built-in object
+Object veg_tb_EucalyptusGum_6m is a built-in object
+Object veg_tb_EucalyptusGum_7m is a built-in object
+Object veg_tb_EucalyptusGum_8m is a built-in object
+Object veg_tb_EucalyptusSav_12m_sp is a built-in object
+Object veg_tb_EucalyptusSav_7m is a built-in object
+Object veg_tb_Maple_8m is a built-in object
+Object veg_tb_Mesquite1_12m is a built-in object
+Object veg_tb_Oak1_10m is a built-in object
+Object veg_tb_Oak1_14m is a built-in object
+Object veg_tb_Oak1_20m is a built-in object
+Object veg_tb_OliveTree_4m is a built-in object
+Object veg_tb_OliveTree_7m is a built-in object
+Object veg_tb_OliveTree_9m is a built-in object
+Object veg_tb_Sycamore_10m is a built-in object
+Object veg_tb_Sycamore_11m is a built-in object
+Object veg_tb_Sycamore_12m is a built-in object
+Using objects from the OpenSceneryX library
