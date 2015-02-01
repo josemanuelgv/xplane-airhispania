@@ -1,0 +1,6 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Super_Koala_II at ( 43.55450800,   -7.01593700) in file castropol-arnao_LES1_aviones.bgl
+Texture $pan not found

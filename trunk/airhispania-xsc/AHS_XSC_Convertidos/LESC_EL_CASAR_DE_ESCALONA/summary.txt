@@ -1,0 +1,33 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (1.04m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 40.01865600,   -4.55789400) in file el casar de escalona_LESC_arboles.bgl
+Non-zero altitude (1.3m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 40.01830000,   -4.55768800) in file el casar de escalona_LESC_arboles.bgl
+Non-zero altitude (1.3m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 40.01793700,   -4.55747100) in file el casar de escalona_LESC_arboles.bgl
+Non-zero altitude (1.3m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 40.01758100,   -4.55727300) in file el casar de escalona_LESC_arboles.bgl
+Non-zero altitude (0.5m) for object veg_tb_Bush_DesertSpiky2_5ft at ( 40.01995000,   -4.55956200) in file el casar de escalona_LESC_arboles.bgl
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Object 7472b9ba8975e767e45c449e6dbaa134 not found
+Object ag_highpower is a built-in object
+Texture skintone1.bmp not found
+Texture skintone1_lm.bmp not found
+Object Gen_Crowd_Camera is a built-in object
+Object Gen_Crowd_Security is a built-in object
+Object gen_hangar07 is a built-in object
+Object gen_hangar12 is a built-in object
+Object gen_powertower01 is a built-in object
+Object medium_fuel_station_overhang is a built-in object
+Object PPL_AmazonScientist is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object sco_noaa_constructcrane_med is a built-in object
+Object veg_p_DatePalm2_mat2 is a built-in object
+Object veg_tb_Bush_DesertSpiky2_5ft is a built-in object
+Object veg_tb_Maple_8m_sp is a built-in object
+Object veg_tb_Poplar_10m is a built-in object
+Object veg_tb_Sagebrush_2_5ft is a built-in object
+Object veg_tb_Sagebrush_3ft is a built-in object
+Object veg_tb_Sagebrush_6_5ft is a built-in object
+Using objects from the OpenSceneryX library
