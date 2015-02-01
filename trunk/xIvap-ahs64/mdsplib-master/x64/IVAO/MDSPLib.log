@@ -1,5 +1,5 @@
-﻿Build started 16/06/2014 18:48:27.
-     1>Project "C:\Prog\FSD\x-ivap-ahs-estable\mdsplib-master\MDSPLib.vcxproj" on node 3 (Build target(s)).
+﻿Build started 27/08/2014 0:27:58.
+     1>Project "C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\mdsplib-master\MDSPLib.vcxproj" on node 3 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /O2 /D WIN32 /D NDEBUG /D _LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\IVAO\\" /Fd"x64\IVAO\vc110.pdb" /Gd /TC /errorReport:prompt src\antoi.c src\charcmp.c src\dcdmetar.c src\dcdmtrmk.c src\drvmetar.c src\fracpart.c src\prtdmetr.c src\stspack2.c src\stspack3.c
          antoi.c
@@ -14,25 +14,25 @@
      1>src\charcmp.c(21): warning C4109: unexpected identifier 'date'
      1>src\charcmp.c(22): warning C4109: unexpected identifier 'timestamp'
      1>src\charcmp.c(23): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\charcmp.c(27): warning C4068: unknown pragma
      1>src\charcmp.c(28): warning C4068: unknown pragma
@@ -42,25 +42,25 @@
      1>src\dcdmetar.c(21): warning C4109: unexpected identifier 'date'
      1>src\dcdmetar.c(22): warning C4109: unexpected identifier 'timestamp'
      1>src\dcdmetar.c(23): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\dcdmetar.c(33): warning C4068: unknown pragma
      1>src\dcdmetar.c(34): warning C4068: unknown pragma
@@ -329,25 +329,25 @@
      1>src\dcdmetar.c(2534): warning C4101: 'j' : unreferenced local variable
      1>src\dcdmetar.c(2828): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          dcdmtrmk.c
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\dcdmtrmk.c(25): warning C4068: unknown pragma
      1>src\dcdmtrmk.c(26): warning C4068: unknown pragma
@@ -719,25 +719,25 @@
      1>src\dcdmtrmk.c(4979): warning C4101: 'slash' : unreferenced local variable
      1>src\dcdmtrmk.c(4977): warning C4101: 'ndex' : unreferenced local variable
          drvmetar.c
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\drvmetar.c(33): warning C4068: unknown pragma
      1>src\drvmetar.c(34): warning C4068: unknown pragma
@@ -745,25 +745,25 @@
      1>src\drvmetar.c(62): warning C4068: unknown pragma
      1>src\drvmetar.c(612): warning C4101: 'bltn_prefix' : unreferenced local variable
          fracpart.c
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\fracpart.c(22): warning C4068: unknown pragma
      1>src\fracpart.c(23): warning C4068: unknown pragma
@@ -773,25 +773,25 @@
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(191) : see declaration of 'strncpy'
      1>src\fracpart.c(74): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
          prtdmetr.c
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\prtdmetr.c(37): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdio.h(357) : see declaration of 'sprintf'
@@ -1277,25 +1277,25 @@
      1>src\stspack2.c(21): warning C4109: unexpected identifier 'date'
      1>src\stspack2.c(22): warning C4109: unexpected identifier 'timestamp'
      1>src\stspack2.c(23): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\stspack2.c(27): warning C4068: unknown pragma
      1>src\stspack2.c(28): warning C4068: unknown pragma
@@ -1306,25 +1306,25 @@
      1>src\stspack3.c(21): warning C4109: unexpected identifier 'date'
      1>src\stspack3.c(22): warning C4109: unexpected identifier 'timestamp'
      1>src\stspack3.c(23): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(89): warning C4005: 'max' : macro redefinition
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(893) : see previous definition of 'max'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1036): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1039): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1042): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1049): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1052): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1055): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1097): warning C4273: 'itoa' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\stdlib.h(909) : see previous definition of 'itoa'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1120): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1123): warning C4068: unknown pragma
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1176): warning C4273: 'strupr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(255) : see previous definition of 'strupr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1177): warning C4273: 'strlwr' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(250) : see previous definition of 'strlwr'
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 1 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4028: formal parameter 2 different from declaration
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\local.h(1180): warning C4273: 'strcmpi' : inconsistent dll linkage
                  C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\string.h(248) : see previous definition of 'strcmpi'
      1>src\stspack3.c(27): warning C4068: unknown pragma
      1>src\stspack3.c(28): warning C4068: unknown pragma
@@ -1332,11 +1332,11 @@
      1>src\stspack3.c(97): warning C4068: unknown pragma
      1>src\stspack3.c(230): warning C4068: unknown pragma
          Generating Code...
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\dcdmtrmk.c(150): warning C4715: 'isTS_LOC' : not all control paths return a value
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\dcdmtrmk.c(2575): warning C4715: 'isRecentWX' : not all control paths return a value
-     1>c:\prog\fsd\x-ivap-ahs-estable\mdsplib-master\src\dcdmtrmk.c(1625): warning C4700: uninitialized local variable 'slash' used
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\dcdmtrmk.c(150): warning C4715: 'isTS_LOC' : not all control paths return a value
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\dcdmtrmk.c(1625): warning C4700: uninitialized local variable 'slash' used
+     1>c:\prog\fsd\ahs_xplane_repo\xplane-airhispania\xivap-ahs64\mdsplib-master\src\dcdmtrmk.c(2575): warning C4715: 'isRecentWX' : not all control paths return a value
        Lib:
-         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Prog\FSD\x-ivap-ahs-estable\src\\IVAO\MDSPLib64.lib" /NOLOGO /MACHINE:X64 x64\IVAO\antoi.obj
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\Lib.exe /OUT:"C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\\IVAO\MDSPLib64.lib" /NOLOGO /MACHINE:X64 x64\IVAO\antoi.obj
          x64\IVAO\charcmp.obj
          x64\IVAO\dcdmetar.obj
          x64\IVAO\dcdmtrmk.obj
@@ -1345,9 +1345,9 @@
          x64\IVAO\prtdmetr.obj
          x64\IVAO\stspack2.obj
          x64\IVAO\stspack3.obj
-         MDSPLib.vcxproj -> C:\Prog\FSD\x-ivap-ahs-estable\src\\IVAO\MDSPLib64.lib
-     1>Done Building Project "C:\Prog\FSD\x-ivap-ahs-estable\mdsplib-master\MDSPLib.vcxproj" (Build target(s)).
+         MDSPLib.vcxproj -> C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\\IVAO\MDSPLib64.lib
+     1>Done Building Project "C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\mdsplib-master\MDSPLib.vcxproj" (Rebuild target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:02.23
+Time Elapsed 00:00:03.65

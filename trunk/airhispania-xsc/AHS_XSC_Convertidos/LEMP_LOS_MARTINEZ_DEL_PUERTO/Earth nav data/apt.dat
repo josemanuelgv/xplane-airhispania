@@ -1,0 +1,24 @@
+I
+1000	# Converted by FS2XPlane 3.26
+
+
+1      629 1 0 LEMP Los Martinez del Puerto
+100  50.00  4 0 0.25 0 0 1 16   37.83797426   -1.09899854   0.0   0.0 3  0 0 0 34   37.82960774   -1.09481146   0.0   0.0 3  0 0 0
+21    37.83786779   -1.09856602 1 158.40 3.0 16 PAPI2
+21    37.82971421   -1.09524398 1 338.40 3.0 34 PAPI2
+14    37.83482700   -1.09632500    6 0 Los Martinez del Puerto Tower
+54   12260 TWR
+
+1000 Default Flow
+1001 LEMP 000 359 999
+1002 LEMP 0
+1003 LEMP 0
+1004 0000 2400
+1101 16 left
+1100 16 12260 arrivals|departures heavy|jets|turboprops|props 000359 000359 Runway 16
+1100 34 12260 arrivals|departures heavy|jets|turboprops|props 000359 000359 Runway 34
+
+1200 
+
+
+99

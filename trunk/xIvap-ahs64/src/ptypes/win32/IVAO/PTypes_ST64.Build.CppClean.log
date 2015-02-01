@@ -53,66 +53,122 @@ C:\PROG\FSD\X-IVAP-CODE - PRUEBAS\SRC\PTYPES\WIN32\IVAO\PSTRTOI.OBJ
 C:\PROG\FSD\X-IVAP-CODE - PRUEBAS\SRC\PTYPES\WIN32\IVAO\PSTRMANIP.OBJ
 C:\PROG\FSD\X-IVAP-CODE - PRUEBAS\SRC\PTYPES\WIN32\IVAO\PSTRLIST.OBJ
 C:\PROG\FSD\X-IVAP-CODE - PRUEBAS\SRC\PTYPES\WIN32\IVAO\VC110.PDB
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPSVBASE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPSTMSV.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPSTM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPMSGSV.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPMSG.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIPBASE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PIOBASE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PINTEE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PINSTM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PINMEM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PINFILTER.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PINFILE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PFDXSTM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PFATAL.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PEXCEPT.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PCSETDBG.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PCSET.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PCOMPONENT.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PATOMIC.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PASYNC.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRING.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRCONV.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRCASE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTDIO.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSEMAPHORE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PRWLOCK.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PPUTF.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PPODLIST.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PPIPE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\POUTSTM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\POUTMEM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\POUTFILTER.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\POUTFILE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\POBJLIST.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PNPSERVER.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PNPIPE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PMTXTABLE.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PMSGQ.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PMEM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PMD5.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PVERSION.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PVARIANT.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PUNKNOWN.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PUNIT.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTYPES_TEST.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTRIGGER.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTIMEDSEM.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTIME.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTHREAD.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PTEXTMAP.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRUTILS.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRTOI.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRMANIP.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\PSTRLIST.OBJ
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\PTYPES\WIN32\IVAO\VC110.PDB
 C:\PROG\FSD\X-IVAP-CODE - PRUEBAS\SRC\IVAO\PTYPES_ST64.LIB
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pasync.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\patomic.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pcomponent.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pcset.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pcsetdbg.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pexcept.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pfatal.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pfdxstm.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pinfile.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pinfilter.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pinmem.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pinstm.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pintee.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\piobase.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipbase.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipmsg.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipmsgsv.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipstm.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipstmsv.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pipsvbase.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pmd5.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pmem.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pmsgq.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pmtxtable.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pnpipe.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pnpserver.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pobjlist.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\poutfile.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\poutfilter.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\poutmem.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\poutstm.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ppipe.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ppodlist.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pputf.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\prwlock.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\psemaphore.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstdio.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrcase.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrconv.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstring.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrlist.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrmanip.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrtoi.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pstrutils.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ptextmap.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pthread.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ptime.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ptimedsem.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ptrigger.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\ptypes_test.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\punit.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\punknown.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pvariant.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\pversion.obj
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\cl.command.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\CL.read.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\CL.write.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\Lib-link.read.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\Lib-link.write.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\lib.command.1.tlog
-C:\Prog\FSD\x-ivap-code - pruebas\src\ptypes\win32\IVAO\vc110.pdb
-C:\Prog\FSD\x-ivap-code - pruebas\src\IVAO\PTypes_ST64.lib
+C:\PROG\FSD\X-IVAP-AHS-ESTABLE\SRC\IVAO\PTYPES_ST64.LIB
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pasync.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\patomic.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pcomponent.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pcset.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pcsetdbg.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pexcept.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pfatal.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pfdxstm.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pinfile.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pinfilter.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pinmem.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pinstm.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pintee.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\piobase.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipbase.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipmsg.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipmsgsv.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipstm.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipstmsv.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pipsvbase.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pmd5.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pmem.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pmsgq.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pmtxtable.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pnpipe.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pnpserver.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pobjlist.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\poutfile.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\poutfilter.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\poutmem.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\poutstm.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ppipe.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ppodlist.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pputf.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\prwlock.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\psemaphore.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstdio.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrcase.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrconv.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstring.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrlist.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrmanip.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrtoi.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pstrutils.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ptextmap.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pthread.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ptime.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ptimedsem.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ptrigger.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\ptypes_test.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\punit.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\punknown.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pvariant.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\pversion.obj
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\cl.command.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\CL.read.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\CL.write.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\Lib-link.read.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\Lib-link.write.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\lib.command.1.tlog
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\ptypes\win32\IVAO\vc110.pdb
+C:\Prog\FSD\AHS_XPlane_repo\xplane-airhispania\xIvap-ahs64\src\IVAO\PTypes_ST64.lib

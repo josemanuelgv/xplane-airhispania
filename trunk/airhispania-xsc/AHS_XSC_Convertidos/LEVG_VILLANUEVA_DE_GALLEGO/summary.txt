@@ -1,0 +1,45 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (150.0m) for object add_balloons10 at ( 41.82605300,   -0.76502000) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (150.0m) for object add_balloons10 at ( 41.71637100,   -0.84690300) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-1.6m) for object ba11ddcb4b741f52b2eac68205ad6a16 at ( 41.71641800,   -0.84690300) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero pitch/bank (4.0/2.0) for object ba11ddcb4b741f52b2eac68205ad6a16 at ( 41.71641800,   -0.84690300) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-1.6m) for object ba11ddcb4b741f52b2eac68205ad6a16 at ( 41.82619000,   -0.76517100) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero pitch/bank (4.0/2.0) for object ba11ddcb4b741f52b2eac68205ad6a16 at ( 41.82619000,   -0.76517100) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_3_tramos at ( 41.78832400,   -0.84777500) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78807200,   -0.84742400) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78808100,   -0.84707200) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78853600,   -0.84650700) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_3_tramos at ( 41.78870500,   -0.84629700) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78849500,   -0.84764900) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78876600,   -0.84731100) in file villanueva_de_gallego_LEVG_objetos.bgl
+Non-zero altitude (-0.74m) for object Tapia_blanca_12_tramos at ( 41.78903800,   -0.84697300) in file villanueva_de_gallego_LEVG_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 1a5ffb40eb4c11d98cd60800200c9a66 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a68 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6b not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6c not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6d not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6e not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6f not found
+Object 47454f4657494c4cffff0001ffff00c0 not found
+Object 47454f4657494c4cffff0001ffff00c6 not found
+Object 47454f4657494c4cffff0001ffff00c8 not found
+Object 47454f4657494c4cffff0001ffff00ca not found
+Object 47454f4657494c4cffff0001ffff00cb not found
+Object 47454f4657494c4cffff0001ffff00cd not found
+Object 47454f4657494c4cffff0001ffff00e5 not found
+Object 47454f4657494c4cffff0001ffff00e7 not found
+Object 47454f4657494c4cffff0001ffff00f0 not found
+Object 67677891dbc1cc0d5f111ee9c4cbf16b not found
+Object ba11ddcb4b741f52b2eac68205ad6a16 not found
+Object Bush_pilot is a built-in object
+Object d4f94d70429c0215361b17946616380b not found
+Object ppl_alexeyoilrig is a built-in object
+Object ppl_andreoilrig is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
