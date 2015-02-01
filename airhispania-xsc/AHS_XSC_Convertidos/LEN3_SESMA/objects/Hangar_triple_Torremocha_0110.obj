@@ -1,0 +1,26 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object Hangar_triple_Torremocha in file AHS_Hangares_FSX.bgl scaled x1.1
+
+TEXTURE		FS2X-palette.dds
+POINT_COUNTS	6 0 0 6
+
+VT	 -17.050    0.163    8.800	 0.276  0.921  0.276	0.3984 0.6484
+VT	 -16.500    0.163    8.250	 0.276  0.921  0.276	0.3984 0.6484
+VT	 -16.500    0.000    8.800	 0.276  0.921  0.276	0.3984 0.6484
+VT	 -16.500    0.000    8.800	 0.000  0.000  1.000	0.3984 0.6484
+VT	 -17.050    0.000    8.800	 0.000  0.000  1.000	0.3984 0.6484
+VT	 -17.050    0.163    8.800	 0.000  0.000  1.000	0.3984 0.6484
+
+IDX	0
+IDX	1
+IDX	2
+IDX	3
+IDX	4
+IDX	5
+
+ATTR_no_blend
+
+TRIS	0 6

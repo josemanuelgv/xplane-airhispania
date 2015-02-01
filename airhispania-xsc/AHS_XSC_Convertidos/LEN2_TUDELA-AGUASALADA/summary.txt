@@ -1,0 +1,14 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-0.2m) for object f99d01394a36dbbc3d10d9ba0bb4eda4 at ( 42.10959500,   -1.68798100) in file tudela-aguasalada_LEN2_objetos.BGL
+Non-zero altitude (-0.2m) for object ezhangers00 at ( 42.10971500,   -1.68626500) in file tudela-aguasalada_LEN2_objetos.BGL
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Object gen_powertower01 is a built-in object
+Texture $pan not found
+Object PPL_Construction2 is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object veg_tb_Chestnut1_8m is a built-in object
+Using objects from the OpenSceneryX library

@@ -1,0 +1,16 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+No airport definition found!
+Object GEN_equip_mobile_wing_rack is a built-in object
+Object gen_objectsstacked01 is a built-in object
+Object GEN_Plane_Schweizer2_orngstripe is a built-in object
+Object GEN_Plane_Schweizer2_redstripe is a built-in object
+Object gen_sailplane_trailer01 is a built-in object
+Object gen_sailplane_trailer02 is a built-in object
+Object gen_sailplane_trailer03 is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object PPL_Policeman1 is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object Veh_Truck_Derelict is a built-in object

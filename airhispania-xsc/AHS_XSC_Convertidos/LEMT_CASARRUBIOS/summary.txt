@@ -1,0 +1,32 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (1.36m) for object veg_tb_Chestnut1_10m at ( 40.23395300,   -4.02738100) in file casarrubios_LEMT_arboles.bgl
+Non-zero altitude (1.53m) for object veg_tb_Chestnut1_10m at ( 40.23395700,   -4.02732700) in file casarrubios_LEMT_arboles.bgl
+Non-zero altitude (1.36m) for object veg_tb_Chestnut1_10m at ( 40.23392200,   -4.02725300) in file casarrubios_LEMT_arboles.bgl
+Non-zero altitude (1.53m) for object veg_tb_Chestnut1_10m at ( 40.23392100,   -4.02722900) in file casarrubios_LEMT_arboles.bgl
+Non-zero altitude (1.5m) for object cartel at ( 40.23403400,   -4.02717300) in file casarrubios_LEMT_objetos.bgl
+Non-zero pitch/bank (270.0/0.0) for object cartel at ( 40.23403400,   -4.02717300) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (4.67m) for object sokoaviation at ( 40.23378500,   -4.02912200) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (1.8m) for object mesa_sillas_parasol at ( 40.23415300,   -4.02717900) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (1.8m) for object mesa_sillas_parasol at ( 40.23411000,   -4.02717500) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (1.8m) for object PPL_friendVegas at ( 40.23417300,   -4.02720800) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (-1.3m) for object ppl_svenoilrig at ( 40.23351500,   -4.03081900) in file casarrubios_LEMT_objetos.bgl
+Non-zero altitude (-1.3m) for object ppl_alexeyoilrig at ( 40.23350500,   -4.03081200) in file casarrubios_LEMT_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c953 in file AHS_Mangas_FSX.bgl
+Object ppl_alexeyoilrig is a built-in object
+Object PPL_friendVegas is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object small_fuel_station2 is a built-in object
+Object veg_tb_Aspen_6m is a built-in object
+Object veg_tb_Chestnut1_10m is a built-in object
+Object veg_tb_Chestnut1_8m is a built-in object
+Object veg_tb_Chestnut1_8m_sp is a built-in object
+Object veg_tb_Cottonwood_12m is a built-in object
+Object veg_tb_Cottonwood_14m is a built-in object
+Object veg_tb_Cottonwood_16m is a built-in object
+Object veg_tb_Cottonwood_5m is a built-in object
+Object veg_tb_Cottonwood_6m is a built-in object
+Object veg_tb_Cottonwood_8m is a built-in object
+Object veg_tb_Elm1_12m is a built-in object
