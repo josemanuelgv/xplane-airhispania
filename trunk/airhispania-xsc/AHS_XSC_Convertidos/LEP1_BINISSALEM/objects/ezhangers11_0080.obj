@@ -1,0 +1,25 @@
+I
+800	# Converted by FS2XPlane 3.26
+OBJ
+
+# object ezhangers11 in file AHS_Hangares_FSX.bgl scaled x0.8
+
+TEXTURE		FS2X-palette.dds
+POINT_COUNTS	4 0 0 6
+
+VT	   0.435    3.763   -0.006	 1.000  0.000 -0.000	0.9766 0.9922
+VT	   0.435    4.374   -0.006	 1.000  0.000 -0.000	0.9766 0.9922
+VT	   0.435    4.374   -0.054	 1.000  0.000 -0.000	0.9766 0.9922
+VT	   0.435    3.763   -0.054	 1.000  0.000 -0.000	0.9766 0.9922
+
+IDX	0
+IDX	1
+IDX	2
+IDX	2
+IDX	3
+IDX	0
+
+ATTR_no_blend
+
+ATTR_shiny_rat	1.000
+TRIS	0 6
