@@ -1,7 +1,0 @@
-FS2XPlane 3.26
-System:	Windows 6.1 Service Pack 1
-Target:	X-Plane 10
-
-Non-zero altitude (0.7m) for object Pa28_180 at ( 37.59729200,   -1.76711800) in file puerto_lumbreras_LE73_aviones.bgl
-Object ppl_alexeyoilrig is a built-in object
-Object ppl_svenoilrig is a built-in object
