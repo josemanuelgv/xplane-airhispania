@@ -1,0 +1,9 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (11.0m) for object gen_tv01 at ( 43.33432300,   -6.37883000) in file tineo_LET1_objetos.BGL
+Texture car_vw_bus.bmp not found
+Object 193755cb4cc3a7240a7d8db14094805a not found
+Object gen_tv01 is a built-in object
+Using objects from the OpenSceneryX library

@@ -1,0 +1,5 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+"Z:\X-Plane 10\Custom Scenery\LEMM_MARUGAN" already exists and is not empty
