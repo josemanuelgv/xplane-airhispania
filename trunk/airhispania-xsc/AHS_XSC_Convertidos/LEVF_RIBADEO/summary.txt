@@ -1,0 +1,23 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.7m) for object Pa28_180 at ( 43.55181500,   -7.08785300) in file ribadeo_LEVF_aviones_FSX.bgl
+Object 7472b9ba8975e767e45c449e6dbaa134 not found
+Object c0e732044204268997e391b9006f2354 not found
+Object PPL_Bodyguard is a built-in object
+Object PPL_JapaneseExec is a built-in object
+Object PPL_RussianVillain is a built-in object
+Object ppl_svenoilrig is a built-in object
+Object veg_tb_Chestnut1_14m is a built-in object
+Object veg_tb_Mesquite1_12m_sp is a built-in object
+Object veg_tb_Oak1_20m is a built-in object
+Object veg_tb_OliveTree_4_5m is a built-in object
+Object veg_tb_OliveTree_4_5m_hw is a built-in object
+Object veg_tb_OliveTree_5m_fa is a built-in object
+Object veg_tb_OliveTree_7m_sp is a built-in object
+Object veg_tb_OliveTree_8m_hw is a built-in object
+Object veg_tb_OliveTree_8m_wi is a built-in object
+Object veg_tb_OliveTree_9m_fa is a built-in object
+Object veg_tb_OliveTree_9m_hw is a built-in object
+Using objects from the OpenSceneryX library
