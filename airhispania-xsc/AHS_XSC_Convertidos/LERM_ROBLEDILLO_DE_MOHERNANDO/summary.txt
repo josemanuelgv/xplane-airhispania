@@ -1,0 +1,25 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (-64.0m) for object veg_tb_Poplar_16m_sp at ( 40.86036700,   -3.24621100) in file robledillo de mohernando_LERM_arboles.bgl
+Non-zero altitude (-64.0m) for object veg_tb_Poplar_16m_sp at ( 40.86031000,   -3.24616500) in file robledillo de mohernando_LERM_arboles.bgl
+Non-zero altitude (-64.0m) for object veg_tb_Poplar_16m_sp at ( 40.86026900,   -3.24612900) in file robledillo de mohernando_LERM_arboles.bgl
+Non-zero altitude (-64.0m) for object veg_tb_Poplar_16m_sp at ( 40.86022400,   -3.24605700) in file robledillo de mohernando_LERM_arboles.bgl
+Non-zero altitude (-64.0m) for object veg_tb_Poplar_16m_sp at ( 40.86018200,   -3.24602500) in file robledillo de mohernando_LERM_arboles.bgl
+Non-zero altitude (-64.0m) for object 1a5ffb40eb4c11d98cd60800200c9a67 at ( 40.85999400,   -3.24594400) in file robledillo de mohernando_LERM_objetos.bgl
+Skipping animation in object dab9276ef44c46e5a8254c0723b0c954 in file AHS_Mangas_FSX.bgl
+Object 1a5ffb40eb4c11d98cd60800200c9a67 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a68 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a69 not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6a not found
+Object 1a5ffb40eb4c11d98cd60800200c9a6c not found
+Object 658a4c2b483c239837d7c78d129174a4 not found
+Object bbdfc1eb4e4a96b235b0efbfd43cd7fa not found
+Object c0e732044204268997e391b9006f2354 not found
+Object gen_powertower01 is a built-in object
+Object PPL_Climber2 is a built-in object
+Object PPL_friendVegas is a built-in object
+Object PPL_IceFisherman1 is a built-in object
+Object small_fuel_station1 is a built-in object
+Object veg_tb_Poplar_16m_sp is a built-in object
