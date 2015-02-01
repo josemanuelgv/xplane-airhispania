@@ -1,0 +1,8 @@
+FS2XPlane 3.26
+System:	Windows 6.1 Service Pack 1
+Target:	X-Plane 10
+
+Non-zero altitude (0.8m) for object 0c633cca4b462ccb6deb149b86da50b0 at ( 38.91904600,   -0.35484700) in file benicolet_LEV1_objetos.BGL
+Texture earmuffs.bmp not found
+Texture $pan not found
+Using objects from the OpenSceneryX library
