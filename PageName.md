@@ -1,0 +1,42 @@
+<h1> Lista de aeródromos españoles de libre uso para XPlane </h1>
+
+> Esta página pretende catalogar los escenarios para XPlane de aeródromos españoles.
+
+
+
+# Paquetes de aeródromos #
+
+> ## **Conversión aeródromos de AirHispania SCX para Xplane** ##
+    * Proveedor: AirHispania
+    * Descarga: [enlace](https://drive.google.com/file/d/0By8c9o_8djGZSHQ3bjVkUEJMY2c)
+    * Listado de aeropuertos que incluye:
+      * **LEBA Cordoba LEBB Bilbao LEBG Burgos-Villafria LEBZ Badajoz LECO La Coruna LEGR Granada LEHC Huesca-Pirineos LELC San Javier-Murcia LEMG Malaga LEPP Pamplona LERJ Logroño-Agoncillo LERL Ciudad Real LESA Salamanca-Matacan LESO San Sebastián-Fuenterrabia LEVD Valladolid-Villanubla LEZG Zaragoza
+    * Listado de aeródromos que incluye:
+      *** LE01 Aeroveleta LE02 El Vendrel LE03 Maestrat-Vinaròs LE04 Gurrea de Gállego LE06 Castejón del Sos LE07 Alcazarén LE08 Cocoll LE0B Jayena LE11 Bages-Sallent LE13 Gurb LE14 Medina Sidonia LE17 Mérida 2 LE18 Tinajeros LE20 Moia LE21 Sigüenza LE23 Llavia LE24 Catral-Zenair LE25 Numancia-Garray LE26 Pairades LE31 Olocau LE32 Villanueva del Pardillo LE35 Ronda LE36 La Ina LE37 Villanueva del Trabuco LE38 Torremocha de Jiloca LE39 Antequera LE41 Vera LE43 Alcosser de Planes LE45 Tardienta-Monegros LE46 Yecla LE47 La Balanzona LE48 Andújar LE52 Cieza LE54 Niebla LE55 San Torcuato LE57 Trasmiras LE58 Barcena de Cudon LE59 Camarenilla LE60 Valdelaguna LE61 Campillos-Paravientos LE63 Villoldo LE64 El Ejido LE65 El Bernagal LE66 Las Infantas LE67 Almonte LE68 Turre LE69 Coscojuela de Sobrarbe LE71 Tarancón LE72 Lorca LE73 Puerto Lumbreras LE75 Caravaca De La Cruz LE76 Orce LE77 La Segarra LE79 Rosinos-Puebla de Sanabria LE80 Santa María Del Paramo LE81 Sonseca LE82 Pozuelo de Calatrava LE84 Garrucha LE86 Calzada de Vanduciel LE87 Algodor LE88 Arcones LE89 Navianos de Valverde LE90 Santa Maria del Paramo LE91 Pals LE92 Ses Salines LE93 Barbastro LE94 Los Alcores LE96 Moia 2 Les Humbertes LE97 Almorox GC99 El Jarde LEA2 Fuenteobejuna LEA5 Guillena LEA7 Alcalá del Rio LEA9 El Barranco-Bailen LEAP Ampuriabrava LEAT Alfes LEAV Avinyonet LEBE Beas de Segura LEC1 Castellar del Vallés LEC2 Vallmoll LEC3 Mollerussa LEC4 Palafolls LEC5 Viladamat LEC6 L’Estartit LEC7 Tiurana LEC8 Cevera LEC9 Hostalric LECD La Cerdanya LECF Calaf-Sallavinera LECI Santa Cilia LECN Castellón LECT El Castaño LECU Madrid-Cuatro Vientos LED2 El Molar-Loring LED3 Griñon-Madrid LED4 Brunete LED5 Lebrija LED7 Cobreces (Cantabria) LED6 Ororbia LED8 Villalambrus de Losa LEE1 Don Benito LEE3 La Cervera-Valdesalor LEE4 Fontioso LEE5 El Tobar LEE7 Linares-Jaén LEE9 Aldeacentenera LEEP Casimiro Patiño LEEV Villacastin LEF1 Fuenterrobles LEF5 Villarrobledo LEF7 El Maillo LEF8 Los Garranchos LEF9 Carcelén LEFM Fuentemilanos LEG1 Hiendelaencina LEG2 Madrigalejo del Monte LEG4 Chozas de Abajo LEG5 La Lora- Valderredible LEG6 Ontaneda LEGC Guadalcanal-La Calderera LEH7 Camaleño-Arteñín (Potes) LEH8 Ager LEHI Hinojosa Del Duque LEIG Igualada-Odena LEIZ Almuradiel2-La Perdiz LEJU La Juliana LEL1 El Salobral-Valle Ambles LEL2 Villamarco LEL9 Cillamayor LELH Alhama de Murcia LELJ Loja LELL Sabadell LELM Almansa LELO Logroño-Argoncillo LELT Lillo LEM1 Almuradiel1 LEMM Marugan LEMP Los Martinez del Puerto LEMR La Morgal LEMU Muchamiel LEMX La Mancha-Quero LEMT Casarrubios del Monte LEN1 Lumbier LEN2 Tudela-Aguasalada LEN3 Sesma LEN4 Berbinzana (Navarra) LENA Benabarre LEOC Ocaña LEOT Ontur LEP1 Binissalem LEPR Palma del Río LEPZ Los Pozuelos de Calatrava LERE Requena LERM Robledillo de Mohernando LES1 Castropol-Arnao LESB Son Bonet LESC El Casar de Escalona LESE San Enrique-Almodóvar del Campo LESG Sangüesa LESL San Luis LESS Sotos LESU Seo de Urgel LET1 Tineo LETC Matilla de los Caños LETI La Iglesuela-Tietar LETL Plata-Teruel LETF Villamartín LETP Santo Tomé del Puerto LEU1 Totana LEV1 Benicolet LEV2 La Llosa LEVF Ribadeo LEVG Villanueva de Gállego LFIP Peyresourde
+
+# Aeródromos individuales #
+
+> ## **LEXJ**, Aeropuerto de Santander ##
+    * Autor Tdg, http://forums.x-plane.org/index.php?app=downloads&showfile=24365
+
+> ## **LECO**, Aeropuerto de A Coruña ##
+    * Autor Tdg, http://forums.x-plane.org/index.php?app=downloads&showfile=24348
+
+> ## **LEAL**, Aeropuerto de Alicante ##
+    * Autor Tdg, http://forums.x-plane.org/index.php?app=downloads&showfile=21773
+
+> ## **LEVC**, Aeropuerto de Valencia ##
+    * Conversion de Akesoft, http://forums.x-plane.org/index.php?app=downloads&showfile=20675
+
+> ## **LELL**, Aeropuerto de Sabadell ##
+    * zxplane, http://www.x-plane.es/modules/TDMDownloads/singlefile.php?cid=1&lid=111
+
+> ## **LEJR**, Aeropuerto de Jerez ##
+    * Fagundo, http://forums.x-plane.org/index.php?app=downloads&showfile=15979
+
+> ## **LEIB**, Aeropuerto de Ibiza ##
+    * Montes, http://forums.x-plane.org/index.php?app=downloads&showfile=19976
+
+> ## **LEGR**, Aeropuerto de Granada ##
+    * zxplane, http://www.x-plane.es/modules/TDMDownloads/singlefile.php?cid=1&lid=47
+

@@ -1,0 +1,177 @@
+<h1> <b>Tutorial de vuelo en red con XPlane en AirHispania</b> </h1>
+
+<font color='red'><b>ATENCION: Se recomienda acceder a una nueva versión de este tutorial <a href='XivAp_AHS.md'>aquí</a></b></font>
+
+
+# Introducción #
+
+> Este tutorial es una recopilación de todos los aportes y experiencias de diversos usuarios de AirHispania que han trabajado y trabajan para que el simulador Xplane sea compatible y usable con las herramientas y protocolos que la escuela pone a disposición.
+
+> Se asume que el lector ya conoce las herramientas y procedimientos y dispone de experiencia en el vuelo online en la red de AirHispania. No es objetivo del mismo iniciar al lector desde cero en el vuelo online en AirHispania.
+
+> La guía abarca las versiones 9 y 10 de XPlane de 32bits para Windows. La versión 10 de 64 bits de XPlane por ahora no permite la conexión a la red de AirHispania debido a que el agente de red usado, XsquawkBox, no ha sido portado a 64 bits todavía.
+
+> _Jose Manuel GV - AHS018D_
+
+# Instalación y configuración de XPlane #
+
+## Palabras clave ##
+
+> En este tutorial se hará referencia a palabras clave cuyo significado se detalla a continuación:
+
+  * DIR\_INSTALL\_XPLANE = Hace referencia al directorio donde tenemos instalado XPlane, ejemplo, C:\XPlane9.
+## 1. Instalar plugin XPUIPC en el simulador ##
+
+  1. Descargarlo de http://www.tosi-online.de/XPUIPC/XPUIPC_files/XPUIPC%20and%20WPWideClient%202.0.0.0.zip
+  1. Descomprimir en una carpeta temporal.
+  1. Copiar el contenido de la carpeta XPUIPC en la carpeta DIR\_INSTALL\_XPLANE/Resources/plugins
+  1. Arrancar XPlane y verificar que el plugin se ha instalado correctamente usando el menú Plugins.
+
+## 2. Configurar la compatibilidad de XPUIPC con AHSBOX (aporte de Mikel N'Dong, AHS120D) ##
+
+> El asunto es que el XPUIPC no ofrece a la caja la cuenta de cuantas "estaciones de carga" tiene el avión y la caja no llegaba a grabar nada sin ese dato. Supongo que igual es porque el propio X-Plane no tiene esa característica (creo que es lo más probable). Así que con
+> estas líneas, lo que he hecho ha sido engañar a la caja y decirle que sólo hay una estación de carga con el peso que tenemos configurado de
+> payload del avión.
+
+  1. Abrir con un editor de textos el fichero DIR\_INSTALL\_XPLANE/Resources/plugins/XUIPCOffsets.cfg
+  1. Añadir el siguiente contenido al final del mismo y guardarlo:
+
+```
+# Añadido para compatibilidad con AHSBOX
+Dataref TotalPayload sim/flightmodel/weight/m_fixed float
+Offset 0x13FC UINT32 1 r 1 # Count of payload stations = 1
+Offset 0x1400 FLOAT64 1 r $TotalPayload 2.2046 * # Peso en la primera "station" en lbs
+```
+
+## 3. Instalar XSquawkBox 1.0.0 IVAO Compatible (aporte de Carlos, AHS6441) ##
+
+> XSquawkBox es el software homólogo al FSINN que permite el vuelo online. Esta es la única versión de XSquawkBox compatible con el servidor FSD de AirHispania.
+
+> Esta son las limitaciones funcionales detectadas hasta el momento:
+    * No cambia de canal TS automáticamente, hay que ir a la ventana del TS y cambiar el canal.
+    * No se muestran los callsign del resto de aviones como sí hace FSINN.
+
+  1. Descargar XSquawkBox 1.0.0 para Windows desde este enlace: http://www.xsquawkbox.net/xsb/wp-content/uploads/2011/06/xsb_win_ivao_100.zip
+  1. Descomprimir el paquete en una carpeta temporal.
+  1. Copiar el contenido de la carpeta "For plugins folder" en la carpeta DIR\_INSTALL\_XPLANE/Resources/plugins
+
+## 4. Instalar el gestor de recursos añadidos XAddonManager ##
+
+> Esta herramienta nos permitirá de forma sencilla activar y desactivar cualquier escenarios (principalmente aeródromos) o plugin en nuestra sesión con XPlane. No es obligatorio tenerla instalada pero particularmente creo que es muy recomendable.
+
+  1. Descargar el software desde este enlace: http://code.google.com/p/xaddonmanager/downloads/detail?name=XAddonManager-2.0.0-Windows.zip&can=2&q=
+  1. Descomprimir el paquete en el lugar deseado.
+
+## 5. Instalación de los recursos principales de AirHispania ##
+
+> Todos los recursos disponibles a continuación son conversiones realizadas de las versiones de FS9 y FSX de AirHispaniaSC a XPlane realizados con la herramienta FS2XPLANE. Muchos de ellos, sobre todo los escenarios de aeródromos, pueden tener imperfecciones generadas por la conversión.
+
+> El procedimiento para instalarlos en nuestro XPlane es sencillamente descargar el paquete y descomprimirlo en la carpeta DIR\_INSTALL\_XPLANE/Custom scenery.
+
+> ### Elementos del terreno ###
+
+  * Puntos de notificación VFR 1.8: [Descargar](https://mega.co.nz/#!qZIwFATS!GN-brkdy4pdOCxXxnHgN6x2VPVYwRegyE0kWfst70_U)
+  * Faros 1.4: [Descargar](https://mega.co.nz/#!fd5F3YqT!QyVi9zz-XYCcDsksWEprK0XAViQnEvacqEj-imXpxpw)
+  * Toros de Osborne 1.0: [Descargar](https://mega.co.nz/#!bd4XFZSC!borM5gxQMOIQaqoI8cxhdQ0HwZwwsI2XaJuwK47CkA8)
+  * Castillos 1.0: [Descargar](https://mega.co.nz/#!LcghHCDZ!ZNnA_lV3KcC-9CdIjhJcv0Ppo1JDr7LFtCFwZJiDoGg)
+  * Obstáculos 2.1: [Descargar](https://mega.co.nz/#!DNAxDLCK!Cq8Gimxl2PaNDmh-3SWDrSBK7eEJEsnR6hcK7I3rmlk)
+
+> ### Aeródromos convertidos de AirHispaniaSC ###
+
+  * Aeródromos 2.0 convertidos de FSX: [Descarga](https://mega.co.nz/#!uNpXyLpJ!aB739TdWWxyYaIn4vO8uGUK5hbYdKzW06X7DQ_Dmxow)
+
+> Para la correcta visualización de los aeródromos es aconsejable realizar este ajuste en la configuración:
+    * Ajustes - opciones gráficas - numbers of objects - y luego pinchar donde dice "a lot" o bien otra opción superior, como puede ser "tons".
+
+> ### Aviones de la flota ###
+
+  * Cessna Skyline 182 gratuita de AIR.C74.NET, muy similar a la usada en FS9 y FSX: [Cessna\_Skyline\_C182](http://www.c74.net/xplane/fx/viewtopic.php?f=44&t=14)
+
+  * BeechCraft Baron 58 gratuita: [Baron\_58](http://forums.x-plane.org/index.php?app=downloads&showfile=9291)
+
+## 6. Instalación de aeronaves de la flota de AirHispania ##
+
+> En XSquawkbox el concepto de CSL se corresponde con el modelo tridimensional (OBJ) y las texturas (PNG) que representan a un aeronave conectada a la red. Por tanto, si al conectarnos a la red deseamos ver a los compañeros con sus respectivas aeronaves, debemos tener instalado en nuestro simulador los CSL de las mismas.
+
+> La comunidad XPlane está trabajando para tener disponible los CSL's de toda la flota de AirHispania. De momento disponemos de algunas de las aeronaves de la flota sin texturizar, pero nos permite al menos volar viendo las aeronaves que corresponden a los ICAO correctos.
+
+> Los CSL's se ubican en la carpeta DIR\_INSTALL\_XPLANE/Resources/plugins/XSquawkBox Resources/CSL. Hay que eliminar (o mover a otro sitio) los que existen instalados por XSquawkBox. Después descomprimimos los de AirHispania. Descarga en el siguiente enlace:
+
+> [CSL's](https://mega.co.nz/#!jcghSCII!ay_81AQ3bke28CYLHE070S37YCYFB-u_0udc0wrsZmk) de la flota de AirHispania (versión inicial)
+
+> Es importante comentar que la versión que usamos de XSquawkBox carga TODOS los CSL's existentes en memoria, con el correspondiente tiempo de espera en la carga de XPlane y consumo de recursos. Por eso es importante tener un número "coherente" de CSL's.
+
+## 7. Configuración específica del simulador ##
+
+  1. Desactivar la opción de "pistas siguen los contornos del terreno" (en inglés "runways follow terrain contours") en la configuración de Gráficos (Render options) para evitar ver las aeronaves de los compañeros enterradas en el terreno o levitando.
+
+  * Captura en XPlane9: [Ver](https://xplane-airhispania.googlecode.com/svn/wiki/xplane9_graphics_setup.png)
+  * Captura en XPlane10: pendiente
+
+## 8. Plugins adicionales recomendables ##
+
+  1. **Airport Navigator plugin**: excelente utilidad muy recomendable. Utiliza la base de datos de aeropuertos para representar un mapa del mismo en el cual podemos guiarnos para conocer nuestra posición y movimientos en tiempo real. Descarga en http://forums.x-plane.org/index.php?app=downloads&showfile=4930
+  1. **PilotView plugin**: Fundamental para los que usan TrackIR, pero también muy util para los que no, ya que permite asignas vistas concretas a teclas o botones de joystick. Facilita mucho los cambios de vista. Disponible en http://www.xpluginsdk.org/pilot_view.htm
+  1. **CheckList plugin**: Pendiente enlace y descripción
+
+# Conexión y vuelo en la red #
+
+> ## Conexión ##
+
+> Para conectar iremos al plugin XSquawkbox y seleccionaremos la opción "Connect". Introduciremos todos los datos para la conexión tal como muestra esta captura de pantalla:
+
+![https://xplane-airhispania.googlecode.com/svn/wiki/xsb_connect_ahs.png](https://xplane-airhispania.googlecode.com/svn/wiki/xsb_connect_ahs.png)
+
+  * En el campo _Model_ indicaremos el código ICAO de la aeronave con la que queremos que nos vean el resto de usuarios de la red. Lo normal es que coincida con la aeronave con la que volamos.
+  * En el campo _Airline_ indicaremos el codigo de la aerolínea. Si queremos que salga AirHispania disponible, debemos darla de alta en el fichero **airlines.txt** localizado en la carpeta _DIR\_INSTALL\_XPLANE/Resources\plugins\XSquawkBox Resources_
+
+> ## Metereología ##
+
+> Al conectar recibimos automáticamente el ATIS de las dependencias abiertas en la red. Pero si necesitamos actualizarlo, debemos ordenárselo a XSquawkbox. La forma de hacerlo es pulsar Enter para abrir la zona de mensajes y escribir allí:
+```
+   .atis LECO_TWR
+```
+
+> Si queremos también que nuestro simulador reciba, interprete y represente el último METAR, hacemos:
+
+```
+   .metar LECO_TWR
+```
+
+> ## El Plan de Vuelo ##
+
+> Aquí tenemos un ejemplo de plan de vuelo para VFR.
+
+> ![https://xplane-airhispania.googlecode.com/svn/wiki/xsb_fp_ahs.png](https://xplane-airhispania.googlecode.com/svn/wiki/xsb_fp_ahs.png)
+
+> Podemos especificar toda la información del FP al igual que con FS9 o FSX **salvo uno de los datos requeridos, la altitud de cruzero**. La norma dice que para un vuelo VFR en dicho campo hay que poner "VFR", pero vemos que la única letra que nos deja XSquawkBox poner es la "F", por tanto realizaremos lo siguiente:
+
+  1. Indicar la altitud máxima de crucero en nuestro plan en pies. En el ejemplo hemos indicado 1000 pies para un circuito de tráfico.
+  1. En el apartado de REMARKS, indicaremos que estamos usando XPlane para que el ATC pueda tener en cuenta nuestra limitación. Aún así, os aconsejo que al llamar a torre tras enviar el plan de vuelo, indiquéis al ATC verbalmente que voláis con XPlane. Esto evita que si en REMARKS no cabe la palabra "XPLANE" y el ATC no la ve (ellos sólo ven los primero 75 caracteres de REMARKS), no tengáis que dar explicaciones y saturar el canal.
+
+> ## Sintonización de radio y TeamSpeak: FSCom2TS ##
+
+> Hemos desarrollado una utilidad que permite conectar a un canal de TeamSpeak cuya dependencia asociada ha sido sintonizada en la radio de nuestro simulador. Lleva incorporada una base de datos de frecuencias para las dependencias españolas y mundiales (generados desde las bases de datos de XPlane con XMakeRwys).
+
+Dado que se basa en FSUIPC/XPUIPC permite ser usado con cualquier simulador de vuelo (FS9, FSX, P3D, XPlane).
+
+> Está en estado de pruebas, por lo que si encontráis errores o mejoras a aplicar, éstas serán bienvenidas.
+
+> Podéis descargar la versión 0.2.0 desde este  [enlace](https://drive.google.com/file/d/0By8c9o_8djGZbXZsWGRTY2x4M1U).
+
+> # Valoración de vuelos con AHSBender #
+
+> En la [zona de descargas](https://code.google.com/p/xplane-airhispania/downloads/list) está disponible la última versión de XMakeRwys, una versión para XPlane de MakeRwys que permite valorar con AHSBender 9 los vuelos registrados con AHSBox y realizados con XPlane.
+
+Requisitos:
+  1. Sistema operativo Windows
+  1. Máquina virtual Java JRE mínimo 1.5.0
+  1. XPlane 9 o 10
+  1. AhsBender
+
+Uso:
+  1. Desempaquetar los archivos en la carpeta de instalación de XPlane.
+  1. Ejecutar "MakeRwys.exe".
+  1. Ejecutar "AhsBender.exe" para valorar vuelos. Este software se puede descargar desde la web de AirHispania. Todas las pruebas se han realizado con la versión para FS9 del mismo. Una vez instalado, hay que copiar el fichero AhsBender.exe al directorio de XPlane y, desde allí, ejecutarlo.
+
+Opcionalmente ejecutar "AptViewer" para inspeccionar y buscar aeropuertos entre todas las bases de datos apt disponibles en nuestro XPlane. Esta herramienta permite inspeccionar toda la base de datos de aeropuertos que tenemos instalada.
