@@ -1,0 +1,401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="src\XPmessageBox.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xivapWin.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\xivap.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\WristWatch.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weatherPosition.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\weatherGod.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\uiWindow.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TLVpacket.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\TeamSpeak.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\tcpsocket.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tcas.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\systemcallbacks.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\stb_image_aug.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\SoundGraphics.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\refInspector.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\planeposition.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\navQuery.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\multiplayerPilot.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\multiplayer.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messageWindow.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\messageHandler.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\IVAOsecurity.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\interpolator.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HTTPclient.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\helpers.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fsdmessage.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\fsdapi.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FMCform.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\flightplanForm.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FlightLogger.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\disconnectForm.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\connectForm.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\configFile.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chatWindow.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\caja.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\awyFinder.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\atcPosition.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\airlinesDB.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\aircraftDB.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ahsControl.cpp">
+      <Filter>srcfiles</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\BitmapUtils.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\CSLLoaderThread.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\PlatformUtils.win.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\TexUtils.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XObjDefs.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XObjReadWrite.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XOGLUtils.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPCAircraft.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPMultiplayer.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPMultiplayerCSL.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPMultiplayerObj.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPMultiplayerObj8.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPMultiplayerVars.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XPMPPlaneRenderer.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\multiplayer\src\XUtils.cpp">
+      <Filter>External Sources\SDK\Multiplayer</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\XPPopups.cpp">
+      <Filter>External Sources\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="others\stund\StunClient.cpp">
+      <Filter>External Sources\Stun</Filter>
+    </ClCompile>
+    <ClCompile Include="others\stund\client.cxx">
+      <Filter>External Sources\Stun</Filter>
+    </ClCompile>
+    <ClCompile Include="others\stund\stun.cxx">
+      <Filter>External Sources\Stun</Filter>
+    </ClCompile>
+    <ClCompile Include="others\stund\udp.cxx">
+      <Filter>External Sources\Stun</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\XPListBox.cpp">
+      <Filter>External Sources\SDK</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="srcfiles">
+      <UniqueIdentifier>{cfe339d9-a99d-485f-ae10-a2441025ddb1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="headers">
+      <UniqueIdentifier>{84cec017-7e77-4487-9405-39cec927fc20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Sources">
+      <UniqueIdentifier>{4a9c55ed-4ac3-439a-937c-aa225e968009}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Sources\SDK">
+      <UniqueIdentifier>{64d57cd9-310e-483d-bd0c-f7a257d52ea6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Sources\SDK\Multiplayer">
+      <UniqueIdentifier>{b9668971-212d-4230-a197-b6a4f3d2015e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="External Sources\Stun">
+      <UniqueIdentifier>{bb4305aa-803b-41fe-adc9-2f576f16d1b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="libraries">
+      <UniqueIdentifier>{fae72deb-c5f5-4505-b970-1bed6b0aff91}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\XPmessageBox.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\xivap.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\WristWatch.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\weatherPosition.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\weatherGod_Old.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\weatherGod.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\version.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\uiWindow.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TsRemoteImport.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TLVpacket.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\TeamSpeak.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\tcpsocket.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tcas.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\systemcallbacks.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stbi_DDS_aug_c.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stbi_DDS_aug.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\stb_image_aug.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\SoundGraphics.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\refInspector.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ptpos.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\planeposition.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\navQuery.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\multiplayerPilot.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\multiplayer.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\metar.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messageWindow.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\messageHandler.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\IVAOsecurity.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\interpolator.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTPClient.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\helpers.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FSDprotocol.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fsdmessage.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\fsdapi.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FMCform.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\flightplanForm.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\FlightLogger.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\disconnectForm.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\connectForm.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\configFile.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\common.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\chatWindow.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\caja.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\awyFinder.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\atcPosition.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\airlinesDB.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\aircraftDB.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ahsControl.h">
+      <Filter>headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="SDK\Libraries\Win\XPLM.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="SDK\Libraries\Win\XPLM_64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="SDK\Libraries\Win\XPWidgets.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="SDK\Libraries\Win\XPWidgets_64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\png\Windows\pnglib.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\png\Windows\pnglib64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\FMOD\FMODWindows\api\lib\fmodex_vc.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\FMOD\FMODWindows\api\lib\fmodex64_vc.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\zlib\win32\zlib.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="others\zlib\win32\zlib64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="libs\MDSPLib.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="libs\MDSPLib64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="libs\PTypes_ST.lib">
+      <Filter>libraries</Filter>
+    </Library>
+    <Library Include="libs\PTypes_ST64.lib">
+      <Filter>libraries</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
