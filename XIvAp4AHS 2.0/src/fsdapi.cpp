@@ -291,7 +291,7 @@ void FsdAPI::connectPilot(string host, string port, string callsign, string id, 
 	_host = host + ":" + port;
 	_connectHost = host;
 	_connectPort = atoi(port);
-	_realname = realname;
+	_realname = realname + " (XP)"; //agregamos que el piloto se conecta con xplane;
 }
 
 
@@ -530,6 +530,13 @@ FSD::Message FsdAPI::testreceive(string str) // Añadido para comando "TEST"
 	return m;
 }
 
+/*La repuesta se manda cuando recibe el siguiente paquete de la red:
+ 
+$CQGCXO_OBS: AHS116E:RN
+ 
+Y el Xivap responde:
+ 
+$CRAHS116E:GCXO_OBS:RN:Carlos Roig - LEAL (XP):NONE:1 */
 void FsdAPI::sendInfoRequestReply(string dest, string request, string reply)
 {
 	FSD::Message m;
@@ -795,6 +802,9 @@ bool FsdAPI::sendFlightplan(Flightplan& fpl)
 	char t_equipo = 'G';
 
 	// compose flightplan packet
+	//$FPAHS116E:*A:V:1/C182/L-SD/C:110:GCXO:2130:2134:VFR:GCXO:0:30:2:20:GCTS:DOF/160316 REG/ECSKY OPR/AIRHISPANIA RMK/ALUMNOVFR2:W//S
+	//$FP<callsign origen del paquete>:<destino del paquete>:<reglas>:<aeronave>:<velocidad real>:<aeropuerto de salida>:<Hora prevista de salida>:<Hora de despegue detectada>:<altura>:<aeropuerto de destino>:<tiempo en ruta H>:<Tiempo en ruta M>:
+    //<horas de fuel>:<minutos de fuel>:<aeropuerto alternativo>:<remarks>:<ruta>
 	FSD::Message m;
 	m.type = _FSD_FLIGHTPLAN_;
 	m.source = _callsign;
