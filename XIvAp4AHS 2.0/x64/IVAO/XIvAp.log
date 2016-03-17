@@ -1,0 +1,490 @@
+﻿Build started 17/03/2016 0:45:50.
+     1>Project "C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\XIvAp.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\CL.exe /c /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK\CHeaders\Widgets" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK\CHeaders\XPLM" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK\multiplayer\src" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK\multiplayer\include" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\others\ptypes\include" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\others\WinIncludes" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\others\stund" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\others\FMOD\FMODWindows\api\inc" /I"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\others\xsbsources\plugins" /Z7 /nologo /W3 /WX- /O2 /Ob1 /Ot /D WIN32 /D NDEBUG /D _WINDOWS /D _USRDLL /D IBM=1 /D XPLM200 /D _CRT_SECURE_NO_WARNINGS /D X64=1 /D _VC80_UPGRADE=0x0710 /D _WINDLL /D _MBCS /GF /Gm- /EHsc /MD /Zp4 /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\IVAO\\" /Fd"x64\IVAO\vc110.pdb" /FR"x64\IVAO\\" /Gd /TP /errorReport:prompt others\stund\client.cxx others\stund\stun.cxx others\stund\StunClient.cpp others\stund\udp.cxx SDK\multiplayer\src\BitmapUtils.cpp SDK\multiplayer\src\CSLLoaderThread.cpp SDK\multiplayer\src\PlatformUtils.win.cpp SDK\multiplayer\src\TexUtils.cpp SDK\multiplayer\src\XObjDefs.cpp SDK\multiplayer\src\XObjReadWrite.cpp SDK\multiplayer\src\XOGLUtils.cpp SDK\multiplayer\src\XPCAircraft.cpp SDK\multiplayer\src\XPMPMultiplayer.cpp SDK\multiplayer\src\XPMPMultiplayerCSL.cpp SDK\multiplayer\src\XPMPMultiplayerObj.cpp SDK\multiplayer\src\XPMPMultiplayerObj8.cpp SDK\multiplayer\src\XPMPMultiplayerVars.cpp SDK\multiplayer\src\XPMPPlaneRenderer.cpp SDK\multiplayer\src\XUtils.cpp SDK\XPListBox.cpp SDK\XPPopups.cpp src\ahsControl.cpp src\aircraftDB.cpp src\airlinesDB.cpp src\atcPosition.cpp src\awyFinder.cpp src\caja.cpp src\chatWindow.cpp src\configFile.cpp src\connectForm.cpp src\disconnectForm.cpp src\FlightLogger.cpp src\flightplanForm.cpp src\FMCform.cpp src\fsdapi.cpp src\fsdmessage.cpp src\helpers.cpp src\HTTPclient.cpp src\interpolator.cpp src\IVAOsecurity.cpp src\messageHandler.cpp src\messageWindow.cpp src\multiplayer.cpp src\multiplayerPilot.cpp src\navQuery.cpp src\planeposition.cpp src\refInspector.cpp src\SoundGraphics.cpp src\stb_image_aug.cpp src\systemcallbacks.cpp src\Tcas.cpp src\tcpsocket.cpp src\TeamSpeak.cpp src\TLVpacket.cpp src\uiWindow.cpp src\weatherGod.cpp src\weatherPosition.cpp src\WristWatch.cpp src\xivap.cpp src\xivapWin.cpp src\XPmessageBox.cpp
+         client.cxx
+         stun.cxx
+     1>others\stund\stun.cxx(654): warning C4267: 'initializing' : conversion from 'size_t' to 'UInt16', possible loss of data
+     1>others\stund\stun.cxx(803): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>others\stund\stun.cxx(810): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>others\stund\stun.cxx(827): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>others\stund\stun.cxx(1459): warning C4244: 'argument' : conversion from 'Socket' to 'int', possible loss of data
+     1>others\stund\stun.cxx(1563): warning C4244: '=' : conversion from 'Socket' to 'int', possible loss of data
+     1>others\stund\stun.cxx(2034): warning C4244: '=' : conversion from 'Socket' to 'int', possible loss of data
+     1>others\stund\stun.cxx(2083): warning C4244: '=' : conversion from 'Socket' to 'unsigned int', possible loss of data
+     1>others\stund\stun.cxx(2084): warning C4244: '=' : conversion from 'Socket' to 'unsigned int', possible loss of data
+     1>others\stund\stun.cxx(2401): warning C4244: 'return' : conversion from 'Socket' to 'int', possible loss of data
+     1>others\stund\stun.cxx(2442): warning C4244: 'return' : conversion from 'Socket' to 'int', possible loss of data
+     1>others\stund\stun.cxx(2482): warning C4244: '=' : conversion from 'Socket' to 'int', possible loss of data
+         StunClient.cpp
+     1>others\stund\StunClient.cpp(23): warning C4309: '=' : truncation of constant value
+         udp.cxx
+         BitmapUtils.cpp
+     1>SDK\multiplayer\src\BitmapUtils.cpp(636): warning C4068: unknown pragma
+     1>SDK\multiplayer\src\BitmapUtils.cpp(950): warning C4018: '<' : signed/unsigned mismatch
+         CSLLoaderThread.cpp
+         PlatformUtils.win.cpp
+     1>SDK\multiplayer\src\PlatformUtils.win.cpp(133): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\PlatformUtils.win.cpp(218): warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+         TexUtils.cpp
+         XObjDefs.cpp
+         XObjReadWrite.cpp
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(143): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(144): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(145): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(154): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(155): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(156): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(179): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(180): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(181): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(182): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(197): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(198): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(199): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(227): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(228): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(229): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(230): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(231): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(233): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(234): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(235): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(236): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(237): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(273): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(274): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(275): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(276): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(277): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(278): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(298): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(299): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(300): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(301): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(302): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(309): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(310): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(311): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(312): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(313): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XObjReadWrite.cpp(328): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         XOGLUtils.cpp
+         XPCAircraft.cpp
+         XPMPMultiplayer.cpp
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(121): warning C4101: 'fi' : unreferenced local variable
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(119): warning C4101: 'line' : unreferenced local variable
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(118): warning C4101: 'airPath' : unreferenced local variable
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(117): warning C4101: 'myPath' : unreferenced local variable
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(120): warning C4101: 'sysPath' : unreferenced local variable
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(171): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(224): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayer.cpp(330): warning C4267: 'return' : conversion from 'size_t' to 'long', possible loss of data
+         XPMPMultiplayerCSL.cpp
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(560): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(617): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(620): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(640): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(652): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(681): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(691): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(1100): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(1101): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(1102): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(1103): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerCSL.cpp(1116): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+         XPMPMultiplayerObj.cpp
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(53): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(54): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(55): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(56): warning C4305: 'initializing' : truncation from 'double' to 'const float'
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(76): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(108): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(140): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(403): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(404): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(405): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(491): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(578): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(729): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(730): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(731): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(760): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(761): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(762): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(763): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(773): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(774): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(775): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(776): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(787): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(788): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(789): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(790): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(801): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(802): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(803): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(804): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(823): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(825): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(826): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(827): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(828): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(836): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(837): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(838): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(839): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj.cpp(840): warning C4244: 'argument' : conversion from 'double' to 'GLfloat', possible loss of data
+         XPMPMultiplayerObj8.cpp
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(100): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(114): warning C4244: 'return' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(115): warning C4244: 'return' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(116): warning C4244: 'return' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(117): warning C4244: 'return' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(260): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(261): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(262): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(263): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(264): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPMultiplayerObj8.cpp(265): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         XPMPMultiplayerVars.cpp
+         XPMPPlaneRenderer.cpp
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(335): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(361): warning C4244: 'argument' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(382): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(383): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(384): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(412): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(413): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(415): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(416): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(417): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(418): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(658): warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(659): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(660): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+     1>SDK\multiplayer\src\XPMPPlaneRenderer.cpp(662): warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+         XUtils.cpp
+     1>SDK\multiplayer\src\XUtils.cpp(112): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XUtils.cpp(232): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XUtils.cpp(354): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XUtils.cpp(355): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XUtils.cpp(392): warning C4068: unknown pragma
+     1>SDK\multiplayer\src\XUtils.cpp(411): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\multiplayer\src\XUtils.cpp(432): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\include\utility(138): warning C4267: 'initializing' : conversion from 'size_t' to 'int', possible loss of data
+                 SDK\multiplayer\src\XUtils.cpp(430) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<std::string&,unsigned __int64>(_Other1,_Other2 &&,void **)' being compiled
+                 with
+                 [
+                     _Ty1=const std::string,
+                     _Ty2=int,
+                     _Other1=std::string &,
+                     _Other2=unsigned __int64
+                 ]
+                 SDK\multiplayer\src\XUtils.cpp(430) : see reference to function template instantiation 'std::pair<_Ty1,_Ty2>::pair<std::string&,unsigned __int64>(_Other1,_Other2 &&,void **)' being compiled
+                 with
+                 [
+                     _Ty1=const std::string,
+                     _Ty2=int,
+                     _Other1=std::string &,
+                     _Other2=unsigned __int64
+                 ]
+         XPListBox.cpp
+     1>SDK\XPListBox.cpp(48): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(197): warning C4018: '>=' : signed/unsigned mismatch
+     1>SDK\XPListBox.cpp(197): warning C4018: '<' : signed/unsigned mismatch
+     1>SDK\XPListBox.cpp(287): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(288): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(289): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(290): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(291): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(292): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(293): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(308): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(335): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(347): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(358): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(397): warning C4018: '<' : signed/unsigned mismatch
+     1>SDK\XPListBox.cpp(483): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(484): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(552): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(553): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(555): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>SDK\XPListBox.cpp(565): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+     1>SDK\XPListBox.cpp(570): warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+         Generating Code...
+         Compiling...
+         XPPopups.cpp
+     1>SDK\XPPopups.cpp(333): warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>SDK\XPPopups.cpp(446): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPPopups.cpp(478): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPPopups.cpp(479): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>SDK\XPPopups.cpp(527): warning C4267: '=' : conversion from 'size_t' to 'int', possible loss of data
+     1>SDK\XPPopups.cpp(542): warning C4244: 'argument' : conversion from 'intptr_t' to 'int', possible loss of data
+         ahsControl.cpp
+     1>src\ahsControl.cpp(21): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>src\ahsControl.cpp(84): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+     1>src\ahsControl.cpp(126): warning C4129: '/' : unrecognized character escape sequence
+     1>src\ahsControl.cpp(178): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>src\ahsControl.cpp(182): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+     1>src\ahsControl.cpp(186): warning C4267: 'return' : conversion from 'size_t' to 'int', possible loss of data
+         aircraftDB.cpp
+         airlinesDB.cpp
+         atcPosition.cpp
+         awyFinder.cpp
+         caja.cpp
+     1>src\caja.cpp(126): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\caja.cpp(148): warning C4244: '=' : conversion from 'float' to 'UInt32', possible loss of data
+     1>src\caja.cpp(151): warning C4244: '=' : conversion from 'float' to 'UInt32', possible loss of data
+     1>src\caja.cpp(153): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\caja.cpp(154): warning C4244: '=' : conversion from 'float' to 'UInt32', possible loss of data
+     1>src\caja.cpp(156): warning C4244: '=' : conversion from 'float' to 'UInt32', possible loss of data
+     1>src\caja.cpp(158): warning C4244: '=' : conversion from 'float' to 'UInt32', possible loss of data
+         chatWindow.cpp
+         configFile.cpp
+         connectForm.cpp
+     1>src\connectForm.cpp(445): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+         disconnectForm.cpp
+         FlightLogger.cpp
+         flightplanForm.cpp
+     1>src\flightplanForm.cpp(392): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\flightplanForm.cpp(418): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\flightplanForm.cpp(424): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\flightplanForm.cpp(829): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\flightplanForm.cpp(849): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\flightplanForm.cpp(977): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         FMCform.cpp
+     1>src\FMCform.cpp(336): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\FMCform.cpp(346): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\FMCform.cpp(358): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\FMCform.cpp(374): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\FMCform.cpp(411): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+     1>src\FMCform.cpp(418): warning C4244: 'initializing' : conversion from 'intptr_t' to 'unsigned int', possible loss of data
+         fsdapi.cpp
+         fsdmessage.cpp
+         helpers.cpp
+         HTTPclient.cpp
+         interpolator.cpp
+         IVAOsecurity.cpp
+         Generating Code...
+         Compiling...
+         messageHandler.cpp
+     1>src\messageHandler.cpp(151): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(153): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(154): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(155): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(156): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(157): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(158): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(162): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(164): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(165): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(166): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(167): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\messageHandler.cpp(168): warning C4244: 'return' : conversion from 'intptr_t' to 'int', possible loss of data
+         messageWindow.cpp
+         multiplayer.cpp
+     1>src\multiplayer.cpp(1182): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>src\multiplayer.cpp(1185): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+     1>src\multiplayer.cpp(1188): warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+         multiplayerPilot.cpp
+         navQuery.cpp
+         planeposition.cpp
+     1>src\planeposition.cpp(118): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(119): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(120): warning C4244: '/=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(122): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>src\planeposition.cpp(123): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>src\planeposition.cpp(124): warning C4244: '/=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>src\planeposition.cpp(139): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(140): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(141): warning C4244: '*=' : conversion from 'const double' to 'float', possible loss of data
+     1>src\planeposition.cpp(143): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>src\planeposition.cpp(144): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+     1>src\planeposition.cpp(145): warning C4244: '*=' : conversion from 'const double' to 'UInt32', possible loss of data
+         refInspector.cpp
+         SoundGraphics.cpp
+     1>src\SoundGraphics.cpp(545): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
+     1>src\SoundGraphics.cpp(569): warning C4267: 'argument' : conversion from 'size_t' to 'GLsizei', possible loss of data
+         stb_image_aug.cpp
+     1>c:\users\tomas\documents\visual studio 2012\projects\xivap4ahs 2.0\src\stbi_DDS_aug_c.h(362): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tomas\documents\visual studio 2012\projects\xivap4ahs 2.0\src\stbi_DDS_aug_c.h(366): warning C4018: '>' : signed/unsigned mismatch
+     1>c:\users\tomas\documents\visual studio 2012\projects\xivap4ahs 2.0\src\stbi_DDS_aug_c.h(390): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\tomas\documents\visual studio 2012\projects\xivap4ahs 2.0\src\stbi_DDS_aug_c.h(427): warning C4018: '<' : signed/unsigned mismatch
+         systemcallbacks.cpp
+     1>src\systemcallbacks.cpp(231): warning C4244: 'initializing' : conversion from 'intptr_t' to 'int', possible loss of data
+     1>src\systemcallbacks.cpp(277): warning C4244: 'argument' : conversion from 'intptr_t' to 'long', possible loss of data
+     1>src\systemcallbacks.cpp(295): warning C4244: 'argument' : conversion from 'intptr_t' to 'long', possible loss of data
+         Tcas.cpp
+     1>src\Tcas.cpp(422): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Tcas.cpp(423): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Tcas.cpp(424): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Tcas.cpp(425): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Tcas.cpp(426): warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+     1>src\Tcas.cpp(477): warning C4267: 'argument' : conversion from 'size_t' to 'int', possible loss of data
+         tcpsocket.cpp
+         TeamSpeak.cpp
+         TLVpacket.cpp
+         uiWindow.cpp
+         weatherGod.cpp
+     1>src\weatherGod.cpp(459): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherGod.cpp(477): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherGod.cpp(497): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherGod.cpp(510): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+         weatherPosition.cpp
+     1>src\weatherPosition.cpp(328): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(331): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(347): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(353): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(355): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(559): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(561): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(570): warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+     1>src\weatherPosition.cpp(571): warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+         WristWatch.cpp
+         xivap.cpp
+         xivapWin.cpp
+         Generating Code...
+         Compiling...
+         XPmessageBox.cpp
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\win.xpl" /INCREMENTAL:NO /NOLOGO /LIBPATH:"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\SDK\Libraries\Win" /LIBPATH:"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\libs" /LIBPATH:"C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\x64\IVAO" Opengl32.lib odbc32.lib odbccp32.lib ptypes_ST64.lib MDSPLib64.lib ws2_32.lib glu32.lib comctl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /NODEFAULTLIB:LIBCMT /NODEFAULTLIB:LIBC /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\win.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"x64\IVAO\X-IvAp.lib" /MACHINE:X64 /DLL /DLL x64\IVAO\client.obj
+         x64\IVAO\stun.obj
+         x64\IVAO\StunClient.obj
+         x64\IVAO\udp.obj
+         x64\IVAO\BitmapUtils.obj
+         x64\IVAO\CSLLoaderThread.obj
+         x64\IVAO\PlatformUtils.win.obj
+         x64\IVAO\TexUtils.obj
+         x64\IVAO\XObjDefs.obj
+         x64\IVAO\XObjReadWrite.obj
+         x64\IVAO\XOGLUtils.obj
+         x64\IVAO\XPCAircraft.obj
+         x64\IVAO\XPMPMultiplayer.obj
+         x64\IVAO\XPMPMultiplayerCSL.obj
+         x64\IVAO\XPMPMultiplayerObj.obj
+         x64\IVAO\XPMPMultiplayerObj8.obj
+         x64\IVAO\XPMPMultiplayerVars.obj
+         x64\IVAO\XPMPPlaneRenderer.obj
+         x64\IVAO\XUtils.obj
+         x64\IVAO\XPListBox.obj
+         x64\IVAO\XPPopups.obj
+         x64\IVAO\ahsControl.obj
+         x64\IVAO\aircraftDB.obj
+         x64\IVAO\airlinesDB.obj
+         x64\IVAO\atcPosition.obj
+         x64\IVAO\awyFinder.obj
+         x64\IVAO\caja.obj
+         x64\IVAO\chatWindow.obj
+         x64\IVAO\configFile.obj
+         x64\IVAO\connectForm.obj
+         x64\IVAO\disconnectForm.obj
+         x64\IVAO\FlightLogger.obj
+         x64\IVAO\flightplanForm.obj
+         x64\IVAO\FMCform.obj
+         x64\IVAO\fsdapi.obj
+         x64\IVAO\fsdmessage.obj
+         x64\IVAO\helpers.obj
+         x64\IVAO\HTTPclient.obj
+         x64\IVAO\interpolator.obj
+         x64\IVAO\IVAOsecurity.obj
+         x64\IVAO\messageHandler.obj
+         x64\IVAO\messageWindow.obj
+         x64\IVAO\multiplayer.obj
+         x64\IVAO\multiplayerPilot.obj
+         x64\IVAO\navQuery.obj
+         x64\IVAO\planeposition.obj
+         x64\IVAO\refInspector.obj
+         x64\IVAO\SoundGraphics.obj
+         x64\IVAO\stb_image_aug.obj
+         x64\IVAO\systemcallbacks.obj
+         x64\IVAO\Tcas.obj
+         x64\IVAO\tcpsocket.obj
+         x64\IVAO\TeamSpeak.obj
+         x64\IVAO\TLVpacket.obj
+         x64\IVAO\uiWindow.obj
+         x64\IVAO\weatherGod.obj
+         x64\IVAO\weatherPosition.obj
+         x64\IVAO\WristWatch.obj
+         x64\IVAO\xivap.obj
+         x64\IVAO\xivapWin.obj
+         x64\IVAO\XPmessageBox.obj
+         libs\MDSPLib.lib
+         libs\MDSPLib64.lib
+         libs\PTypes_ST.lib
+         libs\PTypes_ST64.lib
+         others\FMOD\FMODWindows\api\lib\fmodex64_vc.lib
+         others\FMOD\FMODWindows\api\lib\fmodex_vc.lib
+         others\png\Windows\pnglib.lib
+         others\png\Windows\pnglib64.lib
+         others\zlib\win32\zlib.lib
+         others\zlib\win32\zlib64.lib
+         SDK\Libraries\Win\XPLM.lib
+         SDK\Libraries\Win\XPLM_64.lib
+         SDK\Libraries\Win\XPWidgets.lib
+         SDK\Libraries\Win\XPWidgets_64.lib
+            Creating library x64\IVAO\X-IvAp.lib and object x64\IVAO\X-IvAp.exp
+     1>ptypes_ST64.lib(pasync.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pasync.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(patomic.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(patomic.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pcomponent.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pcomponent.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pcset.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pcset.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pexcept.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pexcept.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pfatal.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pfatal.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pfdxstm.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pfdxstm.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pinfile.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pinfile.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pinstm.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pinstm.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(piobase.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(piobase.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pipbase.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pipbase.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pipmsgsv.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pipmsgsv.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pipstm.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pipstm.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pipsvbase.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pipsvbase.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pmem.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pmem.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pmsgq.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pmsgq.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pobjlist.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pobjlist.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(poutfile.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(poutfile.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(poutstm.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(poutstm.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(ppodlist.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(ppodlist.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pputf.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pputf.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstdio.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstdio.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstrconv.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstrconv.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstring.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstring.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstrmanip.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstrmanip.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstrtoi.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstrtoi.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pstrutils.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pstrutils.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(pthread.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(pthread.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(ptime.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(ptime.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(ptimedsem.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(ptimedsem.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>ptypes_ST64.lib(punknown.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'ptypes_ST64.lib(punknown.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(antoi.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(antoi.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(charcmp.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(charcmp.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(dcdmetar.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(dcdmetar.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(dcdmtrmk.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(dcdmtrmk.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(fracpart.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(fracpart.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(prtdmetr.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(prtdmetr.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(stspack2.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(stspack2.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>MDSPLib64.lib(stspack3.obj) : warning LNK4099: PDB 'vc110.pdb' was not found with 'MDSPLib64.lib(stspack3.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc110.pdb'; linking object as if no debug info
+     1>pnglib64.lib(png.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(png.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngerror.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngerror.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngget.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngget.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngmem.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngmem.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngread.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngread.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngrio.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngrio.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngrtran.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngrtran.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngrutil.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngrutil.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngset.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngset.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>pnglib64.lib(pngtrans.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'pnglib64.lib(pngtrans.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(adler32.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(adler32.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(crc32.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(crc32.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(inffast.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(inffast.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(inflate.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(inflate.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(inftrees.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(inftrees.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+     1>zlib64.lib(zutil.obj) : warning LNK4099: PDB 'vc100.pdb' was not found with 'zlib64.lib(zutil.obj)' or at 'C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\vc100.pdb'; linking object as if no debug info
+         XIvAp.vcxproj -> C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\win.xpl
+       BscMake:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\bscmake.exe /nologo /o"C:\X-Plane 10 Tests\Resources\Plugins\X-IvAp AHS\64\win.bsc" /n x64\IVAO\client.sbr x64\IVAO\stun.sbr x64\IVAO\StunClient.sbr x64\IVAO\udp.sbr x64\IVAO\BitmapUtils.sbr x64\IVAO\CSLLoaderThread.sbr x64\IVAO\PlatformUtils.win.sbr x64\IVAO\TexUtils.sbr x64\IVAO\XObjDefs.sbr x64\IVAO\XObjReadWrite.sbr x64\IVAO\XOGLUtils.sbr x64\IVAO\XPCAircraft.sbr x64\IVAO\XPMPMultiplayer.sbr x64\IVAO\XPMPMultiplayerCSL.sbr x64\IVAO\XPMPMultiplayerObj.sbr x64\IVAO\XPMPMultiplayerObj8.sbr x64\IVAO\XPMPMultiplayerVars.sbr x64\IVAO\XPMPPlaneRenderer.sbr x64\IVAO\XUtils.sbr x64\IVAO\XPListBox.sbr x64\IVAO\XPPopups.sbr x64\IVAO\ahsControl.sbr x64\IVAO\aircraftDB.sbr x64\IVAO\airlinesDB.sbr x64\IVAO\atcPosition.sbr x64\IVAO\awyFinder.sbr x64\IVAO\caja.sbr x64\IVAO\chatWindow.sbr x64\IVAO\configFile.sbr x64\IVAO\connectForm.sbr x64\IVAO\disconnectForm.sbr x64\IVAO\FlightLogger.sbr x64\IVAO\flightplanForm.sbr x64\IVAO\FMCform.sbr x64\IVAO\fsdapi.sbr x64\IVAO\fsdmessage.sbr x64\IVAO\helpers.sbr x64\IVAO\HTTPclient.sbr x64\IVAO\interpolator.sbr x64\IVAO\IVAOsecurity.sbr x64\IVAO\messageHandler.sbr x64\IVAO\messageWindow.sbr x64\IVAO\multiplayer.sbr x64\IVAO\multiplayerPilot.sbr x64\IVAO\navQuery.sbr x64\IVAO\planeposition.sbr x64\IVAO\refInspector.sbr x64\IVAO\SoundGraphics.sbr x64\IVAO\stb_image_aug.sbr x64\IVAO\systemcallbacks.sbr x64\IVAO\Tcas.sbr x64\IVAO\tcpsocket.sbr x64\IVAO\TeamSpeak.sbr x64\IVAO\TLVpacket.sbr x64\IVAO\uiWindow.sbr x64\IVAO\weatherGod.sbr x64\IVAO\weatherPosition.sbr x64\IVAO\WristWatch.sbr x64\IVAO\xivap.sbr x64\IVAO\xivapWin.sbr x64\IVAO\XPmessageBox.sbr
+     1>Done Building Project "C:\Users\Tomas\Documents\Visual Studio 2012\Projects\XIvAp4AHS 2.0\XIvAp.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:01:07.59
