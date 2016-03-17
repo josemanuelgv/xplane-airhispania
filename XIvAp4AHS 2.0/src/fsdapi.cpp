@@ -348,7 +348,8 @@ FSD::Message FsdAPI::receive()
 					sendInfoReply(m.source);
 					str = "";
 				} else if(m.tokens[0] == "RN") {
-					sendInfoRequestReply(m.source, "RN", _realname);
+//					sendInfoRequestReply(m.source, "RN", _realname);
+					sendInfoRequestReply(m.source, "RN", _realname + " (XP)"); // Añadido para compatibilidad nueva red AHS (17-3-2016)
 					str = "";
 				} else if(m.tokens[0] == "RV") {
 					sendInfoRequestReply(m.source, "RV", _id);
@@ -456,7 +457,8 @@ FSD::Message FsdAPI::testreceive(string str) // Añadido para comando "TEST"
 					sendInfoReply(m.source);
 					str = "";
 				} else if(m.tokens[0] == "RN") {
-					sendInfoRequestReply(m.source, "RN", _realname);
+//					sendInfoRequestReply(m.source, "RN", _realname);
+					sendInfoRequestReply(m.source, "RN", _realname + " (XP)"); // Añadido para compatibilidad nueva red AHS (17-3-2016)
 					str = "";
 				} else if(m.tokens[0] == "RV") {
 					sendInfoRequestReply(m.source, "RV", _id);
