@@ -291,7 +291,7 @@ void FsdAPI::connectPilot(string host, string port, string callsign, string id, 
 	_host = host + ":" + port;
 	_connectHost = host;
 	_connectPort = atoi(port);
-	_realname = realname + " (XP)"; //agregamos que el piloto se conecta con xplane;
+	_realname = realname;
 }
 
 
