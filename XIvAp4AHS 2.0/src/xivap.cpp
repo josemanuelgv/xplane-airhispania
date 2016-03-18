@@ -2365,6 +2365,7 @@ void Xivap::flightLoopCallback()
 */
 	// things that need to be done once, but cannot be done during start or enable
 	static bool initialized = false;
+	
 	if(!initialized) {
 		initialized = true;
 		int numAircraft, numActive;
@@ -2375,6 +2376,23 @@ void Xivap::flightLoopCallback()
 			messageBox().show("Aviso: TCAS mostrara " + itostring(numAircraft) + " objetivos solamente. Si necesita mas, incremente el numero de aviones en las opciones graficas.");
 		}
 	}
+
+	//En el aire y con el transponder en modo Charlie enviamos el plan de vuelo a control
+	static bool enviadoPlanVueloVolando = false;
+
+	if(!enviadoPlanVueloVolando && !onGround()
+		&& XPLMGetDatai(gXpdrMode)==2)
+	{
+		enviadoPlanVueloVolando = true;
+		fpl.deptimeact; //quizas sea necesario actualizar aqui la variable para que se entrege en el plan de vuelo
+		uiWindow.addMessage(colYellow,"FP: En el aire, reenviando plan de vuelo a Control. Hora despegue real: " + fpl.deptimeact);
+
+	   //TODO: reenviar el plan de vuelo. Se envia pero no se actualiza la hora de despegue. 
+	   
+	   xivap.sendFlightplan();
+
+	}
+
 
 	// let multiplayer do its stuff (update p2p info, send p2p keepalives)
 	_multiplayer.frameTick();

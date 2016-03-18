@@ -530,13 +530,11 @@ FSD::Message FsdAPI::testreceive(string str) // Añadido para comando "TEST"
 	return m;
 }
 
-/*La repuesta se manda cuando recibe el siguiente paquete de la red:
+/*La repuesta que se manda cuando recibe el siguiente paquete de la red:
  
 $CQGCXO_OBS: AHS116E:RN
- 
-Y el Xivap responde:
- 
-$CRAHS116E:GCXO_OBS:RN:Carlos Roig - LEAL (XP):NONE:1 */
+ es:
+ $CRAHS116E:GCXO_OBS:RN:Carlos Roig - LEAL (XP):NONE:1 */
 void FsdAPI::sendInfoRequestReply(string dest, string request, string reply)
 {
 	FSD::Message m;
@@ -545,7 +543,7 @@ void FsdAPI::sendInfoRequestReply(string dest, string request, string reply)
 	m.source = _callsign;
 	m.dest = dest;
 	m.tokens.push_back(request);
-	m.tokens.push_back(reply);
+	m.tokens.push_back(reply + " (XP)"); //agregamos que el piloto se conecta con xplane
 	send(m, false);
 }
 
