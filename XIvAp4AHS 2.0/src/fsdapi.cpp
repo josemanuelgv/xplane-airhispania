@@ -348,7 +348,7 @@ FSD::Message FsdAPI::receive()
 					sendInfoReply(m.source);
 					str = "";
 				} else if(m.tokens[0] == "RN") {
-					sendInfoRequestReply(m.source, "RN", _realname);
+					sendInfoRequestReply(m.source, "RN", _realname +"(XP)");
 					str = "";
 				} else if(m.tokens[0] == "RV") {
 					sendInfoRequestReply(m.source, "RV", _id);
@@ -541,7 +541,7 @@ void FsdAPI::sendInfoRequestReply(string dest, string request, string reply)
 	m.source = _callsign;
 	m.dest = dest;
 	m.tokens.push_back(request);
-	m.tokens.push_back(reply + " (XP)"); //agregamos que el piloto se conecta con xplane
+	m.tokens.push_back(reply);
 	send(m, false);
 }
 

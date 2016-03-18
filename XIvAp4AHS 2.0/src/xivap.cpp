@@ -141,6 +141,8 @@ Xivap::Xivap()
 	altgrande = 10.0; // Altura extra añadida por defecto para aviones grandes para corrección de aviones en tierra
 
 	ghost = false; // Desactiva avión fantasma de pruebas
+
+	enviadoPlanVueloVolando = false; // Inicializa el estado de reenvío del plan de vuelo
 }
 /*Destructor de la clase. Libera la memoria utilizada por los formularios (ventanas) creados*/
 Xivap::~Xivap()
@@ -2378,19 +2380,28 @@ void Xivap::flightLoopCallback()
 	}
 
 	//En el aire y con el transponder en modo Charlie enviamos el plan de vuelo a control
-	static bool enviadoPlanVueloVolando = false;
+	
 
-	if(!enviadoPlanVueloVolando && !onGround()
-		&& XPLMGetDatai(gXpdrMode)==2)
+	if(!enviadoPlanVueloVolando) // Si no está reenviado el plan de vuelo después de despegar 
 	{
-		enviadoPlanVueloVolando = true;
-		fpl.deptimeact; //quizas sea necesario actualizar aqui la variable para que se entrege en el plan de vuelo
-		uiWindow.addMessage(colYellow,"FP: En el aire, reenviando plan de vuelo a Control. Hora despegue real: " + fpl.deptimeact);
+		if (!onGround() && XPLMGetDatai(gXpdrMode)==2) // Si el avión está en el aire y el transponder está en modo C
+		{
+			enviadoPlanVueloVolando = true;
+			datetime dhoy = now(true); // Recoge la fecha de hoy en hora UTC
+			int hora, minuto, segundo;
+			decodetime(dhoy, hora, minuto, segundo);
+			string shora = itostring(hora,10,2,'0');
+			string sminuto = itostring(minuto,10,2,'0');
+			fpl.deptimeact = shora + sminuto; // Actualiza la hora de salida UTC con la hora actual UTC
+			uiWindow.addMessage(colYellow,"FP: En el aire, reenviando plan de vuelo a AHSControl. Hora despegue real: " + shora + ":" + sminuto + "Z");
 
-	   //TODO: reenviar el plan de vuelo. Se envia pero no se actualiza la hora de despegue. 
-	   
-	   xivap.sendFlightplan();
+			xivap.sendFlightplan(); // Reenvía el plan de vuelo con la hora UTC actual de salida actualizada
+		}
 
+	}
+	else if (onGround() && XPLMGetDatai(gXpdrMode)!=2) // Si está enviado el plan, el avión está en tierra y el transponder no está en modo C
+	{
+		enviadoPlanVueloVolando = false; // Se reinicializa el estado del reenvío del plan de vuelo a "no enviado" para volver a enviarlo en el siguiente despegue
 	}
 
 
