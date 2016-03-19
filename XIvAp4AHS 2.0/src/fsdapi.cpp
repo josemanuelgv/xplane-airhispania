@@ -543,7 +543,7 @@ void FsdAPI::sendInfoRequestReply(string dest, string request, string reply)
 	m.source = _callsign;
 	m.dest = dest;
 	m.tokens.push_back(request);
-	m.tokens.push_back(reply);
+	m.tokens.push_back(reply + " (XP)"); //agregamos que el piloto se conecta con xplane
 	send(m, false);
 }
 

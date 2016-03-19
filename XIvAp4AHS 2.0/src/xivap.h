@@ -276,7 +276,9 @@ public:
 	CajaNegra caja; // Clase para grabación de caja negra
 
 	string cfgICAO; // Añadido para guardar el ICAO de la aeronave definido por el usuario en el fichero de configuración
-			
+
+	bool enviadoPlanVueloVolando; // Añadido para almacenar el estado de plan de vuelo enviado después de despegar		
+
 private:
 
 	string _lastPrivSender; // the callsign of the last station that sent a private message
