@@ -1,5 +1,6 @@
 <h2>XPlane para AirHispania</h2>
 Este proyecto proporciona tutoriales y herramientas para soportar el uso del simulador XPlane en la red de simulación de vuelo virtual de AirHispania.
+<b>Atención: este proyecto no está mantenido.</b>
 
 <h2>Descargas disponibles</h2>
 
